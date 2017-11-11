@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event on Enconn</title>
+    <link>https://enconn.fr/tags/event/</link>
+    <description>Recent content in Event on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Tue, 15 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://enconn.fr/tags/event/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jardin numérique 3</title>
+      <link>https://enconn.fr/dev/jardin-numerique-3/</link>
+      <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/jardin-numerique-3/</guid>
+      <description>Du 10 au 13 Avril 2014, j&amp;rsquo;ai participé, pour la seconde année consécutive au Jardin Numérique #3 avec le hackerspace de ma ville. Cette édition fut bien plus petite que la précédente, mais très intéressante. Toutes sortes d&amp;rsquo;ateliers étaient proposés (Makey Makey, Circuit Bending, Soudure en tous genre, création d&amp;rsquo;objets, etc.). Elle débuta comme tous les ans par un apéro Codelab pour présenter quelques projets (dont certains déjà présents à l&amp;rsquo;Arduino Day).</description>
+    </item>
+    
+    <item>
+      <title>Arduino Day 2014</title>
+      <link>https://enconn.fr/dev/arduino-day-2014/</link>
+      <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/arduino-day-2014/</guid>
+      <description>Le 29 mars 2014, ce fut les 10 ans de l&amp;rsquo;Arduino Day. Et pour fêter ça, l&amp;rsquo;Université Foraine et le LabFab ont organisé un évènement pour présenter des projets à base d&amp;rsquo;Arduino et quelques ateliers destinés au grand public dans les immenses salles de l&amp;rsquo;ancienne faculté dentaire de Rennes. Une après-midi donc, consacrée à la soudure, à l&amp;rsquo;apprentissage du code, ainsi que des conférences autour de l&amp;rsquo;Arduino. Des projets tels que ma réplique de GlaDOs, Bionico, une machine qui crayonnait les tweets, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

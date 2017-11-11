@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Passer de la fibre au 56k</title>
+  <meta property="og:title" content="Passer de la fibre au 56k" />
+  <meta name="twitter:title" content="Passer de la fibre au 56k" />
+  <meta name="description" content="Ou comment baisser la qualité de son réseau">
+  <meta property="og:description" content="Ou comment baisser la qualité de son réseau">
+  <meta name="twitter:description" content="Ou comment baisser la qualité de son réseau">
+  <meta name="author" content="Sébastien Blin"/>
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <meta property="og:url" content="https://enconn.fr/dev/fibre-to-56k/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Enconn" />
+
+  <meta name="generator" content="Hugo 0.30.2" />
+  <link rel="canonical" href="https://enconn.fr/dev/fibre-to-56k/" />
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://enconn.fr/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://enconn.fr/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">By AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="/dev" href="/dev/">/dev</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="/var/log" href="/logs/">/var/log</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="/usr" href="/page/about/">/usr</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Enconn" href="https://enconn.fr">
+            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="dev-heading">
+              <h1>Passer de la fibre au 56k</h1>
+                
+                  
+                    <h2 class="dev-subheading">Ou comment baisser la qualité de son réseau</h2>
+                  
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>Contenu posté sur <a href="https://zestedesavoir.com/contenus/2012/passer-de-la-fibre-au-56k/">Zeste de Savoir</a></p>
+
+<p>Vous avez peut-être chez vous un réseau avec un débit trop élevé ou qui marche (trop) bien. Dans ce billet, je ne vais pas parler du côté matériel d&rsquo;un réseau, ni de brancher un switch sans STP en boucle pour le mettre down, mais de quelques commandes linux que j&rsquo;ai eu l&rsquo;occasion d&rsquo;utiliser ces derniers jours pour simuler un mauvais réseau.</p>
+
+<p>Note : Il ne s&rsquo;agit pas d&rsquo;un tutoriel, ce billet cherche seulement à donner un aperçu des possibilités de quelques commandes.</p>
+
+<h1 id="pourquoi-vouloir-faire-ça">Pourquoi vouloir faire ça ?</h1>
+
+<p>Bon, je me doute que vous vous demandez pourquoi vouloir avoir un réseau médiocre ? À vrai dire, j&rsquo;avoue que dans ma vie, j&rsquo;essaye généralement d&rsquo;avoir un réseau correct, mais pour mon travail je développe un logiciel de visio-conférence. Le problème, c&rsquo;est que tout le monde ne peut pas faire des conférences à plusieurs avec des résolutions HD avec un encodage de très bonne qualité.</p>
+
+<p>Je travaille donc sur l&rsquo;amélioration de la qualité de la vidéo lorsque le logiciel détecte des pertes de paquets quand la bandwith n&rsquo;est pas suffisante ou que le réseau a trop de délai ou bien d&rsquo;autres cas. Du coup, pour debugger ou simuler ce type de conférence, il faut donc que je puisse simuler ce type de réseau, afin de récupérer les logs, ce qui se passe au niveau des différents composants et tester différentes approches.</p>
+
+<p>Il existe bien sûr d&rsquo;autres cas où ça peut-être utile. Par exemple :
+&gt; Un cas d’usage que tu peux rajouter dans ton article, c’est la limitation de l’upload sur une connexion câble NC.
+Dès que tu dépasses les 4M d’up, ton ping explose (passant à environ 500 ms).
+&gt; J’avais donc limité mon upload à 3M sur cette connexion pour garder un ping inférieur à 100 ms tout en ayant un serveur chez moi.<br />
+&gt; Source : <a href="https://mammout.bzh/users/alarig/updates/673">https://mammout.bzh/users/alarig/updates/673</a></p>
+
+<h1 id="simuler-un-cas-précis-avec-tc-netem">Simuler un cas précis avec tc-netem</h1>
+
+<p>Dans un premier temps, il était intéressant de voir comment réagissait le stream de vidéo dans plusieurs cas. Par exemple, quel est le débit nécessaire pour faire passer une vidéo avec un flux en 1280x720 (30fps) avec tel ou tel qualité (pour le h.264, on parle de CRF).</p>
+
+<p>Je vous épargne cette partie, il s&rsquo;agit de graphes et de commandes de monitoring (<code>iptraf</code>, <code>ifstat</code> qui donne la consommation pour chaque interface en continu, <code>iperf</code>, etc).</p>
+
+<p>Puis, de voir comment se comporte le stream lorsque le réseau se met à avoir du délai ou des pertes de paquets. Une des solutions était de faire ça au niveau du daemon du programme qu&rsquo;on développe, mais ça demande de relancer le programme trop souvent. C&rsquo;est à ce moment que sert une commande super utile <code>tc</code> (pour traffic control) et <code>netem</code>. Je n&rsquo;ai pas pour but de faire un tutorial complet pour ces commandes (j&rsquo;avoue que je ne maîtrise pas bien ces commandes), mais voilà ce qu&rsquo;on peut trouver dans le <code>man tc-netem</code> :</p>
+
+<pre><code>SYNOPSIS
+       tc qdisc ... dev DEVICE ] add netem OPTIONS
+
+       OPTIONS := [ LIMIT ] [ DELAY ] [ LOSS ] [ CORRUPT ] [ DUPLICATION ] [ REORDERING ][ RATE ]
+
+       LIMIT := limit packets
+
+       DELAY := delay TIME [ JITTER [ CORRELATION ]]]
+              [ distribution { uniform | normal | pareto |  paretonormal } ]
+
+       LOSS := loss { random PERCENT [ CORRELATION ]  |
+                      state p13 [ p31 [ p32 [ p23 [ p14]]]] |
+                      gemodel p [ r [ 1-h [ 1-k ]]] }  [ ecn ]
+
+       CORRUPT := corrupt PERCENT [ CORRELATION ]]
+
+       DUPLICATION := duplicate PERCENT [ CORRELATION ]]
+
+       REORDERING := reorder PERCENT [ CORRELATION ] [ gap DISTANCE ]
+
+       RATE := rate RATE [ PACKETOVERHEAD [ CELLSIZE [ CELLOVERHEAD ]]]]
+
+DESCRIPTION
+       NetEm  is  an enhancement of the Linux traffic control facilities that allow to add delay, packet loss, duplication and more other characteristics to packets outgoing from a selected
+       network interface. NetEm is built using the existing Quality Of Service (QOS) and Differentiated Services (diffserv) facilities in the Linux kernel.
+</code></pre>
+
+<p>Ainsi, cette commande va permettre de simuler un réseau avec des paquets corrompus, droppés, etc. Ainsi, si nous souhaitons simuler un réseau qui perd 30% des paquets, il suffit d&rsquo;éxécuter :</p>
+
+<pre><code class="language-bash">tc qdisc add dev wlp9s0 root netem loss 30%
+</code></pre>
+
+<p><code>wlp9s0</code> étant mon interface. On peut aussi affiner la simulation en ajoutant une probabilité supplémentaire pour simuler le burst. (<code>tc qdisc change dev wlp9s0 root netem loss 0.5% 25%</code> par exemple).
+Notons que le mot clé <code>add</code> a été modifié par <code>change</code> quand on souhaite modifier la règle. Il est aussi possible d&rsquo;ajouter du délai (pour simuler un serveur plus loin) avec <code>netem delay xxxms</code> ou corrompre les paquets.</p>
+
+<p>Pour plus d&rsquo;informations, je vous invite à lire ce post <a href="https://stackoverflow.com/questions/614795/simulate-delayed-and-dropped-packets-on-linux">SO</a></p>
+
+<p>On a maintenant un réseau avec un bon débit, mais qui peut ajouter du délai ou dropper des paquets. Cependant, le résultat n&rsquo;est pas suffisant et faussé. On a encore que des cas particuliers. Par exemple, dans mon cas, je peux simuler un stream avec un encodage particulier avec un taux de perte simulé. Ainsi, si l&rsquo;application détecte des pertes de paquets, la qualité de la vidéo va baisser, mais le taux de perte ne changera pas. Du coup, la qualité de la vidéo va continuer à baisser et ce n&rsquo;est pas ce qui m&rsquo;intéresse. Ce que je souhaite c&rsquo;est de fixer la bande passante à un seuil afin que la perte de paquets ne soit pas fixe, mais dépend de la qualité du flux.</p>
+
+<h1 id="limiter-la-bandwith-en-continu">Limiter la bandwith en continu</h1>
+
+<p>Pour ce faire, je souhaite trouver une commande qui limite la bande passante de mon interface. Par exemple, limiter mon ethernet à 128kbps.</p>
+
+<p>Pour ce faire, j&rsquo;ai trouvé plusieurs options.</p>
+
+<h2 id="wondershaper">wondershaper</h2>
+
+<p>La commande la plus simple : <a href="https://github.com/magnific0/wondershaper/"><code>wondershaper</code></a> qui sert à limiter la bande passante en download et en upload.</p>
+
+<p>Elle s&rsquo;utilise en deux étapes :</p>
+
+<pre><code>sudo wondershaper wlp9s0 -d 1024 -u 1024 # limit wlp9s0 à 1Mbps en up et download
+sudo wondershaper clear wlp9s0 # efface la limite
+</code></pre>
+
+<p>Cependant, le problème c&rsquo;est que pour travailler à côté, c&rsquo;est chiant de limiter toute l&rsquo;interface. Le plus intéressant serait de gérer ça par process ou par port.</p>
+
+<h2 id="trickle">trickle</h2>
+
+<p><code>trickle</code> est une commande très simple comme <code>wondershaper</code>, mais qui prend en argument la commande à exécuter. Par exemple : <code>trickle -u 10 -d 20 wget https://zestedesavoir.com</code>. Cependant, ça n&rsquo;avait pas l&rsquo;air de fonctionner chez moi et je n&rsquo;ai pas trop cherché, vu que j&rsquo;ai utilisé la troisième solution.</p>
+
+<h2 id="tc-htb">tc HTB</h2>
+
+<p>Un autre module de <code>tc</code> est <code>htb</code>. Il permet, en combinaison de iptables, de créer des limites de débits par port. Ce qui justement m&rsquo;intéressait.</p>
+
+<p>La première étape est de se créer une règle pour limiter le débit.</p>
+
+<pre><code class="language-bash">tc qdisc add dev wlp9s0 root handle 1:0 htb default 10
+tc class add dev wlp9s0 parent 1:0 classid 1:10 htb rate 128kbps ceil 128kbps prio 0
+</code></pre>
+
+<p>Puis d&rsquo;ajouter la règle sur le port que l&rsquo;on souhaite.</p>
+
+<pre><code class="language-bash">iptables -A OUTPUT -t mangle -p tcp --sport 49152 -j MARK --set-mark 10
+tc filter add dev wlp9s0 parent 1:0 prio 0 protocol ip handle 10 fw flowid 1:10
+</code></pre>
+
+<p>Pour comprendre l&rsquo;ensemble des arguments je vous invite à lire <code>man tc-htb iptables</code>.</p>
+
+<p>Puis de faire passer le traffic que l&rsquo;on souhaite. On peut le monitorer avec les commandes que j&rsquo;ai cité plus haut ou encore avec <code>tc -s -d class show dev wlp9s0</code></p>
+
+<p>Enfin il fallait effacer la limite :</p>
+
+<pre><code class="language-bash">tc qdisc del dev wlp9s0 root
+</code></pre>
+
+<p>Voici donc quelques pistes pour simuler des réseaux différents depuis son propre réseau. Je vous invite à jouer un peu avec <code>tc</code>, même si la commande est loin d&rsquo;être simple à comprendre/maîtriser. Si quelqu&rsquo;un maîtrise le fonctionnement de cette commande, je l&rsquo;invite à en faire un tutoriel :)</p>
+
+<p>À noter que la simulation ne sera toujours pas parfaite. Par exemple, la perte de paquets que l&rsquo;on obtient en limitant la bande-passante sur un port avec <code>tc-htb</code> ne sera pas forcément identique à celle que l&rsquo;on peut observer sur des réseaux avec cette capacité. Par exemple, les paquets ne vont pas être droppés par un réseau, mais seulement ralenti car des buffers gardent ces paquets. Pour simuler certains cas, il faudra opter pour des outils plus adaptés (à priori des routeurs sous FreeBSD font la job encore mieux).</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://enconn.fr/dev/bridge-irc-ring/" data-toggle="tooltip" data-placement="top" title="Créer un bridge IRC - Ring">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://enconn.fr/dev/speedrunnez-vos-bugs/" data-toggle="tooltip" data-placement="top" title="Speedrunnez vos bugs">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@enconn.fr" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AmarOk1412" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://enconn.fr/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Original theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>, modified by <a href="https://enconn.fr">AmarOk</a>
+          &nbsp;&bull;&nbsp;[<a href="true"></a>]
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+  </body>
+</html>
+

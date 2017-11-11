@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mozilla on Enconn</title>
+    <link>https://enconn.fr/tags/mozilla/</link>
+    <description>Recent content in Mozilla on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Sat, 28 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://enconn.fr/tags/mozilla/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chronique du libre n°2</title>
+      <link>https://enconn.fr/dev/chronique-du-libre-2/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/chronique-du-libre-2/</guid>
+      <description>Tout le monde connait Mozilla grâce à Firefox mais les projets de l&amp;rsquo;organisation ne se limitent pas à un navigateur. La mission de Mozilla est de promouvoir l’ouverture, l’innovation et la bonne santé du Web. La Fondation Mozilla propose des programmes pour mapper ces valeurs à la science, les médias, à la politique ou l&amp;rsquo;éducation afin de les rendre ouverts, collaboratifs et partageables.
+Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&amp;rsquo;open science et plus particulièrement d&amp;rsquo;un projet de la Fondation Mozilla relativement peu connu : Le Mozilla Science Lab.</description>
+    </item>
+    
+  </channel>
+</rss>

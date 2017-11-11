@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Enconn</title>
+    <link>https://enconn.fr/tags/software/</link>
+    <description>Recent content in Software on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Sun, 03 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://enconn.fr/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Speedrunnez vos bugs</title>
+      <link>https://enconn.fr/dev/speedrunnez-vos-bugs/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/speedrunnez-vos-bugs/</guid>
+      <description>Imaginons nous un jeu. Comme pour un speedrun, le but ici est de le finir le plus rapidement possible, mais de manière reproductible (100% de réussite). Par contre, il ne s’agit pas d’un Zelda, Mirror’s edge, Mega man, mais ici, il s’agit de trouver la raison de pourquoi votre logiciel de messagerie reçoit bien les notifications de messages entrant, mais n’affichent pas les messages au client (du beau nom de : bug 1564).</description>
+    </item>
+    
+    <item>
+      <title>Passer de la fibre au 56k</title>
+      <link>https://enconn.fr/dev/fibre-to-56k/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/fibre-to-56k/</guid>
+      <description>Contenu posté sur Zeste de Savoir
+Vous avez peut-être chez vous un réseau avec un débit trop élevé ou qui marche (trop) bien. Dans ce billet, je ne vais pas parler du côté matériel d&amp;rsquo;un réseau, ni de brancher un switch sans STP en boucle pour le mettre down, mais de quelques commandes linux que j&amp;rsquo;ai eu l&amp;rsquo;occasion d&amp;rsquo;utiliser ces derniers jours pour simuler un mauvais réseau.
+Note : Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel, ce billet cherche seulement à donner un aperçu des possibilités de quelques commandes.</description>
+    </item>
+    
+    <item>
+      <title>Créer un bridge IRC - Ring</title>
+      <link>https://enconn.fr/dev/bridge-irc-ring/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/bridge-irc-ring/</guid>
+      <description>Contenu posté sur Zeste de Savoir
+J&amp;rsquo;aime faire des bots. J&amp;rsquo;ai des bots pour tout et n&amp;rsquo;importe quoi. J&amp;rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d&amp;rsquo;autres qui bougent.
+Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :</description>
+    </item>
+    
+    <item>
+      <title>RORI</title>
+      <link>https://enconn.fr/dev/rori/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/rori/</guid>
+      <description>Just a modulable chatterbot created and released for free under the WTFPL on Github.
+Your browser does not support the video tag.  How it works? See wiki
+Downloads Core server This is the central point of RORI. This application get data from entry points, call modules to process this data and send data to endpoints to execute commands. Download
+Irc bot IRC Entry Module is an entry and an endpoint for RORI.</description>
+    </item>
+    
+    <item>
+      <title>TTyRec</title>
+      <link>https://enconn.fr/dev/ttyrec/</link>
+      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/ttyrec/</guid>
+      <description>TTYRec is a little tool to record video of a tty (.gif or .webm) created in Rust lang. The repository is here. Please feel free to contribute.</description>
+    </item>
+    
+    <item>
+      <title>Hacktoberfest 2016</title>
+      <link>https://enconn.fr/dev/hacktoberfest-2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/hacktoberfest-2016/</guid>
+      <description>What is Hacktoberfest? Hacktoberfest is an event where you can get a T-shirt if you create 4 Pull Requests on Github between October 1-31. So, it&amp;rsquo;s the perfect occasion to begin to contribute on your favorite projects or to discover new projects. This year, 10,227 developers complete the challenge and 92,569 PR was created.
+What I did? For this hacktoberfest I contribute to some projects:
+ Mozilla Firefox but it&amp;rsquo;s not on github Firefox Devtools Bug Finder Zeste De Savoir because I love this site.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Service</title>
+      <link>https://enconn.fr/dev/cloud-service/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/cloud-service/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Cloud Service&lt;/em&gt; is a student project created to synchronize files between multiple Cloud services like &lt;em&gt;Google Drive&lt;/em&gt; or &lt;em&gt;Dropbox&lt;/em&gt; during the course &lt;em&gt;JXS&lt;/em&gt;. I made the back-end part.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker temporal scheduling</title>
+      <link>https://enconn.fr/dev/docker-temporal-scheduling/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/docker-temporal-scheduling/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The goal of this project was to encode some videos on a cluster of Raspberry py. The encoding is divide in some task made by containers. The first step is to get the video to encode via a web interface (cf. the following image). Then, to split the video in several fragments (&lt;code&gt;N&lt;/code&gt;). Then, &lt;code&gt;N&lt;/code&gt; containers encode the fragments and finally, a last container re-assemble fragments.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beaglebone Utils</title>
+      <link>https://enconn.fr/dev/beaglebone-utils/</link>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/beaglebone-utils/</guid>
+      <description>Qu&amp;rsquo;est-ce-que la beaglebone ? Il s&amp;rsquo;agit d&amp;rsquo;une carte électronique open-hardware type mini-PC. Elle possède un système d&amp;rsquo;exploitation type linux (Angström de base). Vous pouvez retrouver la description technique ici.
+Motivation Depuis le début de mon projet GLaDOs Replica, je voulais porter le robot sur Beaglebone (et utiliser l&amp;rsquo;Arduino seulement pour le prototypage). Or la beaglebone blanche possède une communauté plus faible que la beaglebone noire. Les bibliothèques sont souvent incompatibles ou inexistantes (exemple avec la bibliothèque d&amp;rsquo;Adafruit).</description>
+    </item>
+    
+    <item>
+      <title>Retour sur un Mooc</title>
+      <link>https://enconn.fr/dev/coursera/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/coursera/</guid>
+      <description>Qu&amp;rsquo;est-ce-qu&amp;rsquo;un MOOC ? Un MOOC (Massive Open Online Courses / Cours en ligne ouverts et massifs) est comme son nom l&amp;rsquo;indique, un cours en ligne, souvent gratuit (pas indiqué dans le nom) et ouvert à tous. Le niveau de ces cours est souvent universitaire. Son origine vient du MIT ou Stanford en commençant à publier en ligne des cours, des devoirs, des notes d&amp;rsquo;étudiants, etc. Par la suite, des plateformes ont vu le jour comme Coursera.</description>
+    </item>
+    
+    <item>
+      <title>Reconnaissance des émotions</title>
+      <link>https://enconn.fr/dev/facial-reco/</link>
+      <pubDate>Fri, 20 Apr 2012 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/facial-reco/</guid>
+      <description>Lors de ma seconde année de préparation, j&amp;rsquo;ai dû réaliser un TIPE avec deux collègues. La problématique était Comment la reconnaissance faciale du conducteur peut-elle améliorer sa sécurité au volant ?. Vous pouvez trouver ici le git complet. Et le rapport ici.</description>
+    </item>
+    
+  </channel>
+</rss>

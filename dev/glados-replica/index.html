@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>GLaDOs Replica</title>
+  <meta property="og:title" content="GLaDOs Replica" />
+  <meta name="twitter:title" content="GLaDOs Replica" />
+  <meta name="description" content="Un prototype de robot bras">
+  <meta property="og:description" content="Un prototype de robot bras">
+  <meta name="twitter:description" content="Un prototype de robot bras">
+  <meta name="author" content="Sébastien Blin"/>
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <meta property="og:url" content="https://enconn.fr/dev/glados-replica/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Enconn" />
+
+  <meta name="generator" content="Hugo 0.30.2" />
+  <link rel="canonical" href="https://enconn.fr/dev/glados-replica/" />
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://enconn.fr/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://enconn.fr/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">By AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="/dev" href="/dev/">/dev</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="/var/log" href="/logs/">/var/log</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="/usr" href="/page/about/">/usr</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Enconn" href="https://enconn.fr">
+            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://enconn.fr/img/dev/glados/_min.jpg" data-img-desc-1="GLaDOs"></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="dev-heading">
+                <h1>GLaDOs Replica</h1>
+                  
+                    
+                      <h2 class="dev-subheading">Un prototype de robot bras</h2>
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="dev-heading">
+              <h1>GLaDOs Replica</h1>
+                
+                  
+                    <h2 class="dev-subheading">Un prototype de robot bras</h2>
+                  
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p><strong>LE PROTOTYPE EST FINI, UNE VERSION PLUS GROSSE, PLUS PROPRE, PLUS FINIE VERRA LE JOUR (un jour, pas de suite).</strong></p>
+
+<h2 id="idée">Idée</h2>
+
+<p>3 types de robots m&rsquo;intéressaient pour cette année 2013 (pour donner une interprétation physique de mon projet RORI). Soit un drône (mais un master a voulu en réaliser un en projet et j&rsquo;en ai vu assez à l&rsquo;évènement &ldquo;faîtes du numérique&rdquo; de Rennes). Soit une araignée (mais il y en avait 2 déjà à Rennes (dont Spooky que j&rsquo;avais déjà utilisé)). Ou un bras mécanique style robot Kuka/GLaDOs de Portal. Mon choix s&rsquo;est porté sur la réalisation d&rsquo;une réplique de GLaDOs (qui me permettrait de jouer avec la caméra) et qui est pour moi un robot bien plus expressif qu&rsquo;un drône ou une araignée.</p>
+
+<h2 id="plans">Plans</h2>
+
+<p>Première étape. Trouver de nombreuses ressources pour réaliser un design de la réplique. De nombreux croquis furent nécessaires, réalisés grâce à de nombreuses ressources. Il a fallu aussi réfléchir à comment assembler les pièces ainsi qu&rsquo;aux déplacements du robot.<br />
+Voici l&rsquo;aboutissement de cette étape de recherche :</p>
+
+<p>Croquis vue de face<br />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Plans%202D/gladosface.png?raw=true" alt="face" />
+Croquis vue de côté<br />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Plans%202D/glados.png?raw=true" alt="côté" />
+Croquis type d&rsquo;une pièce<br />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Plans%202D/finalBase.png?raw=true" alt="piece" />
+<a href="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Plans%202D/">More</a></p>
+
+<p>L&rsquo;ensemble des croquis a été réalisé avec The Gimp 2.8</p>
+
+<h2 id="modélisation-3d">Modélisation 3D</h2>
+
+<p>Voici la partie la plus problématique du projet. Je ne connaissais absolument pas la modélisation 3D et j&rsquo;ai eu énormément de problèmes à imprimer les pièces. Je n&rsquo;ai donc pas réussi à avoir l&rsquo;homogénéité voulue. Cependant, l&rsquo;ensemble des pièces (sauf la tête) fut réalisé avec Blender et FreeCAD. La génération du GCode pour l&rsquo;impression a été réalisé avec Replicator. L&rsquo;ensemble des fichiers est disponible sur le <a href="https://github.com/AmarOk1412/GLaDOsReplica/">Github</a> du projet.</p>
+
+<h2 id="réalisation">Réalisation</h2>
+
+<p>La partie électronique du robot est assez simple. Voici le matériel dont j&rsquo;ai eu besoin :
+- Une <a href="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/beaglebone.jpg?raw=true">beaglebone white</a> pour embarquer <a href="/dev/rori/">RORI</a>.
+- Une Arduino Uno &amp; une breadboard pour le prototypage.
+- Une <a href="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/IMG_20131107_144010_629.jpg?raw=true">caméra</a> récupérée d&rsquo;un robot et son support pan &amp; tilt (composé de 2 servomoteurs TowerPro SG90)
+- Un servomoteur HS-65HB
+- 1 moteur de lecteur CD d&rsquo;un vieil ordi ou un servomoteur HS-422 Hitec pour la base
+- 2 leds RGB et leurs résistances
+- Un tube flexible
+- Beaucoup de câbles pour la décoration
+- 2 stickers imprimés pour la décoration
+- De la peinture en bombe (sous-couche, gris clair, gris <sup>80</sup>&frasl;<sub>90</sub>%).</p>
+
+<p>Voici donc la construction étape par étape :</p>
+
+<ol>
+<li>Imprimer les pièces et les poncer :
+Toutes les pièces peuvent être trouvées <a href="https://github.com/AmarOk1412/GLaDOsReplica/tree/master/Maquette%203D">ici</a></li>
+</ol>
+
+<p><img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/all.jpg?raw=true" alt="" />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/total.jpg?raw=true" alt="" /></p>
+
+<ol>
+<li>Les peindre</li>
+</ol>
+
+<p><img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/basepeinte.jpg?raw=true" alt=" " />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/highbasepeinte.jpg?raw=true" alt=" " />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/coquehautpeinte.jpg?raw=true" alt=" " />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/centreledpeint.jpg?raw=true" alt=" " />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/coquebaspeinte.jpg?raw=true" alt=" " />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/tetepeinte.jpg?raw=true" alt=" " /></p>
+
+<ol>
+<li>Assemblage :
+Pour la tête, il faut commencer par fixer la LED RGB.</li>
+</ol>
+
+<p><img src="http://static.projects.hackaday.com/images/7130201398523692645.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/9908431398523748415.png" alt="" /></p>
+
+<p>Puis la caméra :</p>
+
+<p><img src="http://static.projects.hackaday.com/images/1583181398523780106.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/917611398523801517.png" alt="" /></p>
+
+<p>Les moteurs</p>
+
+<p><img src="http://static.projects.hackaday.com/images/7375941398523839287.png" alt="" /></p>
+
+<p>Puis vient la partie haute.</p>
+
+<p><img src="http://static.projects.hackaday.com/images/9269991398523919016.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/4733171398523944502.png" alt="" /></p>
+
+<p>Puis la partie basse.</p>
+
+<p><img src="http://static.projects.hackaday.com/images/5487211398524415579.png" alt="" /></p>
+
+<p>La base.</p>
+
+<p><img src="http://static.projects.hackaday.com/images/3676151398524121692.jpg" alt="" /></p>
+
+<p>Vient la décoration</p>
+
+<p><img src="http://static.projects.hackaday.com/images/4511271398524169982.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/3644691398524211557.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/3390531398524247006.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/8524651398524318584.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/9969751398524368685.jpg" alt="" />
+<img src="http://static.projects.hackaday.com/images/6492661398524386696.jpg" alt="" /></p>
+
+<h2 id="code">Code</h2>
+
+<p><a href="/dev/rori">RORI</a> est un chatterbot. Je vous invite à visiter la page du projet. Il a suffit de le compiler pour <a href="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/compilation.png?raw=true">ARM</a> afin de le mettre sur [BeagleBone][<a href="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/RORI_Beagle.png?raw=true">https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/RORI_Beagle.png?raw=true</a>]. Ce site peut servir de référence : <a href="http://www.cloud-rocket.com/2013/07/building-qt-for-beaglebone/">http://www.cloud-rocket.com/2013/07/building-qt-for-beaglebone/</a>
+RORI peut très bien contrôler GLaDOs. On peut le faire via l&rsquo;interface Linux ou Android :</p>
+
+<p><img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/RORILinuxClient.png?raw=true" alt="" />
+<img src="https://github.com/AmarOk1412/GLaDOsReplica/blob/master/Photos/androidClientRORI.png?raw=true" alt="" /></p>
+
+<h2 id="futur">Futur</h2>
+
+<p>Il me reste quelques points à réaliser pour finir GLaDOs :
+- Fixer le servomoteur de la base.
+- Porter le tout sur Beagleboard.
+- Réaliser une boite de transport.
+- Enlever les choses non libres comme tout ce qui utilise Google par exemple.</p>
+
+<h2 id="vidéos">Vidéos</h2>
+
+<p>Voici la première vidéo de RORI. Il n&rsquo;y avait pas encore d&rsquo;interface finie. Cependant, on pouvait déjà contrôler RORI avec la voix (Google), répondre à certaines questions et réaliser des tâches, comme naviguer sur Internet, rendre l&rsquo;ordinateur muer, le bloquer, &hellip;
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/jlHHbtdXrBU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+
+Puis la démonstration de l&rsquo;interface graphique et de deux/trois modules :
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/0QCpE57EK2g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+
+Vient ensuite la démonstration de l&rsquo;application Android ainsi que de la synthèse vocale
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/k5rDRLOymHI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+
+Enfin, la démonstration de RORI avec GLaDOs
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/tcwZJqQ56SE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+</p>
+
+<h2 id="démonstrations">Démonstrations</h2>
+
+<p>J&rsquo;ai présenté GLaDOs à quelques évènements comme :
+L&rsquo;Arduino Day en Avril 2014 (juste la tête à ce moment) :</p>
+
+<p><img src="http://static.projects.hackaday.com/images/7324371397764876071.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/1285501397764895076.png" alt="" />
+<img src="http://static.projects.hackaday.com/images/6778641397764909120.png" alt="" /></p>
+
+<p>D&rsquo;autres photos <a href="http://universite-foraine.fr/index.php?/occupations/labfab/">ici</a>.</p>
+
+<p>Au Jardin Numérique 3:</p>
+
+<p><img src="http://jardinnumerique.org/wp-content/uploads/2014/04/ap%C3%A9ro-codelab-7.jpg" alt="" /></p>
+
+<p>D&rsquo;autres photos <a href="http://jardinnumerique.org/2014/04/galerie-photos-jn3//">ici</a>
+Au concours de réalisations en rapport avec la science fiction sur <a href="https://hackaday.io/project/509-GLaDOs-Replica-for-RORI">hackaday</a></p>
+
+<h2 id="remerciements">Remerciements</h2>
+
+<p>Je remercie le pôle mécatronique de l&rsquo;université de Rennes 1, l&rsquo;INRIA de Rennes ainsi que le <a href="http://www.labfab.fr/">labfab</a> de Rennes pour m&rsquo;avoir laissé la possibilité d&rsquo;imprimer mes pièces. Je remercie également le Club de Robotique de l&rsquo;université de Rennes 1 pour avoir financé le matériel manquant. Voici un autre <a href="https://www.youtube.com/watch?v=f8j4JvpSNMA">projet</a> de ce type réalisé par un russe. Cependant, ce n&rsquo;était pas exactement ce que je voulais (je souhaitais le faire par moi-même et en profiter pour mettre une caméra et une beaglebone). Enfin, je remercie Mickael Mackrez pour m&rsquo;avoir modélisé bénévolement la tête de GLaDOs.</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://enconn.fr/dev/chronique-du-libre-1/" data-toggle="tooltip" data-placement="top" title="Chronique du libre n°1">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://enconn.fr/dev/docker-temporal-scheduling/" data-toggle="tooltip" data-placement="top" title="Docker temporal scheduling">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@enconn.fr" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AmarOk1412" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://enconn.fr/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Original theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>, modified by <a href="https://enconn.fr">AmarOk</a>
+          &nbsp;&bull;&nbsp;[<a href="true"></a>]
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+  </body>
+</html>
+

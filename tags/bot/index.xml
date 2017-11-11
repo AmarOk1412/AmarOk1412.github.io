@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bot on Enconn</title>
+    <link>https://enconn.fr/tags/bot/</link>
+    <description>Recent content in Bot on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Wed, 15 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://enconn.fr/tags/bot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fen4i4</title>
+      <link>https://enconn.fr/dev/fen4i4/</link>
+      <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/fen4i4/</guid>
+      <description>Goal The main purpose of this bot is to tweet and retweet &amp;ldquo;interesting&amp;rdquo; things. Also, the bot must follow interesting accounts. Moreover, anyone can make a version on this bot, so, the bot must be trainable on a classical computer in one night: for example, my computer with a second generation&amp;rsquo;s i5 and 4Gb of RAM.
+How it works? Because anyone must be capable of create this twitter bot, I can&amp;rsquo;t use neural nets (anyone can&amp;rsquo;t get enough power to run a good neural net to train a bot to tweet or retweet things).</description>
+    </item>
+    
+  </channel>
+</rss>

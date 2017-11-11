@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beaglebone on Enconn</title>
+    <link>https://enconn.fr/tags/beaglebone/</link>
+    <description>Recent content in Beaglebone on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://enconn.fr/tags/beaglebone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hacktoberfest 2016</title>
+      <link>https://enconn.fr/dev/hacktoberfest-2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/hacktoberfest-2016/</guid>
+      <description>What is Hacktoberfest? Hacktoberfest is an event where you can get a T-shirt if you create 4 Pull Requests on Github between October 1-31. So, it&amp;rsquo;s the perfect occasion to begin to contribute on your favorite projects or to discover new projects. This year, 10,227 developers complete the challenge and 92,569 PR was created.
+What I did? For this hacktoberfest I contribute to some projects:
+ Mozilla Firefox but it&amp;rsquo;s not on github Firefox Devtools Bug Finder Zeste De Savoir because I love this site.</description>
+    </item>
+    
+    <item>
+      <title>Beaglebone Utils</title>
+      <link>https://enconn.fr/dev/beaglebone-utils/</link>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/beaglebone-utils/</guid>
+      <description>Qu&amp;rsquo;est-ce-que la beaglebone ? Il s&amp;rsquo;agit d&amp;rsquo;une carte électronique open-hardware type mini-PC. Elle possède un système d&amp;rsquo;exploitation type linux (Angström de base). Vous pouvez retrouver la description technique ici.
+Motivation Depuis le début de mon projet GLaDOs Replica, je voulais porter le robot sur Beaglebone (et utiliser l&amp;rsquo;Arduino seulement pour le prototypage). Or la beaglebone blanche possède une communauté plus faible que la beaglebone noire. Les bibliothèques sont souvent incompatibles ou inexistantes (exemple avec la bibliothèque d&amp;rsquo;Adafruit).</description>
+    </item>
+    
+  </channel>
+</rss>
