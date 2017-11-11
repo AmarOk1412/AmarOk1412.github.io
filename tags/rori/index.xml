@@ -19,9 +19,7 @@
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/dev/rori/</guid>
       <description>Just a modulable chatterbot created and released for free under the WTFPL on Github.
-Your browser does not support the video tag.  How it works? See wiki
-Downloads Core server This is the central point of RORI. This application get data from entry points, call modules to process this data and send data to endpoints to execute commands. Download
-Irc bot IRC Entry Module is an entry and an endpoint for RORI.</description>
+See site page</description>
     </item>
     
   </channel>
