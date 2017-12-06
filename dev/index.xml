@@ -19,7 +19,7 @@
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/dev/zmarkdown/</guid>
       <description>Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.
-Why? Similar projects like Pandoc don&amp;rsquo;t use AST to translate Markdown and they are difficult to improve with modules. Because Remark is extremely modulable and uses an AST, it&amp;rsquo;s the best solution to craft a markdown engine to translate a custom markdown into any format (HTML, slides, PDF, generate Table Of Contents, generate man pages, etc).</description>
+Why? Similar projects don&amp;rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.</description>
     </item>
     
     <item>
