@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://enconn.fr/dev/zmarkdown/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
+    <loc>https://enconn.fr/logs/brussels/</loc>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/logs/one-day-in-montreal/</loc>
-    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+    <loc>https://enconn.fr/dev/fosdem/</loc>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/dev/zmarkdown/</loc>
+    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -184,12 +189,12 @@
   
   <url>
     <loc>https://enconn.fr/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://enconn.fr/dev/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -201,6 +206,12 @@
   <url>
     <loc>https://enconn.fr/tags/beaglebone/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/belgium/</loc>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -241,7 +252,13 @@
   
   <url>
     <loc>https://enconn.fr/tags/event/</loc>
-    <lastmod>2014-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/fosdem/</loc>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -265,13 +282,13 @@
   
   <url>
     <loc>https://enconn.fr/logs/</loc>
-    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/logs/</loc>
-    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -312,13 +329,13 @@
   
   <url>
     <loc>https://enconn.fr/tags/quebec/</loc>
-    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/ring/</loc>
-    <lastmod>2017-05-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -348,7 +365,7 @@
   
   <url>
     <loc>https://enconn.fr/tags/software/</loc>
-    <lastmod>2017-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

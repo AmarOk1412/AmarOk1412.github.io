@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Brussels</title>
+      <link>https://enconn.fr/logs/brussels/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/brussels/</guid>
+      <description>The day before the FOSDEM, I visited Brussels. It was a 26 km day walk. In the morning I went to Atomium built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.
+  Atomium
+      Atomium
+      Atomium
+     In the center I saw the Palace of Justice a great building you can see far away.</description>
+    </item>
+    
+    <item>
+      <title>FOSDEM 2018</title>
+      <link>https://enconn.fr/dev/fosdem/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/fosdem/</guid>
+      <description>FOSDEM? The FOSDEM (Free and Open Source Software Developers&amp;rsquo; European Meeting) is an event about FOSS (suprised?). It was started in 2000 and is held annually, during the first week-end of February at the ULB. For 5 years I tried to go to this event but I couldn&amp;rsquo;t (due to a lot of reasons). So, this was my first FOSDEM experience and I&amp;rsquo;m not disappointed at all. I arrived in Brussels the Thursday before FOSDEM to visit and did a walk day (photos).</description>
+    </item>
     
     <item>
       <title>ZMarkdown</title>
@@ -20,15 +42,6 @@
       <guid>https://enconn.fr/dev/zmarkdown/</guid>
       <description>Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.
 Why? Similar projects don&amp;rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.</description>
-    </item>
-    
-    <item>
-      <title>One day in Montréal</title>
-      <link>https://enconn.fr/logs/one-day-in-montreal/</link>
-      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/logs/one-day-in-montreal/</guid>
-      <description>   </description>
     </item>
     
     <item>
