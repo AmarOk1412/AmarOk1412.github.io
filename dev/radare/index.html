@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>FOSDEM 2018</title>
-  <meta property="og:title" content="FOSDEM 2018" />
-  <meta name="twitter:title" content="FOSDEM 2018" />
-  <meta name="description" content="My personal review">
-  <meta property="og:description" content="My personal review">
-  <meta name="twitter:description" content="My personal review">
+  <title>r2</title>
+  <meta property="og:title" content="r2" />
+  <meta name="twitter:title" content="r2" />
+  <meta name="description" content="pour changer de gdb">
+  <meta property="og:description" content="pour changer de gdb">
+  <meta name="twitter:description" content="pour changer de gdb">
   <meta name="author" content="Sébastien Blin"/>
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
@@ -18,12 +18,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
-  <meta property="og:url" content="https://enconn.fr/dev/fosdem/" />
+  <meta property="og:url" content="https://enconn.fr/dev/radare/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Enconn" />
 
   <meta name="generator" content="Hugo 0.31" />
-  <link rel="canonical" href="https://enconn.fr/dev/fosdem/" />
+  <link rel="canonical" href="https://enconn.fr/dev/radare/" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -152,30 +152,8 @@
 
 
   
-    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://enconn.fr/img/dev/fosdem/_min.jpg" data-img-desc-1="header"></div>
-  
 
-  <header class="header-section has-img">
-    
-      <div class="intro-header big-img">
-        
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="dev-heading">
-                <h1>FOSDEM 2018</h1>
-                  
-                    
-                      <h2 class="dev-subheading">My personal review</h2>
-                    
-                  
-                  
-              </div>
-            </div>
-          </div>
-        </div>
-        <span class="img-desc" style="display: inline;"></span>
-      </div>
+  <header class="header-section ">
     
     <div class="intro-header no-img">
       
@@ -183,10 +161,10 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="dev-heading">
-              <h1>FOSDEM 2018</h1>
+              <h1>r2</h1>
                 
                   
-                    <h2 class="dev-subheading">My personal review</h2>
+                    <h2 class="dev-subheading">pour changer de gdb</h2>
                   
                 
                 
@@ -205,72 +183,99 @@
       <article role="main" class="blog-post">
         
 
-<h1 id="fosdem">FOSDEM?</h1>
+<p><em>Article original <a href="https://zestedesavoir.com/billets/2479/r2-pour-changer-de-gdb/">ici</a></em></p>
 
-<p>The <a href="https://fosdem.org/2018/">FOSDEM</a> (<em>Free and Open Source Software Developers&rsquo; European Meeting</em>) is an event about FOSS (<em>suprised?</em>). It was started in 2000 and is held annually, during the first week-end of February at the <a href="http://www.ulb.ac.be/">ULB</a>. For 5 years I tried to go to this event but I couldn&rsquo;t (due to a lot of reasons). So, this was my first FOSDEM experience and I&rsquo;m not disappointed at all. I arrived in Brussels the Thursday before FOSDEM to visit and did a walk day (<a href="/logs/brussels">photos</a>).</p>
+<p>Hei, je n&rsquo;avais pas n&rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&hellip;</p>
 
-<p>Note: ULB contains <em>Libre</em>, the translation of <em>Free</em> in french.</p>
+<p>Aujourd&rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le <a href="https://nsec.io/">NorthSec 2018</a> à Montréal. Il m&rsquo;arrive très rarement de faire des CTF et je n&rsquo;en ai pas fait depuis un moment.</p>
 
-<h1 id="highlights">Highlights</h1>
+<p>Pour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges. Et j&rsquo;ai décidé d&rsquo;apprendre à utiliser <code>radare2</code> (<a href="http://radare.org/">http://radare.org/</a>). Dans ce billet, je vais donc partager mon expérimentation du jour, ou des suivantes si j&rsquo;en fais une série.</p>
 
-<p>During FOSDEM you can see a lot of people, talks and stands. I didn&rsquo;t see in person a lot of talks because I had to meet a lot of persons, had to give my talks and I preferred to see people I can&rsquo;t see during the rest of the year. But this is some conferences I saw (directly or in the train):</p>
+<p>Pour symboliser cette décision, une des personnes a proposé un petit challenge, où, comme tous les CTF, il suffit de récupérer un flag. Voici comment j&rsquo;ai utilisé <code>r2</code>:</p>
 
-<ul>
-<li><a href="https://fosdem.org/2018/schedule/event/python3/">Python 3: 10 years later</a> to get a history of Python.</li>
-<li><a href="https://fosdem.org/2018/schedule/event/gstreamer_for_tiny_devices/">GStreamer for tiny devices</a>: to discover some tools to optimize the size of the gstreamer binary (or other binaries) for a camera with not so much space.</li>
-<li><a href="https://fosdem.org/2018/schedule/event/securedroppresentation/">Anonymous Whistleblowing with SecureDrop</a>: because SecureDrop is a really nice project and if you want to understand how it works with nice schemas.</li>
-<li><a href="https://fosdem.org/2018/schedule/event/jitsi/">Speech-to-Text in Jitsi Meet</a>: I&rsquo;m a little bit disappointed by this talk. Because they use the Google Speech API to do that, and I wanted to discover an alternative to current proprietary solutions but in the future they want to use things like Common voice by Mozilla. Still a nice project.</li>
-<li><a href="https://fosdem.org/2018/schedule/event/rust_qt_binding_generator/">Qt GUIs with Rust</a> and <a href="https://fosdem.org/2018/schedule/event/rust_gstreamer/">GStreamer &amp; Rust</a> because it still good to see big libraries coming in Rust.</li>
-<li><a href="https://fosdem.org/2018/schedule/event/tizen_rt/">Tizen:RT</a> to discover the tizen ecosystem.</li>
-</ul>
+<h1 id="première-résolution-simple-analyse">Première résolution, simple analyse</h1>
 
-<p>Also, I&rsquo;m currently waiting the videos of these: <a href="https://fosdem.org/2018/schedule/event/mozilla_deepspeech_common_voice_projects/">https://fosdem.org/2018/schedule/event/mozilla_deepspeech_common_voice_projects/</a> and <a href="https://fosdem.org/2018/schedule/event/peertube/">https://fosdem.org/2018/schedule/event/peertube/</a> because I want to see these projects alive!</p>
+<p>Le challenge n&rsquo;avait rien de compliqué et prenait quelques secondes avec <code>gdb</code> à résoudre, je ne vais donc pas en faire un write-up, juste me concentrer sur <code>r2</code>.</p>
 
-<p>You also can watch a lot of talks in <a href="https://fosdem.org/2018/schedule/track/decentralised_internet_and_privacy/">the decentralized room</a> like Contributopia (by <a href="https://framasoft.org/">Framasoft</a>).</p>
+<p>J&rsquo;ai tout d&rsquo;abord tenté une approche sans exécuter le programme, mais en regardant les fonctionnalités de reverse basiques.</p>
 
-<h1 id="other-highlights">Other highlights</h1>
+<p>La première étape est de lancer <code>r2</code> en lui passant le programme</p>
 
-<p>During FOSDEM, building K contains a lot of booth. It&rsquo;s the better place to discover new projects, talk to someone and not far from the cafeteria. This is some news or some cool projects I discovered in this place.</p>
+<pre><code class="language-bash"> AmarOk@tars3  ~/Downloads  r2 -d ./easy_reverse
+</code></pre>
 
-<ul>
-<li><a href="https://godotengine.org/article/godot-3-0-released">Godot 3.0 is out!</a></li>
-<li><a href="https://www.ghacks.net/2018/02/07/vlc-3-0-media-player-release/">VLC 3.0 is near!</a></li>
-<li><a href="https://krita.org/en/">Krita</a> is now compatible with Python scripts!</li>
-<li>I now have <a href="https://gitmate.io/">gitmate.io</a> to try</li>
-</ul>
+<p>(le <code>-d</code> servira pour la seconde approche, par le debug)</p>
 
-<p>And lot of nice projects like <a href="https://fedoraproject.org/">Fedora</a>, <a href="https://mozilla.org">Mozilla</a>, <a href="https://www.qubes-os.org/">Qubes OS</a>, <a href="https://nextcloud.com/">Nextcloud</a>, SecureDrop, Tor, etc.</p>
+<p>Puis avec des tutoriels en ligne, je trouve les commandes <code>aa</code> pour lancer une analyse du programme (pour <em>anyalyze all</em>) puis (<code>pdf @main</code> pour obtenir le code qui m&rsquo;intéresse). Ce qui donne :</p>
 
-<h1 id="my-talks">My talks</h1>
+<p><img src="/img/dev/radare/pdfmain.png" alt="pdfmain" /></p>
 
-<p>I gave 2 talks with Adrien Béraud at FOSDEM. It was the first time I give a talk in English in front of more than 200 attendants. And&hellip; it was awesome! The public is nice, questions are precise and give nice discussions even after the talk.</p>
+<p>Chose cool, il est possible de visualiser son code par blocs via <code>VV @main</code>.</p>
 
-<h2 id="ring-as-a-free-universal-distributed-communication-platform">Ring as a free universal distributed communication platform.</h2>
+<p><img src="/img/dev/radare/VV.jpg" alt="VV" /></p>
 
-<p>A conference about the state of Ring in 2018. The video is <a href="https://mirrors.dotsrc.org/fosdem/2018/H.1301%20(Cornil)/ring.webm">here</a> and slides (<a href="https://fosdem.org/2018/schedule/event/ring/attachments/slides/2379/export/events/attachments/ring/slides/2379/slides.pdf">pdf</a>) and sources <a href="https://github.com/AmarOk1412/Slides-Ring">here</a></p>
+<p>En regardant vite fait, on voit bien le processus du programme :
+1. On demande a l&rsquo;utilisateur un password</p>
 
-<h2 id="opendht-make-your-project-distributed">OpenDHT: make your project distributed</h2>
+<pre><code> mov edi, str.Password_:     ; 0x4007c4 ; &quot;Password : &quot;
+ mov eax, 0
+ call sym.imp.printf         ; int printf(const char *format)
+ lea rax, [local_70h]
+ mov rsi, rax
+ mov edi, 0x4007d0
+ mov eax, 0
+ call sym.imp.__isoc99_scanf
+</code></pre>
 
-<p>A conference about <a href="http://opendht.net">OpenDHT</a>. I mainly talked about the proxy feature and push notifications support. The video is not available yet, but will be <a href="https://fosdem.org/2018/schedule/event/opendht/">here</a></p>
+<p>via <code>printf</code> et <code>scanf</code>.</p>
 
-<h1 id="special-thanks">Special thanks</h1>
+<p>Puis on compare cette valeur avec une autre (<code>call sym.imp.strcmp         ; int strcmp(const char *s1, const char *s2)</code>)</p>
 
-<p>First, thanks to <a href="http://savoirfairelinux.com/">Savoir-Faire Linux</a> for the opportunity to give a talk @ FOSDEM. And thanks to the FOSDEM team, the organization is just crazy (about 10K people to host, hardware, shirts, video to publish quickly (after 1 day, hundred of videos are available)). I helped to organized some little events and I know how hard it can be, but wow.</p>
+<p>Et on félicite ou non la personne.</p>
 
-<p>Only negative feedback I can give, maybe a lack of diversity? But still, I hope I will be there next year.</p>
+<pre><code>   ,=&lt; 0x00400704      7511           jne 0x400717
+   |   0x00400706      bfd3074000     mov edi, str.You_re_a_Wizard ; 0x4007d3 ; &quot;You're a Wizard&quot;
+   |   0x0040070b      e810feffff     call sym.imp.puts           ; int puts(const char *s)
+   |   0x00400710      b800000000     mov eax, 0
+  ,==&lt; 0x00400715      eb0f           jmp 0x400726
+  |`-&gt; 0x00400717      bfe3074000     mov edi, str.Try_next_year_... ; 0x4007e3 ; &quot;Try next year ...&quot;
+  |    0x0040071c      e8fffdffff     call sym.imp.puts           ; int puts(const char *s)
+  |    0x00400721      b801000000     mov eax, 1
+</code></pre>
+
+<p>On suppose simplement que la valeur qu&rsquo;on cherche c&rsquo;est le bon mot de passe et je m&rsquo;intéresse donc à <code>strcmp</code>. En suivant les <code>mov</code> de dessus, on voit que <code>strcmp</code> compare le password qu&rsquo;on à entré et une valeur que nous voyons en haut :</p>
+
+<pre><code>movabs rax, 0x3857397b47414c46
+mov qword [local_80h], rax
+mov dword [local_78h], 0x7a6e6273
+mov word [local_74h], 0x7d38
+mov byte [local_72h], 0
+</code></pre>
+
+<p>qui correspond a <code>FLAG{9W8sbnz8}</code> à l&rsquo;envers, notre flag. Pour savoir pourquoi c&rsquo;est à l&rsquo;envers, je vous recommande les articles que <a href="https://zestedesavoir.com/membres/voir/Ge0/">Ge0</a> a pu faire sur ce site.</p>
+
+<h1 id="seconde-méthode-à-l-exécution">Seconde méthode, à l&rsquo;exécution</h1>
+
+<p>Pour le coup, sans radare, j&rsquo;aurais utilisé <code>gdb</code> en mettant un breakpoint et regardant le contenu de ce qui m&rsquo;intéressait. Faisons donc ceci avec <code>r2</code></p>
+
+<p>Pour ceci, il faut lancer <em>radare</em> en mode debug (<code>-d</code> de tout à l&rsquo;heure). Toutes les commandes de <code>r2</code> pour le debug commencent par <code>d</code>, voir ici : <a href="https://radare.gitbooks.io/radare2book/content/introduction/basic_debugger_session.html">https://radare.gitbooks.io/radare2book/content/introduction/basic_debugger_session.html</a>. Ainsi prenons la ligne qui nous intéresse :</p>
+
+<p><code>0x004006f2      e869feffff     call sym.imp.strcmp         ; int strcmp(const char *s1, const char *s2)</code></p>
+
+<p>Puis, on peut lancer le programme avec <code>dc</code>. Une fois le breakpoint atteint, on peut alors récupérer le contenu de <code>rdx</code> contenant notre flag avec <code>px @ rdx</code>:</p>
+
+<p><img src="/img/dev/radare/px.jpg" alt="VV" /></p>
+
+<p>Voilà pour ma petite découverte de radare, peut-etre la suite au prochain episode.</p>
 
       </article>
 
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="https://enconn.fr/dev/zmarkdown/" data-toggle="tooltip" data-placement="top" title="ZMarkdown">&larr; Previous Post</a>
+            <a href="https://enconn.fr/dev/fosdem/" data-toggle="tooltip" data-placement="top" title="FOSDEM 2018">&larr; Previous Post</a>
           </li>
         
-        
-          <li class="next">
-            <a href="https://enconn.fr/dev/radare/" data-toggle="tooltip" data-placement="top" title="r2">Next Post &rarr;</a>
-          </li>
         
       </ul>
 
