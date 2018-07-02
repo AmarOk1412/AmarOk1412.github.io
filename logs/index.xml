@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/logs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Boston</title>
+      <link>https://enconn.fr/logs/boston/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/boston/</guid>
+      <description>L&amp;rsquo;avantage de vivre dans une ville comme Montreal, c&amp;rsquo;est qu&amp;rsquo;il est possible de faire un week-end aux US assez facilement. C&amp;rsquo;est ce que j&amp;rsquo;ai fait en allant pendant la fetre des patriotes a Boston pour le week-end.
+Petite note de passage de douanes Pour aller du Canada aucun papier n&amp;rsquo;est necessaire de faire avant de passer la douane. Mais je conseille de faire tout de meme l&amp;rsquo;ESTA pour eviter de passer 1h a passer la douane.</description>
+    </item>
     
     <item>
       <title>Brussels</title>
