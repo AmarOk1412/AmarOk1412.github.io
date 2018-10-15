@@ -7,10 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/logs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Un loup au Canada - Partie 3</title>
+      <link>https://enconn.fr/logs/ontario/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/ontario/</guid>
+      <description>Troisième province du Canada que je vais présenter, mais seconde que j’ai eu l’occasion de visiter.
+Pour le coup, je ne suis resté qu’une semaine dans cette province qui mérite bien plus. De plus, comme il s’agissait de l’hiver, je n’ai pas eu l’occasion de tester les trails (il en existe un qui fait tout de même 1500km, la route Champlain).
+Ce billet parlera donc des plus grosses zones à voir en Ontario, à savoir Ottawa, Toronto, Niagara Falls.</description>
+    </item>
+    
+    <item>
+      <title>Un loup au Canada - Partie 2</title>
+      <link>https://enconn.fr/logs/nova-scotia/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/nova-scotia/</guid>
+      <description>Deuxième province des Maritimes et ma préférée, aujourd&amp;rsquo;hui c&amp;rsquo;est au tour de la Nouvelle Écosse d&amp;rsquo;avoir son petit billet.
+Je suis resté 4 jours dans cette région. 2 à Halifax, sa capitale et 2 autres à Sydney (non, pas celui d&amp;rsquo;Australie) qui sont un peu les deux grosses villes de cette province.
+La Nouvelle Écosse en quelques lignes Nova Scotia, c&amp;rsquo;est une province à l&amp;rsquo;est de New-Brunwick, que j&amp;rsquo;ai présenté dans le précédent billet.</description>
+    </item>
+    
+    <item>
+      <title>Un loup au Canada - Partie 1</title>
+      <link>https://enconn.fr/logs/new-brunswick/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/new-brunswick/</guid>
+      <description>En août 2016, je suis parti de France pour vivre au Canada, au moins quelques années. Ça fait maintenant plus de 2 ans que je vis ici, et j&amp;rsquo;ai parcouru quelques milliers de km dans ce grand pays. visité une bonne partie de 5 des provinces (je souhaite encore visiter la Gaspésie au Québec, l&amp;rsquo;extrême Nord, le Labrador et le Yukon).
+Je commence donc une série de billets (un peu pour faire suite aux billets du Schtroumpf pythonneux), parlant des différentes provinces, ce qu&amp;rsquo;on peut y voir et pourquoi pas, vous donner l&amp;rsquo;envie d&amp;rsquo;y faire un tour.</description>
+    </item>
     
     <item>
       <title>Boston</title>

@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 15 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>https://enconn.fr/tags/android/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Application Ios</title>
+      <link>https://enconn.fr/tags/application-ios/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/application-ios/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Arduino</title>
@@ -67,11 +85,29 @@
     </item>
     
     <item>
+      <title>Canada</title>
+      <link>https://enconn.fr/tags/canada/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/canada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Chronique Du Libre</title>
       <link>https://enconn.fr/tags/chronique-du-libre/</link>
       <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/chronique-du-libre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ctf</title>
+      <link>https://enconn.fr/tags/ctf/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/ctf/</guid>
       <description></description>
     </item>
     
@@ -141,7 +177,7 @@
     <item>
       <title>Logs</title>
       <link>https://enconn.fr/tags/logs/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/logs/</guid>
       <description></description>
@@ -171,6 +207,15 @@
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notification</title>
+      <link>https://enconn.fr/tags/notification/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/notification/</guid>
       <description></description>
     </item>
     
@@ -247,6 +292,15 @@
     </item>
     
     <item>
+      <title>Réseau</title>
+      <link>https://enconn.fr/tags/r%C3%A9seau/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/r%C3%A9seau/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Science</title>
       <link>https://enconn.fr/tags/science/</link>
       <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
@@ -283,6 +337,15 @@
     </item>
     
     <item>
+      <title>Sécurité</title>
+      <link>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tests</title>
       <link>https://enconn.fr/tags/tests/</link>
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
@@ -301,11 +364,29 @@
     </item>
     
     <item>
+      <title>Téléphone</title>
+      <link>https://enconn.fr/tags/t%C3%A9l%C3%A9phone/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/t%C3%A9l%C3%A9phone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Us</title>
       <link>https://enconn.fr/tags/us/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/us/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Voyage</title>
+      <link>https://enconn.fr/tags/voyage/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/voyage/</guid>
       <description></description>
     </item>
     
