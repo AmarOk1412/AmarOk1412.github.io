@@ -175,6 +175,15 @@
     </item>
     
     <item>
+      <title>Programmation</title>
+      <link>https://enconn.fr/tags/programmation/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/programmation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Project</title>
       <link>https://enconn.fr/tags/project/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
@@ -231,7 +240,7 @@
     <item>
       <title>Rust</title>
       <link>https://enconn.fr/tags/rust/</link>
-      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/rust/</guid>
       <description></description>
@@ -270,6 +279,15 @@
       <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/student-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tests</title>
+      <link>https://enconn.fr/tags/tests/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/tests/</guid>
       <description></description>
     </item>
     

@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://enconn.fr/dev/tarpaulin-ou-kcov/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://enconn.fr/dev/radare/</loc>
     <lastmod>2018-03-25T00:00:00+00:00</lastmod>
   </url>
@@ -204,7 +209,7 @@
   
   <url>
     <loc>https://enconn.fr/dev/</loc>
-    <lastmod>2018-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -332,6 +337,12 @@
   </url>
   
   <url>
+    <loc>https://enconn.fr/tags/programmation/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://enconn.fr/tags/project/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -369,7 +380,7 @@
   
   <url>
     <loc>https://enconn.fr/tags/rust/</loc>
-    <lastmod>2016-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -404,6 +415,12 @@
   <url>
     <loc>https://enconn.fr/tags/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/tests/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

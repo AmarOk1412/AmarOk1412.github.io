@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sun, 25 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tarpaulin ou kcov ?</title>
+      <link>https://enconn.fr/dev/tarpaulin-ou-kcov/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/dev/tarpaulin-ou-kcov/</guid>
+      <description>Pour un projet (que je présenterais plus tard sur le forum), j&amp;rsquo;ai eu besoin d&amp;rsquo;avoir du retour sur mes tests. Une des métriques m&amp;rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n&amp;rsquo;ai pas encore testé et d&amp;rsquo;ajouter des scénarios.
+En cherchant un peu sur Internet, je suis tombé sur 2 outils :
+ kcov tarpaulin  En voici un petit comparatif.</description>
+    </item>
     
     <item>
       <title>r2</title>
