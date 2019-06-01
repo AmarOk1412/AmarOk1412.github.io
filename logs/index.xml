@@ -5,6 +5,7 @@
     <link>https://enconn.fr/logs/</link>
     <description>Recent content in Logs on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
     <lastBuildDate>Mon, 24 Sep 2018 00:00:00 +0000</lastBuildDate>
@@ -61,10 +62,10 @@ Petite note de passage de douanes Pour aller du Canada aucun papier n&amp;rsquo;
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/brussels/</guid>
       <description>The day before the FOSDEM, I visited Brussels. It was a 26 km day walk. In the morning I went to Atomium built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.
-  Atomium
+   Atomium
       Atomium
       Atomium
-     In the center I saw the Palace of Justice a great building you can see far away.</description>
+    In the center I saw the Palace of Justice a great building you can see far away.</description>
     </item>
     
     <item>
@@ -74,7 +75,7 @@ Petite note de passage de douanes Pour aller du Canada aucun papier n&amp;rsquo;
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/niagara/</guid>
       <description>Pour notre premier jour à Toronto, nous avons décidé de ne pas visiter Toronto, mais les chutes du Niagara, qui se trouvent à 1h30 en bus de la ville. Au final, les chutes sont magnifiques, mais le complexe autour des chutes m&amp;rsquo;a un peu surpris (je m&amp;rsquo;attendais à une zone plus naturelle qu&amp;rsquo;un complexe de casinos).
-  Le complexe
+   Le complexe
       Les chutes
       Les chutes 2</description>
     </item>
@@ -105,7 +106,7 @@ Chinatown Une de mes premières destination était le Chinatown. Toronto possèd
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/zoo/</guid>
       <description>À l&amp;rsquo;ouest du lac Saint-Jean il y a un Zoo Sauvage. une moitié du zoo est une partie sans cage (sauf pour la meute de loup), la seconde est plus classique. Voici quelques photos de la journée. On a été à une fromagerie prêt du Zoo. Le fromage n&amp;rsquo;existe pas ici (hors cheddar et fromage de chèvre). Mais la bière est pas mal :).
-  ours noir
+   ours noir
       ours noir</description>
     </item>
     
@@ -125,7 +126,7 @@ Chinatown Une de mes premières destination était le Chinatown. Toronto possèd
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/fjord-saguenay/</guid>
       <description>Le moment que j&amp;rsquo;attendais le plus était sans doute l&amp;rsquo;été indien et ses fameuses couleurs. Durant la semaine de la relâche, j&amp;rsquo;en ai profité pour faire quelques parcs. Le premier était le parc du Fjord et son chemin de la statue qui m&amp;rsquo;a permis de voir à quel point l&amp;rsquo;été indien est magnifique.
-  Fjord du Saguenay
+   Fjord du Saguenay
       Fjord du Saguenay
       Fjord du Saguenay</description>
     </item>
@@ -182,8 +183,7 @@ Au final, nous avons décidé de viser le camping sur la carte pour décider de 
       <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/gallerie/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34; /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

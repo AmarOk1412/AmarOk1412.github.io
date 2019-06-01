@@ -5,46 +5,137 @@
     <link>https://enconn.fr/tags/</link>
     <description>Recent content in Tags on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 07 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Android</title>
-      <link>https://enconn.fr/tags/android/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <title>devops</title>
+      <link>https://enconn.fr/tags/devops/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/android/</guid>
+      <guid>https://enconn.fr/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Application Ios</title>
-      <link>https://enconn.fr/tags/application-ios/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <title>free software</title>
+      <link>https://enconn.fr/tags/free-software/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/application-ios/</guid>
+      <guid>https://enconn.fr/tags/free-software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Arduino</title>
-      <link>https://enconn.fr/tags/arduino/</link>
-      <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
+      <title>canada</title>
+      <link>https://enconn.fr/tags/canada/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/arduino/</guid>
+      <guid>https://enconn.fr/tags/canada/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Beaglebone</title>
-      <link>https://enconn.fr/tags/beaglebone/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <title>logs</title>
+      <link>https://enconn.fr/tags/logs/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/beaglebone/</guid>
+      <guid>https://enconn.fr/tags/logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>voyage</title>
+      <link>https://enconn.fr/tags/voyage/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/voyage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>boston</title>
+      <link>https://enconn.fr/tags/boston/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/boston/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>us</title>
+      <link>https://enconn.fr/tags/us/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/us/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ctf</title>
+      <link>https://enconn.fr/tags/ctf/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sécurité</title>
+      <link>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmation</title>
+      <link>https://enconn.fr/tags/programmation/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/programmation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://enconn.fr/tags/rust/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tests</title>
+      <link>https://enconn.fr/tags/tests/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/tests/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://enconn.fr/tags/security/</link>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://enconn.fr/tags/tools/</link>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/tools/</guid>
       <description></description>
     </item>
     
@@ -58,88 +149,7 @@
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>https://enconn.fr/tags/blog/</link>
-      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Boston</title>
-      <link>https://enconn.fr/tags/boston/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/boston/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bot</title>
-      <link>https://enconn.fr/tags/bot/</link>
-      <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/bot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Canada</title>
-      <link>https://enconn.fr/tags/canada/</link>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/canada/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chronique Du Libre</title>
-      <link>https://enconn.fr/tags/chronique-du-libre/</link>
-      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/chronique-du-libre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ctf</title>
-      <link>https://enconn.fr/tags/ctf/</link>
-      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/ctf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://enconn.fr/tags/docker/</link>
-      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Drawing</title>
-      <link>https://enconn.fr/tags/drawing/</link>
-      <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/drawing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Event</title>
-      <link>https://enconn.fr/tags/event/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/event/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fosdem</title>
+      <title>FOSDEM</title>
       <link>https://enconn.fr/tags/fosdem/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
@@ -148,16 +158,7 @@
     </item>
     
     <item>
-      <title>Hardware</title>
-      <link>https://enconn.fr/tags/hardware/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/hardware/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Js</title>
+      <title>js</title>
       <link>https://enconn.fr/tags/js/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
@@ -166,70 +167,7 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://enconn.fr/tags/linux/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Logs</title>
-      <link>https://enconn.fr/tags/logs/</link>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/logs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>https://enconn.fr/tags/machine-learning/</link>
-      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mozilla</title>
-      <link>https://enconn.fr/tags/mozilla/</link>
-      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/mozilla/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Network</title>
-      <link>https://enconn.fr/tags/network/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/network/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Notification</title>
-      <link>https://enconn.fr/tags/notification/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/notification/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programmation</title>
-      <link>https://enconn.fr/tags/programmation/</link>
-      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/programmation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Project</title>
+      <title>project</title>
       <link>https://enconn.fr/tags/project/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
@@ -238,160 +176,7 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://enconn.fr/tags/python/</link>
-      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Quebec</title>
-      <link>https://enconn.fr/tags/quebec/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/quebec/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ring</title>
-      <link>https://enconn.fr/tags/ring/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/ring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robot</title>
-      <link>https://enconn.fr/tags/robot/</link>
-      <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/robot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rori</title>
-      <link>https://enconn.fr/tags/rori/</link>
-      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/rori/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://enconn.fr/tags/rust/</link>
-      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Réseau</title>
-      <link>https://enconn.fr/tags/r%C3%A9seau/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/r%C3%A9seau/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Science</title>
-      <link>https://enconn.fr/tags/science/</link>
-      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>https://enconn.fr/tags/security/</link>
-      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>https://enconn.fr/tags/software/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Student Project</title>
-      <link>https://enconn.fr/tags/student-project/</link>
-      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/student-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sécurité</title>
-      <link>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</link>
-      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tests</title>
-      <link>https://enconn.fr/tags/tests/</link>
-      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/tests/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>https://enconn.fr/tags/tools/</link>
-      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Téléphone</title>
-      <link>https://enconn.fr/tags/t%C3%A9l%C3%A9phone/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/t%C3%A9l%C3%A9phone/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Us</title>
-      <link>https://enconn.fr/tags/us/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/us/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Voyage</title>
-      <link>https://enconn.fr/tags/voyage/</link>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/voyage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web</title>
+      <title>web</title>
       <link>https://enconn.fr/tags/web/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
@@ -400,11 +185,110 @@
     </item>
     
     <item>
-      <title>Zds</title>
+      <title>zds</title>
       <link>https://enconn.fr/tags/zds/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/zds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://enconn.fr/tags/linux/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://enconn.fr/tags/network/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://enconn.fr/tags/software/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://enconn.fr/tags/python/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ring</title>
+      <link>https://enconn.fr/tags/ring/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/ring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quebec</title>
+      <link>https://enconn.fr/tags/quebec/</link>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/quebec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chronique-du-libre</title>
+      <link>https://enconn.fr/tags/chronique-du-libre/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/chronique-du-libre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mozilla</title>
+      <link>https://enconn.fr/tags/mozilla/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/mozilla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>science</title>
+      <link>https://enconn.fr/tags/science/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robot</title>
+      <link>https://enconn.fr/tags/robot/</link>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/robot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drawing</title>
+      <link>https://enconn.fr/tags/drawing/</link>
+      <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/drawing/</guid>
       <description></description>
     </item>
     

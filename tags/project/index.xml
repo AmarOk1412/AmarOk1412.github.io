@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project on Enconn</title>
+    <title>project on Enconn</title>
     <link>https://enconn.fr/tags/project/</link>
-    <description>Recent content in Project on Enconn</description>
+    <description>Recent content in project on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
     <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate>
@@ -14,161 +15,12 @@
     
     <item>
       <title>ZMarkdown</title>
-      <link>https://enconn.fr/dev/zmarkdown/</link>
+      <link>https://enconn.fr/post/zmarkdown/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/zmarkdown/</guid>
+      <guid>https://enconn.fr/post/zmarkdown/</guid>
       <description>Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.
 Why? Similar projects don&amp;rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.</description>
-    </item>
-    
-    <item>
-      <title>RORI</title>
-      <link>https://enconn.fr/dev/rori/</link>
-      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/rori/</guid>
-      <description>Just a modulable chatterbot created and released for free under the WTFPL on Github.
-See site page</description>
-    </item>
-    
-    <item>
-      <title>Fen4i4</title>
-      <link>https://enconn.fr/dev/fen4i4/</link>
-      <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/fen4i4/</guid>
-      <description>Goal The main purpose of this bot is to tweet and retweet &amp;ldquo;interesting&amp;rdquo; things. Also, the bot must follow interesting accounts. Moreover, anyone can make a version on this bot, so, the bot must be trainable on a classical computer in one night: for example, my computer with a second generation&amp;rsquo;s i5 and 4Gb of RAM.
-How it works? Because anyone must be capable of create this twitter bot, I can&amp;rsquo;t use neural nets (anyone can&amp;rsquo;t get enough power to run a good neural net to train a bot to tweet or retweet things).</description>
-    </item>
-    
-    <item>
-      <title>TTyRec</title>
-      <link>https://enconn.fr/dev/ttyrec/</link>
-      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/ttyrec/</guid>
-      <description>TTYRec is a little tool to record video of a tty (.gif or .webm) created in Rust lang. The repository is here. Please feel free to contribute.</description>
-    </item>
-    
-    <item>
-      <title>Hacktoberfest 2016</title>
-      <link>https://enconn.fr/dev/hacktoberfest-2016/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/hacktoberfest-2016/</guid>
-      <description>What is Hacktoberfest? Hacktoberfest is an event where you can get a T-shirt if you create 4 Pull Requests on Github between October 1-31. So, it&amp;rsquo;s the perfect occasion to begin to contribute on your favorite projects or to discover new projects. This year, 10,227 developers complete the challenge and 92,569 PR was created.
-What I did? For this hacktoberfest I contribute to some projects:
- Mozilla Firefox but it&amp;rsquo;s not on github Firefox Devtools Bug Finder Zeste De Savoir because I love this site.</description>
-    </item>
-    
-    <item>
-      <title>Sound Localization</title>
-      <link>https://enconn.fr/dev/sound-localization/</link>
-      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/sound-localization/</guid>
-      <description>Les slides ici :</description>
-    </item>
-    
-    <item>
-      <title>Cloud Service</title>
-      <link>https://enconn.fr/dev/cloud-service/</link>
-      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/cloud-service/</guid>
-      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Cloud Service&lt;/em&gt; is a student project created to synchronize files between multiple Cloud services like &lt;em&gt;Google Drive&lt;/em&gt; or &lt;em&gt;Dropbox&lt;/em&gt; during the course &lt;em&gt;JXS&lt;/em&gt;. I made the back-end part.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Docker temporal scheduling</title>
-      <link>https://enconn.fr/dev/docker-temporal-scheduling/</link>
-      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/docker-temporal-scheduling/</guid>
-      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
-
-&lt;p&gt;The goal of this project was to encode some videos on a cluster of Raspberry py. The encoding is divide in some task made by containers. The first step is to get the video to encode via a web interface (cf. the following image). Then, to split the video in several fragments (&lt;code&gt;N&lt;/code&gt;). Then, &lt;code&gt;N&lt;/code&gt; containers encode the fragments and finally, a last container re-assemble fragments.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>GLaDOs Replica</title>
-      <link>https://enconn.fr/dev/glados-replica/</link>
-      <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/glados-replica/</guid>
-      <description>LE PROTOTYPE EST FINI, UNE VERSION PLUS GROSSE, PLUS PROPRE, PLUS FINIE VERRA LE JOUR (un jour, pas de suite).
-Idée 3 types de robots m&amp;rsquo;intéressaient pour cette année 2013 (pour donner une interprétation physique de mon projet RORI). Soit un drône (mais un master a voulu en réaliser un en projet et j&amp;rsquo;en ai vu assez à l&amp;rsquo;évènement &amp;ldquo;faîtes du numérique&amp;rdquo; de Rennes). Soit une araignée (mais il y en avait 2 déjà à Rennes (dont Spooky que j&amp;rsquo;avais déjà utilisé)).</description>
-    </item>
-    
-    <item>
-      <title>LoRa Fabian</title>
-      <link>https://enconn.fr/dev/lorafabian/</link>
-      <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/lorafabian/</guid>
-      <description>Trouvez le rapport ici :</description>
-    </item>
-    
-    <item>
-      <title>Zeste de Savoir</title>
-      <link>https://enconn.fr/dev/zds-notificateur/</link>
-      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/zds-notificateur/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/zds-notificateur/&#34;&gt;&lt;img src=&#34;https://enconn.fr/img/dev/zds-notificateur/_min.jpg&#34; alt=&#34;Zds&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Beaglebone Utils</title>
-      <link>https://enconn.fr/dev/beaglebone-utils/</link>
-      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/beaglebone-utils/</guid>
-      <description>Qu&amp;rsquo;est-ce-que la beaglebone ? Il s&amp;rsquo;agit d&amp;rsquo;une carte électronique open-hardware type mini-PC. Elle possède un système d&amp;rsquo;exploitation type linux (Angström de base). Vous pouvez retrouver la description technique ici.
-Motivation Depuis le début de mon projet GLaDOs Replica, je voulais porter le robot sur Beaglebone (et utiliser l&amp;rsquo;Arduino seulement pour le prototypage). Or la beaglebone blanche possède une communauté plus faible que la beaglebone noire. Les bibliothèques sont souvent incompatibles ou inexistantes (exemple avec la bibliothèque d&amp;rsquo;Adafruit).</description>
-    </item>
-    
-    <item>
-      <title>Zeste de Savoir</title>
-      <link>https://enconn.fr/dev/zestedesavoir/</link>
-      <pubDate>Thu, 16 Apr 2015 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/zestedesavoir/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://zestedesavoir.com&#34;&gt;&lt;img src=&#34;https://enconn.fr/img/dev/zestedesavoir/_min.jpg&#34; alt=&#34;Zds&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Websites I made</title>
-      <link>https://enconn.fr/dev/website-i-made/</link>
-      <pubDate>Tue, 16 Dec 2014 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/website-i-made/</guid>
-      <description>&lt;h2 id=&#34;mid&#34;&gt;MID&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://mid-rennes.fr&#34;&gt;&lt;img src=&#34;https://enconn.fr/img/dev/mid/_min.jpg&#34; alt=&#34;Zds&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I created the design of this website and integrate in on a Wordpress during my internship (2013). I also worked on the SEO.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Reconnaissance des émotions</title>
-      <link>https://enconn.fr/dev/facial-reco/</link>
-      <pubDate>Fri, 20 Apr 2012 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/facial-reco/</guid>
-      <description>Lors de ma seconde année de préparation, j&amp;rsquo;ai dû réaliser un TIPE avec deux collègues. La problématique était Comment la reconnaissance faciale du conducteur peut-elle améliorer sa sécurité au volant ?. Vous pouvez trouver ici le git complet. Et le rapport ici.</description>
     </item>
     
   </channel>

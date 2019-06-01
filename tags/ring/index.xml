@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ring on Enconn</title>
+    <title>ring on Enconn</title>
     <link>https://enconn.fr/tags/ring/</link>
-    <description>Recent content in Ring on Enconn</description>
+    <description>Recent content in ring on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/tags/ring/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>FOSDEM 2018</title>
-      <link>https://enconn.fr/dev/fosdem/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/fosdem/</guid>
-      <description>FOSDEM? The FOSDEM (Free and Open Source Software Developers&amp;rsquo; European Meeting) is an event about FOSS (suprised?). It was started in 2000 and is held annually, during the first week-end of February at the ULB. For 5 years I tried to go to this event but I couldn&amp;rsquo;t (due to a lot of reasons). So, this was my first FOSDEM experience and I&amp;rsquo;m not disappointed at all. I arrived in Brussels the Thursday before FOSDEM to visit and did a walk day (photos).</description>
-    </item>
-    
-    <item>
       <title>Créer un bridge IRC - Ring</title>
-      <link>https://enconn.fr/dev/bridge-irc-ring/</link>
+      <link>https://enconn.fr/post/bridge-irc-ring/</link>
       <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/bridge-irc-ring/</guid>
+      <guid>https://enconn.fr/post/bridge-irc-ring/</guid>
       <description>Contenu posté sur Zeste de Savoir
 J&amp;rsquo;aime faire des bots. J&amp;rsquo;ai des bots pour tout et n&amp;rsquo;importe quoi. J&amp;rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d&amp;rsquo;autres qui bougent.
 Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :</description>

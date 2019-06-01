@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fosdem on Enconn</title>
+    <title>FOSDEM on Enconn</title>
     <link>https://enconn.fr/tags/fosdem/</link>
-    <description>Recent content in Fosdem on Enconn</description>
+    <description>Recent content in FOSDEM on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
     <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate>
@@ -19,10 +20,10 @@
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/brussels/</guid>
       <description>The day before the FOSDEM, I visited Brussels. It was a 26 km day walk. In the morning I went to Atomium built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.
-  Atomium
+   Atomium
       Atomium
       Atomium
-     In the center I saw the Palace of Justice a great building you can see far away.</description>
+    In the center I saw the Palace of Justice a great building you can see far away.</description>
     </item>
     
   </channel>

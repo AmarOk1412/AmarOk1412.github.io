@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Créer un bridge IRC - Ring - Enconn</title>
+  <meta property="og:title" content="Créer un bridge IRC - Ring" />
+  <meta name="twitter:title" content="Créer un bridge IRC - Ring" />
+  <meta name="description" content="Réalisation d&#39;un bridge IRC/Ring en python">
+  <meta property="og:description" content="Réalisation d&#39;un bridge IRC/Ring en python">
+  <meta name="twitter:description" content="Réalisation d&#39;un bridge IRC/Ring en python">
+  <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Enconn",
+    
+    "url": "https:\/\/enconn.fr"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/enconn.fr"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/post\/bridge-irc-ring\/",
+          "name": "Créer un bridge i r c ring"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "Créer un bridge IRC - Ring",
+  "description" : "Contenu posté sur Zeste de Savoir\nJ\x26rsquo;aime faire des bots. J\x26rsquo;ai des bots pour tout et n\x26rsquo;importe quoi. J\x26rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d\x26rsquo;autres qui bougent.\nCe matin, j\x26rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :",
+  "inLanguage" : "en",
+  "wordCount":  826 ,
+  "datePublished" : "2017-05-06T00:00:00",
+  "dateModified" : "2017-05-06T00:00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "software, ring, python" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/post\/bridge-irc-ring\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Créer un bridge IRC - Ring" />
+<meta property="og:description" content="Réalisation d&#39;un bridge IRC/Ring en python">
+<meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+<meta property="og:url" content="https://enconn.fr/post/bridge-irc-ring/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Enconn" />
+
+  <meta name="twitter:title" content="Créer un bridge IRC - Ring" />
+  <meta name="twitter:description" content="Réalisation d&#39;un bridge IRC/Ring en python">
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <meta property="og:url" content="https://enconn.fr/post/bridge-irc-ring/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Enconn" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">by AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Logs" href="/logs/">Logs</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Enconn" href="https://enconn.fr">
+            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Créer un bridge IRC - Ring</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">Réalisation d&#39;un bridge IRC/Ring en python</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 6, 2017
+  
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sébastien Blin
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>Contenu posté sur <a href="https://zestedesavoir.com/contenus/1829/creer-un-bridge-irc-ring/">Zeste de Savoir</a></p>
+
+<p><em>J&rsquo;aime faire des bots</em>. J&rsquo;ai des bots pour tout et n&rsquo;importe quoi. J&rsquo;ai des bots sur twitter, sur des serveurs <a href="https://github.com/zestedesavoir/clem-irc-bot">IRC</a>, des bots plus ou moins utile, des bots qui contrôlent <a href="/dev/glados-replica">des trucs</a> et d&rsquo;autres qui bougent.<br />
+Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et <a href="https://ring.cx">ring.cx</a>. Ce bot peut servir à plusieurs choses :</p>
+
+<ol>
+<li>Pouvoir pinguer une personne par Ring depuis le channel IRC.</li>
+<li>Pouvoir choisir de récupérer tout le contenu d&rsquo;un channel.</li>
+<li>Pouvoir arrêter de recevoir les informations par Ring.</li>
+</ol>
+
+<p>Dans ce billet je vais expliquer comment je l&rsquo;ai réalisé.</p>
+
+<h1 id="ring">Ring</h1>
+
+<p><a href="https://ring.cx/">Ring.cx</a> est un logiciel de conférence vidéo et de communication instantanée open-source et compatible SIP sous licence GPL 3.</p>
+
+<p>Le truc intéressant et qu&rsquo;il permet de manière simple d&rsquo;avoir une base pour contrôler ce qu&rsquo;on veut via un chat et même jouer avec la vidéo de manière assez simple. En soit, il est possible d&rsquo;imaginer un script qui contrôle ce qu&rsquo;on souhaite comme une <a href="https://blog.savoirfairelinux.com/fr-ca/2015/internet-des-objets-ring-appareils-connectes-iot/">lampe</a>, des capteurs, des caméras ou encore un bot IRC tout en déléguant la partie authentification, communication et sécurité en grande partie à GNU Ring. Il est ensuite possible de communiquer avec ce bot via n&rsquo;importe quel client (il en existe sur Linux, Windows, Android, etc). Le seul truc à faire est de réaliser un script qui se connectera au daemon et va réagir aux nombreux signaux.</p>
+
+<p>Il est aussi possible de l&rsquo;installer depuis les sources depuis le <a href="https://gerrit-ring.savoirfairelinux.com/ring-project">git</a> du projet.</p>
+
+<h1 id="l-interface-du-daemon">L&rsquo;interface du daemon</h1>
+
+<p>Le daemon possède de nombreux signaux et méthodes. Une fois installé, on peut trouver le dossier contenant les binaires dans <code>daemon/bin/</code>. On peut ainsi le lancer avec la commande <code>./dring</code>. Dans ce même dossier, on peut trouver les fichiers <code>bin/dbus/cx.ring.Ring.*.xml</code> qui vont contenir la liste des signaux et des méthodes ainsi que comment les utiliser.</p>
+
+<p>Par exemple, dans <code>bin/dbus/cx.ring.Ring.ConfigurationManager.xml</code> nous pouvons trouver le signal que nous utiliserons plus loin :
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;signal</span> <span class="na">name=</span><span class="s">&#34;incomingAccountMessage&#34;</span> <span class="na">tp:name-for-bindings=</span><span class="s">&#34;incomingAccountMessage&#34;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;tp:added</span> <span class="na">version=</span><span class="s">&#34;2.2.0&#34;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;tp:docstring&gt;</span>
+       Notify clients that a new text message has been received at the account level.
+   <span class="nt">&lt;/tp:docstring&gt;</span>
+   <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;s&#34;</span> <span class="na">name=</span><span class="s">&#34;accountID&#34;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;s&#34;</span> <span class="na">name=</span><span class="s">&#34;from&#34;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;annotation</span> <span class="na">name=</span><span class="s">&#34;org.qtproject.QtDBus.QtTypeName.In2&#34;</span> <span class="na">value=</span><span class="s">&#34;MapStringString&#34;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;a{ss}&#34;</span> <span class="na">name=</span><span class="s">&#34;payloads&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/signal&gt;</span></code></pre></div></p>
+
+<p>Ce signal va permettre d&rsquo;agir à la réception d&rsquo;un message.</p>
+
+<p>Il y a moyen de gérer énormément de choses comme la vidéo, appeler quelqu&rsquo;un, modifier le niveau du son, envoyer un message, etc. Bref, on connaît l&rsquo;interface pour communiquer avec le daemon, il nous reste plus qu&rsquo;à l&rsquo;utiliser afin de faire ce que l&rsquo;on souhaite.</p>
+
+<h1 id="contrôlons-ring">Contrôlons Ring</h1>
+
+<p>Un autre dossier s&rsquo;avère intéressant afin de parvenir à faire ce que l&rsquo;on souhaite. Jetons un oeil du côté des outils fournis avec le daemon, c&rsquo;est-à-dire dans le dossier <code>/tools/</code> où nous pouvons trouver un projet nommé <code>dringctrl</code> qui contient un fichier nommé <code>controler.py</code>, avec comme description <strong>DRing controling class through DBUS</strong>, ce qui est exactement ce que l&rsquo;on cherche.</p>
+
+<p>Dans le fichier, on trouve une classe nommée <code>DRingCtrl</code> qui permet de réagir aux évènements du <em>VideoManager</em>, <em>CallManager</em>, <em>ConfigurationManager</em> et autres parties en connectant les signaux à des callbacks. Ainsi, pour obtenir une application réagissant aux évènements envoyés par le daemon de connecter le signal à une callback ; puis de baser notre application sur <code>DRingCtrl</code>. Par exemple pour le signal donné plus haut, il nous suffit d&rsquo;ajouter dans la méthode <code>register()</code>:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">proxy_confmgr</span><span class="o">.</span><span class="n">connect_to_signal</span><span class="p">(</span><span class="s1">&#39;incomingAccountMessage&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">onIncomingAccountMessage</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>et lorsqu&rsquo;on recevra un message, on pourra le traiter avec uns méthode nommée <em>onIncomingAccountMessage</em>.</p>
+
+<p>Par exemple, on peut imaginer la base de notre contrôleur comme ceci :</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">IRCRingController</span><span class="p">(</span><span class="n">DRingCtrl</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_bridge</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;ircbridge&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accountId</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">configurationmanager</span><span class="o">.</span><span class="n">getAccountList</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">onIncomingAccountMessage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accountId</span><span class="p">,</span> <span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">):</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">[</span><span class="s1">&#39;text/plain&#39;</span><span class="p">])</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Receive new message from </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">message</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h1 id="un-bot-irc">Un bot IRC</h1>
+
+<p>Il existe de nombreuses bibliothèques pour réaliser des bots IRC. On peut en trouver dans pas mal de langages existants. Cette fois, j&rsquo;ai choisi d&rsquo;utiliser <a href="https://github.com/gawel/irc3/">irc3</a> de <em>gawel</em>. Elle consiste à développer un plugin pour l&rsquo;ajouter à un bot. Voici, les scénarios que j&rsquo;imaginais pour mon bot :</p>
+
+<ul>
+<li>Le contrôle de la configuration se fait seulement via Ring, car généralement sur IRC, les personnes ne pensent pas forcément à protéger leur pseudo. Ici l&rsquo;authentification est gérée via Ring.</li>
+<li>Une personne peut choisir de pouvoir recevoir des informations du bot. Il suffit d&rsquo;utiliser la commande <code>!add nick</code> au bot via ring. Depuis IRC on pourra communiquer avec cette personne avec <code>!tell nick message</code> et le bot se chargera d&rsquo;envoyer à la bonne personne le message.</li>
+<li>Une personne peut vouloir ne plus recevoir de message, il suffit d&rsquo;envoyer <code>!rm</code></li>
+<li>Une personne peut vouloir recevoir l&rsquo;intégralité du contenu du chan, il suffit d&rsquo;envoyer <code>!follow</code> et <code>!unfollow</code> pour arrêter de recevoir les informations.</li>
+</ul>
+
+<p>Le code est disponible ici : <a href="https://gist.github.com/AmarOk1412/df88402e9a1e5710898cd2df2be117d8">https://gist.github.com/AmarOk1412/df88402e9a1e5710898cd2df2be117d8</a></p>
+
+<p><img src="/img/dev/bridge-irc-ring/capture.png" alt="Le programme en action" /></p>
+
+<p>Au final, on peut voir que Ring peut s&rsquo;avérer être une bonne base pour tout type de bots se basant sur la communication en profitant de toute l&rsquo;abstraction qu&rsquo;il peut fournir au niveau de l&rsquo;authentification, de la communication, de la décentralisation.</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://enconn.fr/tags/software/">software</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/ring/">ring</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/python/">python</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://enconn.fr/post/chronique-du-libre-2/" data-toggle="tooltip" data-placement="top" title="Chronique du libre n°2">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://enconn.fr/post/fibre-to-56k/" data-toggle="tooltip" data-placement="top" title="Passer de la fibre au 56k">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@enconn.fr" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AmarOk1412" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://enconn.fr">Sébastien Blin</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2019
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://enconn.fr">Enconn</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.55.6</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://enconn.fr/js/katex.min.js"></script>
+<script src="https://enconn.fr/js/auto-render.min.js"></script>
+<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/bootstrap.min.js"></script>
+
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

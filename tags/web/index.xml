@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web on Enconn</title>
+    <title>web on Enconn</title>
     <link>https://enconn.fr/tags/web/</link>
-    <description>Recent content in Web on Enconn</description>
+    <description>Recent content in web on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
     <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate>
@@ -14,49 +15,12 @@
     
     <item>
       <title>ZMarkdown</title>
-      <link>https://enconn.fr/dev/zmarkdown/</link>
+      <link>https://enconn.fr/post/zmarkdown/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/zmarkdown/</guid>
+      <guid>https://enconn.fr/post/zmarkdown/</guid>
       <description>Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.
 Why? Similar projects don&amp;rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.</description>
-    </item>
-    
-    <item>
-      <title>Zeste de Savoir</title>
-      <link>https://enconn.fr/dev/zds-notificateur/</link>
-      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/zds-notificateur/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/zds-notificateur/&#34;&gt;&lt;img src=&#34;https://enconn.fr/img/dev/zds-notificateur/_min.jpg&#34; alt=&#34;Zds&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zeste de Savoir</title>
-      <link>https://enconn.fr/dev/zestedesavoir/</link>
-      <pubDate>Thu, 16 Apr 2015 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/zestedesavoir/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://zestedesavoir.com&#34;&gt;&lt;img src=&#34;https://enconn.fr/img/dev/zestedesavoir/_min.jpg&#34; alt=&#34;Zds&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Websites I made</title>
-      <link>https://enconn.fr/dev/website-i-made/</link>
-      <pubDate>Tue, 16 Dec 2014 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/website-i-made/</guid>
-      <description>&lt;h2 id=&#34;mid&#34;&gt;MID&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://mid-rennes.fr&#34;&gt;&lt;img src=&#34;https://enconn.fr/img/dev/mid/_min.jpg&#34; alt=&#34;Zds&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I created the design of this website and integrate in on a Wordpress during my internship (2013). I also worked on the SEO.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

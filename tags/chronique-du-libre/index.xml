@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chronique Du Libre on Enconn</title>
+    <title>chronique-du-libre on Enconn</title>
     <link>https://enconn.fr/tags/chronique-du-libre/</link>
-    <description>Recent content in Chronique Du Libre on Enconn</description>
+    <description>Recent content in chronique-du-libre on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
     <lastBuildDate>Sat, 28 May 2016 00:00:00 +0000</lastBuildDate>
@@ -14,25 +15,23 @@
     
     <item>
       <title>Chronique du libre n°2</title>
-      <link>https://enconn.fr/dev/chronique-du-libre-2/</link>
+      <link>https://enconn.fr/post/chronique-du-libre-2/</link>
       <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/chronique-du-libre-2/</guid>
+      <guid>https://enconn.fr/post/chronique-du-libre-2/</guid>
       <description>Tout le monde connait Mozilla grâce à Firefox mais les projets de l&amp;rsquo;organisation ne se limitent pas à un navigateur. La mission de Mozilla est de promouvoir l’ouverture, l’innovation et la bonne santé du Web. La Fondation Mozilla propose des programmes pour mapper ces valeurs à la science, les médias, à la politique ou l&amp;rsquo;éducation afin de les rendre ouverts, collaboratifs et partageables.
 Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&amp;rsquo;open science et plus particulièrement d&amp;rsquo;un projet de la Fondation Mozilla relativement peu connu : Le Mozilla Science Lab.</description>
     </item>
     
     <item>
       <title>Chronique du libre n°1</title>
-      <link>https://enconn.fr/dev/chronique-du-libre-1/</link>
+      <link>https://enconn.fr/post/chronique-du-libre-1/</link>
       <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/chronique-du-libre-1/</guid>
+      <guid>https://enconn.fr/post/chronique-du-libre-1/</guid>
       <description>&lt;p&gt;Le monde du libre est composé de bien de projets dans de nombreux domaines. De nombreuses communautés se sont formées autour de ces projets. Cette nouvelle série d&amp;rsquo;articles a pour but de présenter des projets communautaires dans différents domaines. Aujourd&amp;rsquo;hui, nous allons débuter cette série avec un projet de robot humanoïde open-source : InMoov.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/dev/inmoov/inmoov_ban.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/dev/inmoov/inmoov_ban.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

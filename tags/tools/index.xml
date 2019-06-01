@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tools on Enconn</title>
+    <title>tools on Enconn</title>
     <link>https://enconn.fr/tags/tools/</link>
-    <description>Recent content in Tools on Enconn</description>
+    <description>Recent content in tools on Enconn</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
     <lastBuildDate>Sun, 25 Mar 2018 00:00:00 +0000</lastBuildDate>
@@ -14,10 +15,10 @@
     
     <item>
       <title>r2</title>
-      <link>https://enconn.fr/dev/radare/</link>
+      <link>https://enconn.fr/post/radare/</link>
       <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/dev/radare/</guid>
+      <guid>https://enconn.fr/post/radare/</guid>
       <description>Article original ici
 Hei, je n&amp;rsquo;avais pas n&amp;rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&amp;hellip;
 Aujourd&amp;rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le NorthSec 2018 à Montréal. Il m&amp;rsquo;arrive très rarement de faire des CTF et je n&amp;rsquo;en ai pas fait depuis un moment.
