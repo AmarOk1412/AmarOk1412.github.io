@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>How to host your own Jitsi instance - Enconn</title>
-  <meta property="og:title" content="How to host your own Jitsi instance" />
-  <meta name="twitter:title" content="How to host your own Jitsi instance" />
-  <meta name="description" content="A short feedback from experience">
-  <meta property="og:description" content="A short feedback from experience">
-  <meta name="twitter:description" content="A short feedback from experience">
+  <title>P2P internals - episode 1 - Enconn</title>
+  <meta property="og:title" content="P2P internals - episode 1" />
+  <meta name="twitter:title" content="P2P internals - episode 1" />
+  <meta name="description" content="TURN over TCP (RFC 6062)">
+  <meta property="og:description" content="TURN over TCP (RFC 6062)">
+  <meta name="twitter:description" content="TURN over TCP (RFC 6062)">
   <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/enconn.fr\/post\/jitsi\/",
-          "name": "How to host your own jitsi instance"
+          "@id": "https:\/\/enconn.fr\/post\/p2p-internals-rfc6062\/",
+          "name": "P2 p internals episode 1"
         }
     }]
 }
@@ -60,15 +60,15 @@
   "author": {
     "name" : "Sébastien Blin"
   },
-  "headline": "How to host your own Jitsi instance",
-  "description" : "For the local future CHATONS (Chatons is a french word which means kitten), I am currently helping to host a new Jitsi-meet instance. This instance will be available at this address: https:\/\/conference.facil.services\/ and this is a little post about how we did it and what problems we encountered.\nFirst step - The manual installation For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools).",
+  "headline": "P2P internals - episode 1",
+  "description" : "I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc.",
   "inLanguage" : "en",
-  "wordCount":  854 ,
-  "datePublished" : "2019-05-12T00:00:00",
-  "dateModified" : "2019-05-12T00:00:00",
+  "wordCount":  878 ,
+  "datePublished" : "2019-06-01T00:00:00",
+  "dateModified" : "2019-06-01T00:00:00",
   "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
-  "keywords" : [ "free software, devops" ],
-  "mainEntityOfPage" : "https:\/\/enconn.fr\/post\/jitsi\/",
+  "keywords" : [ "p2p, dev" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/post\/p2p-internals-rfc6062\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/enconn.fr",
@@ -82,15 +82,15 @@
 }
 </script>
 
-<meta property="og:title" content="How to host your own Jitsi instance" />
-<meta property="og:description" content="A short feedback from experience">
+<meta property="og:title" content="P2P internals - episode 1" />
+<meta property="og:description" content="TURN over TCP (RFC 6062)">
 <meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
-<meta property="og:url" content="https://enconn.fr/post/jitsi/" />
+<meta property="og:url" content="https://enconn.fr/post/p2p-internals-rfc6062/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Enconn" />
 
-  <meta name="twitter:title" content="How to host your own Jitsi instance" />
-  <meta name="twitter:description" content="A short feedback from experience">
+  <meta name="twitter:title" content="P2P internals - episode 1" />
+  <meta name="twitter:description" content="TURN over TCP (RFC 6062)">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@AmarOk1412" />
@@ -101,7 +101,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
-  <meta property="og:url" content="https://enconn.fr/post/jitsi/" />
+  <meta property="og:url" content="https://enconn.fr/post/p2p-internals-rfc6062/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Enconn" />
 
@@ -224,8 +224,51 @@
 
 
   
+    <div id="header-big-imgs" data-num-img=1 
+      
+         
+          data-img-src-1="/img/dev/p2p_rfc6062/banner.jpg" 
+         
+         
+      ></div>
+  
 
-  <header class="header-section ">
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>P2P internals - episode 1</h1>
+                  
+                    
+                      <h2 class="post-subheading">TURN over TCP (RFC 6062)</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on June 1, 2019
+  
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sébastien Blin
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
     
     <div class="intro-header no-img">
       <div class="container">
@@ -233,19 +276,19 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>How to host your own Jitsi instance</h1>
+                <h1>P2P internals - episode 1</h1>
               
               
               
                 
-                  <h2 class="post-subheading">A short feedback from experience</h2>
+                  <h2 class="post-subheading">TURN over TCP (RFC 6062)</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 12, 2019
+  <i class="fas fa-calendar"></i>&nbsp;Posted on June 1, 2019
   
   
   
@@ -272,93 +315,60 @@
       <article role="main" class="blog-post">
         
 
-<p>For the local future <a href="https://chatons.org/">CHATONS</a> (<em>Chatons</em> is a french word which means <em>kitten</em>), I am currently helping to host a new <a href="https://jitsi.org/jitsi-meet/">Jitsi-meet</a> instance. This instance will be available at this address: <a href="https://conference.facil.services/">https://conference.facil.services/</a> and this is a little post about how we did it and what problems we encountered.</p>
+<p>I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc. This is why I want to explain some common problems we can encounter when creating a peer to peer system and to describe existing solutions.</p>
 
-<h1 id="first-step-the-manual-installation">First step - The manual installation</h1>
+<p>So, <strong>p2p internals</strong> is a serie of articles made to explain how distributed systems work. In this first article, let&rsquo;s imagine Alice wants to create a peer to peer software that transmit files directly from one device to one another as we have today in our browsers (ShareDrop for example, thanks to webrtc), p2p chat applications (I will take a lot of examples from <a href="https://jami.net">Jami</a>), file transfer applications, etc. Let&rsquo;s call the application <em>DEL</em> (<em>del</em> means <em>share</em> in Norwegian and looks like <em>delete</em>).</p>
 
-<p>For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools). Anyway, even the logs were odds.</p>
+<h1 id="first-transfers">First transfers</h1>
 
-<p>I arrived in this project at this precise moment. So, I decided to start to do my own virtual machine, in my local network (bridge mode) to replicate the final server config (a Debian Stretch, 1 Go RAM, 2 CPUs) and I followed the instructions from this page: <a href="https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md">https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md</a></p>
+<p>So, <em>DEL</em> is really simple to understand. For a transfer, two clients are necessary, one on each devices. Each clients will get several addresses from different networks (LAN/WAN). An address is in fact composed by an IP and a port where the client is listening. Then the user provides a file to share and the address of the peer. Finally, a TCP link will be created and the file will be transmitted via this link. Alice starts to send files between her devices. She is happy because she did her first p2p application. She needs to show <em>DEL</em> to Bob.</p>
 
-<p>The only big difference between my setup and the final server is that the VM is only available in my local network, so I used an auto-signed certificate instead of our Let&rsquo;s Encrypt certificate. But we saw that the instance was functionnal and we did some conferences with multiple participants.</p>
+<p>Note that the link MUST be a TCP link, because UDP is not reliable and you don&rsquo;t want to miss packets.</p>
 
-<p>Because everything seemed to work, I did the same steps (with the auto-signed certificate) but on the final production server (in a clean state). Again, we did some tests and the instance was working great. So the next step is to setup the back-up system, monitoring tools and automate the installation of <em>Jitsi</em> and the certificate.</p>
+<p>As soon as Bob receives Alice&rsquo;s message, he starts <em>DEL</em> to share some pictures with Alice… but nothing is transmitted. The transfer is failing and he cannot get a direct link with Alice…</p>
 
-<h1 id="second-step-automate-all-the-things">Second step - Automate all the things</h1>
+<p>In fact, the creation of the link can fail due to a lot of reasons. The most common reason is the <strong>NAT</strong>. I think I will have the time to describe what is this thing in the next episodes, but basically the <strong>NAT</strong> is something created to have more addresses available on the internet but it also makes your local address unavailable from other networks, unless if you ask your router to forward the incoming traffic or if you use a NAT traversal techniques such as <em>UPnP, STUN, TURN</em>, etc.</p>
 
-<p><em>Ansible</em> is used ot automate the installation of our servers. And, to avoid to re-invent the wheel, we use existing ansible roles made by others. For <em>Jitsi</em>, I found this project: <a href="https://github.com/freedomofpress/ansible-role-jitsi-meet">https://github.com/freedomofpress/ansible-role-jitsi-meet</a></p>
+<h1 id="let-s-avoid-the-nat">Let&rsquo;s avoid the NAT!</h1>
 
-<p>Even if the role is not up-to-date (last commit is from 2017), a <a href="https://github.com/freedomofpress/ansible-role-jitsi-meet/pull/43">pull request</a> exists to update the role and is only 2 months old! Let&rsquo;s try with that patched role. So, I did this little playbook (<code>jitsi.yml</code>)</p>
+<p>Don&rsquo;t be scare of the <em>NAT</em>! Many applications can pass through this problem, and <em>DEL</em> too! In fact, a lot of literature exists on the subject. Today, I will just explain how a <em>TURN</em> (<em>Traversal Using Relays around NAT</em>) server works (and only for TCP). Other methods exist, but these techniques only need a <em>TURN</em> server available. The process is fully described in <a href="https://tools.ietf.org/html/rfc6062">RFC 6062</a>. To summarize, a <em>TURN</em> server will be used as a relay for the connection with Alice. Instead trying to open a connection directly with Bob, the client opens a connection with a <em>TURN</em> server. This <em>TURN</em> will open a port and Alice will be able to connect to this port (if the TURN server accepts connections) or the <em>TURN</em> server will try to connect to Alice (if Bob send data). So, the NAT will not block the connection, because Alice will never contact Bob, but will connect to a point where Bob is listening.</p>
 
-<pre><code class="language-yml">- name: Configure jitsi-meet server.
-  hosts: [server]
-  user: amarok
-  vars:
-    jitsi_meet_server_name: conference.facil.services
-    jitsi_meet_lang: fr
-  roles:
-    - role: thefinn93.letsencrypt
-      become: yes
-      letsencrypt_email: &quot;webmaster@{{ jitsi_meet_server_name }}&quot;
-      ssl_certificate: /etc/ssl/{{ jitsi_meet_server_name }}/server.cert
-      ssl_certificate_key: /etc/ssl/{{ jitsi_meet_server_name }}/server.key
-      letsencrypt_cert_domains:
-        - &quot;{{ jitsi_meet_server_name }}&quot;
-      tags: letsencrypt
+<p>This will looks like that:</p>
 
-    - role: freedomofpress.jitsi-meet
-      jitsi_meet_ssl_cert_path: &quot;/etc/ssl/{{ jitsi_meet_server_name }}/server.cert&quot;
-      jitsi_meet_ssl_key_path: &quot;/etc/ssl/{{ jitsi_meet_server_name }}/server.key&quot;
-      become: yes
-      tags: jitsi
+<p><img src="/img/dev/p2p_rfc6062/turn.jpg" alt="TURN - RFC 6062" /></p>
 
-</code></pre>
+<h1 id="technical-overview">Technical overview</h1>
 
-<p>I press the BIG launch button, <em>Ansible</em> is starting and&hellip; <strong>FAIL</strong>. The certificate can&rsquo;t be created.  :sad:</p>
+<p>So, now that <em>DEL</em> needs to be compatible with a <em>TURN</em> server, this is how the application will work.</p>
 
-<h1 id="third-step-debugging-the-role">Third step - Debugging the role</h1>
-
-<p>First problem, the challenge for the certificate is failing. It was a problem with the <code>nginx</code> server which were listening only on IPv4, so it was failing for the IPv6 challenge.</p>
-
-<p>Let&rsquo;s retry. Re-click on the BIG launch button&hellip; certificate: <strong>OK</strong> ; installing <em>Jitsi</em>: <strong>OK</strong> ; reloading services: <strong>NOK</strong>. Shit, the website is not responding. Let&rsquo;s see on the server. I don&rsquo;t really understand why <code>nginx</code> is not started, but let&rsquo;s start it and see if it works. <code>service nginx restart</code>, I can see that <em>Jitsi</em> is running. I create a new room, nice, the camera is working. Let&rsquo;s try with somebody else&hellip; BOTH SIDES ARE CRASHING :sad:.</p>
-
-<p>Maybe the problem is from the role. I purge all the server, and re-launch the role. Quick note, <code>jitsi-meet-web-config</code> can&rsquo;t be removed directly if <code>nginx</code> is removed before <em>Jitsi</em>. To fix it, you have to remove the following lines from <code>/var/lib/dpkg/info/jitsi-meet-web-config.postrm</code></p>
-
-<pre><code class="language-bash">if [ -x &quot;/etc/init.d/nginx&quot; ]; then
-    invoke-rc.d nginx reload
-fi
-</code></pre>
-
-<p>So, the whole role is ok this time. I try to connect two computers and again - crash!</p>
-
-<p>Let&rsquo;s check the logs. Basically for this kind of issue, <em>Jitsi</em> have at least two interesting log files:</p>
+<p>First, <em>DEL</em> has to open a connection with a TURN server and send a request asking for a TCP transport (the <code>REQUESTED-TRANSPORT</code> attribute). The TURN server opens a new port and listen for incoming connections. The tuple (ip, port) of the TURN is called a relayed address. So, <em>DEL</em> will have 2 addresses, the one from the local network and the relayed one. This first connection (Bob-&gt;TURN) is called the control connection. Now, there is two possibilities:</p>
 
 <ul>
-<li><code>/var/log/jitsi/jicofo.log</code> which help me to find a little <code>ssl</code> mis-configuration while I used the auto-signed certificate. This first file is telling me that it can&rsquo;t find a bridge and indeed, <code>service status jitsi-videobridge</code> is showing that the bridge is down, killed after a few seconds of life.</li>
-<li><code>/var/log/jitsi/jvb.log</code> which are the video bridge&rsquo;s logs. I can see the following line: <code>Error: Could not find or load main class $JVB_EXTRA_JVM_PARAMS</code> which is actually a variable in <code>/etc/jitsi/videobridge/config</code>. So, I remove the line from this file, restart the bridge, start a first device, now the second one. Nice, I can see both cameras! The instance is working now!</li>
+<li>the <em>TURN</em> server can be used to send data. But, it&rsquo;s not the case here.</li>
+<li>the <em>TURN</em> server can be used to receive data.</li>
 </ul>
 
-<p>Let&rsquo;s finish the work by installing the monitoring tools, the back-up system, and now, the instance is complete and production ready!</p>
+<p>For the second case, Bob&rsquo;s client will send to the <em>TURN</em> a <code>CreatePermission</code> request to allow Alice to connect to the relayed address. Then Alice is able to connect to the relayed address. When she does, Bob&rsquo;s client will receive a <code>ConnectionAttempt</code> request with an id.</p>
 
-<h1 id="conclusion">Conclusion</h1>
+<p>If Bob&rsquo;s client accepts the connection, it will initiate a new connection to the <em>TURN</em> server. This new connection is the data connection. And then, the client will send a <code>ConnectionBind</code> request with the previously received id. Finally, the TCP link is here! Bob can share files with Alice without any NAT issues!</p>
 
-<p>To conclude, if you want to host your own <em>Jitsi</em> instance:</p>
+<h1 id="more-details">More details</h1>
+
+<p>If you want to dig the subject, here is some links:</p>
 
 <ul>
-<li>You can generate your own <em>Let&rsquo;s Encrypt</em> certificate and follow the quick-install method from Jitsi. It will work great and you will be able to update your instance from time to time.</li>
-<li>I didn&rsquo;t try in a dockerized environment, but i think this will also work. Some problems may exists, but <a href="https://github.com/santiagomr">Santiago</a> is answering fast and already fixed his role!</li>
-<li>If you want to automate the whole process with <em>Ansible</em>, actually you can. The <em>Freedom of Press</em> role is working if you take the patched role.</li>
+<li>I wrote how the file sharing feature works in <a href="https://jami.net">Jami</a> and how to setup a <em>TURN</em> server here: <a href="https://git.jami.net/savoirfairelinux/ring-project/wikis/tutorials/file-transfer">https://git.jami.net/savoirfairelinux/ring-project/wikis/tutorials/file-transfer</a></li>
+<li>Coturn is a easy to setup <em>TURN</em> server: <a href="https://github.com/coturn/coturn">https://github.com/coturn/coturn</a></li>
+<li>RFC 6062 will be supported in PJProject 2.9 (<a href="https://trac.pjsip.org/repos/ticket/2197">https://trac.pjsip.org/repos/ticket/2197</a>, <a href="https://github.com/pjsip/pjproject/commit/fa6616c43c7e19797084f4e02a67d1fb6fd99473">https://github.com/pjsip/pjproject/commit/fa6616c43c7e19797084f4e02a67d1fb6fd99473</a>)</li>
 </ul>
-
-<p>Finally, if you see some problems with your instances, actually, the logs are complete and useful.</p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://enconn.fr/tags/free-software/">free software</a>&nbsp;
+              <a href="https://enconn.fr/tags/p2p/">p2p</a>&nbsp;
             
-              <a href="https://enconn.fr/tags/devops/">devops</a>&nbsp;
+              <a href="https://enconn.fr/tags/dev/">dev</a>&nbsp;
             
           </div>
         
@@ -372,13 +382,9 @@ fi
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://enconn.fr/post/2-3-retour-du-nsec-the-visual-microphone/" data-toggle="tooltip" data-placement="top" title="(2/3)Retour du nsec - The visual microphone">&larr; Previous Post</a>
+              <a href="https://enconn.fr/post/jitsi/" data-toggle="tooltip" data-placement="top" title="How to host your own Jitsi instance">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://enconn.fr/post/p2p-internals-rfc6062/" data-toggle="tooltip" data-placement="top" title="P2P internals - episode 1">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
