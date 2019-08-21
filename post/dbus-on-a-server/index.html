@@ -7,9 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Enconn - Enconn</title>
-  <meta property="og:title" content="Enconn" />
-  <meta name="twitter:title" content="Enconn" />
+  <title>Dbus on a server - Enconn</title>
+  <meta property="og:title" content="Dbus on a server" />
+  <meta name="twitter:title" content="Dbus on a server" />
+  <meta name="description" content="and without any graphical session">
+  <meta property="og:description" content="and without any graphical session">
+  <meta name="twitter:description" content="and without any graphical session">
   <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -30,14 +33,64 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/post\/dbus-on-a-server\/",
+          "name": "Dbus on a server"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "Dbus on a server",
+  "description" : "Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a service, but you can encounter the same problem across terminals or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or any graphical session.",
+  "inLanguage" : "en",
+  "wordCount":  147 ,
+  "datePublished" : "2019-08-20T00:00:00",
+  "dateModified" : "2019-08-20T00:00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "software, dbus, quickie" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/post\/dbus-on-a-server\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Enconn" />
+<meta property="og:title" content="Dbus on a server" />
+<meta property="og:description" content="and without any graphical session">
 <meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
-<meta property="og:url" content="https://enconn.fr/" />
+<meta property="og:url" content="https://enconn.fr/post/dbus-on-a-server/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Enconn" />
 
-  <meta name="twitter:title" content="Enconn" />
+  <meta name="twitter:title" content="Dbus on a server" />
+  <meta name="twitter:description" content="and without any graphical session">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@AmarOk1412" />
@@ -48,7 +101,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
-  <meta property="og:url" content="https://enconn.fr/" />
+  <meta property="og:url" content="https://enconn.fr/post/dbus-on-a-server/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Enconn" />
 
@@ -178,18 +231,31 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
+            <div class="post-heading">
               
-                <h1>Enconn</h1>
+                <h1>Dbus on a server</h1>
               
-              
-                <hr class="small">
               
               
                 
-                  <span class="page-subheading">A concentrate of random tech stuff, free software development and travel logs</span>
+                  <h2 class="post-subheading">and without any graphical session</h2>
                 
               
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 20, 2019
+  
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sébastien Blin
+  
+  
+</span>
+
+
               
             </div>
           </div>
@@ -200,120 +266,68 @@
 
 
     
-  <div role="main" class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         
 
-        <div class="posts-list">
-          
-          
-            <article class="post-preview">
-              <a href="https://enconn.fr/post/chronique-du-libre-2/">
-                <h2 class="post-title">Chronique du libre n°2</h2>
-                
-                  <h3 class="post-subtitle">
-                  Le Mozilla Science Lab
-                  </h3>
-                
-                
-              </a>
+<p>Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a service, but you can encounter the same problem across terminals or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or any graphical session.</p>
 
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 28, 2016
-  
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sébastien Blin
-  
-  
-</span>
+<h1 id="how-to-solve-it">How to solve it</h1>
 
+<p>The important thing to remember with dbus is you can share a dbus session via <code>DBUS_SESSION_BUS_ADDRESS</code> (an environment variable). So, the key is to save <code>DBUS_SESSION_BUS_ADDRESS</code> in a place you will be able to read from all the place you want a dbus session.</p>
 
-              <div class="post-entry">
-                
-                  Tout le monde connait Mozilla grâce à Firefox mais les projets de l&rsquo;organisation ne se limitent pas à un navigateur. La mission de Mozilla est de promouvoir l’ouverture, l’innovation et la bonne santé du Web. La Fondation Mozilla propose des programmes pour mapper ces valeurs à la science, les médias, à la politique ou l&rsquo;éducation afin de les rendre ouverts, collaboratifs et partageables.
-Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&rsquo;open science et plus particulièrement d&rsquo;un projet de la Fondation Mozilla relativement peu connu : Le Mozilla Science Lab.
-                  <a href="https://enconn.fr/post/chronique-du-libre-2/" class="post-read-more">[Read More]</a>
-                
-              </div>
+<h1 id="example">Example</h1>
 
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://enconn.fr/tags/chronique-du-libre/">chronique-du-libre</a>&nbsp;
-                  
-                    <a href="https://enconn.fr/tags/mozilla/">mozilla</a>&nbsp;
-                  
-                    <a href="https://enconn.fr/tags/science/">science</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://enconn.fr/post/chronique-du-libre-1/">
-                <h2 class="post-title">Chronique du libre n°1</h2>
-                
-                  <h3 class="post-subtitle">
-                  Gaël Langevin et son robot Inmoov
-                  </h3>
-                
-                
-              </a>
+<pre><code class="language-sh">sudo dnf install dbus-x11 # or apt-get install dbus-x11
+dbus-launch --auto-syntax
+env | grep DBUS_SESSION_BUS_ADDRESS &gt; /tmp/env
+# On another terminal
+export `cat /tmp/env`
+dbus-monitor
+</code></pre>
 
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 17, 2016
-  
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sébastien Blin
-  
-  
-</span>
+<p>And that&rsquo;s it!</p>
 
-
-              <div class="post-entry">
-                
-                  <p>Le monde du libre est composé de bien de projets dans de nombreux domaines. De nombreuses communautés se sont formées autour de ces projets. Cette nouvelle série d&rsquo;articles a pour but de présenter des projets communautaires dans différents domaines. Aujourd&rsquo;hui, nous allons débuter cette série avec un projet de robot humanoïde open-source : InMoov.</p>
-
-<p><img src="/img/dev/inmoov/inmoov_ban.png" alt="" /></p>
-                  <a href="https://enconn.fr/post/chronique-du-libre-1/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://enconn.fr/tags/chronique-du-libre/">chronique-du-libre</a>&nbsp;
-                  
-                    <a href="https://enconn.fr/tags/robot/">robot</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-        </div>
 
         
-          <ul class="pager main-pager">
+          <div class="blog-tags">
             
-              <li class="previous">
-                <a href="https://enconn.fr/page/1/">&larr; Newer Posts</a>
-              </li>
+              <a href="https://enconn.fr/tags/software/">software</a>&nbsp;
             
+              <a href="https://enconn.fr/tags/dbus/">dbus</a>&nbsp;
             
-          </ul>
+              <a href="https://enconn.fr/tags/quickie/">quickie</a>&nbsp;
+            
+          </div>
         
-      </div>
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://enconn.fr/post/p2p-internals-rfc6062/" data-toggle="tooltip" data-placement="top" title="P2P internals - episode 1">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -347,7 +361,7 @@ Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&rsq
               </li>
           
           <li>
-            <a href="/index.xml" title="RSS">
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

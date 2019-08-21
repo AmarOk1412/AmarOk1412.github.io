@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dbus on a server</title>
+      <link>https://enconn.fr/post/dbus-on-a-server/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/post/dbus-on-a-server/</guid>
+      <description>Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a service, but you can encounter the same problem across terminals or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or any graphical session.</description>
+    </item>
     
     <item>
       <title>P2P internals - episode 1</title>
