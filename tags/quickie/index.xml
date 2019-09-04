@@ -19,7 +19,7 @@
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/post/dbus-on-a-server/</guid>
-      <description>Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a service, but you can encounter the same problem across terminals or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or any graphical session.</description>
+      <description>Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a System V init script, but you can encounter the same problem in a terminal or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or your graphical session.</description>
     </item>
     
   </channel>
