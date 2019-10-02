@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Mon, 24 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/logs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Grands Jardins</title>
+      <link>https://enconn.fr/logs/grands-jardins/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/grands-jardins/</guid>
+      <description>Si un jour vous traînez sur la côte Ouest du Saint Laurent, entre Tadoussac et Québec se trouve un petit parc très sympathique pour le temps d&amp;rsquo;un week end : le Parc National des Grands Jardins. Ce parc propose diverses activités (dont de la Via Ferrata pour les amateurs ou du Kayak).
+La faune est peu présente, cependant les balades sont agréables et les points de vues sont super. Ci-dessous vous pouvez voir quelques photos du Pic de la Chouenne.</description>
+    </item>
     
     <item>
       <title>Un loup au Canada - Partie 3</title>

@@ -4,7 +4,36 @@
   
   <url>
     <loc>https://enconn.fr/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/logs/grands-jardins/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/logs/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/logs/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/quebec/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -15,12 +44,6 @@
   
   <url>
     <loc>https://enconn.fr/post/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -83,24 +106,12 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/logs/</loc>
-    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/logs/ontario/</loc>
     <lastmod>2018-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/canada/</loc>
-    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/logs/</loc>
     <lastmod>2018-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -293,12 +304,6 @@
   <url>
     <loc>https://enconn.fr/logs/toronto/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/quebec/</loc>
-    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

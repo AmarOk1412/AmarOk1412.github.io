@@ -8,10 +8,28 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>logs</title>
+      <link>https://enconn.fr/tags/logs/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quebec</title>
+      <link>https://enconn.fr/tags/quebec/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/quebec/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dev</title>
@@ -82,15 +100,6 @@
       <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/canada/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>logs</title>
-      <link>https://enconn.fr/tags/logs/</link>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/logs/</guid>
       <description></description>
     </item>
     
@@ -271,15 +280,6 @@
       <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/ring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>quebec</title>
-      <link>https://enconn.fr/tags/quebec/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/quebec/</guid>
       <description></description>
     </item>
     
