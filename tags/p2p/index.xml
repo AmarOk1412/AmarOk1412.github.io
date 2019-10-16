@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>P2P internals - episode 3</title>
+      <link>https://enconn.fr/post/p2p-internals-dht/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/post/p2p-internals-dht/</guid>
+      <description>In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. TURN servers) or some new protocols (like ICE).
+It is now time to talk about distributed applications and structures created on top of a p2p network.
+For a lot of distributed applications, all the nodes in the system can&amp;rsquo;t be stable.</description>
+    </item>
     
     <item>
       <title>P2P internals - episode 2</title>
