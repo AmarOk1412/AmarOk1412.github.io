@@ -1,40 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://enconn.fr/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/post/p2p-internals-dht/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://enconn.fr/post/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/privacy/</loc>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/post/onion-address/</loc>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/dev/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/p2p/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/post/p2p-internals-dht/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -45,19 +50,16 @@
   <url>
     <loc>https://enconn.fr/logs/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/logs/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/quebec/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -66,26 +68,23 @@
   </url>
   
   <url>
+    <loc>https://enconn.fr/tags/dbus/</loc>
+    <lastmod>2019-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://enconn.fr/post/dbus-on-a-server/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/tags/dbus/</loc>
-    <lastmod>2019-08-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/tags/quickie/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/software/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -94,20 +93,23 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/post/jitsi/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/tags/devops/</loc>
     <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/free-software/</loc>
     <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/post/jitsi/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/canada/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -116,15 +118,8 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/tags/canada/</loc>
-    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/tags/voyage/</loc>
     <lastmod>2018-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -145,13 +140,11 @@
   <url>
     <loc>https://enconn.fr/tags/boston/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/us/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -162,13 +155,11 @@
   <url>
     <loc>https://enconn.fr/tags/ctf/</loc>
     <lastmod>2018-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</loc>
     <lastmod>2018-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -177,26 +168,23 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/post/tarpaulin-ou-kcov/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/tags/programmation/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/rust/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/post/tarpaulin-ou-kcov/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/tests/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -207,19 +195,16 @@
   <url>
     <loc>https://enconn.fr/tags/security/</loc>
     <lastmod>2018-03-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/tools/</loc>
     <lastmod>2018-03-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/belgium/</loc>
     <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -230,7 +215,26 @@
   <url>
     <loc>https://enconn.fr/tags/fosdem/</loc>
     <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/js/</loc>
+    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/project/</loc>
+    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/web/</loc>
+    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/zds/</loc>
+    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -239,44 +243,18 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/tags/js/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/project/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/web/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/zds/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/post/fibre-to-56k/</loc>
-    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/tags/linux/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/network/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/post/fibre-to-56k/</loc>
+    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -287,13 +265,11 @@
   <url>
     <loc>https://enconn.fr/tags/python/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/ring/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -359,19 +335,16 @@
   <url>
     <loc>https://enconn.fr/tags/chronique-du-libre/</loc>
     <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/mozilla/</loc>
     <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://enconn.fr/tags/science/</loc>
     <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -382,7 +355,11 @@
   <url>
     <loc>https://enconn.fr/tags/robot/</loc>
     <lastmod>2016-02-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/drawing/</loc>
+    <lastmod>2014-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -391,14 +368,7 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/tags/drawing/</loc>
-    <lastmod>2014-07-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

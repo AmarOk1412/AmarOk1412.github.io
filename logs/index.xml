@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logs on Enconn</title>
@@ -184,7 +184,8 @@ Au final, nous avons décidé de viser le camping sur la carte pour décider de 
       <pubDate>Sat, 20 Aug 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/montreal/</guid>
-      <description>Les points visités Si vous vous rendez à Montréal, je vous conseil VRAIMENT de faire un tour au parc du Mont Royal (Mount Royal). Il s&amp;rsquo;agit d&amp;rsquo;un parc immense qui domine la ville de Montréal. Vous trouverez dans ce parc plusieurs points importants comme le lac aux castors, la croix du Mont-Royal mais surtout le chalet du Mont. Ce chalet ouvre sur une vue sans équivalent sur la ville.</description>
+      <description>Les points visités Si vous vous rendez à Montréal, je vous conseil VRAIMENT de faire un tour au parc du Mont Royal (Mount Royal). Il s&amp;rsquo;agit d&amp;rsquo;un parc immense qui domine la ville de Montréal. Vous trouverez dans ce parc plusieurs points importants comme le lac aux castors, la croix du Mont-Royal mais surtout le chalet du Mont. Ce chalet ouvre sur une vue sans équivalent sur la ville.
+   Point de vue de Mont-Royal</description>
     </item>
     
     <item>
@@ -193,7 +194,7 @@ Au final, nous avons décidé de viser le camping sur la carte pour décider de 
       <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/gallerie/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34; /&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

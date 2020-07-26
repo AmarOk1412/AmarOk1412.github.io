@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>drawing on Enconn</title>
@@ -19,7 +19,7 @@
       <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/gallerie/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34; /&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
