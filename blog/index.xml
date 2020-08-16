@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Enconn</title>
+    <link>https://enconn.fr/blog/</link>
+    <description>Recent content in Blogs on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://enconn.fr/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This blog has a .onion address</title>
+      <link>https://enconn.fr/blog/onion-address/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/onion-address/</guid>
+      <description>This blog is also available via the Tor Browser. And have a .onion address.onion
+You can support the Tor project there: https://support.torproject.org/
+Or run your own hidden service via https://2019.www.torproject.org/docs/tor-onion-service.html.en</description>
+    </item>
+    
+    <item>
+      <title>P2P internals - episode 3</title>
+      <link>https://enconn.fr/blog/p2p-internals-dht/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/p2p-internals-dht/</guid>
+      <description>In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. TURN servers) or some new protocols (like ICE).
+It is now time to talk about distributed applications and structures created on top of a p2p network.
+For a lot of distributed applications, all the nodes in the system can&amp;rsquo;t be stable.</description>
+    </item>
+    
+    <item>
+      <title>P2P internals - episode 2</title>
+      <link>https://enconn.fr/blog/p2p-internals-ice/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/p2p-internals-ice/</guid>
+      <description>In the first article of this series, we saw how to make an application (DEL) which is able to transfer a file from one peer to one another by successfully bypassing the NAT thanks to a TURN server. However, this technique is not really effective, because, in a lot of cases, a TURN server is completely useless. Indeed, if both peers are on the same network or both peers has an IPv6 address, the TURN server is not mandatory.</description>
+    </item>
+    
+    <item>
+      <title>Dbus on a server</title>
+      <link>https://enconn.fr/blog/dbus-on-a-server/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/dbus-on-a-server/</guid>
+      <description>Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a System V init script, but you can encounter the same problem in a terminal or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or your graphical session.</description>
+    </item>
+    
+    <item>
+      <title>P2P internals - episode 1</title>
+      <link>https://enconn.fr/blog/p2p-internals-rfc6062/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/p2p-internals-rfc6062/</guid>
+      <description>I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc.</description>
+    </item>
+    
+    <item>
+      <title>How to host your own Jitsi instance</title>
+      <link>https://enconn.fr/blog/jitsi/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/jitsi/</guid>
+      <description>For the local future CHATONS (Chatons is a french word which means kitten), I am currently helping to host a new Jitsi-meet instance. This instance will be available at this address: https://conference.facil.services/ and this is a little post about how we did it and what problems we encountered.
+First step - The manual installation For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools).</description>
+    </item>
+    
+    <item>
+      <title>(2/3)Retour du nsec - The visual microphone</title>
+      <link>https://enconn.fr/blog/2-3-retour-du-nsec-the-visual-microphone/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/2-3-retour-du-nsec-the-visual-microphone/</guid>
+      <description>Suite de la petite série sur le retour du nsec. Dans ce second article, je vais m&amp;rsquo;intéresser la dernière partie d&amp;rsquo;une track en 3 points réalisée par un autre membre de mon équipe.
+La première partie consistait à trouver la fréquence du mouvement du diaphragme d&amp;rsquo;un haut parleur. Puis de trouver la musique qui était jouée par cette enceinte (bien entendu, le son n&amp;rsquo;était pas présent). La dernière partie consistait à retrouver une conversation réalisée dans une pièce où un paquet de chips était filmé à très haute fréquence.</description>
+    </item>
+    
+    <item>
+      <title>(1/3)Retour du nsec - Introduction au badge hacking</title>
+      <link>https://enconn.fr/blog/1-3-retour-du-nsec-introduction-au-badge-hacking/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/1-3-retour-du-nsec-introduction-au-badge-hacking/</guid>
+      <description>Comme expliqué dans mon précédent billet (https://zestedesavoir.com/contenus/2479/r2-pour-changer-de-gdb/), j&amp;rsquo;ai participé au NorthSec 2018, une grosse compétition de sécurité en Amérique du Nord.
+Au final, quelques épreuves valent un article, certaines où je n&amp;rsquo;ai pas les connaissances (par exemple, pour une épreuve web, il fallait réaliser du Prototype pollution attack) et quelques unes assez drôle.
+Je vais donc m&amp;rsquo;attarder sur 3 challenges :
+ Pour la conférence, chaque personne possède un badge contenant le programme de la conférence, des LEDs qui clignotent, des PINS, une interface bluetooth et&amp;hellip; 2 FLAGS (cet article).</description>
+    </item>
+    
+    <item>
+      <title>Tarpaulin ou kcov ?</title>
+      <link>https://enconn.fr/blog/tarpaulin-ou-kcov/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/tarpaulin-ou-kcov/</guid>
+      <description>Pour un projet (que je présenterais plus tard sur le forum), j&amp;rsquo;ai eu besoin d&amp;rsquo;avoir du retour sur mes tests. Une des métriques m&amp;rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n&amp;rsquo;ai pas encore testé et d&amp;rsquo;ajouter des scénarios.
+En cherchant un peu sur Internet, je suis tombé sur 2 outils :
+ kcov tarpaulin  En voici un petit comparatif.
+Comparatif Facilité d&amp;rsquo;installation kcov wget https://github.</description>
+    </item>
+    
+    <item>
+      <title>r2</title>
+      <link>https://enconn.fr/blog/radare/</link>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/radare/</guid>
+      <description>Article original ici
+Hei, je n&amp;rsquo;avais pas n&amp;rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&amp;hellip;
+Aujourd&amp;rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le NorthSec 2018 à Montréal. Il m&amp;rsquo;arrive très rarement de faire des CTF et je n&amp;rsquo;en ai pas fait depuis un moment.
+Pour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges.</description>
+    </item>
+    
+    <item>
+      <title>ZMarkdown</title>
+      <link>https://enconn.fr/blog/zmarkdown/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/zmarkdown/</guid>
+      <description>Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.
+Why? Similar projects don&amp;rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.</description>
+    </item>
+    
+    <item>
+      <title>Passer de la fibre au 56k</title>
+      <link>https://enconn.fr/blog/fibre-to-56k/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/fibre-to-56k/</guid>
+      <description>Contenu posté sur Zeste de Savoir
+Vous avez peut-être chez vous un réseau avec un débit trop élevé ou qui marche (trop) bien. Dans ce billet, je ne vais pas parler du côté matériel d&amp;rsquo;un réseau, ni de brancher un switch sans STP en boucle pour le mettre down, mais de quelques commandes linux que j&amp;rsquo;ai eu l&amp;rsquo;occasion d&amp;rsquo;utiliser ces derniers jours pour simuler un mauvais réseau.
+Note : Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel, ce billet cherche seulement à donner un aperçu des possibilités de quelques commandes.</description>
+    </item>
+    
+    <item>
+      <title>Créer un bridge IRC - Ring</title>
+      <link>https://enconn.fr/blog/bridge-irc-ring/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/bridge-irc-ring/</guid>
+      <description>Contenu posté sur Zeste de Savoir
+J&amp;rsquo;aime faire des bots. J&amp;rsquo;ai des bots pour tout et n&amp;rsquo;importe quoi. J&amp;rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d&amp;rsquo;autres qui bougent.
+Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :</description>
+    </item>
+    
+    <item>
+      <title>Chronique du libre n°2</title>
+      <link>https://enconn.fr/blog/chronique-du-libre-2/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/chronique-du-libre-2/</guid>
+      <description>Tout le monde connait Mozilla grâce à Firefox mais les projets de l&amp;rsquo;organisation ne se limitent pas à un navigateur. La mission de Mozilla est de promouvoir l’ouverture, l’innovation et la bonne santé du Web. La Fondation Mozilla propose des programmes pour mapper ces valeurs à la science, les médias, à la politique ou l&amp;rsquo;éducation afin de les rendre ouverts, collaboratifs et partageables.
+Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&amp;rsquo;open science et plus particulièrement d&amp;rsquo;un projet de la Fondation Mozilla relativement peu connu : Le Mozilla Science Lab.</description>
+    </item>
+    
+    <item>
+      <title>Chronique du libre n°1</title>
+      <link>https://enconn.fr/blog/chronique-du-libre-1/</link>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/chronique-du-libre-1/</guid>
+      <description>&lt;p&gt;Le monde du libre est composé de bien de projets dans de nombreux domaines. De nombreuses communautés se sont formées autour de ces projets. Cette nouvelle série d&amp;rsquo;articles a pour but de présenter des projets communautaires dans différents domaines. Aujourd&amp;rsquo;hui, nous allons débuter cette série avec un projet de robot humanoïde open-source : InMoov.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/dev/inmoov/inmoov_ban.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

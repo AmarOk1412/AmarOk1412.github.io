@@ -15,10 +15,10 @@
     
     <item>
       <title>How to host your own Jitsi instance</title>
-      <link>https://enconn.fr/post/jitsi/</link>
+      <link>https://enconn.fr/blog/jitsi/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/jitsi/</guid>
+      <guid>https://enconn.fr/blog/jitsi/</guid>
       <description>For the local future CHATONS (Chatons is a french word which means kitten), I am currently helping to host a new Jitsi-meet instance. This instance will be available at this address: https://conference.facil.services/ and this is a little post about how we did it and what problems we encountered.
 First step - The manual installation For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools).</description>
     </item>

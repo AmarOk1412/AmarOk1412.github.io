@@ -15,10 +15,10 @@
     
     <item>
       <title>P2P internals - episode 3</title>
-      <link>https://enconn.fr/post/p2p-internals-dht/</link>
+      <link>https://enconn.fr/blog/p2p-internals-dht/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/p2p-internals-dht/</guid>
+      <guid>https://enconn.fr/blog/p2p-internals-dht/</guid>
       <description>In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. TURN servers) or some new protocols (like ICE).
 It is now time to talk about distributed applications and structures created on top of a p2p network.
 For a lot of distributed applications, all the nodes in the system can&amp;rsquo;t be stable.</description>
@@ -26,19 +26,19 @@ For a lot of distributed applications, all the nodes in the system can&amp;rsquo
     
     <item>
       <title>P2P internals - episode 2</title>
-      <link>https://enconn.fr/post/p2p-internals-ice/</link>
+      <link>https://enconn.fr/blog/p2p-internals-ice/</link>
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/p2p-internals-ice/</guid>
+      <guid>https://enconn.fr/blog/p2p-internals-ice/</guid>
       <description>In the first article of this series, we saw how to make an application (DEL) which is able to transfer a file from one peer to one another by successfully bypassing the NAT thanks to a TURN server. However, this technique is not really effective, because, in a lot of cases, a TURN server is completely useless. Indeed, if both peers are on the same network or both peers has an IPv6 address, the TURN server is not mandatory.</description>
     </item>
     
     <item>
       <title>P2P internals - episode 1</title>
-      <link>https://enconn.fr/post/p2p-internals-rfc6062/</link>
+      <link>https://enconn.fr/blog/p2p-internals-rfc6062/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/p2p-internals-rfc6062/</guid>
+      <guid>https://enconn.fr/blog/p2p-internals-rfc6062/</guid>
       <description>I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc.</description>
     </item>
     

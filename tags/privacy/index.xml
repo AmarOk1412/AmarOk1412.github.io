@@ -15,10 +15,10 @@
     
     <item>
       <title>This blog has a .onion address</title>
-      <link>https://enconn.fr/post/onion-address/</link>
+      <link>https://enconn.fr/blog/onion-address/</link>
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/onion-address/</guid>
+      <guid>https://enconn.fr/blog/onion-address/</guid>
       <description>This blog is also available via the Tor Browser. And have a .onion address.onion
 You can support the Tor project there: https://support.torproject.org/
 Or run your own hidden service via https://2019.www.torproject.org/docs/tor-onion-service.html.en</description>

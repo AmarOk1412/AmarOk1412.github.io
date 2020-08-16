@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>r2 - Enconn</title>
+  <meta name="description" content="pour changer de gdb">
+  <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Enconn",
+    
+    "url": "https:\/\/enconn.fr"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/enconn.fr"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/blog\/radare\/",
+          "name": "R2"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "r2",
+  "description" : "Article original ici\nHei, je n\x26rsquo;avais pas n\x26rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas\x26hellip;\nAujourd\x26rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le NorthSec 2018 à Montréal. Il m\x26rsquo;arrive très rarement de faire des CTF et je n\x26rsquo;en ai pas fait depuis un moment.\nPour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges.",
+  "inLanguage" : "en",
+  "wordCount":  613 ,
+  "datePublished" : "2018-03-25T00:00:00",
+  "dateModified" : "2018-03-25T00:00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "security, tools" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/radare\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="r2" />
+<meta property="og:description" content="pour changer de gdb">
+<meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+<meta property="og:url" content="https://enconn.fr/blog/radare/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Enconn" />
+
+  <meta name="twitter:title" content="r2" />
+  <meta name="twitter:description" content="pour changer de gdb">
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.69.0" />
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">by AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Travel" href="/travel/">Travel</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Enconn" href="https://enconn.fr">
+            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              
+                <h1>r2</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <h2 class="blog-subheading">pour changer de gdb</h2>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p><em>Article original <a href="https://zestedesavoir.com/billets/2479/r2-pour-changer-de-gdb/">ici</a></em></p>
+<p>Hei, je n&rsquo;avais pas n&rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&hellip;</p>
+<p>Aujourd&rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le <a href="https://nsec.io/">NorthSec 2018</a> à Montréal. Il m&rsquo;arrive très rarement de faire des CTF et je n&rsquo;en ai pas fait depuis un moment.</p>
+<p>Pour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges. Et j&rsquo;ai décidé d&rsquo;apprendre à utiliser <code>radare2</code> (<a href="http://radare.org/)">http://radare.org/)</a>. Dans ce billet, je vais donc partager mon expérimentation du jour, ou des suivantes si j&rsquo;en fais une série.</p>
+<p>Pour symboliser cette décision, une des personnes a proposé un petit challenge, où, comme tous les CTF, il suffit de récupérer un flag. Voici comment j&rsquo;ai utilisé <code>r2</code>:</p>
+<h1 id="première-résolution-simple-analyse">Première résolution, simple analyse</h1>
+<p>Le challenge n&rsquo;avait rien de compliqué et prenait quelques secondes avec <code>gdb</code> à résoudre, je ne vais donc pas en faire un write-up, juste me concentrer sur <code>r2</code>.</p>
+<p>J&rsquo;ai tout d&rsquo;abord tenté une approche sans exécuter le programme, mais en regardant les fonctionnalités de reverse basiques.</p>
+<p>La première étape est de lancer <code>r2</code> en lui passant le programme</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> AmarOk@tars3  ~/Downloads  r2 -d ./easy_reverse
+</code></pre></div><p>(le <code>-d</code> servira pour la seconde approche, par le debug)</p>
+<p>Puis avec des tutoriels en ligne, je trouve les commandes <code>aa</code> pour lancer une analyse du programme (pour <em>anyalyze all</em>) puis (<code>pdf @main</code> pour obtenir le code qui m&rsquo;intéresse). Ce qui donne :</p>
+<p><img src="/img/dev/radare/pdfmain.png" alt="pdfmain"></p>
+<p>Chose cool, il est possible de visualiser son code par blocs via <code>VV @main</code>.</p>
+<p><img src="/img/dev/radare/VV.jpg" alt="VV"></p>
+<p>En regardant vite fait, on voit bien le processus du programme :</p>
+<ol>
+<li>On demande a l&rsquo;utilisateur un password</li>
+</ol>
+<pre><code> mov edi, str.Password_:     ; 0x4007c4 ; &quot;Password : &quot;
+ mov eax, 0
+ call sym.imp.printf         ; int printf(const char *format)
+ lea rax, [local_70h]
+ mov rsi, rax
+ mov edi, 0x4007d0
+ mov eax, 0
+ call sym.imp.__isoc99_scanf
+</code></pre><p>via <code>printf</code> et <code>scanf</code>.</p>
+<p>Puis on compare cette valeur avec une autre (<code> call sym.imp.strcmp         ; int strcmp(const char *s1, const char *s2)</code>)</p>
+<p>Et on félicite ou non la personne.</p>
+<pre><code>   ,=&lt; 0x00400704      7511           jne 0x400717
+   |   0x00400706      bfd3074000     mov edi, str.You_re_a_Wizard ; 0x4007d3 ; &quot;You're a Wizard&quot;
+   |   0x0040070b      e810feffff     call sym.imp.puts           ; int puts(const char *s)
+   |   0x00400710      b800000000     mov eax, 0
+  ,==&lt; 0x00400715      eb0f           jmp 0x400726
+  |`-&gt; 0x00400717      bfe3074000     mov edi, str.Try_next_year_... ; 0x4007e3 ; &quot;Try next year ...&quot;
+  |    0x0040071c      e8fffdffff     call sym.imp.puts           ; int puts(const char *s)
+  |    0x00400721      b801000000     mov eax, 1
+</code></pre><p>On suppose simplement que la valeur qu&rsquo;on cherche c&rsquo;est le bon mot de passe et je m&rsquo;intéresse donc à <code>strcmp</code>. En suivant les <code>mov</code> de dessus, on voit que <code>strcmp</code> compare le password qu&rsquo;on à entré et une valeur que nous voyons en haut :</p>
+<pre><code>movabs rax, 0x3857397b47414c46
+mov qword [local_80h], rax
+mov dword [local_78h], 0x7a6e6273
+mov word [local_74h], 0x7d38
+mov byte [local_72h], 0
+</code></pre><p>qui correspond a <code>FLAG{9W8sbnz8}</code> à l&rsquo;envers, notre flag. Pour savoir pourquoi c&rsquo;est à l&rsquo;envers, je vous recommande les articles que <a href="https://zestedesavoir.com/membres/voir/Ge0/">Ge0</a> a pu faire sur ce site.</p>
+<h1 id="seconde-méthode-à-lexécution">Seconde méthode, à l&rsquo;exécution</h1>
+<p>Pour le coup, sans radare, j&rsquo;aurais utilisé <code>gdb</code> en mettant un breakpoint et regardant le contenu de ce qui m&rsquo;intéressait. Faisons donc ceci avec <code>r2</code></p>
+<p>Pour ceci, il faut lancer <em>radare</em> en mode debug (<code>-d</code> de tout à l&rsquo;heure). Toutes les commandes de <code>r2</code> pour le debug commencent par <code>d</code>, voir ici : <a href="https://radare.gitbooks.io/radare2book/content/introduction/basic_debugger_session.html">https://radare.gitbooks.io/radare2book/content/introduction/basic_debugger_session.html</a>. Ainsi prenons la ligne qui nous intéresse :</p>
+<p><code>0x004006f2      e869feffff     call sym.imp.strcmp         ; int strcmp(const char *s1, const char *s2)</code></p>
+<p>Puis, on peut lancer le programme avec <code>dc</code>. Une fois le breakpoint atteint, on peut alors récupérer le contenu de <code>rdx</code> contenant notre flag avec <code>px @ rdx</code>:</p>
+<p><img src="/img/dev/radare/px.jpg" alt="VV"></p>
+<p>Voilà pour ma petite découverte de radare, peut-etre la suite au prochain episode.</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://enconn.fr/tags/security/">security</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/tools/">tools</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://enconn.fr/blog/zmarkdown/" data-toggle="tooltip" data-placement="top" title="ZMarkdown">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://enconn.fr/blog/tarpaulin-ou-kcov/" data-toggle="tooltip" data-placement="top" title="Tarpaulin ou kcov ?">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@enconn.fr" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AmarOk1412" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://mastodon.social/@amarok" title="Mastodon">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://enconn.fr">Sébastien Blin</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://enconn.fr">Enconn</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.69.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://enconn.fr/js/katex.min.js"></script>
+<script src="https://enconn.fr/js/auto-render.min.js"></script>
+<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/bootstrap.min.js"></script>
+
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

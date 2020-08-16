@@ -15,19 +15,19 @@
     
     <item>
       <title>Dbus on a server</title>
-      <link>https://enconn.fr/post/dbus-on-a-server/</link>
+      <link>https://enconn.fr/blog/dbus-on-a-server/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/dbus-on-a-server/</guid>
+      <guid>https://enconn.fr/blog/dbus-on-a-server/</guid>
       <description>Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a System V init script, but you can encounter the same problem in a terminal or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or your graphical session.</description>
     </item>
     
     <item>
       <title>Passer de la fibre au 56k</title>
-      <link>https://enconn.fr/post/fibre-to-56k/</link>
+      <link>https://enconn.fr/blog/fibre-to-56k/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/fibre-to-56k/</guid>
+      <guid>https://enconn.fr/blog/fibre-to-56k/</guid>
       <description>Contenu posté sur Zeste de Savoir
 Vous avez peut-être chez vous un réseau avec un débit trop élevé ou qui marche (trop) bien. Dans ce billet, je ne vais pas parler du côté matériel d&amp;rsquo;un réseau, ni de brancher un switch sans STP en boucle pour le mettre down, mais de quelques commandes linux que j&amp;rsquo;ai eu l&amp;rsquo;occasion d&amp;rsquo;utiliser ces derniers jours pour simuler un mauvais réseau.
 Note : Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel, ce billet cherche seulement à donner un aperçu des possibilités de quelques commandes.</description>
@@ -35,10 +35,10 @@ Note : Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel, ce billet cherche seu
     
     <item>
       <title>Créer un bridge IRC - Ring</title>
-      <link>https://enconn.fr/post/bridge-irc-ring/</link>
+      <link>https://enconn.fr/blog/bridge-irc-ring/</link>
       <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/bridge-irc-ring/</guid>
+      <guid>https://enconn.fr/blog/bridge-irc-ring/</guid>
       <description>Contenu posté sur Zeste de Savoir
 J&amp;rsquo;aime faire des bots. J&amp;rsquo;ai des bots pour tout et n&amp;rsquo;importe quoi. J&amp;rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d&amp;rsquo;autres qui bougent.
 Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :</description>

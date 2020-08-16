@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>ZMarkdown - Enconn</title>
+  <meta name="description" content="The Markdown engine powering Zeste de Savoir.">
+  <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Enconn",
+    
+    "url": "https:\/\/enconn.fr"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/enconn.fr"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/blog\/zmarkdown\/",
+          "name": "Z markdown"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "ZMarkdown",
+  "description" : "Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.\nWhy? Similar projects don\x26rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.",
+  "inLanguage" : "en",
+  "wordCount":  318 ,
+  "datePublished" : "2017-11-11T00:00:00",
+  "dateModified" : "2017-11-11T00:00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "zds, project, web, js" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/zmarkdown\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="ZMarkdown" />
+<meta property="og:description" content="The Markdown engine powering Zeste de Savoir.">
+<meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+<meta property="og:url" content="https://enconn.fr/blog/zmarkdown/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Enconn" />
+
+  <meta name="twitter:title" content="ZMarkdown" />
+  <meta name="twitter:description" content="The Markdown engine powering Zeste de Savoir.">
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.69.0" />
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">by AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Travel" href="/travel/">Travel</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Enconn" href="https://enconn.fr">
+            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              
+                <h1>ZMarkdown</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <h2 class="blog-subheading">The Markdown engine powering Zeste de Savoir.</h2>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h1 id="description">Description</h1>
+<p>ZMarkdown is the markdown engine used by <a href="https://zestedesavoir.com">Zeste de Savoir</a>. It translates Markdown input to an <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a>, then the <em>AST</em> to <em>LaTeX</em> or <em>HTML</em>. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on <a href="http://remark.js.org/">Remark</a> and created in NodeJs.</p>
+<h1 id="why">Why?</h1>
+<p>Similar projects don&rsquo;t use AST (like the previous iteration of <a href="https://github.com/zestedesavoir/Python-ZMarkdown">ZMarkdown</a> to translate Markdown and they are difficult to improve with modules or translate in another text language. Because <em>Remark</em> is extremely modulable and uses an AST, it&rsquo;s the best solution to craft a markdown engine to translate a custom markdown into any format (HTML, slides, PDF, generate Table Of Contents, generate man pages, etc).</p>
+<h1 id="how-it-works">How it works?</h1>
+<p>Remark is based on <a href="https://github.com/unifiedjs/unified">unified</a> which process text with AST. Syntax trees are a representation of an entity (a text) in a understandable structure for programs.</p>
+<p>For example:</p>
+<pre><code>text
+|-&gt;Chapter
+   |-&gt; paragraph
+       |-&gt; text
+       |-&gt; link
+       |-&gt; text
+   |-&gt; paragraph
+</code></pre><p>Will represent a text which contains a Chapter with 2 paragraph. The first paragraph got a link surrounded by two simple texts.</p>
+<p>Then you can use this tree to generate a text, for example the link will be transformed by <code>&lt;a href=&quot;link&quot;&gt;text&lt;/a&gt;</code>.</p>
+<p>The code eating text to produce an AST or which eats the AST to produce a text are separated into several plugins. And so, you can build your own markdown in taking the module you want.</p>
+<p>So you have something like</p>
+<pre><code>| ....................... process() ......................... |
+| ......... parse() ..... | run() | ..... stringify() ....... |
+
+          +--------+                     +----------+
+Input -&gt;- | Parser | -&gt;- Syntax Tree -&gt;- | Compiler | -&gt;- Output
+          +--------+          |          +----------+
+                              X
+                              |
+                       +--------------+
+                       | Transformers |
+                       +--------------+
+</code></pre><p>Source: <a href="https://github.com/unifiedjs/unified">https://github.com/unifiedjs/unified</a></p>
+<h1 id="demo">Demo</h1>
+<p>ZMarkdown can be tested here: <a href="https://zestedesavoir.github.io/zmarkdown/public/">https://zestedesavoir.github.io/zmarkdown/public/</a></p>
+<p><a href="https://github.com/zestedesavoir/latex-template/files/1431863/test.pdf">This is an example</a> for a tutorial from <a href="https://zestedesavoir.com">https://zestedesavoir.com</a>.</p>
+<h1 id="contribute">Contribute</h1>
+<p>This project is under the MIT License and you can find the code on <a href="https://github.com/zestedesavoir/zmarkdown">Github</a></p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://enconn.fr/tags/zds/">zds</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/project/">project</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/web/">web</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/js/">js</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://enconn.fr/blog/fibre-to-56k/" data-toggle="tooltip" data-placement="top" title="Passer de la fibre au 56k">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://enconn.fr/blog/radare/" data-toggle="tooltip" data-placement="top" title="r2">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@enconn.fr" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AmarOk1412" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://mastodon.social/@amarok" title="Mastodon">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://enconn.fr">Sébastien Blin</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://enconn.fr">Enconn</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.69.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://enconn.fr/js/katex.min.js"></script>
+<script src="https://enconn.fr/js/auto-render.min.js"></script>
+<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/bootstrap.min.js"></script>
+
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

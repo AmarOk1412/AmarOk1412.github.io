@@ -15,10 +15,10 @@
     
     <item>
       <title>Passer de la fibre au 56k</title>
-      <link>https://enconn.fr/post/fibre-to-56k/</link>
+      <link>https://enconn.fr/blog/fibre-to-56k/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/post/fibre-to-56k/</guid>
+      <guid>https://enconn.fr/blog/fibre-to-56k/</guid>
       <description>Contenu posté sur Zeste de Savoir
 Vous avez peut-être chez vous un réseau avec un débit trop élevé ou qui marche (trop) bien. Dans ce billet, je ne vais pas parler du côté matériel d&amp;rsquo;un réseau, ni de brancher un switch sans STP en boucle pour le mettre down, mais de quelques commandes linux que j&amp;rsquo;ai eu l&amp;rsquo;occasion d&amp;rsquo;utiliser ces derniers jours pour simuler un mauvais réseau.
 Note : Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel, ce billet cherche seulement à donner un aperçu des possibilités de quelques commandes.</description>
