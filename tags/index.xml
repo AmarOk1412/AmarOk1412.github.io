@@ -8,10 +8,28 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>logs</title>
+      <link>https://enconn.fr/tags/logs/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quebec</title>
+      <link>https://enconn.fr/tags/quebec/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/quebec/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>privacy</title>
@@ -37,24 +55,6 @@
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/p2p/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>logs</title>
-      <link>https://enconn.fr/tags/logs/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/logs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>quebec</title>
-      <link>https://enconn.fr/tags/quebec/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/quebec/</guid>
       <description></description>
     </item>
     

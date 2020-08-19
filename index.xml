@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>La Gaspésie</title>
+      <link>https://enconn.fr/logs/gaspesie/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/gaspesie/</guid>
+      <description>(Note: ce billet traite d&amp;rsquo;un voyage réalisé en 2019)
+Début du roadtrip Depuis pas mal de temps, je souhaitais faire la Gaspésie. J&amp;rsquo;ai donc décidé de prendre 2 semaines pour rouler et voir cette partie du Québec (avec quelques membres de ma famille) après un détour au Saguenay et du Fjord (forcément). Il est possible d&amp;rsquo;arriver en Gaspésie par Forestville en Ferry pour Rimouski, point de départ de ce petit voyage.</description>
+    </item>
     
     <item>
       <title>This blog has a .onion address</title>
@@ -37,10 +47,10 @@ For a lot of distributed applications, all the nodes in the system can&amp;rsquo
     
     <item>
       <title>Grands Jardins</title>
-      <link>https://enconn.fr/travel/grands-jardins/</link>
+      <link>https://enconn.fr/logs/grands-jardins/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/grands-jardins/</guid>
+      <guid>https://enconn.fr/logs/grands-jardins/</guid>
       <description>Si un jour vous traînez sur la côte Ouest du Saint Laurent, entre Tadoussac et Québec se trouve un petit parc très sympathique pour le temps d&amp;rsquo;un week end : le Parc National des Grands Jardins. Ce parc propose diverses activités (dont de la Via Ferrata pour les amateurs ou du Kayak).
 La faune est peu présente, cependant les balades sont agréables et les points de vues sont super. Ci-dessous vous pouvez voir quelques photos du Pic de la Chouenne.</description>
     </item>
@@ -84,10 +94,10 @@ First step - The manual installation For the story, the first attempt for hostin
     
     <item>
       <title>Un loup au Canada - Partie 3</title>
-      <link>https://enconn.fr/travel/ontario/</link>
+      <link>https://enconn.fr/logs/ontario/</link>
       <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/ontario/</guid>
+      <guid>https://enconn.fr/logs/ontario/</guid>
       <description>Troisième province du Canada que je vais présenter, mais seconde que j’ai eu l’occasion de visiter.
 Pour le coup, je ne suis resté qu’une semaine dans cette province qui mérite bien plus. De plus, comme il s’agissait de l’hiver, je n’ai pas eu l’occasion de tester les trails (il en existe un qui fait tout de même 1500km, la route Champlain).
 Ce billet parlera donc des plus grosses zones à voir en Ontario, à savoir Ottawa, Toronto, Niagara Falls.</description>
@@ -95,10 +105,10 @@ Ce billet parlera donc des plus grosses zones à voir en Ontario, à savoir Otta
     
     <item>
       <title>Un loup au Canada - Partie 2</title>
-      <link>https://enconn.fr/travel/nova-scotia/</link>
+      <link>https://enconn.fr/logs/nova-scotia/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/nova-scotia/</guid>
+      <guid>https://enconn.fr/logs/nova-scotia/</guid>
       <description>Deuxième province des Maritimes et ma préférée, aujourd&amp;rsquo;hui c&amp;rsquo;est au tour de la Nouvelle Écosse d&amp;rsquo;avoir son petit billet.
 Je suis resté 4 jours dans cette région. 2 à Halifax, sa capitale et 2 autres à Sydney (non, pas celui d&amp;rsquo;Australie) qui sont un peu les deux grosses villes de cette province.
 La Nouvelle Écosse en quelques lignes Nova Scotia, c&amp;rsquo;est une province à l&amp;rsquo;est de New-Brunwick, que j&amp;rsquo;ai présenté dans le précédent billet.</description>
@@ -106,20 +116,20 @@ La Nouvelle Écosse en quelques lignes Nova Scotia, c&amp;rsquo;est une province
     
     <item>
       <title>Un loup au Canada - Partie 1</title>
-      <link>https://enconn.fr/travel/new-brunswick/</link>
+      <link>https://enconn.fr/logs/new-brunswick/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/new-brunswick/</guid>
+      <guid>https://enconn.fr/logs/new-brunswick/</guid>
       <description>En août 2016, je suis parti de France pour vivre au Canada, au moins quelques années. Ça fait maintenant plus de 2 ans que je vis ici, et j&amp;rsquo;ai parcouru quelques milliers de km dans ce grand pays. visité une bonne partie de 5 des provinces (je souhaite encore visiter la Gaspésie au Québec, l&amp;rsquo;extrême Nord, le Labrador et le Yukon).
 Je commence donc une série de billets (un peu pour faire suite aux billets du Schtroumpf pythonneux), parlant des différentes provinces, ce qu&amp;rsquo;on peut y voir et pourquoi pas, vous donner l&amp;rsquo;envie d&amp;rsquo;y faire un tour.</description>
     </item>
     
     <item>
       <title>Boston</title>
-      <link>https://enconn.fr/travel/boston/</link>
+      <link>https://enconn.fr/logs/boston/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/boston/</guid>
+      <guid>https://enconn.fr/logs/boston/</guid>
       <description>L&amp;rsquo;avantage de vivre dans une ville comme Montréal, c&amp;rsquo;est qu&amp;rsquo;il est possible de faire un week-end aux US assez facilement. C&amp;rsquo;est ce que j&amp;rsquo;ai fait en allant pendant la fête des patriotes à Boston pour le week-end.
 Petite note de passage de douanes Pour aller du Canada aucun papier n&amp;rsquo;est nécessaire de faire avant de passer la douane. Mais je conseille de faire tout de même l&amp;rsquo;ESTA pour éviter de passer 1h a passer la douane.</description>
     </item>
@@ -172,10 +182,10 @@ Pour se préparer, on va se faire une séance de quelques heures par semaine pou
     
     <item>
       <title>Brussels</title>
-      <link>https://enconn.fr/travel/brussels/</link>
+      <link>https://enconn.fr/logs/brussels/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/brussels/</guid>
+      <guid>https://enconn.fr/logs/brussels/</guid>
       <description>The day before the FOSDEM, I visited Brussels. It was a 26 km day walk. In the morning I went to Atomium built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.
    Atomium
       Atomium
@@ -217,10 +227,10 @@ Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge e
     
     <item>
       <title>Niagara</title>
-      <link>https://enconn.fr/travel/niagara/</link>
+      <link>https://enconn.fr/logs/niagara/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/niagara/</guid>
+      <guid>https://enconn.fr/logs/niagara/</guid>
       <description>Pour notre premier jour à Toronto, nous avons décidé de ne pas visiter Toronto, mais les chutes du Niagara, qui se trouvent à 1h30 en bus de la ville. Au final, les chutes sont magnifiques, mais le complexe autour des chutes m&amp;rsquo;a un peu surpris (je m&amp;rsquo;attendais à une zone plus naturelle qu&amp;rsquo;un complexe de casinos).
    Le complexe
       Les chutes
@@ -229,29 +239,29 @@ Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge e
     
     <item>
       <title>Ottawa</title>
-      <link>https://enconn.fr/travel/ottawa/</link>
+      <link>https://enconn.fr/logs/ottawa/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/ottawa/</guid>
+      <guid>https://enconn.fr/logs/ottawa/</guid>
       <description>Petite visite d&amp;rsquo;une journée dans la capitale canadienne. Ottawa est une ville assez rapide à visiter au final (pour le centre de la ville). Les monuments à voir se trouvent sur le même chemin. Une grosse partie de cette journée s&amp;rsquo;est déroulé prêt du parlement (un spectacle de lumières avait lieu) et sur le chemin des monuments. Pour le repas du midi nous l&amp;rsquo;avons fait entre le chemin conseillé pour les visites de monuments et notre auberge de jeunesse, au market district.</description>
     </item>
     
     <item>
       <title>Toronto</title>
-      <link>https://enconn.fr/travel/toronto/</link>
+      <link>https://enconn.fr/logs/toronto/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/toronto/</guid>
+      <guid>https://enconn.fr/logs/toronto/</guid>
       <description>En décembre 2016, j&amp;rsquo;ai eu l&amp;rsquo;occasion de passer plusieurs jours dans la ville de Toronto et de visiter la plupart de ses endroits (sauf le hackerspace&amp;hellip;)
 Chinatown Une de mes premières destination était le Chinatown. Toronto possède une grosse population asiatique et possède en son centre un chinatown et un koreatown. De plus, il se trouve prêt du Kensigton Market et de la Graffity Alley que je voulais visiter. C&amp;rsquo;est un endroit parfait pour chercher un dépaysement (la plupart des pancartes sont marqués dans en chinois, japonais, etc.</description>
     </item>
     
     <item>
       <title>Zoo Saint-Félicien</title>
-      <link>https://enconn.fr/travel/zoo/</link>
+      <link>https://enconn.fr/logs/zoo/</link>
       <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/zoo/</guid>
+      <guid>https://enconn.fr/logs/zoo/</guid>
       <description>À l&amp;rsquo;ouest du lac Saint-Jean il y a un Zoo Sauvage. une moitié du zoo est une partie sans cage (sauf pour la meute de loup), la seconde est plus classique. Voici quelques photos de la journée. On a été à une fromagerie prêt du Zoo. Le fromage n&amp;rsquo;existe pas ici (hors cheddar et fromage de chèvre). Mais la bière est pas mal :).
    ours noir
       ours noir</description>
@@ -259,19 +269,19 @@ Chinatown Une de mes premières destination était le Chinatown. Toronto possèd
     
     <item>
       <title>Parc des Monts-Valins</title>
-      <link>https://enconn.fr/travel/parc-des-monts-valins/</link>
+      <link>https://enconn.fr/logs/parc-des-monts-valins/</link>
       <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/parc-des-monts-valins/</guid>
+      <guid>https://enconn.fr/logs/parc-des-monts-valins/</guid>
       <description>Première visite Pour mon premier parc national visité, j&amp;rsquo;ai choisi le parc du Mont Valins, un poil au nord de Chicoutimi. On était censé y aller pour voir un magnifique point de vue en haut du Mont. Heureusement (ou pas), le Mont Valin était au beau milieu d&amp;rsquo;un nuage. Ce qui a limité le champ de vision en haut du mont (mais ce n&amp;rsquo;est pas grave, on a pu parler au gardien dans le refuge) mais a donné des photos très sympathiques !</description>
     </item>
     
     <item>
       <title>Fjord de Saguenay</title>
-      <link>https://enconn.fr/travel/fjord-saguenay/</link>
+      <link>https://enconn.fr/logs/fjord-saguenay/</link>
       <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/fjord-saguenay/</guid>
+      <guid>https://enconn.fr/logs/fjord-saguenay/</guid>
       <description>Le moment que j&amp;rsquo;attendais le plus était sans doute l&amp;rsquo;été indien et ses fameuses couleurs. Durant la semaine de la relâche, j&amp;rsquo;en ai profité pour faire quelques parcs. Le premier était le parc du Fjord et son chemin de la statue qui m&amp;rsquo;a permis de voir à quel point l&amp;rsquo;été indien est magnifique.
    Fjord du Saguenay
       Fjord du Saguenay
@@ -280,47 +290,47 @@ Chinatown Une de mes premières destination était le Chinatown. Toronto possèd
     
     <item>
       <title>Roadtrip</title>
-      <link>https://enconn.fr/travel/roadtrip/</link>
+      <link>https://enconn.fr/logs/roadtrip/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/roadtrip/</guid>
+      <guid>https://enconn.fr/logs/roadtrip/</guid>
       <description>Jour 1 Pour commencer ce road trip, on a loué une voiture (une Ford focus berline F blanche automatique) pour aller aux Monts Valins. Au final apres 1h de route et quelques paysages stylés, nous nous sommes rendus compte que la route était pas vraiment une route (on voyait que des 4x4 puis apres plus personne. Mais les paysages étaient stylés.
 Au final, nous avons décidé de viser le camping sur la carte pour décider de ce qu&amp;rsquo;on fera après.</description>
     </item>
     
     <item>
       <title>Chicoutimi</title>
-      <link>https://enconn.fr/travel/chicoutimi/</link>
+      <link>https://enconn.fr/logs/chicoutimi/</link>
       <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/chicoutimi/</guid>
+      <guid>https://enconn.fr/logs/chicoutimi/</guid>
       <description>Arrivée Le dernier point de cette semaine de voyage est Chicoutimi, ma ville d&amp;rsquo;arrivée dans laquelle je vais vivre au moins les 10 prochains mois. Ces 10 prochains mois se passeront dans un appartement prêt du port, de l&amp;rsquo;université et des commerces. La ville est relativement petite (moins de 150 000 habitants), l&amp;rsquo;université joue un rôle centrale, mais quelques points valent le coup d&amp;rsquo;oeil et la ville est relativement active (pas mal d&amp;rsquo;évènements tout au long de l&amp;rsquo;année.</description>
     </item>
     
     <item>
       <title>Baie-Saint-Paul</title>
-      <link>https://enconn.fr/travel/baie-saint-paul/</link>
+      <link>https://enconn.fr/logs/baie-saint-paul/</link>
       <pubDate>Wed, 24 Aug 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/baie-saint-paul/</guid>
+      <guid>https://enconn.fr/logs/baie-saint-paul/</guid>
       <description>Baie-Saint-Paul est un petit village prêt du Saint Laurent. On peut y trouver une ambiance entre les films de western avec sa rue principale et forêt de sapins avec les alentours. La ville se visite très vite mais le centre ville est très joli tout comme le coin de la baie ou des excursions débutent pour aller voir des baleines. Il existe aussi de nombreuses randonnées autour. J&amp;rsquo;en ai surtout profité pour découvrir un village de campagne et me promener.</description>
     </item>
     
     <item>
       <title>Québec</title>
-      <link>https://enconn.fr/travel/quebec/</link>
+      <link>https://enconn.fr/logs/quebec/</link>
       <pubDate>Mon, 22 Aug 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/quebec/</guid>
+      <guid>https://enconn.fr/logs/quebec/</guid>
       <description>Les points visités Ma visite de Quebec a débuté par la zone de la gare du Palais. J&amp;rsquo;ai alors choisi de faire le tour des rues en montant vers la Haute ville via les remparts. En haut des remparts se trouve LE plus beau point de Quebec. La terasse entre l&amp;rsquo;hôtel surplombant la ville et la balade des gouverneurs. Après une pause café sur cette terrasse à regarder les différents artistes réaliser leur spectacle, je me suis attaqué à la balade des gouverneurs qui offre une belle vision des alentours pour finir en haut des plaines d&amp;rsquo;Abraham.</description>
     </item>
     
     <item>
       <title>Montréal</title>
-      <link>https://enconn.fr/travel/montreal/</link>
+      <link>https://enconn.fr/logs/montreal/</link>
       <pubDate>Sat, 20 Aug 2016 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/montreal/</guid>
+      <guid>https://enconn.fr/logs/montreal/</guid>
       <description>Les points visités Si vous vous rendez à Montréal, je vous conseil VRAIMENT de faire un tour au parc du Mont Royal (Mount Royal). Il s&amp;rsquo;agit d&amp;rsquo;un parc immense qui domine la ville de Montréal. Vous trouverez dans ce parc plusieurs points importants comme le lac aux castors, la croix du Mont-Royal mais surtout le chalet du Mont. Ce chalet ouvre sur une vue sans équivalent sur la ville.
    Point de vue de Mont-Royal</description>
     </item>
@@ -347,10 +357,10 @@ Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&amp
     
     <item>
       <title>Gallerie 2D</title>
-      <link>https://enconn.fr/travel/gallerie/</link>
+      <link>https://enconn.fr/logs/gallerie/</link>
       <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/travel/gallerie/</guid>
+      <guid>https://enconn.fr/logs/gallerie/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34;&gt;&lt;/p&gt;</description>
     </item>
     

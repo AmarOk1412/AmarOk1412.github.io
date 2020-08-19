@@ -3,22 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://enconn.fr/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/logs/gaspesie/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/logs/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/logs/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/quebec/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://enconn.fr/tags/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://enconn.fr/blog/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/</loc>
-    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://enconn.fr/tags/privacy/</loc>
-    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,22 +63,7 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/grands-jardins/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/logs/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/quebec/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/travel/</loc>
+    <loc>https://enconn.fr/logs/grands-jardins/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -113,7 +118,7 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/ontario/</loc>
+    <loc>https://enconn.fr/logs/ontario/</loc>
     <lastmod>2018-09-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -123,17 +128,17 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/nova-scotia/</loc>
+    <loc>https://enconn.fr/logs/nova-scotia/</loc>
     <lastmod>2018-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/new-brunswick/</loc>
+    <loc>https://enconn.fr/logs/new-brunswick/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/boston/</loc>
+    <loc>https://enconn.fr/logs/boston/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,7 +213,7 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/brussels/</loc>
+    <loc>https://enconn.fr/logs/brussels/</loc>
     <lastmod>2018-02-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -273,57 +278,57 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/niagara/</loc>
+    <loc>https://enconn.fr/logs/niagara/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/ottawa/</loc>
+    <loc>https://enconn.fr/logs/ottawa/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/toronto/</loc>
+    <loc>https://enconn.fr/logs/toronto/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/zoo/</loc>
+    <loc>https://enconn.fr/logs/zoo/</loc>
     <lastmod>2016-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/parc-des-monts-valins/</loc>
+    <loc>https://enconn.fr/logs/parc-des-monts-valins/</loc>
     <lastmod>2016-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/fjord-saguenay/</loc>
+    <loc>https://enconn.fr/logs/fjord-saguenay/</loc>
     <lastmod>2016-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/roadtrip/</loc>
+    <loc>https://enconn.fr/logs/roadtrip/</loc>
     <lastmod>2016-11-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/chicoutimi/</loc>
+    <loc>https://enconn.fr/logs/chicoutimi/</loc>
     <lastmod>2016-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/baie-saint-paul/</loc>
+    <loc>https://enconn.fr/logs/baie-saint-paul/</loc>
     <lastmod>2016-08-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/quebec/</loc>
+    <loc>https://enconn.fr/logs/quebec/</loc>
     <lastmod>2016-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/montreal/</loc>
+    <loc>https://enconn.fr/logs/montreal/</loc>
     <lastmod>2016-08-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -363,7 +368,7 @@
   </url>
   
   <url>
-    <loc>https://enconn.fr/travel/gallerie/</loc>
+    <loc>https://enconn.fr/logs/gallerie/</loc>
     <lastmod>2014-07-31T00:00:00+00:00</lastmod>
   </url>
   

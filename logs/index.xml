@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://enconn.fr/logs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>La Gaspésie</title>
+      <link>https://enconn.fr/logs/gaspesie/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/logs/gaspesie/</guid>
+      <description>(Note: ce billet traite d&amp;rsquo;un voyage réalisé en 2019)
+Début du roadtrip Depuis pas mal de temps, je souhaitais faire la Gaspésie. J&amp;rsquo;ai donc décidé de prendre 2 semaines pour rouler et voir cette partie du Québec (avec quelques membres de ma famille) après un détour au Saguenay et du Fjord (forcément). Il est possible d&amp;rsquo;arriver en Gaspésie par Forestville en Ferry pour Rimouski, point de départ de ce petit voyage.</description>
+    </item>
     
     <item>
       <title>Grands Jardins</title>
