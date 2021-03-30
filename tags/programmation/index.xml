@@ -8,11 +8,7 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://enconn.fr/tags/programmation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/programmation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tarpaulin ou kcov ?</title>
       <link>https://enconn.fr/blog/tarpaulin-ou-kcov/</link>

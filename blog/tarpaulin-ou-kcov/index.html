@@ -57,9 +57,9 @@
     "name" : "Sébastien Blin"
   },
   "headline": "Tarpaulin ou kcov ?",
-  "description" : "Pour un projet (que je présenterais plus tard sur le forum), j\x26rsquo;ai eu besoin d\x26rsquo;avoir du retour sur mes tests. Une des métriques m\x26rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n\x26rsquo;ai pas encore testé et d\x26rsquo;ajouter des scénarios.\nEn cherchant un peu sur Internet, je suis tombé sur 2 outils :\n kcov tarpaulin  En voici un petit comparatif.\nComparatif Facilité d\x26rsquo;installation kcov wget https:\/\/github.",
+  "description" : "Pour un projet (que je présenterais plus tard sur le forum), j\u0026rsquo;ai eu besoin d\u0026rsquo;avoir du retour sur mes tests. Une des métriques m\u0026rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n\u0026rsquo;ai pas encore testé et d\u0026rsquo;ajouter des scénarios.\nEn cherchant un peu sur Internet, je suis tombé sur 2 outils :\n kcov tarpaulin  En voici un petit comparatif.\nComparatif Facilité d\u0026rsquo;installation kcov wget https:\/\/github.",
   "inLanguage" : "en",
-  "wordCount":  341 ,
+  "wordCount":  395 ,
   "datePublished" : "2018-04-23T00:00:00",
   "dateModified" : "2018-04-23T00:00:00",
   "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
@@ -92,7 +92,7 @@
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
@@ -304,37 +304,37 @@ cargo install cargo-tarpaulin
 <p>Au final même si <code>kcov</code> possède plus de fonctionnalités, <code>tarpaulin</code> l&rsquo;emporte (et le fait que seul lui fonctionne dans mon cas est ce qui m&rsquo;intéresse le plus je l&rsquo;avoue).</p>
 <h1 id="conclusion">Conclusion</h1>
 <p>Au final, si <code>tarpaulin</code> est intéressant pour votre projet, voici le <code>.travis.yml</code> du projet :</p>
-<div class="highlight"><pre class="chroma"><code class="language-yml" data-lang="yml"><span class="k">language</span><span class="p">:</span><span class="w"> </span>rust<span class="w">
-</span><span class="w"></span><span class="k">rust</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- stable<span class="w">
-</span><span class="w">  </span>- nightly<span class="w">
-</span><span class="w"></span><span class="k">sudo</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w"></span><span class="k">git</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">submodules</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w"></span><span class="k">before_install</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/git@github.com:/https:\/\/github.com\//&#39;</span><span class="w"> </span>.gitmodules<span class="w">
-</span><span class="w">  </span>- git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive<span class="w">
-</span><span class="w"></span><span class="k">install</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>libdbus<span class="m">-1</span>-dev<span class="w"> </span>openssl<span class="w">
-</span><span class="w">  </span>- <span class="sd">|
-</span><span class="sd">    # tarpaulin deps</span><span class="w">
-</span><span class="w">    </span>if<span class="w"> </span><span class="p">[[</span><span class="w"> </span><span class="s2">&#34;$TRAVIS_RUST_VERSION&#34;</span><span class="w"> </span>==<span class="w"> </span>nightly<span class="w"> </span><span class="p">]]</span>;<span class="w"> </span>then<span class="w">
-</span><span class="w">      </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span>-y<span class="w"> </span><span class="cp">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>libssl-dev<span class="w"> </span>pkg-config<span class="w"> </span>cmake<span class="w"> </span>zlib1g-dev;<span class="w">
-</span><span class="w">      </span>cargo<span class="w"> </span>install<span class="w"> </span>cargo-tarpaulin;<span class="w">
-</span><span class="w">    </span>fi<span class="w">
-</span><span class="w">  </span>- rustc<span class="w"> </span>-V<span class="w">
-</span><span class="w"></span><span class="k">before_script</span><span class="p">:</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l">rust</span><span class="w">
+</span><span class="w"></span><span class="nt">rust</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">stable</span><span class="w">
+</span><span class="w">  </span>- <span class="l">nightly</span><span class="w">
+</span><span class="w"></span><span class="nt">sudo</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="nt">git</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="nt">before_install</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">sed -i &#39;s/git@github.com:/https:\/\/github.com\//&#39; .gitmodules</span><span class="w">
+</span><span class="w">  </span>- <span class="l">git submodule update --init --recursive</span><span class="w">
+</span><span class="w"></span><span class="nt">install</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">sudo apt-get install -y libdbus-1-dev openssl</span><span class="w">
+</span><span class="w">  </span>- <span class="p">|</span><span class="sd">
+</span><span class="sd">    # tarpaulin deps
+</span><span class="sd">    if [[ &#34;$TRAVIS_RUST_VERSION&#34; == nightly ]]; then
+</span><span class="sd">      sudo apt-get update -y &amp;&amp; sudo apt-get -y install libssl-dev pkg-config cmake zlib1g-dev;
+</span><span class="sd">      cargo install cargo-tarpaulin;
+</span><span class="sd">    fi</span><span class="w">    
+</span><span class="w">  </span>- <span class="l">rustc -V</span><span class="w">
+</span><span class="w"></span><span class="nt">before_script</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="s2">&#34;export DISPLAY=:99.0&#34;</span><span class="w">
 </span><span class="w">  </span>- <span class="s2">&#34;sh -e /etc/init.d/xvfb start&#34;</span><span class="w">
-</span><span class="w">  </span>- sleep<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="c"># give xvfb some time to start</span><span class="w">
-</span><span class="w"></span><span class="k">script</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- cargo<span class="w"> </span>build<span class="w">
-</span><span class="w">  </span>- RUST_TEST_THREADS=<span class="m">1</span><span class="w"> </span>cargo<span class="w"> </span>test<span class="w"> </span>-- --nocapture<span class="w">
-</span><span class="w">  </span>- <span class="sd">|
-</span><span class="sd">    # tarpaulin deps</span><span class="w">
-</span><span class="w">    </span>if<span class="w"> </span><span class="p">[[</span><span class="w"> </span><span class="s2">&#34;$TRAVIS_RUST_VERSION&#34;</span><span class="w"> </span>==<span class="w"> </span>nightly<span class="w"> </span><span class="p">]]</span>;<span class="w"> </span>then<span class="w">
-</span><span class="w">      </span>cargo<span class="w"> </span>tarpaulin<span class="w"> </span>--ciserver<span class="w"> </span>travis-ci<span class="w"> </span>--coveralls<span class="w"> </span>$TRAVIS_JOB_ID;<span class="w">
-</span><span class="w">    </span>fi<span class="w">
+</span><span class="w">  </span>- <span class="l">sleep 3</span><span class="w"> </span><span class="c"># give xvfb some time to start</span><span class="w">
+</span><span class="w"></span><span class="nt">script</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">cargo build</span><span class="w">
+</span><span class="w">  </span>- <span class="l">RUST_TEST_THREADS=1 cargo test -- --nocapture</span><span class="w">
+</span><span class="w">  </span>- <span class="p">|</span><span class="sd">
+</span><span class="sd">    # tarpaulin deps
+</span><span class="sd">    if [[ &#34;$TRAVIS_RUST_VERSION&#34; == nightly ]]; then
+</span><span class="sd">      cargo tarpaulin --ciserver travis-ci --coveralls $TRAVIS_JOB_ID;
+</span><span class="sd">    fi</span><span class="w">    
 </span></code></pre></div>
 
         
@@ -438,7 +438,7 @@ cargo install cargo-tarpaulin
 
           &nbsp;&bull;&nbsp;&copy;
           
-            2020
+            2021
           
 
           
@@ -448,7 +448,7 @@ cargo install cargo-tarpaulin
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.69.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

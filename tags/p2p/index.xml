@@ -8,10 +8,16 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://enconn.fr/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 25 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git dissect</title>
+      <link>https://enconn.fr/blog/git-dissect/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/git-dissect/</guid>
+      <description>It&amp;rsquo;s been a long time since my previous post, but let&amp;rsquo;s continue this serie about distributed systems with a tool that a lot of people use every day: git.
+Git is a versioning tool. Unlike some systems like subversion, you don&amp;rsquo;t need to have a server to use git. Every member of the project own a (partial or not) copy of the project and can directly send data to another member.</description>
+    </item>
     
     <item>
       <title>P2P internals - episode 3</title>

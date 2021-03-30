@@ -8,10 +8,33 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Thu, 27 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dev</title>
+      <link>https://enconn.fr/tags/dev/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/dev/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://enconn.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://enconn.fr/tags/git/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/git/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>p2p</title>
+      <link>https://enconn.fr/tags/p2p/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/p2p/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>logs</title>
@@ -37,24 +60,6 @@
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       <author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dev</title>
-      <link>https://enconn.fr/tags/dev/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/dev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>p2p</title>
-      <link>https://enconn.fr/tags/p2p/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/p2p/</guid>
       <description></description>
     </item>
     
