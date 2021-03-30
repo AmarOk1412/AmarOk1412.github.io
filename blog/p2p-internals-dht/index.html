@@ -59,7 +59,7 @@
   "headline": "P2P internals - episode 3",
   "description" : "In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. TURN servers) or some new protocols (like ICE).\nIt is now time to talk about distributed applications and structures created on top of a p2p network.\nFor a lot of distributed applications, all the nodes in the system can\u0026rsquo;t be stable.",
   "inLanguage" : "en",
-  "wordCount":  1347 ,
+  "wordCount":  1346 ,
   "datePublished" : "2019-10-15T00:00:00",
   "dateModified" : "2019-10-15T00:00:00",
   "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
@@ -293,13 +293,13 @@
 <h1 id="and-how-it-works">And how it works?</h1>
 <p>Let&rsquo;s imagine a cluster of nodes around the world. Without any logic, we can&rsquo;t really ask every node to connect to some other nodes without the certitude to get an interconnected network where each node can talk to any other one. We have to create some sort of spatial scheduling. Let&rsquo;s say that each node has a random identifier (a hash). So the order will be (<em>00000, 00001, &hellip;, 11111</em>) and we can imagine a circle like the following image:</p>
 <p><img src="/img/dev/p2p_dht/dht.png" alt="DHT"></p>
-<p>If we have a circle of $N$ nodes, we can interconnect the nodes by connecting a node to one neighbor. With this technique, the number of connections in that network will be minimized ($N$ for all of the network), but the time to send a message will be maximized. On the contrary, we can also connect a node to all of the peers. We will have a lot of connections ($N\times N$) but we will minimize the time to send a message. But other techniques exist, to get a quick transmission without many connections (and still easy to calculate).</p>
+<p>If we have a circle of N nodes, we can interconnect the nodes by connecting a node to one neighbor. With this technique, the number of connections in that network will be minimized (N for all of the network), but the time to send a message will be maximized. On the contrary, we can also connect a node to all of the peers. We will have a lot of connections (NxN) but we will minimize the time to send a message. But other techniques exist, to get a quick transmission without many connections (and still easy to calculate).</p>
 <p>On a Kademlia like network, each node has a 160 bits random identifier (and the hashes keys have the same length). To define the distance between two nodes, the <strong>XOR</strong> method is used. Thus, the nodes &hellip;0101010 and &hellip;0100010 will have a distance of &hellip;0001000.</p>
 <h3 id="storage">Storage</h3>
-<p>Let&rsquo;s imagine that Alice wants to store a value on the DHT: $hash(foo) = bar$. $hash(foo)$ is a 160 bits long key. We can find the node that will store the data $bar$ in a complexity like $O(log(N) + \omega)$.
-However, because this node can leave the network during the next seconds, the data must be stored in a redundant way. So, the data will be stored in the $k$ nearest nodes to guaranty a time to live. For example, <strong>IPFS</strong> defines $k=20$ (to confirm) and <strong>BitTorrent</strong> $k=8$ (to guaranty a ~10 minutes ttl).</p>
+<p>Let&rsquo;s imagine that Alice wants to store a value on the DHT: hash(foo) = bar. hash(foo) is a 160 bits long key. We can find the node that will store the data bar in a complexity like O(log(N) + Ω).
+However, because this node can leave the network during the next seconds, the data must be stored in a redundant way. So, the data will be stored in the k nearest nodes to guaranty a time to live. For example, <strong>IPFS</strong> defines k=20 (to confirm) and <strong>BitTorrent</strong> k=8 (to guaranty a ~10 minutes ttl).</p>
 <h3 id="routing">Routing</h3>
-<p>Each node in the DHT divides the cluster in <em>buckets</em> until having one bucket with $k$ nodes present (including the current one). The routing table for $F (id=10010&hellip;)$ will be:</p>
+<p>Each node in the DHT divides the cluster in <em>buckets</em> until having one bucket with k nodes present (including the current one). The routing table for F (id=10010&hellip;) will be:</p>
 <table>
 <thead>
 <tr>
@@ -334,22 +334,22 @@ However, because this node can leave the network during the next seconds, the da
 </tr>
 </tbody>
 </table>
-<p>The last bucket has $F$.</p>
+<p>The last bucket has F.</p>
 <p>A protocol can be defined to interact between peers. First, the insertion of nodes in the routing table is defined by:</p>
-<p>$X$ is a node for bucket $B$. If $B$ is not full, $X$ is added. Else, if the bucket contains expired nodes, $X$ is added to $B$ (and the expired node is removed) or if $X$ is in the same bucket as $F$ we divide $B$. In the other cases, we drop $X$.</p>
+<p>X is a node for bucket B. If B is not full, X is added. Else, if the bucket contains expired nodes, X is added to B (and the expired node is removed) or if X is in the same bucket as F we divide B. In the other cases, we drop X.</p>
 <p>The following operations are also defined:</p>
 <ol>
 <li><strong>ping</strong></li>
-<li><strong>find(n)</strong> to get the list of the $k$ nearest nodes of $n$.</li>
+<li><strong>find(n)</strong> to get the list of the k nearest nodes of N.</li>
 <li><strong>put(k,v)</strong></li>
 <li><strong>get(k)</strong></li>
 </ol>
 <h4 id="join-a-network">Join a network</h4>
 <p>Now that the protocol is designed, we have to discuss an important step: joining a DHT network. To do that, every node in the network is a potential entry point. However, in most of the cases, we need a node that is always up and known. That node is called &ldquo;the bootstrap server&rdquo; and will be the entry point for new peers (e.g. <em>router.bittorrent.com</em>, <em>bootstrap.jami.net</em>, etc).</p>
 <h4 id="maintenance">Maintenance</h4>
-<p>Because the routing table can&rsquo;t be fixed (nodes are able to leave or join the network), we need to maintain some sort of synchronization with the network. Periodically, a node will try a <strong>find(F)</strong> to maintain its direct neighbors and for each bucket <strong>find(i)</strong> where $i$ is a random identifier of $B$ to fill the bucket (if $B$ is empty, the identifier comes from the previous bucket) and to remove expired nodes.</p>
+<p>Because the routing table can&rsquo;t be fixed (nodes are able to leave or join the network), we need to maintain some sort of synchronization with the network. Periodically, a node will try a <strong>find(F)</strong> to maintain its direct neighbors and for each bucket <strong>find(i)</strong> where i is a random identifier of B to fill the bucket (if B is empty, the identifier comes from the previous bucket) and to remove expired nodes.</p>
 <h3 id="retrieve-a-value">Retrieve a value</h3>
-<p>Finally, if Bob wants to get the values stored for $hash(foo)$, he has to send $find(hash(foo))$ on the DHT to get the $k$ nearest nodes of $hash(foo)$. When the list is stationary, the search operation is done.</p>
+<p>Finally, if Bob wants to get the values stored for hash(foo), he has to send find(hash(foo)) on the DHT to get the k nearest nodes of hash(foo). When the list is stationary, the search operation is done.</p>
 <p>Thus, it&rsquo;s possible for all peers to get or to send a value on the resulting list via <strong>get(k)</strong> and <strong>put(k,v)</strong>,</p>
 <h1 id="some-projects-using-a-dht">Some projects using a DHT</h1>
 <p>As we have seen, the DHT is a structure allowing to store relatively simply data on a distributed network. This kind of network can contains tens of millions of nodes with a lot of unavailable nodes (<em>NAT</em>, here you are) or with nodes only available for a few seconds.</p>
@@ -362,7 +362,7 @@ However, because this node can leave the network during the next seconds, the da
 <li>etc.</li>
 </ul>
 <h1 id="lets-do-a-quick-project">Let&rsquo;s do a quick project!</h1>
-<p>Wabi is a smart city where pollution sensors are present everywhere. Every sensor is a DHT node and put collected data every minute on the network to $hash(pollution_level)$. A data is something like:</p>
+<p>Wabi is a smart city where pollution sensors are present everywhere. Every sensor is a DHT node and put collected data every minute on the network to hash(pollution_level). A data is something like:</p>
 <pre><code>SIGN(sensor_key,{
     &quot;lvl_percent&quot;:78,
     &quot;lat&quot;:39.010941,
