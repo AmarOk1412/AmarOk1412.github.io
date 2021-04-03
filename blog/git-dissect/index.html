@@ -59,7 +59,7 @@
   "headline": "Git dissect",
   "description" : "It\u0026rsquo;s been a long time since my previous post, but let\u0026rsquo;s continue this serie about distributed systems with a tool that a lot of people use every day: git.\nGit is a versioning tool. Unlike some systems like subversion, you don\u0026rsquo;t need to have a server to use git. Every member of the project own a (partial or not) copy of the project and can directly send data to another member.",
   "inLanguage" : "en",
-  "wordCount":  2857 ,
+  "wordCount":  2858 ,
   "datePublished" : "2021-03-25T00:00:00",
   "dateModified" : "2021-03-25T00:00:00",
   "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
@@ -252,7 +252,7 @@
       <article role="main" class="blog-post">
         <p>It&rsquo;s been a long time since my previous post, but let&rsquo;s continue this serie about distributed systems with a tool that a lot of people use every day: <em>git</em>.</p>
 <p><em>Git</em> is a versioning tool. Unlike some systems like <em>subversion</em>, you don&rsquo;t need to have a server to use <em>git</em>. Every member of the project own a (partial or not) copy of the project and can directly send data to another member. So, even if today a lot of people use platforms like <a href="https://gitea.com/">Gitea</a>, <a href="https://gitlab.com/">GitLab</a>, <a href="https://github.com/">GitHub</a>, etc. it&rsquo;s possible to work without any of them (can be useful when the platform is down).</p>
-<p>In this article I will <strong>not describe how to use <em>git</em></strong> because there is already plenty of articles about this  (e.g. <a href="https://try.github.io/)">https://try.github.io/)</a>. If you want to learn how to use <em>git</em>, this article is not for you. In this article, I will describe what is going on when you do <code>git clone https://github.com/zestedesavoir/zmarkdown/</code> from the network perspective and will describe how to implement a minimalist <em>git</em> server working on a custom protocol.</p>
+<p>In this article I will <strong>not describe how to use <em>git</em></strong> because there is already plenty of articles about this  (e.g. <a href="https://try.github.io/">https://try.github.io/</a> ). If you want to learn how to use <em>git</em>, this article is not for you. In this article, I will describe what is going on when you do <code>git clone https://github.com/zestedesavoir/zmarkdown/</code> from the network perspective and will describe how to implement a minimalist <em>git</em> server working on a custom protocol.</p>
 <h1 id="what-is-a-git-transport">What is a git transport?</h1>
 <h2 id="the-different-layers">The different layers</h2>
 <p>To exchange information between a server and a client, <em>git</em> uses <em>packfiles</em> transmitted via the <code>pack-protocol</code> or the <code>http-protocol</code>. Both protocols have a similar logic, but in this article we will just check the <code>pack-protocol</code>. For the curious, here is the <a href="https://github.com/git/git/blob/master/Documentation/technical/http-protocol.txt">definition of the <code>http-protocol</code></a> (note that the documentation is still incomplete).</p>
