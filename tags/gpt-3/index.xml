@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gpt-3 on Enconn</title>
+    <link>https://enconn.fr/tags/gpt-3/</link>
+    <description>Recent content in gpt-3 on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/gpt-3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A GPT-3 bot to answer my tickets</title>
+      <link>https://enconn.fr/blog/gpt3-gitlab-bot/</link>
+      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/gpt3-gitlab-bot/</guid>
+      <description>Long time no see! I have a looooooot of projects in mind and a lot far too big (+40h of work &amp;amp; personal community stuff &amp;amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this.</description>
+    </item>
+    
+  </channel>
+</rss>

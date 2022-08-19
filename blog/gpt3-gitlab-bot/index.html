@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>A GPT-3 bot to answer my tickets - Enconn</title>
+  <meta name="description" content="A project done in one week-end">
+  <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Enconn",
+    
+    "url": "https:\/\/enconn.fr"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/enconn.fr"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/blog\/gpt3-gitlab-bot\/",
+          "name": "A g p t 3 bot to answer my tickets"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "A GPT-3 bot to answer my tickets",
+  "description" : "Long time no see! I have a looooooot of projects in mind and a lot far too big (\u002b40h of work \u0026amp; personal community stuff \u0026amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this.",
+  "inLanguage" : "en",
+  "wordCount":  1566 ,
+  "datePublished" : "2022-08-18T00:00:00",
+  "dateModified" : "2022-08-18T00:00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "gpt-3, dev, ai, software" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/gpt3-gitlab-bot\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="A GPT-3 bot to answer my tickets" />
+<meta property="og:description" content="A project done in one week-end">
+<meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+<meta property="og:url" content="https://enconn.fr/blog/gpt3-gitlab-bot/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Enconn" />
+
+  <meta name="twitter:title" content="A GPT-3 bot to answer my tickets" />
+  <meta name="twitter:description" content="A project done in one week-end">
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">by AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Logs" href="/logs/">Logs</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Enconn" href="https://enconn.fr">
+            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              
+                <h1>A GPT-3 bot to answer my tickets</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <h2 class="blog-subheading">A project done in one week-end</h2>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Long time no see!
+I have a looooooot of projects in mind and a lot far too big (+40h of work &amp; personal community stuff &amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this. So, you just have to fix bugs and redirect to the FAQ/doc).</p>
+<p>So, I took a few hours to play with GPT-3 during a week-end (I had an access for two months without using it) to create a small bot that will answer my tickets. This bot is called: GePeTTTo.</p>
+<h1 id="do-not-think-too-big">Do not think too big</h1>
+<p>Because I have a life and other priorities (learn things to my cat, cook, talk with friends, etc). I really need to scope my projects more than ever (yeah I&rsquo;m not a student anymore).</p>
+<p>So, the goal of this project is to get in one week-end a small CLI application which:</p>
+<ul>
+<li>Get latest GitLab tickets</li>
+<li>Can inject issues from a URL or a file (make it easy to debug for me if there is no new issue).</li>
+<li>Generate answers to those tickets with a custom model.</li>
+<li>Be able to save or send the answers. I could be automated, but to be honest, except hosting yet another bot, it&rsquo;s not necessary.</li>
+</ul>
+<p>And I need to do:</p>
+<ol>
+<li>Play with the GitLab&rsquo;s API to retrieve projects/issues/discussions and post new comments</li>
+<li>Retrieve all my comments to train a custom model</li>
+<li>Play with OpenAI&rsquo;s API to train a model and generate answer</li>
+<li>Create a small Python app to make it usable</li>
+<li>Fix the bugs, publish the code</li>
+<li>Write an article, because I do stuff but I don&rsquo;t write much.</li>
+</ol>
+<h1 id="playing-with-gitlab">Playing with GitLab</h1>
+<p>GitLab is a HUGE project, with a huge API, but the documentation is good.
+The first step is to get an access token via <code>https://INSTANCE_GITLAB/-/profile/personal_access_tokens</code> once logged with the <code>api</code> and <code>read_api</code> permissions.</p>
+<p>Then, we can read the documentation. In my case:</p>
+<p><a href="https://docs.gitlab.com/ee/api/issues.html">https://docs.gitlab.com/ee/api/issues.html</a><br>
+<a href="https://docs.gitlab.com/ee/api/discussions.html">https://docs.gitlab.com/ee/api/discussions.html</a><br>
+<a href="https://docs.gitlab.com/ee/api/projects.html">https://docs.gitlab.com/ee/api/projects.html</a></p>
+<p>Then, the simplest way to know what we will have to parse is to use that good old <code>curl</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Retrieve all projects from an instance (here gitlab.com)</span>
+curl https://gitlab.com/api/v4/projects
+<span class="c1"># Or to post a comment in the issue #42 in project 42</span>
+curl -XPOST --header <span class="s2">&#34;PRIVATE-TOKEN:tres_tres_prive&#34;</span> <span class="s2">&#34;https://gitlab.com/api/v4/projects/42/issues/42/notes?body=foobar&#34;</span>
+</code></pre></div><p>In the final script, I use <a href="https://pypi.org/project/requests/"><code>requests</code></a></p>
+<p>A small example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">answer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">project_id</span><span class="p">,</span> <span class="n">issue_id</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+    <span class="n">endpoint</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;{self.git_url}/api/v4/projects/{project_id}/issues/{issue_id}/notes?body={body}&#39;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">&#39;error&#39;</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">():</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;An error occurred while posting to {endpoint}&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Answered to issue {issue_id} with success&#39;</span><span class="p">)</span>
+</code></pre></div><h1 id="playing-with-openai">Playing with OpenAI</h1>
+<h2 id="get-a-token">Get a token</h2>
+<p>The API is documented there: <a href="https://openai.com/api/">https://openai.com/api/</a></p>
+<p>And the first step is to generate a key (after getting access to the beta) here: <a href="https://beta.openai.com/account/api-keys">https://beta.openai.com/account/api-keys</a></p>
+<h2 id="play-a-little">Play a little</h2>
+<p>A lot of demonstrations are available <a href="https://beta.openai.com/examples">here</a> and even a playground <a href="https://beta.openai.com/playground">here</a>!</p>
+<p>So, let&rsquo;s try to answer to a post from StackOverflow <a href="https://stackoverflow.com/questions/73311716/gpt3-point-as-terminator-of-sentence:">https://stackoverflow.com/questions/73311716/gpt3-point-as-terminator-of-sentence:</a></p>
+<p><img src="/img/dev/gpt3-gitlab-bot/so.png" alt="GPT-3&rsquo;s answer for a StackOverflow post"></p>
+<p>which is similar to the use-case I want. The only thing to do is to start with &ldquo;Answer to this&rdquo;, else GPT-3 will just complete the text (with something like &ldquo;Thanks, Pierre&rdquo;).</p>
+<h1 id="a-minimalist-interface">A minimalist interface</h1>
+<h2 id="minimalist-but-usable">Minimalist, but usable</h2>
+<p>To create the CLI interface I&rsquo;ll use <a href="https://docs.python.org/3/library/cmd.html">cmd</a>, which is an easy to use Python&rsquo;s module that can handle the input (go to the previous command <code>Ctrl+W</code>, <code>Ctrl+U</code>, etc.) and it&rsquo;s easy to add new commands, for example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">do_save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">arg</span> <span class="k">if</span> <span class="n">arg</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="k">else</span> <span class="n">f</span><span class="s1">&#39;{self.answeringTo[&#34;id&#34;]}.answer&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">answer</span><span class="p">)</span>
+</code></pre></div><p>This code adds in a few lines a <code>save</code> command (to save a file passed in the arguments or a generated one), or another example with the <code>help</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">do_help</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;start: Start to analyze issues&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;save &lt;file&gt;: Save generated answer to &lt;file&gt;&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;send: Send answer without saving it&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;send &lt;file&gt;: Send answer from file&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;add &lt;url&gt;: Add an issue from an url&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;add &lt;file&gt;: Add an issue from a file (no send possible)&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;next: Pass to the next issue&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;exit: Close GePeTTTo&#39;</span><span class="p">)</span>
+</code></pre></div><p>Then it&rsquo;s possible to show text in a wanted color with:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">colored</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">))</span>
+</code></pre></div><h2 id="some-screenshots">Some screenshots</h2>
+<p>Now that everything is plugged, this is what it looks like:</p>
+<p><img src="/img/dev/gpt3-gitlab-bot/first.png" alt="A first answer"></p>
+<p><img src="/img/dev/gpt3-gitlab-bot/second.png" alt="a second one"></p>
+<h1 id="train-a-custom-model">Train a custom model</h1>
+<p>Now that the script do what I want, the next step is to try to get better answers. For that, I need to customize a model, and I found this article: <a href="https://openai.com/blog/customized-gpt-3/">Customizing GPT-3
+for Your Application</a> which explains what I want.</p>
+<p>At first, I tried to parse the whole GitLab instance to get all the comments I posted. It generated a models with a few thousands inputs after filtering a lot of &ldquo;this is a duplicate of&hellip;&rdquo;, &ldquo;non reproducible&rdquo;, &ldquo;fixed, close&rdquo; because I don&rsquo;t want the bot to generate this. The inputs looked like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span> <span class="nt">&#34;prompt&#34;</span><span class="p">:</span> <span class="s2">&#34;Answer to this:\n&lt;comment&gt;&#34;</span><span class="p">,</span> <span class="nt">&#34;completion&#34;</span><span class="p">:</span> <span class="s2">&#34;&lt;my_answer&gt;###&#34;</span><span class="p">}</span>
+<span class="p">{</span> <span class="nt">&#34;prompt&#34;</span><span class="p">:</span> <span class="s2">&#34;Answer to this:\n&lt;comment2&gt;&#34;</span><span class="p">,</span> <span class="nt">&#34;completion&#34;</span><span class="p">:</span> <span class="s2">&#34;&lt;my_answer2&gt;###&#34;</span><span class="p">}</span>
+<span class="err">...</span>
+</code></pre></div><p>and I can train a custom model via the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">openai api fine_tunes.create -m davinci --n_epochs <span class="m">2</span> -t myfile
+</code></pre></div><p>This generates a custom model I can use in Python with:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">openai</span><span class="o">.</span><span class="n">Completion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>\
+    <span class="n">model</span><span class="o">=</span><span class="s2">&#34;davinci:ft-personal-2022-00-00-00-00-00&#34;</span><span class="p">,</span>\
+    <span class="n">prompt</span><span class="o">=</span><span class="n">f</span><span class="s2">&#34;Answer to this issue:</span><span class="se">\n\n</span><span class="s2">{json.dumps(issue[&#39;body&#39;])}&#34;</span><span class="p">,</span>\
+    <span class="n">temperature</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">500</span>\
+<span class="p">)</span>
+</code></pre></div><p>However:</p>
+<ol>
+<li>A lot of answers were nonsense and a lot of garbage.</li>
+<li>A lot of bad characters were generated inside the answer.</li>
+<li>Sadly, whatever I was generating, the answer has a length of max_token (so around 500 words), but not with <code>text-davinci-002</code>.</li>
+</ol>
+<p>I thought that the first point was because of my filtering in the training data. There are a lot of backtraces, logs, some code sometimes, noise and the best tickets were tickets asking questions, not about how to reproduce a bug. So, Option A - I needed to sort the current data again to keep the best lines. Or Option B - I restart from scratch and write a new model with a FAQ and some answers I mainly wrote (and that I can also use the <code>question</code> label on the GitLab I use).</p>
+<p>Once this garbage problem handled, I checked the weird characters issues. The reason is that a lot of my training data contained some Markdown input. So, I needed to remove the format and use a plain/text (I converted the Markdown to plain/text in Python directly with <code>markdown</code> and <code>BeautifulSoup</code>).</p>
+<p>Finally, the third point took me some time to figure out. I tried different inputs with and without the end mark (I changed it to <code>&lt;END&gt;</code>) before solving it. The OpenAI&rsquo;s API take a <strong>stop</strong> parameter:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">openai</span><span class="o">.</span><span class="n">Completion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>\
+    <span class="n">model</span><span class="o">=</span><span class="s2">&#34;davinci:ft-personal-2022-00-00-00-00-00&#34;</span><span class="p">,</span>\
+    <span class="n">prompt</span><span class="o">=</span><span class="n">f</span><span class="s2">&#34;Answer to this issue:</span><span class="se">\n\n</span><span class="s2">{json.dumps(issue[&#39;body&#39;])}&#34;</span><span class="p">,</span>\
+    <span class="n">temperature</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">500</span>\
+    <span class="n">stop</span><span class="o">=</span><span class="s2">&#34;&lt;END&gt;&#34;</span>
+<span class="p">)</span>
+</code></pre></div><p>Et voilà!</p>
+<h1 id="deploy-it">Deploy it!</h1>
+<h2 id="the-project">The project</h2>
+<p>All the sources for this project is there (and should be usable): <a href="https://github.com/AmarOk1412/GePeTTTo">https://github.com/AmarOk1412/GePeTTTo</a></p>
+<h2 id="some-examples">Some examples</h2>
+<h2 id="some-examples-in-another-language-french">Some examples in another language (French)</h2>
+<p>Because I also check a lot <a href="https://zestedesavoir.com">https://zestedesavoir.com</a> (a French Forum), I was wondering if I can use the exact same code for answering to French tickets. And this is 3 examples I generated (if you understand French):</p>
+<ol>
+<li>Answer to <a href="https://zestedesavoir.com/forums/sujet/16395/charger-ordinateur-avec-thunderbolt-ou-port-natif/">https://zestedesavoir.com/forums/sujet/16395/charger-ordinateur-avec-thunderbolt-ou-port-natif/</a></li>
+</ol>
+<blockquote>
+<p>Oui, vous pouvez recharger votre ordinateur portable Thunderbolt 4 via le port USB sans rien configurer. Cependant, il est recommandé d&rsquo;utiliser le chargeur natif pour une meilleure performance.</p>
+</blockquote>
+<ol start="2">
+<li><a href="https://zestedesavoir.com/forums/sujet/16355/probleme-performances-chrome/">https://zestedesavoir.com/forums/sujet/16355/probleme-performances-chrome/</a> (answer to the first post)</li>
+</ol>
+<blockquote>
+<p>Il y a plusieurs raisons qui pourraient expliquer les performances de Chrome. Il se peut que vous ayez trop d&rsquo;onglets ouverts, ce qui ralentit votre ordinateur. Vous pouvez également avoir des extensions ou des programmes en cours d&rsquo;exécution qui utilisent beaucoup de mémoire et de CPU.</p>
+<p>Il existe plusieurs façons de résoudre ce problème. Vous pouvez d&rsquo;abord essayer de fermer quelques onglets ou de désactiver temporairement les extensions que vous n&rsquo;utilisez pas. Vous pouvez également vider le cache et les cookies de Chrome pour voir si cela améliore les performances.</p>
+</blockquote>
+<ol start="3">
+<li>And a custom test about TURN/Jitsi:</li>
+</ol>
+<p><strong>Moi:</strong>
+Répond à ceci:</p>
+<p>&ldquo;Bonjour,
+J&rsquo;essaye d&rsquo;héberger chez moi une instance de Jitsi. Cependant, je ne comprends pas tous les parametres notament useTurnUdp. Qu&rsquo;est-ce qu&rsquo;un serveur TURN et pourquoi est-ce désactivé par défaut?
+&quot;</p>
+<p><strong>GPT-3:</strong>
+Bonjour,</p>
+<p>Un serveur TURN est un serveur qui peut être utilisé pour relayer des flux audio et vidéo en cas de besoin. Il est désactivé par défaut car il n&rsquo;est pas toujours nécessaire, mais peut être activé si vous rencontrez des problèmes de connectivité.</p>
+<p><strong>Moi:</strong>
+&ldquo;Quel genre de problème de connectivité ?&rdquo;</p>
+<p><strong>GPT-3:</strong>
+Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, à des connexions instables ou à d&rsquo;autres facteurs. Le serveur TURN peut aider à contourner ces problèmes en relayant les flux audio et vidéo directement entre les participants, sans passer par le réseau.</p>
+<p><img src="/img/dev/gpt3-gitlab-bot/demo.gif" alt="animated demo, yeay"></p>
+<p>To conclude this weekend (in fact, it took me 2 more days) of experimentation, it works well so far. There are still some limits, failed answers, but a lot of answers are good and I really think behind GPT-3 there is a lot of HUUUUUUUUUUUGE datasets. Like DALL-E 2, my tests in other languages seem to work and the whole project was pretty easy to do.</p>
+<p>However, it&rsquo;s still a beta. Sometimes the documentation is not perfect, a lot of models can&rsquo;t be customized (<code>text-davinci-002</code> for example). Also, like a lot of AI projects, the difficult point (and most consuming) is to create a good dataset to train the model you want to use and avoid any weird formatting (except if you want to generate code).</p>
+<p>See ya!</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://enconn.fr/tags/gpt-3/">gpt-3</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/dev/">dev</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/ai/">ai</a>&nbsp;
+            
+              <a href="https://enconn.fr/tags/software/">software</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://enconn.fr/blog/git-dissect/" data-toggle="tooltip" data-placement="top" title="Git dissect">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@enconn.fr" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AmarOk1412" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://mastodon.social/@amarok" title="Mastodon">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://enconn.fr">Sébastien Blin</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2022
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://enconn.fr">Enconn</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://enconn.fr/js/katex.min.js"></script>
+<script src="https://enconn.fr/js/auto-render.min.js"></script>
+<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/bootstrap.min.js"></script>
+
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
