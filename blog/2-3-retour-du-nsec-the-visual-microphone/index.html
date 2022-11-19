@@ -46,7 +46,7 @@ La première partie consistait à trouver la fréquence du mouvement du diaphrag
         "position": 3,
         "item": {
           "@id": "https:\/\/enconn.fr\/blog\/2-3-retour-du-nsec-the-visual-microphone\/",
-          "name": "(2\/3) retour du nsec the visual microphone"
+          "name": "(2 3) retour du nsec the visual microphone"
         }
     }]
 }
@@ -91,18 +91,16 @@ La première partie consistait à trouver la fréquence du mouvement du diaphrag
   <meta name="twitter:description" content="Suite de la petite série sur le retour du nsec. Dans ce second article, je vais m&rsquo;intéresser la dernière partie d&rsquo;une track en 3 points réalisée par un autre membre de mon équipe.
 La …">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
-
-
 
   </head>
   <body>
@@ -223,6 +221,7 @@ La …">
 
   <header class="header-section ">
     
+    
     <div class="intro-header no-img">
       <div class="container">
         <div class="row">
@@ -241,6 +240,7 @@ La …">
         </div>
       </div>
     </div>
+  
   </header>
 
 
@@ -266,7 +266,7 @@ La …">
 <p><img src="/media/galleries/5133/abf4142c-afbc-4ab4-8b31-f0f1ee41a196.jpg" alt="chips"></p>
 <p>Le script étant gentillement donné directement dans la page du papier, il suffit de l&rsquo;exploiter. Le script ne marche malheureusement pas sous <code>Octave</code> et l&rsquo;installateur de Matlab ne supportant que l&rsquo;IPv4 (non disponible au nsec), l&rsquo;installation à pris un peu de temps. Cependant, on se rend alors compte qu&rsquo;il suffit de changer le nom de la vidéo, le format et le sampling rate pour faire fonctionner le script (et modifier la fonction d&rsquo;écriture par <code>audiowrite</code> pour ne pas faire planter le script à la toute fin).</p>
 <p>Le point d&rsquo;entrée du script ressemble au final à ceci :</p>
-<pre><code>%%
+<pre tabindex="0"><code>%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %By Abe Davis:
@@ -453,7 +453,9 @@ audiowrite('chips.wav',S.x,samplingrate);
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:contact@enconn.fr" title="Email me">
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -461,7 +463,9 @@ audiowrite('chips.wav',S.x,samplingrate);
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -469,7 +473,9 @@ audiowrite('chips.wav',S.x,samplingrate);
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
+		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -477,7 +483,9 @@ audiowrite('chips.wav',S.x,samplingrate);
                 </a>
               </li>
               <li>
-                <a href="https://mastodon.social/@amarok" title="Mastodon">
+		
+		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -514,7 +522,7 @@ audiowrite('chips.wav',S.x,samplingrate);
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -522,7 +530,7 @@ audiowrite('chips.wav',S.x,samplingrate);
   </div>
 </footer><script src="https://enconn.fr/js/katex.min.js"></script>
 <script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>

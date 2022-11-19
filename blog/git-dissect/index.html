@@ -88,18 +88,16 @@
   <meta name="twitter:title" content="Git dissect" />
   <meta name="twitter:description" content="P2P internals - episode 4">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
-
-
 
   </head>
   <body>
@@ -220,6 +218,7 @@
 
   <header class="header-section ">
     
+    
     <div class="intro-header no-img">
       <div class="container">
         <div class="row">
@@ -242,6 +241,7 @@
         </div>
       </div>
     </div>
+  
   </header>
 
 
@@ -332,7 +332,7 @@
 <h2 id="git-upload-pack-utterly-useless-therefore-essential">git upload-pack: utterly useless, therefore essential</h2>
 <p><em>git</em> is a command with a loooooong list of subprograms. A lot are (hopefully) not necessary, but they are still interesting; like <code>git http-backend</code> (to play with the <code>http-protocol</code> mentioned before).  Yet, some of these commands only exist to be invoked by others (but <strong>never</strong> by the end-user). It&rsquo;s the case for <code>git upload-pack</code> that we will use to start to play with the <code>pack-protocol</code>. This program is used by <code>git fetch-pack</code> which is used by <code>git fetch</code>. It allows us to do a <code>git clone/fetch</code> by communicating with a server with <em>pkt-lines</em>.</p>
 <p>This is an example of <code>git upload-pack</code> used on <a href="https://github.com/zestedesavoir/zmarkdown">ZMarkdown&rsquo;s repository</a>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># https://github.com/zestedesavoir/zmarkdown</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># https://github.com/zestedesavoir/zmarkdown</span>
 <span class="c1"># `git clone git@github.com:zestedesavoir/zmarkdown.git`</span>
 <span class="c1"># 7e31d5dcc19fa412df5674676f5fb7092d035275 is the current master</span>
 
@@ -359,9 +359,9 @@ $ <span class="nb">echo</span> <span class="s2">&#34;0032want 7e31d5dcc19fa412df
 </thead>
 </table>
 <p>For example:</p>
-<pre><code>003dgit-upload-pack zmarkdown.git\0host=localhost\0\0version=1\0
+<pre tabindex="0"><code>003dgit-upload-pack zmarkdown.git\0host=localhost\0\0version=1\0
 </code></pre><p>Note that <code>version=1</code> is the only extra parameter accepted for now, and is totally optional. This will be valid too:</p>
-<pre><code>0032git-upload-pack zmarkdown.git\0host=localhost\0
+<pre tabindex="0"><code>0032git-upload-pack zmarkdown.git\0host=localhost\0
 </code></pre><p>Then, for our server, it&rsquo;s time to send its references so that the client will know about what they can download. This is what the documentation says:</p>
 <ul>
 <li>If <code>version</code> is present in the extra parameters, the server starts by announcing its version <code>000eversion 1\n</code>.</li>
@@ -372,7 +372,7 @@ $ <span class="nb">echo</span> <span class="s2">&#34;0032want 7e31d5dcc19fa412df
 <li>And it&rsquo;s finished by a <code>0000</code> (<em>flush-pkt</em>).</li>
 </ul>
 <p>Thus, the beginning of our negotiation looks like:</p>
-<pre><code>C: 0028git-upload-pack /zdshost=localhost\0host=localhost\0
+<pre tabindex="0"><code>C: 0028git-upload-pack /zdshost=localhost\0host=localhost\0
 S: 006ac29eb686c3638633bff5b852ee1ed76211882ba1 HEAD\0side-band side-band-64k shallow no-progress include-tag
 S: 003f7300c6f39366e2c0bcaf99efc05cc45e8511a384 refs/heads/master
 S: 0046c29eb686c3638633bff5b852ee1ed76211882ba1 refs/remotes/origin/HEAD
@@ -407,12 +407,12 @@ S: 0000
 </ul>
 <p>Then, the client decides if enough information is received. In that case, it sends a <code>0009done\n</code> packet. Else, a new have-list is sent until maximum 256 <code>have</code> (else all objects can be downloaded).</p>
 <p>So, a clone looks like:</p>
-<pre><code>C: 004dwant c42412dfee248e8acbd21df6038991dff6fd1b2a side-band-64k include-tag\n
+<pre tabindex="0"><code>C: 004dwant c42412dfee248e8acbd21df6038991dff6fd1b2a side-band-64k include-tag\n
 C: 0000
 C: 0009done\n
 S: 0008NAK\n
 </code></pre><p>and a fetch:</p>
-<pre><code>C: 0057want 04930e2b1a6a4f92cb6bbc4fac9237383f052b81 multi_ack side-band-64k include-tag\n
+<pre tabindex="0"><code>C: 0057want 04930e2b1a6a4f92cb6bbc4fac9237383f052b81 multi_ack side-band-64k include-tag\n
 C: 0000
 C: 0032have 3648793596d9a971632b86805949d036ab5918a0\n
 C: 0000
@@ -430,7 +430,7 @@ S: 0031ACK 3648793596d9a971632b86805949d036ab5918a0\n
 <p>I&rsquo;ll use <a href="https://libgit2.org/">libgit2</a> because it provides methods to create the packfiles and interact with <em>git</em> repositories. It also handles custom transports. This lib has many wrappers, and I&rsquo;ll use the Rust one because I think it&rsquo;s the most complete (outside the C one): <a href="https://github.com/rust-lang/git2-rs/">git2-rs</a>. The main problem is that the <a href="https://libgit2.org/libgit2/#HEAD">documentation</a> is pretty incomplete and the whole part on <em>transport</em> is missing.
 Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</em> transmits <em>packfiles</em> we can talk about <a href="https://www.youtube.com/watch?v=u4_SbUcv7OY">wolf-pack</a>). This protocol is useless and only adds four bytes (&ldquo;WOLF&rdquo;) before each packet.</p>
 <p>Our <code>src/wolftransport.rs</code> will be:</p>
-<div class="highlight"><pre class="chroma"><code class="language-rust" data-lang="rust"><span class="c1">// https://docs.rs/git2/0.13.17/git2/transport/fn.register.html
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="c1">// https://docs.rs/git2/0.13.17/git2/transport/fn.register.html
 </span><span class="c1"></span><span class="w">
 </span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">bichannel</span>::<span class="p">{</span><span class="w"> </span><span class="n">SendError</span><span class="p">,</span><span class="w"> </span><span class="n">RecvError</span><span class="w"> </span><span class="p">};</span><span class="w">
 </span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">git2</span>::<span class="n">Error</span><span class="p">;</span><span class="w">
@@ -457,7 +457,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">;</span><span class="w">
 </span><span class="w">        </span><span class="p">}</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">res</span><span class="p">.</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="n">res</span><span class="p">.</span><span class="n">drain</span><span class="p">(</span><span class="mi">0</span><span class="p">..</span><span class="mi">4</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="n">res</span><span class="p">.</span><span class="n">drain</span><span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="mi">4</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="nb">Ok</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
@@ -489,7 +489,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">    </span><span class="n">git2</span>::<span class="n">transport</span>::<span class="n">register</span><span class="p">(</span><span class="s">&#34;wolf&#34;</span><span class="p">,</span><span class="w"> </span><span class="k">move</span><span class="w"> </span><span class="o">|</span><span class="n">remote</span><span class="o">|</span><span class="w"> </span><span class="n">factory</span><span class="p">(</span><span class="n">remote</span><span class="p">,</span><span class="w"> </span><span class="n">channel</span><span class="p">.</span><span class="n">clone</span><span class="p">())).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w"></span><span class="p">}</span><span class="w">
 </span><span class="w">
-</span><span class="w"></span><span class="k">fn</span> <span class="nf">factory</span><span class="p">(</span><span class="n">remote</span>: <span class="kp">&amp;</span><span class="nc">git2</span>::<span class="n">Remote</span><span class="o">&lt;</span><span class="na">&#39;_</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">channel</span>: <span class="nc">Channel</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nb">Result</span><span class="o">&lt;</span><span class="n">Transport</span><span class="p">,</span><span class="w"> </span><span class="n">Error</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="w"></span><span class="k">fn</span> <span class="nf">factory</span><span class="p">(</span><span class="n">remote</span>: <span class="kp">&amp;</span><span class="nc">git2</span>::<span class="n">Remote</span><span class="o">&lt;&#39;</span><span class="nb">_</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">channel</span>: <span class="nc">Channel</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nb">Result</span><span class="o">&lt;</span><span class="n">Transport</span><span class="p">,</span><span class="w"> </span><span class="n">Error</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">    </span><span class="n">Transport</span>::<span class="n">smart</span><span class="p">(</span><span class="w">
 </span><span class="w">        </span><span class="n">remote</span><span class="p">,</span><span class="w">
 </span><span class="w">        </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="c1">// rpc = false, this means that our channel is connected during all the transaction.
@@ -507,7 +507,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">        </span><span class="o">&amp;</span><span class="bp">self</span><span class="p">,</span><span class="w">
 </span><span class="w">        </span><span class="n">url</span>: <span class="kp">&amp;</span><span class="kt">str</span><span class="p">,</span><span class="w">
 </span><span class="w">        </span><span class="n">action</span>: <span class="nc">Service</span><span class="p">,</span><span class="w">
-</span><span class="w">    </span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nb">Result</span><span class="o">&lt;</span><span class="nb">Box</span><span class="o">&lt;</span><span class="n">dyn</span><span class="w"> </span><span class="n">SmartSubtransportStream</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">Error</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nb">Result</span><span class="o">&lt;</span><span class="nb">Box</span><span class="o">&lt;</span><span class="k">dyn</span><span class="w"> </span><span class="n">SmartSubtransportStream</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">Error</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">        </span><span class="nb">Ok</span><span class="p">(</span><span class="nb">Box</span>::<span class="n">new</span><span class="p">(</span><span class="n">WolfSubTransport</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">            </span><span class="n">action</span><span class="p">,</span><span class="w">
 </span><span class="w">            </span><span class="n">channel</span>: <span class="nc">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">clone</span><span class="p">(),</span><span class="w">
@@ -526,8 +526,8 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">        </span><span class="c1">// url format = wolf://host/repo
 </span><span class="c1"></span><span class="w">        </span><span class="c1">// Note: This request is sent when the client&#39;s part is starting, to notify the server about what we want to do.
 </span><span class="c1"></span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">url</span><span class="p">.</span><span class="n">rfind</span><span class="p">(</span><span class="sc">&#39;/&#39;</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">url</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">7</span><span class="p">..</span><span class="n">sep</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">repo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">url</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">sep</span><span class="p">..).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">url</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">7</span><span class="o">..</span><span class="n">sep</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">repo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">url</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">sep</span><span class="o">..</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">null_char</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">;</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="w">                                   </span><span class="cm">/* 4 bytes for the len len */</span><span class="w">
@@ -537,7 +537,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">                    </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w">                                 </span><span class="cm">/* \0 */</span><span class="w">
 </span><span class="w">                    </span><span class="o">+</span><span class="w"> </span><span class="n">HOST_TAG</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">host</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w">       </span><span class="cm">/* host=server */</span><span class="w">
 </span><span class="w">                    </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w">                                 </span><span class="cm">/* \0 */</span><span class="p">;</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{:04x}{} {}{}{}{}{}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="n">cmd</span><span class="p">,</span><span class="w"> </span><span class="n">repo</span><span class="p">,</span><span class="w"> </span><span class="n">null_char</span><span class="p">,</span><span class="w"> </span><span class="n">HOST_TAG</span><span class="p">,</span><span class="w"> </span><span class="n">host</span><span class="p">,</span><span class="w"> </span><span class="n">null_char</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{:04x}{} {}{}{}{}{}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="n">cmd</span><span class="p">,</span><span class="w"> </span><span class="n">repo</span><span class="p">,</span><span class="w"> </span><span class="n">null_char</span><span class="p">,</span><span class="w"> </span><span class="n">HOST_TAG</span><span class="p">,</span><span class="w"> </span><span class="n">host</span><span class="p">,</span><span class="w"> </span><span class="n">null_char</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="n">request</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w"></span><span class="p">}</span><span class="w">
@@ -558,7 +558,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">        </span><span class="p">}</span><span class="w">
 </span><span class="w">        </span><span class="c1">// Write what the server sends into buf.
 </span><span class="c1"></span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">recv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">recv</span><span class="p">().</span><span class="n">unwrap_or</span><span class="p">(</span><span class="nb">Vec</span>::<span class="n">new</span><span class="p">());</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">iter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">recv</span><span class="p">.</span><span class="n">drain</span><span class="p">(..);</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">iter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">recv</span><span class="p">.</span><span class="n">drain</span><span class="p">(</span><span class="o">..</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">
 </span><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iter</span><span class="p">.</span><span class="n">next</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">            </span><span class="n">buf</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span><span class="w">
@@ -579,7 +579,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w"></span><span class="p">}</span><span class="w">
 </span></code></pre></div><p>Then, we can do the server - <code>src/server.rs</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-rust" data-lang="rust"><span class="k">use</span><span class="w"> </span><span class="k">crate</span>::<span class="n">wolftransport</span>::<span class="n">Channel</span><span class="p">;</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">use</span><span class="w"> </span><span class="k">crate</span>::<span class="n">wolftransport</span>::<span class="n">Channel</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">git2</span>::<span class="p">{</span><span class="w"> </span><span class="n">Buf</span><span class="p">,</span><span class="w"> </span><span class="n">Oid</span><span class="p">,</span><span class="w"> </span><span class="n">Repository</span><span class="p">,</span><span class="w"> </span><span class="n">Sort</span><span class="w"> </span><span class="p">};</span><span class="w">
 </span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">cmp</span>::<span class="p">{</span><span class="w"> </span><span class="n">max</span><span class="p">,</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="p">};</span><span class="w">
 </span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="kt">i64</span><span class="p">;</span><span class="w">
@@ -614,7 +614,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="sd">     */</span><span class="w">
 </span><span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">new</span><span class="p">(</span><span class="n">channel</span>: <span class="nc">Channel</span><span class="p">,</span><span class="w"> </span><span class="n">path</span>: <span class="kp">&amp;</span><span class="kt">str</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nc">Self</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Repository</span>::<span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="n">Self</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="w">        </span><span class="bp">Self</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">            </span><span class="n">repository</span><span class="p">,</span><span class="w">
 </span><span class="w">            </span><span class="n">channel</span><span class="p">,</span><span class="w">
 </span><span class="w">            </span><span class="n">wanted</span>: <span class="nb">String</span>::<span class="n">new</span><span class="p">(),</span><span class="w">
@@ -651,16 +651,16 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="c1"></span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">buf</span><span class="p">.</span><span class="n">is_some</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">buf</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">buf</span><span class="p">.</span><span class="n">unwrap</span><span class="p">());</span><span class="w">
 </span><span class="w">        </span><span class="p">}</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">str</span>::<span class="n">from_utf8</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">.</span><span class="n">buf</span><span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">4</span><span class="p">]).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">str</span>::<span class="n">from_utf8</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">.</span><span class="n">buf</span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">4</span><span class="p">]).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">usize</span><span class="p">,</span><span class="w"> </span><span class="kt">i64</span>::<span class="n">from_str_radix</span><span class="p">(</span><span class="n">pkt_len</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">).</span><span class="n">unwrap</span><span class="p">()</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">usize</span><span class="p">);</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt</span><span class="w"> </span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">u8</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">buf</span><span class="p">.</span><span class="n">drain</span><span class="p">(</span><span class="mi">0</span><span class="p">..</span><span class="n">pkt_len</span><span class="p">).</span><span class="n">collect</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">str</span>::<span class="n">from_utf8</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pkt</span><span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="n">pkt_len</span><span class="p">]).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;RECV: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pkt</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt</span><span class="w"> </span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">u8</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">buf</span><span class="p">.</span><span class="n">drain</span><span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="n">pkt_len</span><span class="p">).</span><span class="n">collect</span><span class="p">();</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">str</span>::<span class="n">from_utf8</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pkt</span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="n">pkt_len</span><span class="p">]).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
+</span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;RECV: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pkt</span><span class="p">);</span><span class="w">
 </span><span class="w">
 </span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">pkt</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">UPLOAD_PACK_CMD</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">            </span><span class="c1">// Cf: https://github.com/git/git/blob/master/Documentation/technical/pack-protocol.txt#L166
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// References discovery
-</span><span class="c1"></span><span class="w">            </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Upload pack command detected&#34;</span><span class="p">);</span><span class="w">
+</span><span class="c1"></span><span class="w">            </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Upload pack command detected&#34;</span><span class="p">);</span><span class="w">
 </span><span class="w">            </span><span class="c1">// NOTE: the upload-pack command can contains some parameters like version=1
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// For now git supports only version=1 so we can ignore this part for this article.
 </span><span class="c1"></span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">send_references_capabilities</span><span class="p">();</span><span class="w">
@@ -670,17 +670,17 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// NOTE: a client may sends more than one want. Moreover, the first want line will sends
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// wanted capabilities such as `side-band-64, multi-ack, etc`. To simplify the code, we
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// just ignore capabilities &amp; mutli-lines
-</span><span class="c1"></span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">wanted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from</span><span class="p">(</span><span class="n">pkt</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">9</span><span class="p">..</span><span class="mi">49</span><span class="p">).</span><span class="n">unwrap</span><span class="p">());</span><span class="w"> </span><span class="c1">// take just the commit id
-</span><span class="c1"></span><span class="w">            </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Detected wanted commit: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">wanted</span><span class="p">);</span><span class="w">
+</span><span class="c1"></span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">wanted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from</span><span class="p">(</span><span class="n">pkt</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">9</span><span class="o">..</span><span class="mi">49</span><span class="p">).</span><span class="n">unwrap</span><span class="p">());</span><span class="w"> </span><span class="c1">// take just the commit id
+</span><span class="c1"></span><span class="w">            </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Detected wanted commit: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">wanted</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">pkt</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">HAVE_CMD</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">            </span><span class="c1">// Reference:
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// https://github.com/git/git/blob/master/Documentation/technical/pack-protocol.txt#L390
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// NOTE: improve this part for multi-ack
-</span><span class="c1"></span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">have_commit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from</span><span class="p">(</span><span class="n">pkt</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">9</span><span class="p">..</span><span class="mi">49</span><span class="p">).</span><span class="n">unwrap</span><span class="p">());</span><span class="w"> </span><span class="c1">// take just the commit id
+</span><span class="c1"></span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">have_commit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from</span><span class="p">(</span><span class="n">pkt</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">9</span><span class="o">..</span><span class="mi">49</span><span class="p">).</span><span class="n">unwrap</span><span class="p">());</span><span class="w"> </span><span class="c1">// take just the commit id
 </span><span class="c1"></span><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">.</span><span class="n">is_empty</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">repository</span><span class="p">.</span><span class="n">find_commit</span><span class="p">(</span><span class="n">Oid</span>::<span class="n">from_str</span><span class="p">(</span><span class="o">&amp;*</span><span class="n">have_commit</span><span class="p">).</span><span class="n">unwrap</span><span class="p">()).</span><span class="n">is_ok</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">                    </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">have_commit</span><span class="p">.</span><span class="n">clone</span><span class="p">();</span><span class="w">
-</span><span class="w">                    </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Set common commit to: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">);</span><span class="w">
+</span><span class="w">                    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Set common commit to: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">);</span><span class="w">
 </span><span class="w">                </span><span class="p">}</span><span class="w">
 </span><span class="w">            </span><span class="p">}</span><span class="w">
 </span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">have</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">have_commit</span><span class="p">);</span><span class="w">
@@ -689,7 +689,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// https://github.com/git/git/blob/master/Documentation/technical/pack-protocol.txt#L390
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// NOTE: Do not do multi-ack, just send ACK + pack file
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// In case of no common base, send NAK
-</span><span class="c1"></span><span class="w">            </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Peer negotiation is done. Answering to want order&#34;</span><span class="p">);</span><span class="w">
+</span><span class="c1"></span><span class="w">            </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Peer negotiation is done. Answering to want order&#34;</span><span class="p">);</span><span class="w">
 </span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">send_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">match</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">.</span><span class="n">is_empty</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">                </span><span class="kc">true</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">nak</span><span class="p">(),</span><span class="w">
 </span><span class="w">                </span><span class="kc">false</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">ack_first</span><span class="p">(),</span><span class="w">
@@ -709,49 +709,49 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">                </span><span class="bp">self</span><span class="p">.</span><span class="n">stop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w">
 </span><span class="w">            </span><span class="p">}</span><span class="w">
 </span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span><span class="w">            </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Unwanted packet received: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pkt</span><span class="p">);</span><span class="w">
+</span><span class="w">            </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Unwanted packet received: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pkt</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="p">}</span><span class="w">
 </span><span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">buf</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="k">fn</span> <span class="nf">send_references_capabilities</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">current_head</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">repository</span><span class="p">.</span><span class="n">refname_to_id</span><span class="p">(</span><span class="s">&#34;HEAD&#34;</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">capabilities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{} HEAD\0side-band side-band-64k shallow no-progress include-tag multi_ack&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">current_head</span><span class="p">);</span><span class="w">
-</span><span class="w">        </span><span class="n">capabilities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{:04x}{}\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">capabilities</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="cm">/* size + \n */</span><span class="p">,</span><span class="w"> </span><span class="n">capabilities</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">capabilities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{} HEAD\0side-band side-band-64k shallow no-progress include-tag multi_ack&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">current_head</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="n">capabilities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{:04x}{}\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">capabilities</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="cm">/* size + \n */</span><span class="p">,</span><span class="w"> </span><span class="n">capabilities</span><span class="p">);</span><span class="w">
 </span><span class="w">
 </span><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">repository</span><span class="p">.</span><span class="n">references</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">names</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">reference</span>: <span class="kp">&amp;</span><span class="kt">str</span> <span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">oid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">repository</span><span class="p">.</span><span class="n">refname_to_id</span><span class="p">(</span><span class="n">reference</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">            </span><span class="n">capabilities</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{:04x}{} {}\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="cm">/* size + space + \n */</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">40</span><span class="w"> </span><span class="cm">/* oid */</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">reference</span><span class="p">.</span><span class="n">len</span><span class="p">(),</span><span class="w"> </span><span class="n">oid</span><span class="p">,</span><span class="w"> </span><span class="n">reference</span><span class="p">);</span><span class="w">
+</span><span class="w">            </span><span class="n">capabilities</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="o">&amp;*</span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{:04x}{} {}\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="cm">/* size + space + \n */</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">40</span><span class="w"> </span><span class="cm">/* oid */</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">reference</span><span class="p">.</span><span class="n">len</span><span class="p">(),</span><span class="w"> </span><span class="n">oid</span><span class="p">,</span><span class="w"> </span><span class="n">reference</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="p">}</span><span class="w">
 </span><span class="w">
-</span><span class="w">        </span><span class="n">print</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">capabilities</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">print!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">capabilities</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">capabilities</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">FLUSH_PKT</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">FLUSH_PKT</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">FLUSH_PKT</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="k">fn</span> <span class="nf">nak</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">bool</span> <span class="p">{</span><span class="w">
-</span><span class="w">        </span><span class="n">print</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">NAK_PKT</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">print!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">NAK_PKT</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">NAK_PKT</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">is_ok</span><span class="p">()</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="k">fn</span> <span class="nf">ack_common</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">bool</span> <span class="p">{</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="cm">/* size + ACK + space * 2 + continue + \n */</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">.</span><span class="n">len</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{:04x}ACK {} continue\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">);</span><span class="w">
-</span><span class="w">        </span><span class="n">print</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{:04x}ACK {} continue\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">print!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">is_ok</span><span class="p">()</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="k">fn</span> <span class="nf">ack_first</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">bool</span> <span class="p">{</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="cm">/* size + ACK + space + \n */</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">.</span><span class="n">len</span><span class="p">();</span><span class="w">
-</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{:04x}ACK {}\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">);</span><span class="w">
-</span><span class="w">        </span><span class="n">print</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{:04x}ACK {}\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">common</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">print!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">is_ok</span><span class="p">()</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="k">fn</span> <span class="nf">send_pack_data</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span><span class="w">        </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Send: [PACKFILE]&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Send: [PACKFILE]&#34;</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="c1">// Note: this part of the code adds every commits into
 </span><span class="c1"></span><span class="w">        </span><span class="c1">// the packfile until a commit announced by the client
 </span><span class="c1"></span><span class="w">        </span><span class="c1">// is found AND a common parent is found (or until the
@@ -798,20 +798,20 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="c1"></span><span class="w">            </span><span class="c1">// total of up to 65520 bytes in a pkt-line.
 </span><span class="c1"></span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="mi">65515</span><span class="p">,</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">sent</span><span class="p">);</span><span class="w">
 </span><span class="w">            </span><span class="c1">// The packet is Size (4 bytes), Control byte (0x01 for data), pack data.
-</span><span class="c1"></span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{:04x}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pkt_size</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="cm">/* size + control */</span><span class="p">);</span><span class="w">
+</span><span class="c1"></span><span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="n">pkt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{:04x}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pkt_size</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="cm">/* size + control */</span><span class="p">);</span><span class="w">
 </span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">pkt</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="s">b&#34;</span><span class="se">\x01</span><span class="s">&#34;</span><span class="p">.</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
-</span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">sent</span><span class="p">..(</span><span class="n">sent</span><span class="o">+</span><span class="n">pkt_size</span><span class="p">)].</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
+</span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">sent</span><span class="o">..</span><span class="p">(</span><span class="n">sent</span><span class="o">+</span><span class="n">pkt_size</span><span class="p">)].</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">            </span><span class="n">sent</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">pkt_size</span><span class="p">;</span><span class="w">
 </span><span class="w">        </span><span class="p">}</span><span class="w">
 </span><span class="w">
-</span><span class="w">        </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">FLUSH_PKT</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Send: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">FLUSH_PKT</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="c1">// And finish by a little FLUSH
 </span><span class="c1"></span><span class="w">        </span><span class="bp">self</span><span class="p">.</span><span class="n">channel</span><span class="p">.</span><span class="n">lock</span><span class="p">().</span><span class="n">unwrap</span><span class="p">().</span><span class="n">send</span><span class="p">(</span><span class="n">FLUSH_PKT</span><span class="p">.</span><span class="n">as_bytes</span><span class="p">().</span><span class="n">to_vec</span><span class="p">()).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w"></span><span class="p">}</span><span class="w">
 </span></code></pre></div><p>Finally <code>src/main.rs</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-rust" data-lang="rust"><span class="k">mod</span> <span class="nn">wolftransport</span><span class="p">;</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">mod</span> <span class="nn">wolftransport</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="k">mod</span> <span class="nn">server</span><span class="p">;</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">bichannel</span>::<span class="n">channel</span><span class="p">;</span><span class="w">
@@ -826,7 +826,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w"></span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">args</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">env</span>::<span class="n">args</span><span class="p">().</span><span class="n">collect</span><span class="p">();</span><span class="w">
 </span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">args</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span><span class="w">        </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Usage: ./p2p-internal-git &lt;src_dir&gt; &lt;dest_dir&gt;&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Usage: ./p2p-internal-git &lt;src_dir&gt; &lt;dest_dir&gt;&#34;</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="k">return</span><span class="p">;</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">    
@@ -835,7 +835,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">
 </span><span class="w">    </span><span class="c1">// For fetch, comment the 4 following lines
 </span><span class="c1"></span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">dest_dir</span><span class="p">.</span><span class="n">is_dir</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span><span class="w">        </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Can&#39;t clone into an existing directory&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Can&#39;t clone into an existing directory&#34;</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="k">return</span><span class="p">;</span><span class="w">
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
@@ -855,7 +855,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="w">    </span><span class="p">}</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">thread</span>::<span class="n">spawn</span><span class="p">(</span><span class="k">move</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span><span class="w">        </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Starting server for {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">src_dir</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Starting server for {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">src_dir</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Server</span>::<span class="n">new</span><span class="p">(</span><span class="n">server_channel</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">src_dir</span><span class="p">);</span><span class="w">
 </span><span class="w">        </span><span class="n">server</span><span class="p">.</span><span class="n">run</span><span class="p">();</span><span class="w">
 </span><span class="w">    </span><span class="p">});</span><span class="w">
@@ -870,12 +870,12 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span><span class="c1"></span><span class="w">    </span><span class="n">RepoBuilder</span>::<span class="n">new</span><span class="p">().</span><span class="n">clone</span><span class="p">(</span><span class="s">&#34;wolf://localhost/zds&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">dest_dir</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w">
 </span><span class="w">    </span><span class="c1">// Note: &#34;wolf://&#34; triggers our registered transport. localhost/zds is unused
 </span><span class="c1"></span><span class="w">    </span><span class="c1">// as our server only serves one repository and the address is not resolved.
-</span><span class="c1"></span><span class="w">    </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Cloned into {:?}!&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">dest_dir</span><span class="p">);</span><span class="w">
+</span><span class="c1"></span><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Cloned into {:?}!&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">dest_dir</span><span class="p">);</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="n">server</span><span class="p">.</span><span class="n">join</span><span class="p">().</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;The server panicked&#34;</span><span class="p">);</span><span class="w">
 </span><span class="w"></span><span class="p">}</span><span class="w">
 </span></code></pre></div><p>And <code>Cargo.toml</code>:</p>
-<pre><code>[package]
+<pre tabindex="0"><code>[package]
 name = &quot;p2p-internals-git&quot;
 version = &quot;0.1.0&quot;
 authors = [&quot;AmarOk&quot;]
@@ -885,7 +885,7 @@ edition = &quot;2018&quot;
 bichannel = &quot;0.0.4&quot;
 git2 = { git = &quot;https://github.com/AmarOk1412/git2-rs&quot; }
 </code></pre><p>Now, we can use the program to copy a <em>git</em> repository from one directory to another:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Note, multi-ack is not supported, so just clone the master branch without the tags</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Note, multi-ack is not supported, so just clone the master branch without the tags</span>
  amarok@tars3  ~/Projects/p2p-internals-git   main  git clone -b master --single-branch --no-tags https://github.com/zestedesavoir/zmarkdown.git
 Cloning into <span class="s1">&#39;zmarkdown&#39;</span>...
 remote: Enumerating objects: 1207, <span class="k">done</span>.
@@ -982,7 +982,9 @@ c42412dfee248e8acbd21df6038991dff6fd1b2a
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:contact@enconn.fr" title="Email me">
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -990,7 +992,9 @@ c42412dfee248e8acbd21df6038991dff6fd1b2a
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -998,7 +1002,9 @@ c42412dfee248e8acbd21df6038991dff6fd1b2a
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
+		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -1006,7 +1012,9 @@ c42412dfee248e8acbd21df6038991dff6fd1b2a
                 </a>
               </li>
               <li>
-                <a href="https://mastodon.social/@amarok" title="Mastodon">
+		
+		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -1043,7 +1051,7 @@ c42412dfee248e8acbd21df6038991dff6fd1b2a
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -1051,7 +1059,7 @@ c42412dfee248e8acbd21df6038991dff6fd1b2a
   </div>
 </footer><script src="https://enconn.fr/js/katex.min.js"></script>
 <script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>

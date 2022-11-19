@@ -88,18 +88,16 @@
   <meta name="twitter:title" content="r2" />
   <meta name="twitter:description" content="pour changer de gdb">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
-
-
 
   </head>
   <body>
@@ -220,6 +218,7 @@
 
   <header class="header-section ">
     
+    
     <div class="intro-header no-img">
       <div class="container">
         <div class="row">
@@ -242,6 +241,7 @@
         </div>
       </div>
     </div>
+  
   </header>
 
 
@@ -259,7 +259,7 @@
 <p>Le challenge n&rsquo;avait rien de compliqué et prenait quelques secondes avec <code>gdb</code> à résoudre, je ne vais donc pas en faire un write-up, juste me concentrer sur <code>r2</code>.</p>
 <p>J&rsquo;ai tout d&rsquo;abord tenté une approche sans exécuter le programme, mais en regardant les fonctionnalités de reverse basiques.</p>
 <p>La première étape est de lancer <code>r2</code> en lui passant le programme</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> AmarOk@tars3  ~/Downloads  r2 -d ./easy_reverse
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"> AmarOk@tars3  ~/Downloads  r2 -d ./easy_reverse
 </code></pre></div><p>(le <code>-d</code> servira pour la seconde approche, par le debug)</p>
 <p>Puis avec des tutoriels en ligne, je trouve les commandes <code>aa</code> pour lancer une analyse du programme (pour <em>anyalyze all</em>) puis (<code>pdf @main</code> pour obtenir le code qui m&rsquo;intéresse). Ce qui donne :</p>
 <p><img src="/img/dev/radare/pdfmain.png" alt="pdfmain"></p>
@@ -269,7 +269,7 @@
 <ol>
 <li>On demande a l&rsquo;utilisateur un password</li>
 </ol>
-<pre><code> mov edi, str.Password_:     ; 0x4007c4 ; &quot;Password : &quot;
+<pre tabindex="0"><code> mov edi, str.Password_:     ; 0x4007c4 ; &quot;Password : &quot;
  mov eax, 0
  call sym.imp.printf         ; int printf(const char *format)
  lea rax, [local_70h]
@@ -280,7 +280,7 @@
 </code></pre><p>via <code>printf</code> et <code>scanf</code>.</p>
 <p>Puis on compare cette valeur avec une autre (<code> call sym.imp.strcmp         ; int strcmp(const char *s1, const char *s2)</code>)</p>
 <p>Et on félicite ou non la personne.</p>
-<pre><code>   ,=&lt; 0x00400704      7511           jne 0x400717
+<pre tabindex="0"><code>   ,=&lt; 0x00400704      7511           jne 0x400717
    |   0x00400706      bfd3074000     mov edi, str.You_re_a_Wizard ; 0x4007d3 ; &quot;You're a Wizard&quot;
    |   0x0040070b      e810feffff     call sym.imp.puts           ; int puts(const char *s)
    |   0x00400710      b800000000     mov eax, 0
@@ -289,7 +289,7 @@
   |    0x0040071c      e8fffdffff     call sym.imp.puts           ; int puts(const char *s)
   |    0x00400721      b801000000     mov eax, 1
 </code></pre><p>On suppose simplement que la valeur qu&rsquo;on cherche c&rsquo;est le bon mot de passe et je m&rsquo;intéresse donc à <code>strcmp</code>. En suivant les <code>mov</code> de dessus, on voit que <code>strcmp</code> compare le password qu&rsquo;on à entré et une valeur que nous voyons en haut :</p>
-<pre><code>movabs rax, 0x3857397b47414c46
+<pre tabindex="0"><code>movabs rax, 0x3857397b47414c46
 mov qword [local_80h], rax
 mov dword [local_78h], 0x7a6e6273
 mov word [local_74h], 0x7d38
@@ -352,7 +352,9 @@ mov byte [local_72h], 0
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:contact@enconn.fr" title="Email me">
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -360,7 +362,9 @@ mov byte [local_72h], 0
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -368,7 +372,9 @@ mov byte [local_72h], 0
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
+		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -376,7 +382,9 @@ mov byte [local_72h], 0
                 </a>
               </li>
               <li>
-                <a href="https://mastodon.social/@amarok" title="Mastodon">
+		
+		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -413,7 +421,7 @@ mov byte [local_72h], 0
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -421,7 +429,7 @@ mov byte [local_72h], 0
   </div>
 </footer><script src="https://enconn.fr/js/katex.min.js"></script>
 <script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>

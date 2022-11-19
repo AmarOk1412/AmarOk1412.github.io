@@ -1,413 +1,258 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://enconn.fr/blog/gpt3-gitlab-bot/</loc>
-    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/ai/</loc>
-    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://enconn.fr/blog/</loc>
-    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://enconn.fr/tags/dev/</loc>
-    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://enconn.fr/</loc>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/jami/</loc>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/blog/jami-post/</loc>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/software/</loc>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/</loc>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/talk/</loc>
+    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/blog/gpt3-gitlab-bot/</loc>
     <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://enconn.fr/tags/ai/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://enconn.fr/tags/gpt-3/</loc>
     <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/software/</loc>
-    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://enconn.fr/tags/</loc>
-    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/git/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/git-dissect/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/p2p/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/mont-tremblant/</loc>
     <lastmod>2020-08-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/</loc>
     <lastmod>2020-08-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/logs/</loc>
     <lastmod>2020-08-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/quebec/</loc>
     <lastmod>2020-08-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/gaspesie/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/privacy/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/onion-address/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/p2p-internals-dht/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/grands-jardins/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/p2p-internals-ice/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/dbus/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/dbus-on-a-server/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/quickie/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/p2p-internals-rfc6062/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/devops/</loc>
     <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/free-software/</loc>
     <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/jitsi/</loc>
     <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/canada/</loc>
     <lastmod>2018-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/ontario/</loc>
     <lastmod>2018-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/voyage/</loc>
     <lastmod>2018-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/nova-scotia/</loc>
     <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/new-brunswick/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/boston/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/boston/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/us/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/2-3-retour-du-nsec-the-visual-microphone/</loc>
     <lastmod>2018-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/ctf/</loc>
     <lastmod>2018-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/s%C3%A9curit%C3%A9/</loc>
     <lastmod>2018-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/1-3-retour-du-nsec-introduction-au-badge-hacking/</loc>
     <lastmod>2018-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/programmation/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/rust/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/tarpaulin-ou-kcov/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/tests/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/radare/</loc>
     <lastmod>2018-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/security/</loc>
     <lastmod>2018-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/tools/</loc>
     <lastmod>2018-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/belgium/</loc>
     <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/brussels/</loc>
     <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/fosdem/</loc>
     <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/js/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/project/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/web/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/zds/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/zmarkdown/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/linux/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/network/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/fibre-to-56k/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/bridge-irc-ring/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/python/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/ring/</loc>
     <lastmod>2017-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/niagara/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/ottawa/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/toronto/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/zoo/</loc>
     <lastmod>2016-11-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/parc-des-monts-valins/</loc>
     <lastmod>2016-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/fjord-saguenay/</loc>
     <lastmod>2016-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/roadtrip/</loc>
     <lastmod>2016-11-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/chicoutimi/</loc>
     <lastmod>2016-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/baie-saint-paul/</loc>
     <lastmod>2016-08-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/quebec/</loc>
     <lastmod>2016-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/montreal/</loc>
     <lastmod>2016-08-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/chronique-du-libre-2/</loc>
     <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/chronique-du-libre/</loc>
     <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/mozilla/</loc>
     <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/science/</loc>
     <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/blog/chronique-du-libre-1/</loc>
     <lastmod>2016-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/robot/</loc>
     <lastmod>2016-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/tags/drawing/</loc>
     <lastmod>2014-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/logs/gallerie/</loc>
     <lastmod>2014-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://enconn.fr/about/</loc>
   </url>
-  
 </urlset>

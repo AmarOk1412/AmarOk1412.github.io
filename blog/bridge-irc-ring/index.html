@@ -45,7 +45,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/enconn.fr\/blog\/bridge-irc-ring\/",
-          "name": "Créer un bridge i r c ring"
+          "name": "Créer un bridge irc ring"
         }
     }]
 }
@@ -88,18 +88,16 @@
   <meta name="twitter:title" content="Créer un bridge IRC - Ring" />
   <meta name="twitter:description" content="Réalisation d&#39;un bridge IRC/Ring en python">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
-
-
 
   </head>
   <body>
@@ -220,6 +218,7 @@
 
   <header class="header-section ">
     
+    
     <div class="intro-header no-img">
       <div class="container">
         <div class="row">
@@ -242,6 +241,7 @@
         </div>
       </div>
     </div>
+  
   </header>
 
 
@@ -266,7 +266,7 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 <h1 id="linterface-du-daemon">L&rsquo;interface du daemon</h1>
 <p>Le daemon possède de nombreux signaux et méthodes. Une fois installé, on peut trouver le dossier contenant les binaires dans <code>daemon/bin/</code>. On peut ainsi le lancer avec la commande <code>./dring</code>. Dans ce même dossier, on peut trouver les fichiers <code>bin/dbus/cx.ring.Ring.*.xml</code> qui vont contenir la liste des signaux et des méthodes ainsi que comment les utiliser.</p>
 <p>Par exemple, dans <code>bin/dbus/cx.ring.Ring.ConfigurationManager.xml</code> nous pouvons trouver le signal que nous utiliserons plus loin :
-<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;signal</span> <span class="na">name=</span><span class="s">&#34;incomingAccountMessage&#34;</span> <span class="na">tp:name-for-bindings=</span><span class="s">&#34;incomingAccountMessage&#34;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;signal</span> <span class="na">name=</span><span class="s">&#34;incomingAccountMessage&#34;</span> <span class="na">tp:name-for-bindings=</span><span class="s">&#34;incomingAccountMessage&#34;</span><span class="nt">&gt;</span>
    <span class="nt">&lt;tp:added</span> <span class="na">version=</span><span class="s">&#34;2.2.0&#34;</span><span class="nt">/&gt;</span>
    <span class="nt">&lt;tp:docstring&gt;</span>
        Notify clients that a new text message has been received at the account level.
@@ -283,17 +283,17 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 <p>Dans le fichier, on trouve une classe nommée <code>DRingCtrl</code> qui permet de réagir aux évènements du <em>VideoManager</em>, <em>CallManager</em>, <em>ConfigurationManager</em> et autres parties en connectant les signaux à des callbacks. Ainsi, pour obtenir une application réagissant aux évènements envoyés par le daemon de connecter le signal à une callback ; puis de baser notre application sur <code>DRingCtrl</code>. Par exemple pour le signal donné plus haut, il nous suffit d&rsquo;ajouter dans la méthode <code>register()</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">proxy_confmgr</span><span class="o">.</span><span class="n">connect_to_signal</span><span class="p">(</span><span class="s1">&#39;incomingAccountMessage&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">onIncomingAccountMessage</span><span class="p">)</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">proxy_confmgr</span><span class="o">.</span><span class="n">connect_to_signal</span><span class="p">(</span><span class="s1">&#39;incomingAccountMessage&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">onIncomingAccountMessage</span><span class="p">)</span></code></pre></td></tr></table>
 </div>
 </div>
 <p>et lorsqu&rsquo;on recevra un message, on pourra le traiter avec uns méthode nommée <em>onIncomingAccountMessage</em>.</p>
 <p>Par exemple, on peut imaginer la base de notre contrôleur comme ceci :</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -303,14 +303,14 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">IRCRingController</span><span class="p">(</span><span class="n">DRingCtrl</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">IRCRingController</span><span class="p">(</span><span class="n">DRingCtrl</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_bridge</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;ircbridge&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;ircbridge&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">accountId</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">configurationmanager</span><span class="o">.</span><span class="n">getAccountList</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="k">def</span> <span class="nf">onIncomingAccountMessage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accountId</span><span class="p">,</span> <span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">):</span>
         <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">[</span><span class="s1">&#39;text/plain&#39;</span><span class="p">])</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Receive new message from </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">message</span><span class="p">)</span></code></pre></td></tr></table>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Receive new message from </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">message</span><span class="p">)</span></code></pre></td></tr></table>
 </div>
 </div>
 <h1 id="un-bot-irc">Un bot IRC</h1>
@@ -376,7 +376,9 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:contact@enconn.fr" title="Email me">
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -384,7 +386,9 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -392,7 +396,9 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
+		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -400,7 +406,9 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
                 </a>
               </li>
               <li>
-                <a href="https://mastodon.social/@amarok" title="Mastodon">
+		
+		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -437,7 +445,7 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -445,7 +453,7 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
   </div>
 </footer><script src="https://enconn.fr/js/katex.min.js"></script>
 <script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>

@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Jami posts</title>
+      <link>https://enconn.fr/blog/jami-post/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/jami-post/</guid>
+      <description>I&amp;rsquo;m a Core Developer for https://jami.net since several years now. During those years, I gave some talks and wrote a lot of articles that I&amp;rsquo;ll link of that page:
+Articles  &amp;ldquo;Improving the call experience in Jami&amp;rdquo; - 2022, Aug 31 - https://jami.net/improving-call-experience-in-jami/ &amp;ldquo;Swarm file transfers&amp;rdquo; - 2022, Aug 09 - https://jami.net/swarm-file-transfers/ &amp;ldquo;Synchronizing conversation history with Swarm&amp;rdquo; - 2022, Feb 16 - https://jami.net/synchronizing-conversation-history-with-swarm/ &amp;ldquo;Swarm: a new generation of group conversations&amp;rdquo; - 2021, Jan 15 - https://jami.</description>
+    </item>
+    
     <item>
       <title>A GPT-3 bot to answer my tickets</title>
       <link>https://enconn.fr/blog/gpt3-gitlab-bot/</link>

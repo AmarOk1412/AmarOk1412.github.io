@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>talk on Enconn</title>
+    <link>https://enconn.fr/tags/talk/</link>
+    <description>Recent content in talk on Enconn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Jami posts</title>
+      <link>https://enconn.fr/blog/jami-post/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/jami-post/</guid>
+      <description>I&amp;rsquo;m a Core Developer for https://jami.net since several years now. During those years, I gave some talks and wrote a lot of articles that I&amp;rsquo;ll link of that page:
+Articles  &amp;ldquo;Improving the call experience in Jami&amp;rdquo; - 2022, Aug 31 - https://jami.net/improving-call-experience-in-jami/ &amp;ldquo;Swarm file transfers&amp;rdquo; - 2022, Aug 09 - https://jami.net/swarm-file-transfers/ &amp;ldquo;Synchronizing conversation history with Swarm&amp;rdquo; - 2022, Feb 16 - https://jami.net/synchronizing-conversation-history-with-swarm/ &amp;ldquo;Swarm: a new generation of group conversations&amp;rdquo; - 2021, Jan 15 - https://jami.</description>
+    </item>
+    
+  </channel>
+</rss>

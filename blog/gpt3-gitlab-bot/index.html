@@ -45,7 +45,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/enconn.fr\/blog\/gpt3-gitlab-bot\/",
-          "name": "A g p t 3 bot to answer my tickets"
+          "name": "A gpt 3 bot to answer my tickets"
         }
     }]
 }
@@ -59,7 +59,7 @@
   "headline": "A GPT-3 bot to answer my tickets",
   "description" : "Long time no see! I have a looooooot of projects in mind and a lot far too big (\u002b40h of work \u0026amp; personal community stuff \u0026amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this.",
   "inLanguage" : "en",
-  "wordCount":  1566 ,
+  "wordCount":  1565 ,
   "datePublished" : "2022-08-18T00:00:00",
   "dateModified" : "2022-08-18T00:00:00",
   "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
@@ -88,18 +88,16 @@
   <meta name="twitter:title" content="A GPT-3 bot to answer my tickets" />
   <meta name="twitter:description" content="A project done in one week-end">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
-
-
 
   </head>
   <body>
@@ -220,6 +218,7 @@
 
   <header class="header-section ">
     
+    
     <div class="intro-header no-img">
       <div class="container">
         <div class="row">
@@ -242,6 +241,7 @@
         </div>
       </div>
     </div>
+  
   </header>
 
 
@@ -279,47 +279,47 @@ The first step is to get an access token via <code>https://INSTANCE_GITLAB/-/pro
 <a href="https://docs.gitlab.com/ee/api/discussions.html">https://docs.gitlab.com/ee/api/discussions.html</a><br>
 <a href="https://docs.gitlab.com/ee/api/projects.html">https://docs.gitlab.com/ee/api/projects.html</a></p>
 <p>Then, the simplest way to know what we will have to parse is to use that good old <code>curl</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Retrieve all projects from an instance (here gitlab.com)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Retrieve all projects from an instance (here gitlab.com)</span>
 curl https://gitlab.com/api/v4/projects
 <span class="c1"># Or to post a comment in the issue #42 in project 42</span>
 curl -XPOST --header <span class="s2">&#34;PRIVATE-TOKEN:tres_tres_prive&#34;</span> <span class="s2">&#34;https://gitlab.com/api/v4/projects/42/issues/42/notes?body=foobar&#34;</span>
 </code></pre></div><p>In the final script, I use <a href="https://pypi.org/project/requests/"><code>requests</code></a></p>
 <p>A small example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">answer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">project_id</span><span class="p">,</span> <span class="n">issue_id</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
-    <span class="n">endpoint</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;{self.git_url}/api/v4/projects/{project_id}/issues/{issue_id}/notes?body={body}&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">answer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">project_id</span><span class="p">,</span> <span class="n">issue_id</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+    <span class="n">endpoint</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">git_url</span><span class="si">}</span><span class="s1">/api/v4/projects/</span><span class="si">{</span><span class="n">project_id</span><span class="si">}</span><span class="s1">/issues/</span><span class="si">{</span><span class="n">issue_id</span><span class="si">}</span><span class="s1">/notes?body=</span><span class="si">{</span><span class="n">body</span><span class="si">}</span><span class="s1">&#39;</span>
     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
     <span class="k">if</span> <span class="s1">&#39;error&#39;</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">():</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;An error occurred while posting to {endpoint}&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;An error occurred while posting to </span><span class="si">{</span><span class="n">endpoint</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Answered to issue {issue_id} with success&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Answered to issue </span><span class="si">{</span><span class="n">issue_id</span><span class="si">}</span><span class="s1"> with success&#39;</span><span class="p">)</span>
 </code></pre></div><h1 id="playing-with-openai">Playing with OpenAI</h1>
 <h2 id="get-a-token">Get a token</h2>
 <p>The API is documented there: <a href="https://openai.com/api/">https://openai.com/api/</a></p>
 <p>And the first step is to generate a key (after getting access to the beta) here: <a href="https://beta.openai.com/account/api-keys">https://beta.openai.com/account/api-keys</a></p>
 <h2 id="play-a-little">Play a little</h2>
 <p>A lot of demonstrations are available <a href="https://beta.openai.com/examples">here</a> and even a playground <a href="https://beta.openai.com/playground">here</a>!</p>
-<p>So, let&rsquo;s try to answer to a post from StackOverflow <a href="https://stackoverflow.com/questions/73311716/gpt3-point-as-terminator-of-sentence:">https://stackoverflow.com/questions/73311716/gpt3-point-as-terminator-of-sentence:</a></p>
+<p>So, let&rsquo;s try to answer to a post from StackOverflow <a href="https://stackoverflow.com/questions/73311716/gpt3-point-as-terminator-of-sentence">https://stackoverflow.com/questions/73311716/gpt3-point-as-terminator-of-sentence</a>:</p>
 <p><img src="/img/dev/gpt3-gitlab-bot/so.png" alt="GPT-3&rsquo;s answer for a StackOverflow post"></p>
 <p>which is similar to the use-case I want. The only thing to do is to start with &ldquo;Answer to this&rdquo;, else GPT-3 will just complete the text (with something like &ldquo;Thanks, Pierre&rdquo;).</p>
 <h1 id="a-minimalist-interface">A minimalist interface</h1>
 <h2 id="minimalist-but-usable">Minimalist, but usable</h2>
 <p>To create the CLI interface I&rsquo;ll use <a href="https://docs.python.org/3/library/cmd.html">cmd</a>, which is an easy to use Python&rsquo;s module that can handle the input (go to the previous command <code>Ctrl+W</code>, <code>Ctrl+U</code>, etc.) and it&rsquo;s easy to add new commands, for example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">do_save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="n">arg</span> <span class="k">if</span> <span class="n">arg</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="k">else</span> <span class="n">f</span><span class="s1">&#39;{self.answeringTo[&#34;id&#34;]}.answer&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">do_save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">arg</span> <span class="k">if</span> <span class="n">arg</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="k">else</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">answeringTo</span><span class="p">[</span><span class="s2">&#34;id&#34;</span><span class="p">]</span><span class="si">}</span><span class="s1">.answer&#39;</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">answer</span><span class="p">)</span>
 </code></pre></div><p>This code adds in a few lines a <code>save</code> command (to save a file passed in the arguments or a generated one), or another example with the <code>help</code> command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">do_help</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;start: Start to analyze issues&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;save &lt;file&gt;: Save generated answer to &lt;file&gt;&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;send: Send answer without saving it&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;send &lt;file&gt;: Send answer from file&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;add &lt;url&gt;: Add an issue from an url&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;add &lt;file&gt;: Add an issue from a file (no send possible)&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;next: Pass to the next issue&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;exit: Close GePeTTTo&#39;</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">do_help</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;start: Start to analyze issues&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;save &lt;file&gt;: Save generated answer to &lt;file&gt;&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;send: Send answer without saving it&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;send &lt;file&gt;: Send answer from file&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;add &lt;url&gt;: Add an issue from an url&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;add &lt;file&gt;: Add an issue from a file (no send possible)&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;next: Pass to the next issue&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;exit: Close GePeTTTo&#39;</span><span class="p">)</span>
 </code></pre></div><p>Then it&rsquo;s possible to show text in a wanted color with:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">colored</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">))</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="nb">print</span><span class="p">(</span><span class="n">colored</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">))</span>
 </code></pre></div><h2 id="some-screenshots">Some screenshots</h2>
 <p>Now that everything is plugged, this is what it looks like:</p>
 <p><img src="/img/dev/gpt3-gitlab-bot/first.png" alt="A first answer"></p>
@@ -328,15 +328,15 @@ curl -XPOST --header <span class="s2">&#34;PRIVATE-TOKEN:tres_tres_prive&#34;</s
 <p>Now that the script do what I want, the next step is to try to get better answers. For that, I need to customize a model, and I found this article: <a href="https://openai.com/blog/customized-gpt-3/">Customizing GPT-3
 for Your Application</a> which explains what I want.</p>
 <p>At first, I tried to parse the whole GitLab instance to get all the comments I posted. It generated a models with a few thousands inputs after filtering a lot of &ldquo;this is a duplicate of&hellip;&rdquo;, &ldquo;non reproducible&rdquo;, &ldquo;fixed, close&rdquo; because I don&rsquo;t want the bot to generate this. The inputs looked like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span> <span class="nt">&#34;prompt&#34;</span><span class="p">:</span> <span class="s2">&#34;Answer to this:\n&lt;comment&gt;&#34;</span><span class="p">,</span> <span class="nt">&#34;completion&#34;</span><span class="p">:</span> <span class="s2">&#34;&lt;my_answer&gt;###&#34;</span><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span> <span class="nt">&#34;prompt&#34;</span><span class="p">:</span> <span class="s2">&#34;Answer to this:\n&lt;comment&gt;&#34;</span><span class="p">,</span> <span class="nt">&#34;completion&#34;</span><span class="p">:</span> <span class="s2">&#34;&lt;my_answer&gt;###&#34;</span><span class="p">}</span>
 <span class="p">{</span> <span class="nt">&#34;prompt&#34;</span><span class="p">:</span> <span class="s2">&#34;Answer to this:\n&lt;comment2&gt;&#34;</span><span class="p">,</span> <span class="nt">&#34;completion&#34;</span><span class="p">:</span> <span class="s2">&#34;&lt;my_answer2&gt;###&#34;</span><span class="p">}</span>
 <span class="err">...</span>
 </code></pre></div><p>and I can train a custom model via the following command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">openai api fine_tunes.create -m davinci --n_epochs <span class="m">2</span> -t myfile
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openai api fine_tunes.create -m davinci --n_epochs <span class="m">2</span> -t myfile
 </code></pre></div><p>This generates a custom model I can use in Python with:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">openai</span><span class="o">.</span><span class="n">Completion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">openai</span><span class="o">.</span><span class="n">Completion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>\
     <span class="n">model</span><span class="o">=</span><span class="s2">&#34;davinci:ft-personal-2022-00-00-00-00-00&#34;</span><span class="p">,</span>\
-    <span class="n">prompt</span><span class="o">=</span><span class="n">f</span><span class="s2">&#34;Answer to this issue:</span><span class="se">\n\n</span><span class="s2">{json.dumps(issue[&#39;body&#39;])}&#34;</span><span class="p">,</span>\
+    <span class="n">prompt</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;Answer to this issue:</span><span class="se">\n\n</span><span class="si">{</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">issue</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>\
     <span class="n">temperature</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">500</span>\
 <span class="p">)</span>
 </code></pre></div><p>However:</p>
@@ -348,9 +348,9 @@ for Your Application</a> which explains what I want.</p>
 <p>I thought that the first point was because of my filtering in the training data. There are a lot of backtraces, logs, some code sometimes, noise and the best tickets were tickets asking questions, not about how to reproduce a bug. So, Option A - I needed to sort the current data again to keep the best lines. Or Option B - I restart from scratch and write a new model with a FAQ and some answers I mainly wrote (and that I can also use the <code>question</code> label on the GitLab I use).</p>
 <p>Once this garbage problem handled, I checked the weird characters issues. The reason is that a lot of my training data contained some Markdown input. So, I needed to remove the format and use a plain/text (I converted the Markdown to plain/text in Python directly with <code>markdown</code> and <code>BeautifulSoup</code>).</p>
 <p>Finally, the third point took me some time to figure out. I tried different inputs with and without the end mark (I changed it to <code>&lt;END&gt;</code>) before solving it. The OpenAI&rsquo;s API take a <strong>stop</strong> parameter:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">openai</span><span class="o">.</span><span class="n">Completion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">openai</span><span class="o">.</span><span class="n">Completion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>\
     <span class="n">model</span><span class="o">=</span><span class="s2">&#34;davinci:ft-personal-2022-00-00-00-00-00&#34;</span><span class="p">,</span>\
-    <span class="n">prompt</span><span class="o">=</span><span class="n">f</span><span class="s2">&#34;Answer to this issue:</span><span class="se">\n\n</span><span class="s2">{json.dumps(issue[&#39;body&#39;])}&#34;</span><span class="p">,</span>\
+    <span class="n">prompt</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;Answer to this issue:</span><span class="se">\n\n</span><span class="si">{</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">issue</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>\
     <span class="n">temperature</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">500</span>\
     <span class="n">stop</span><span class="o">=</span><span class="s2">&#34;&lt;END&gt;&#34;</span>
 <span class="p">)</span>
@@ -422,6 +422,10 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
             </li>
           
           
+            <li class="next">
+              <a href="https://enconn.fr/blog/jami-post/" data-toggle="tooltip" data-placement="top" title="My Jami posts">Next Post &rarr;</a>
+            </li>
+          
         </ul>
       
 
@@ -443,7 +447,9 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:contact@enconn.fr" title="Email me">
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -451,7 +457,9 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -459,7 +467,9 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
+		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -467,7 +477,9 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
                 </a>
               </li>
               <li>
-                <a href="https://mastodon.social/@amarok" title="Mastodon">
+		
+		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -504,7 +516,7 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -512,7 +524,7 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
   </div>
 </footer><script src="https://enconn.fr/js/katex.min.js"></script>
 <script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>

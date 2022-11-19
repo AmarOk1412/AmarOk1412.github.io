@@ -88,18 +88,16 @@
   <meta name="twitter:title" content="Passer de la fibre au 56k" />
   <meta name="twitter:description" content="Ou comment baisser la qualité de son réseau">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
-
-
 
   </head>
   <body>
@@ -220,6 +218,7 @@
 
   <header class="header-section ">
     
+    
     <div class="intro-header no-img">
       <div class="container">
         <div class="row">
@@ -242,6 +241,7 @@
         </div>
       </div>
     </div>
+  
   </header>
 
 
@@ -267,7 +267,7 @@ Source : <a href="https://mammout.bzh/users/alarig/updates/673">https://mammout.
 <p>Dans un premier temps, il était intéressant de voir comment réagissait le stream de vidéo dans plusieurs cas. Par exemple, quel est le débit nécessaire pour faire passer une vidéo avec un flux en 1280x720 (30fps) avec tel ou tel qualité (pour le h.264, on parle de CRF).</p>
 <p>Je vous épargne cette partie, il s&rsquo;agit de graphes et de commandes de monitoring (<code>iptraf</code>, <code>ifstat</code> qui donne la consommation pour chaque interface en continu, <code>iperf</code>, etc).</p>
 <p>Puis, de voir comment se comporte le stream lorsque le réseau se met à avoir du délai ou des pertes de paquets. Une des solutions était de faire ça au niveau du daemon du programme qu&rsquo;on développe, mais ça demande de relancer le programme trop souvent. C&rsquo;est à ce moment que sert une commande super utile <code>tc</code> (pour traffic control) et <code>netem</code>. Je n&rsquo;ai pas pour but de faire un tutorial complet pour ces commandes (j&rsquo;avoue que je ne maîtrise pas bien ces commandes), mais voilà ce qu&rsquo;on peut trouver dans le <code>man tc-netem</code> :</p>
-<pre><code>SYNOPSIS
+<pre tabindex="0"><code>SYNOPSIS
        tc qdisc ... dev DEVICE ] add netem OPTIONS
 
        OPTIONS := [ LIMIT ] [ DELAY ] [ LOSS ] [ CORRUPT ] [ DUPLICATION ] [ REORDERING ][ RATE ]
@@ -293,7 +293,7 @@ DESCRIPTION
        NetEm  is  an enhancement of the Linux traffic control facilities that allow to add delay, packet loss, duplication and more other characteristics to packets outgoing from a selected
        network interface. NetEm is built using the existing Quality Of Service (QOS) and Differentiated Services (diffserv) facilities in the Linux kernel.
 </code></pre><p>Ainsi, cette commande va permettre de simuler un réseau avec des paquets corrompus, droppés, etc. Ainsi, si nous souhaitons simuler un réseau qui perd 30% des paquets, il suffit d&rsquo;éxécuter :</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tc qdisc add dev wlp9s0 root netem loss 30%
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">tc qdisc add dev wlp9s0 root netem loss 30%
 </code></pre></div><p><code>wlp9s0</code> étant mon interface. On peut aussi affiner la simulation en ajoutant une probabilité supplémentaire pour simuler le burst. (<code>tc qdisc change dev wlp9s0 root netem loss 0.5% 25%</code> par exemple).
 Notons que le mot clé <code>add</code> a été modifié par <code>change</code> quand on souhaite modifier la règle. Il est aussi possible d&rsquo;ajouter du délai (pour simuler un serveur plus loin) avec <code>netem delay xxxms</code> ou corrompre les paquets.</p>
 <p>Pour plus d&rsquo;informations, je vous invite à lire ce post <a href="https://stackoverflow.com/questions/614795/simulate-delayed-and-dropped-packets-on-linux">SO</a></p>
@@ -304,7 +304,7 @@ Notons que le mot clé <code>add</code> a été modifié par <code>change</code>
 <h2 id="wondershaper">wondershaper</h2>
 <p>La commande la plus simple : <a href="https://github.com/magnific0/wondershaper/"><code>wondershaper</code></a> qui sert à limiter la bande passante en download et en upload.</p>
 <p>Elle s&rsquo;utilise en deux étapes :</p>
-<pre><code>sudo wondershaper wlp9s0 -d 1024 -u 1024 # limit wlp9s0 à 1Mbps en up et download
+<pre tabindex="0"><code>sudo wondershaper wlp9s0 -d 1024 -u 1024 # limit wlp9s0 à 1Mbps en up et download
 sudo wondershaper clear wlp9s0 # efface la limite
 </code></pre><p>Cependant, le problème c&rsquo;est que pour travailler à côté, c&rsquo;est chiant de limiter toute l&rsquo;interface. Le plus intéressant serait de gérer ça par process ou par port.</p>
 <h2 id="trickle">trickle</h2>
@@ -312,15 +312,15 @@ sudo wondershaper clear wlp9s0 # efface la limite
 <h2 id="tc-htb">tc HTB</h2>
 <p>Un autre module de <code>tc</code> est <code>htb</code>. Il permet, en combinaison de iptables, de créer des limites de débits par port. Ce qui justement m&rsquo;intéressait.</p>
 <p>La première étape est de se créer une règle pour limiter le débit.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tc qdisc add dev wlp9s0 root handle 1:0 htb default <span class="m">10</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">tc qdisc add dev wlp9s0 root handle 1:0 htb default <span class="m">10</span>
 tc class add dev wlp9s0 parent 1:0 classid 1:10 htb rate 128kbps ceil 128kbps prio <span class="m">0</span>
 </code></pre></div><p>Puis d&rsquo;ajouter la règle sur le port que l&rsquo;on souhaite.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">iptables -A OUTPUT -t mangle -p tcp --sport <span class="m">49152</span> -j MARK --set-mark <span class="m">10</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">iptables -A OUTPUT -t mangle -p tcp --sport <span class="m">49152</span> -j MARK --set-mark <span class="m">10</span>
 tc filter add dev wlp9s0 parent 1:0 prio <span class="m">0</span> protocol ip handle <span class="m">10</span> fw flowid 1:10
 </code></pre></div><p>Pour comprendre l&rsquo;ensemble des arguments je vous invite à lire <code>man tc-htb iptables</code>.</p>
 <p>Puis de faire passer le traffic que l&rsquo;on souhaite. On peut le monitorer avec les commandes que j&rsquo;ai cité plus haut ou encore avec <code>tc -s -d class show dev wlp9s0</code></p>
 <p>Enfin il fallait effacer la limite :</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tc qdisc del dev wlp9s0 root
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">tc qdisc del dev wlp9s0 root
 </code></pre></div><p>Voici donc quelques pistes pour simuler des réseaux différents depuis son propre réseau. Je vous invite à jouer un peu avec <code>tc</code>, même si la commande est loin d&rsquo;être simple à comprendre/maîtriser. Si quelqu&rsquo;un maîtrise le fonctionnement de cette commande, je l&rsquo;invite à en faire un tutoriel :)</p>
 <p>À noter que la simulation ne sera toujours pas parfaite. Par exemple, la perte de paquets que l&rsquo;on obtient en limitant la bande-passante sur un port avec <code>tc-htb</code> ne sera pas forcément identique à celle que l&rsquo;on peut observer sur des réseaux avec cette capacité. Par exemple, les paquets ne vont pas être droppés par un réseau, mais seulement ralenti car des buffers gardent ces paquets. Pour simuler certains cas, il faudra opter pour des outils plus adaptés (à priori des routeurs sous FreeBSD font la job encore mieux).</p>
 
@@ -375,7 +375,9 @@ tc filter add dev wlp9s0 parent 1:0 prio <span class="m">0</span> protocol ip ha
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:contact@enconn.fr" title="Email me">
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -383,7 +385,9 @@ tc filter add dev wlp9s0 parent 1:0 prio <span class="m">0</span> protocol ip ha
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -391,7 +395,9 @@ tc filter add dev wlp9s0 parent 1:0 prio <span class="m">0</span> protocol ip ha
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
+		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -399,7 +405,9 @@ tc filter add dev wlp9s0 parent 1:0 prio <span class="m">0</span> protocol ip ha
                 </a>
               </li>
               <li>
-                <a href="https://mastodon.social/@amarok" title="Mastodon">
+		
+		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
+		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -436,7 +444,7 @@ tc filter add dev wlp9s0 parent 1:0 prio <span class="m">0</span> protocol ip ha
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.80.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -444,7 +452,7 @@ tc filter add dev wlp9s0 parent 1:0 prio <span class="m">0</span> protocol ip ha
   </div>
 </footer><script src="https://enconn.fr/js/katex.min.js"></script>
 <script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery.min.js"></script>
+<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>
