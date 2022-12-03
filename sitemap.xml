@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://enconn.fr/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/france/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/guyane/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/logs/guyanada/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/logs/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/logs/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/south-america/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/tropical/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://enconn.fr/blog/</loc>
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/dev/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://enconn.fr/</loc>
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/jami/</loc>
@@ -18,9 +42,6 @@
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/software/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://enconn.fr/tags/</loc>
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/talk/</loc>
@@ -45,12 +66,6 @@
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/logs/mont-tremblant/</loc>
-    <lastmod>2020-08-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://enconn.fr/logs/</loc>
-    <lastmod>2020-08-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://enconn.fr/tags/logs/</loc>
     <lastmod>2020-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/quebec/</loc>
