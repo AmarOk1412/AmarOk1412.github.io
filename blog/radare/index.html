@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
@@ -7,7 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>r2 - Enconn</title>
+ 
+
+
+      <title>r2 - </title>
+
   <meta name="description" content="pour changer de gdb">
   <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
 {
@@ -15,14 +21,14 @@
     "@type": "WebSite",
     "name": "Enconn",
     
-    "url": "https:\/\/enconn.fr"
+    "url": "https:\/\/enconn.fr\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/enconn.fr"
+  "url": "https:\/\/enconn.fr\/"
   
   
   
@@ -37,7 +43,7 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https:\/\/enconn.fr",
+          "@id": "https:\/\/enconn.fr\/",
           "name": "home"
         }
     },{
@@ -57,17 +63,17 @@
     "name" : "Sébastien Blin"
   },
   "headline": "r2",
-  "description" : "Article original ici\nHei, je n\u0026rsquo;avais pas n\u0026rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas\u0026hellip;\nAujourd\u0026rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le NorthSec 2018 à Montréal. Il m\u0026rsquo;arrive très rarement de faire des CTF et je n\u0026rsquo;en ai pas fait depuis un moment.\nPour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges.",
+  "description" : "Article original ici\nHei, je n\u0026rsquo;avais pas n\u0026rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas\u0026hellip;\nAujourd\u0026rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le NorthSec 2018 à Montréal. Il m\u0026rsquo;arrive très rarement de faire des CTF et je n\u0026rsquo;en ai pas fait depuis un moment.\nPour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges. Et j\u0026rsquo;ai décidé d\u0026rsquo;apprendre à utiliser radare2 (http:\/\/radare.org\/). Dans ce billet, je vais donc partager mon expérimentation du jour, ou des suivantes si j\u0026rsquo;en fais une série.\n",
   "inLanguage" : "en",
   "wordCount":  613 ,
-  "datePublished" : "2018-03-25T00:00:00",
-  "dateModified" : "2018-03-25T00:00:00",
+  "datePublished" : "2018-03-25T00:00:00\u002b00:00",
+  "dateModified" : "2018-03-25T00:00:00\u002b00:00",
   "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
   "keywords" : [ "security, tools" ],
   "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/radare\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https:\/\/enconn.fr",
+    "name" : "https:\/\/enconn.fr\/",
     "logo" : {
         "@type" : "ImageObject",
         "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
@@ -77,6 +83,7 @@
   }
 }
 </script>
+
 
 <meta property="og:title" content="r2" />
 <meta property="og:description" content="pour changer de gdb">
@@ -92,9 +99,17 @@
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.152.2">
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
-  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/brands.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/regular.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/solid.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg-with-js.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-shims.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v5-font-face.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
@@ -110,29 +125,29 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">by AmarOk</div>
+      <a class="navbar-brand" href="https://enconn.fr/">Enconn</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
         
-          
-            <li>
-              <a title="Blog" href="/blog/">Blog</a>
-            </li>
-          
         
-          
-            <li>
-              <a title="Logs" href="/logs/">Logs</a>
-            </li>
-          
+        <li>
+          <a title="Blog" href="/blog/">Blog</a>
+        </li>
         
-          
-            <li>
-              <a title="About" href="/about/">About</a>
-            </li>
-          
+        
+        
+        <li>
+          <a title="Logs" href="/logs/">Logs</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="About" href="/about/">About</a>
+        </li>
+        
         
 
         
@@ -141,19 +156,19 @@
       </ul>
     </div>
 
+    
     <div class="avatar-container">
       <div class="avatar-img-border">
-        
-          <a title="Enconn" href="https://enconn.fr">
-            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
-          </a>
-        
+        <a title="Enconn" href="https://enconn.fr/">
+          <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          
+        </a>
       </div>
     </div>
+    
 
   </div>
 </nav>
-
 
 
 
@@ -259,8 +274,8 @@
 <p>Le challenge n&rsquo;avait rien de compliqué et prenait quelques secondes avec <code>gdb</code> à résoudre, je ne vais donc pas en faire un write-up, juste me concentrer sur <code>r2</code>.</p>
 <p>J&rsquo;ai tout d&rsquo;abord tenté une approche sans exécuter le programme, mais en regardant les fonctionnalités de reverse basiques.</p>
 <p>La première étape est de lancer <code>r2</code> en lui passant le programme</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"> AmarOk@tars3  ~/Downloads  r2 -d ./easy_reverse
-</code></pre></div><p>(le <code>-d</code> servira pour la seconde approche, par le debug)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> AmarOk@tars3  ~/Downloads  r2 -d ./easy_reverse
+</span></span></code></pre></div><p>(le <code>-d</code> servira pour la seconde approche, par le debug)</p>
 <p>Puis avec des tutoriels en ligne, je trouve les commandes <code>aa</code> pour lancer une analyse du programme (pour <em>anyalyze all</em>) puis (<code>pdf @main</code> pour obtenir le code qui m&rsquo;intéresse). Ce qui donne :</p>
 <p><img src="/img/dev/radare/pdfmain.png" alt="pdfmain"></p>
 <p>Chose cool, il est possible de visualiser son code par blocs via <code>VV @main</code>.</p>
@@ -269,7 +284,7 @@
 <ol>
 <li>On demande a l&rsquo;utilisateur un password</li>
 </ol>
-<pre tabindex="0"><code> mov edi, str.Password_:     ; 0x4007c4 ; &quot;Password : &quot;
+<pre tabindex="0"><code> mov edi, str.Password_:     ; 0x4007c4 ; &#34;Password : &#34;
  mov eax, 0
  call sym.imp.printf         ; int printf(const char *format)
  lea rax, [local_70h]
@@ -281,11 +296,11 @@
 <p>Puis on compare cette valeur avec une autre (<code> call sym.imp.strcmp         ; int strcmp(const char *s1, const char *s2)</code>)</p>
 <p>Et on félicite ou non la personne.</p>
 <pre tabindex="0"><code>   ,=&lt; 0x00400704      7511           jne 0x400717
-   |   0x00400706      bfd3074000     mov edi, str.You_re_a_Wizard ; 0x4007d3 ; &quot;You're a Wizard&quot;
+   |   0x00400706      bfd3074000     mov edi, str.You_re_a_Wizard ; 0x4007d3 ; &#34;You&#39;re a Wizard&#34;
    |   0x0040070b      e810feffff     call sym.imp.puts           ; int puts(const char *s)
    |   0x00400710      b800000000     mov eax, 0
   ,==&lt; 0x00400715      eb0f           jmp 0x400726
-  |`-&gt; 0x00400717      bfe3074000     mov edi, str.Try_next_year_... ; 0x4007e3 ; &quot;Try next year ...&quot;
+  |`-&gt; 0x00400717      bfe3074000     mov edi, str.Try_next_year_... ; 0x4007e3 ; &#34;Try next year ...&#34;
   |    0x0040071c      e8fffdffff     call sym.imp.puts           ; int puts(const char *s)
   |    0x00400721      b801000000     mov eax, 1
 </code></pre><p>On suppose simplement que la valeur qu&rsquo;on cherche c&rsquo;est le bon mot de passe et je m&rsquo;intéresse donc à <code>strcmp</code>. En suivant les <code>mov</code> de dessus, on voit que <code>strcmp</code> compare le password qu&rsquo;on à entré et une valeur que nous voyons en haut :</p>
@@ -307,8 +322,10 @@ mov byte [local_72h], 0
         
           <div class="blog-tags">
             
+              
               <a href="https://enconn.fr/tags/security/">security</a>&nbsp;
             
+              
               <a href="https://enconn.fr/tags/tools/">tools</a>&nbsp;
             
           </div>
@@ -336,17 +353,14 @@ mov byte [local_72h], 0
 
 
       
-        
-        
-      
 
     </div>
   </div>
 </div>
 
-      
-<footer>
+      <footer>
   <div class="container">
+    
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
@@ -377,7 +391,7 @@ mov byte [local_72h], 0
 		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
@@ -392,14 +406,7 @@ mov byte [local_72h], 0
                 </a>
               </li>
           
-          <li>
-            <a href="" title="RSS">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
+          
           
         </ul>
         <p class="credits copyright text-muted">
@@ -411,32 +418,33 @@ mov byte [local_72h], 0
 
           &nbsp;&bull;&nbsp;&copy;
           
-            2022
+            2026
           
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://enconn.fr">Enconn</a>
+            <a href="https://enconn.fr/">Enconn</a>
           
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.152.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
     </div>
   </div>
-</footer><script src="https://enconn.fr/js/katex.min.js"></script>
-<script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
+</footer><script defer src="https://enconn.fr/js/katex.min.js"></script>
+<script defer src="https://enconn.fr/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="https://enconn.fr/js/jquery-3.7.0.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>
 <script src="https://enconn.fr/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
-<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
 <script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
 
 
 

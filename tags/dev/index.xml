@@ -1,71 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dev on Enconn</title>
+    <title>Dev on Enconn</title>
     <link>https://enconn.fr/tags/dev/</link>
-    <description>Recent content in dev on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Dev on Enconn</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parsing recipe ingredients locally</title>
+      <link>https://enconn.fr/blog/parsing-ingredients-list-python-android/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/parsing-ingredients-list-python-android/</guid>
+      <description>&lt;p&gt;Wow, it&amp;rsquo;s been 4 years since my last article. A lot of things have happened: the pandemic, the AI-bubble-sloppy-shit. But recently I thought about re-opening this blog.&#xA;I&amp;rsquo;ve been using &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; for a long time now, and I have a lot of notes, ideas for articles, and projects I want to work on. And a friend recently started to write weekly articles on his &lt;a href=&#34;https://drouin.io/&#34;&gt;blog&lt;/a&gt;, so now I know it&amp;rsquo;s my turn to make this part of the Internet live again.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My Jami posts</title>
       <link>https://enconn.fr/blog/jami-post/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/jami-post/</guid>
-      <description>I&amp;rsquo;m a Core Developer for https://jami.net since several years now. During those years, I gave some talks and wrote a lot of articles that I&amp;rsquo;ll link of that page:
-Articles  &amp;ldquo;Improving the call experience in Jami&amp;rdquo; - 2022, Aug 31 - https://jami.net/improving-call-experience-in-jami/ &amp;ldquo;Swarm file transfers&amp;rdquo; - 2022, Aug 09 - https://jami.net/swarm-file-transfers/ &amp;ldquo;Synchronizing conversation history with Swarm&amp;rdquo; - 2022, Feb 16 - https://jami.net/synchronizing-conversation-history-with-swarm/ &amp;ldquo;Swarm: a new generation of group conversations&amp;rdquo; - 2021, Jan 15 - https://jami.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m a Core Developer for &lt;a href=&#34;https://jami.net&#34;&gt;https://jami.net&lt;/a&gt; since several years now.&#xA;During those years, I gave some talks and wrote a lot of articles that I&amp;rsquo;ll link of that page:&lt;/p&gt;&#xA;&lt;h1 id=&#34;articles&#34;&gt;Articles&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Improving the call experience in Jami&amp;rdquo; - 2022, Aug 31 - &lt;a href=&#34;https://jami.net/improving-call-experience-in-jami/&#34;&gt;https://jami.net/improving-call-experience-in-jami/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Swarm file transfers&amp;rdquo; - 2022, Aug 09 - &lt;a href=&#34;https://jami.net/swarm-file-transfers/&#34;&gt;https://jami.net/swarm-file-transfers/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Synchronizing conversation history with Swarm&amp;rdquo; - 2022, Feb 16 - &lt;a href=&#34;https://jami.net/synchronizing-conversation-history-with-swarm/&#34;&gt;https://jami.net/synchronizing-conversation-history-with-swarm/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Swarm: a new generation of group conversations&amp;rdquo; - 2021, Jan 15 - &lt;a href=&#34;https://jami.net/swarm-introducing-a-new-generation-of-group-conversations/&#34;&gt;https://jami.net/swarm-introducing-a-new-generation-of-group-conversations/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Improving performance and security with TLS 1.3&amp;rdquo; - 2019, Sep 6 - &lt;a href=&#34;https://jami.net/improving-performance-and-security-with-tls-1-3/&#34;&gt;https://jami.net/improving-performance-and-security-with-tls-1-3/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Peer-to-peer file sharing support in Jami&amp;rdquo; - 2019, Jun 14 - &lt;a href=&#34;https://jami.net/peer-to-peer-file-sharing-support-in-jami/&#34;&gt;https://jami.net/peer-to-peer-file-sharing-support-in-jami/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Establishing peer-to-peer connections with Jami&amp;rdquo; - 2017, Jun 9 - &lt;a href=&#34;https://jami.net/establishing-peer-to-peer-connections-with-jami/&#34;&gt;https://jami.net/establishing-peer-to-peer-connections-with-jami/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;And probably helped to lot of other things (like &lt;a href=&#34;https://docs.jami.net/&#34;&gt;https://docs.jami.net/&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A GPT-3 bot to answer my tickets</title>
       <link>https://enconn.fr/blog/gpt3-gitlab-bot/</link>
-      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/gpt3-gitlab-bot/</guid>
-      <description>Long time no see! I have a looooooot of projects in mind and a lot far too big (+40h of work &amp;amp; personal community stuff &amp;amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this.</description>
+      <description>&lt;p&gt;Long time no see!&#xA;I have a looooooot of projects in mind and a lot far too big (+40h of work &amp;amp; personal community stuff &amp;amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this. So, you just have to fix bugs and redirect to the FAQ/doc).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Git dissect</title>
       <link>https://enconn.fr/blog/git-dissect/</link>
-      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/git-dissect/</guid>
-      <description>It&amp;rsquo;s been a long time since my previous post, but let&amp;rsquo;s continue this serie about distributed systems with a tool that a lot of people use every day: git.
-Git is a versioning tool. Unlike some systems like subversion, you don&amp;rsquo;t need to have a server to use git. Every member of the project own a (partial or not) copy of the project and can directly send data to another member.</description>
+      <description>&lt;p&gt;It&amp;rsquo;s been a long time since my previous post, but let&amp;rsquo;s continue this serie about distributed systems with a tool that a lot of people use every day: &lt;em&gt;git&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Git&lt;/em&gt; is a versioning tool. Unlike some systems like &lt;em&gt;subversion&lt;/em&gt;, you don&amp;rsquo;t need to have a server to use &lt;em&gt;git&lt;/em&gt;. Every member of the project own a (partial or not) copy of the project and can directly send data to another member. So, even if today a lot of people use platforms like &lt;a href=&#34;https://gitea.com/&#34;&gt;Gitea&lt;/a&gt;, &lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt;, &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;, etc. it&amp;rsquo;s possible to work without any of them (can be useful when the platform is down).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>P2P internals - episode 3</title>
       <link>https://enconn.fr/blog/p2p-internals-dht/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/p2p-internals-dht/</guid>
-      <description>In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. TURN servers) or some new protocols (like ICE).
-It is now time to talk about distributed applications and structures created on top of a p2p network.
-For a lot of distributed applications, all the nodes in the system can&amp;rsquo;t be stable.</description>
+      <description>&lt;p&gt;In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. &lt;a href=&#34;https://enconn.fr/post/p2p-internals-rfc6062&#34;&gt;TURN&lt;/a&gt; servers) or some new protocols (like &lt;a href=&#34;https://enconn.fr/post/p2p-internals-ice&#34;&gt;ICE&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;It is now time to talk about distributed applications and structures created on top of a p2p network.&lt;/p&gt;&#xA;&lt;p&gt;For a lot of distributed applications, all the nodes in the system can&amp;rsquo;t be stable. In fact, nodes continuously join and leave the network for a lot of reasons. So, we need to use a structure which connects all the nodes of the network to maximize the coverage of that network (we don&amp;rsquo;t want to have nodes in a sub-net) and to get the best response time.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>P2P internals - episode 2</title>
       <link>https://enconn.fr/blog/p2p-internals-ice/</link>
-      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/p2p-internals-ice/</guid>
-      <description>In the first article of this series, we saw how to make an application (DEL) which is able to transfer a file from one peer to one another by successfully bypassing the NAT thanks to a TURN server. However, this technique is not really effective, because, in a lot of cases, a TURN server is completely useless. Indeed, if both peers are on the same network or both peers has an IPv6 address, the TURN server is not mandatory.</description>
+      <description>&lt;p&gt;In the &lt;a href=&#34;https://enconn.fr/blog/p2p-internals-rfc6062/&#34;&gt;first article&lt;/a&gt; of this series, we saw how to make an application (&lt;em&gt;DEL&lt;/em&gt;) which is able to transfer a file from one peer to one another by successfully bypassing the NAT thanks to a TURN server. However, this technique is not really effective, because, in a lot of cases, a TURN server is completely useless. Indeed, if both peers are on the same network or both peers has an IPv6 address, the TURN server is not mandatory. Now, &lt;em&gt;Alice&lt;/em&gt; wants to improve &lt;em&gt;DEL&lt;/em&gt; to only use the TURN server as a fallback.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>P2P internals - episode 1</title>
       <link>https://enconn.fr/blog/p2p-internals-rfc6062/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/p2p-internals-rfc6062/</guid>
-      <description>I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc.</description>
+      <description>&lt;p&gt;I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc. This is why I want to explain some common problems we can encounter when creating a peer to peer system and to describe existing solutions.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

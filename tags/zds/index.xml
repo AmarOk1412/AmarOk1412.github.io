@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>zds on Enconn</title>
+    <title>Zds on Enconn</title>
     <link>https://enconn.fr/tags/zds/</link>
-    <description>Recent content in zds on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Zds on Enconn</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/zds/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/zds/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ZMarkdown</title>
       <link>https://enconn.fr/blog/zmarkdown/</link>
-      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/zmarkdown/</guid>
-      <description>Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.
-Why? Similar projects don&amp;rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.</description>
+      <description>&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;&#xA;&lt;p&gt;ZMarkdown is the markdown engine used by &lt;a href=&#34;https://zestedesavoir.com&#34;&gt;Zeste de Savoir&lt;/a&gt;. It translates Markdown input to an &lt;a href=&#34;https://en.wikipedia.org/wiki/Abstract_syntax_tree&#34;&gt;AST&lt;/a&gt;, then the &lt;em&gt;AST&lt;/em&gt; to &lt;em&gt;LaTeX&lt;/em&gt; or &lt;em&gt;HTML&lt;/em&gt;. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on &lt;a href=&#34;http://remark.js.org/&#34;&gt;Remark&lt;/a&gt; and created in NodeJs.&lt;/p&gt;&#xA;&lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;&#xA;&lt;p&gt;Similar projects don&amp;rsquo;t use AST (like the previous iteration of &lt;a href=&#34;https://github.com/zestedesavoir/Python-ZMarkdown&#34;&gt;ZMarkdown&lt;/a&gt; to translate Markdown and they are difficult to improve with modules or translate in another text language. Because &lt;em&gt;Remark&lt;/em&gt; is extremely modulable and uses an AST, it&amp;rsquo;s the best solution to craft a markdown engine to translate a custom markdown into any format (HTML, slides, PDF, generate Table Of Contents, generate man pages, etc).&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

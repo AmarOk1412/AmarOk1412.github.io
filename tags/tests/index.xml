@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tests on Enconn</title>
+    <title>Tests on Enconn</title>
     <link>https://enconn.fr/tags/tests/</link>
-    <description>Recent content in tests on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tests on Enconn</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/tests/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/tests/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tarpaulin ou kcov ?</title>
       <link>https://enconn.fr/blog/tarpaulin-ou-kcov/</link>
-      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/tarpaulin-ou-kcov/</guid>
-      <description>Pour un projet (que je présenterais plus tard sur le forum), j&amp;rsquo;ai eu besoin d&amp;rsquo;avoir du retour sur mes tests. Une des métriques m&amp;rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n&amp;rsquo;ai pas encore testé et d&amp;rsquo;ajouter des scénarios.
-En cherchant un peu sur Internet, je suis tombé sur 2 outils :
- kcov tarpaulin  En voici un petit comparatif.
-Comparatif Facilité d&amp;rsquo;installation kcov wget https://github.</description>
+      <description>&lt;p&gt;Pour un projet (que je présenterais plus tard sur le forum), j&amp;rsquo;ai eu besoin d&amp;rsquo;avoir du retour sur mes tests. Une des métriques m&amp;rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n&amp;rsquo;ai pas encore testé et d&amp;rsquo;ajouter des scénarios.&lt;/p&gt;&#xA;&lt;p&gt;En cherchant un peu sur Internet, je suis tombé sur 2 outils :&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/SimonKagstrom/kcov/&#34;&gt;kcov&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/xd009642/tarpaulin&#34;&gt;tarpaulin&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;En voici un petit comparatif.&lt;/p&gt;&#xA;&lt;h1 id=&#34;comparatif&#34;&gt;Comparatif&lt;/h1&gt;&#xA;&lt;h2 id=&#34;facilité-dinstallation&#34;&gt;Facilité d&amp;rsquo;installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;kcov&#34;&gt;kcov&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  tar xzf master.tar.gz &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; kcov-master &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  mkdir build &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; build &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  cmake .. &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  make &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  make install &lt;span class=&#34;nv&#34;&gt;DESTDIR&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;../../kcov-build &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ../.. &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  rm -rf kcov-master&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;tarpaulin&#34;&gt;Tarpaulin&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# install libssl-dev pkg-config cmake zlib1g-dev&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cargo install cargo-tarpaulin&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Tarpaulin 1 ; kcov 0&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
@@ -7,7 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Créer un bridge IRC - Ring - Enconn</title>
+ 
+
+
+      <title>Créer un bridge IRC - Ring - </title>
+
   <meta name="description" content="Réalisation d&#39;un bridge IRC/Ring en python">
   <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
 {
@@ -15,14 +21,14 @@
     "@type": "WebSite",
     "name": "Enconn",
     
-    "url": "https:\/\/enconn.fr"
+    "url": "https:\/\/enconn.fr\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/enconn.fr"
+  "url": "https:\/\/enconn.fr\/"
   
   
   
@@ -37,7 +43,7 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https:\/\/enconn.fr",
+          "@id": "https:\/\/enconn.fr\/",
           "name": "home"
         }
     },{
@@ -57,17 +63,17 @@
     "name" : "Sébastien Blin"
   },
   "headline": "Créer un bridge IRC - Ring",
-  "description" : "Contenu posté sur Zeste de Savoir\nJ\u0026rsquo;aime faire des bots. J\u0026rsquo;ai des bots pour tout et n\u0026rsquo;importe quoi. J\u0026rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d\u0026rsquo;autres qui bougent.\nCe matin, j\u0026rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :",
+  "description" : "Contenu posté sur Zeste de Savoir\nJ\u0026rsquo;aime faire des bots. J\u0026rsquo;ai des bots pour tout et n\u0026rsquo;importe quoi. J\u0026rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d\u0026rsquo;autres qui bougent.\nCe matin, j\u0026rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :\nPouvoir pinguer une personne par Ring depuis le channel IRC. Pouvoir choisir de récupérer tout le contenu d\u0026rsquo;un channel. Pouvoir arrêter de recevoir les informations par Ring. Dans ce billet je vais expliquer comment je l\u0026rsquo;ai réalisé.\n",
   "inLanguage" : "en",
   "wordCount":  826 ,
-  "datePublished" : "2017-05-06T00:00:00",
-  "dateModified" : "2017-05-06T00:00:00",
+  "datePublished" : "2017-05-06T00:00:00\u002b00:00",
+  "dateModified" : "2017-05-06T00:00:00\u002b00:00",
   "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
   "keywords" : [ "software, ring, python" ],
   "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/bridge-irc-ring\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https:\/\/enconn.fr",
+    "name" : "https:\/\/enconn.fr\/",
     "logo" : {
         "@type" : "ImageObject",
         "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
@@ -77,6 +83,7 @@
   }
 }
 </script>
+
 
 <meta property="og:title" content="Créer un bridge IRC - Ring" />
 <meta property="og:description" content="Réalisation d&#39;un bridge IRC/Ring en python">
@@ -92,9 +99,17 @@
   <meta name="twitter:site" content="@AmarOk1412" />
   <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.152.2">
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
-  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/brands.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/regular.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/solid.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg-with-js.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-shims.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v5-font-face.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
   <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
@@ -110,29 +125,29 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://enconn.fr">Enconn</a> <div class="navbar-by">by AmarOk</div>
+      <a class="navbar-brand" href="https://enconn.fr/">Enconn</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
         
-          
-            <li>
-              <a title="Blog" href="/blog/">Blog</a>
-            </li>
-          
         
-          
-            <li>
-              <a title="Logs" href="/logs/">Logs</a>
-            </li>
-          
+        <li>
+          <a title="Blog" href="/blog/">Blog</a>
+        </li>
         
-          
-            <li>
-              <a title="About" href="/about/">About</a>
-            </li>
-          
+        
+        
+        <li>
+          <a title="Logs" href="/logs/">Logs</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="About" href="/about/">About</a>
+        </li>
+        
         
 
         
@@ -141,19 +156,19 @@
       </ul>
     </div>
 
+    
     <div class="avatar-container">
       <div class="avatar-img-border">
-        
-          <a title="Enconn" href="https://enconn.fr">
-            <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
-          </a>
-        
+        <a title="Enconn" href="https://enconn.fr/">
+          <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          
+        </a>
       </div>
     </div>
+    
 
   </div>
 </nav>
-
 
 
 
@@ -266,16 +281,16 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 <h1 id="linterface-du-daemon">L&rsquo;interface du daemon</h1>
 <p>Le daemon possède de nombreux signaux et méthodes. Une fois installé, on peut trouver le dossier contenant les binaires dans <code>daemon/bin/</code>. On peut ainsi le lancer avec la commande <code>./dring</code>. Dans ce même dossier, on peut trouver les fichiers <code>bin/dbus/cx.ring.Ring.*.xml</code> qui vont contenir la liste des signaux et des méthodes ainsi que comment les utiliser.</p>
 <p>Par exemple, dans <code>bin/dbus/cx.ring.Ring.ConfigurationManager.xml</code> nous pouvons trouver le signal que nous utiliserons plus loin :
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;signal</span> <span class="na">name=</span><span class="s">&#34;incomingAccountMessage&#34;</span> <span class="na">tp:name-for-bindings=</span><span class="s">&#34;incomingAccountMessage&#34;</span><span class="nt">&gt;</span>
-   <span class="nt">&lt;tp:added</span> <span class="na">version=</span><span class="s">&#34;2.2.0&#34;</span><span class="nt">/&gt;</span>
-   <span class="nt">&lt;tp:docstring&gt;</span>
-       Notify clients that a new text message has been received at the account level.
-   <span class="nt">&lt;/tp:docstring&gt;</span>
-   <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;s&#34;</span> <span class="na">name=</span><span class="s">&#34;accountID&#34;</span><span class="nt">/&gt;</span>
-   <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;s&#34;</span> <span class="na">name=</span><span class="s">&#34;from&#34;</span><span class="nt">/&gt;</span>
-   <span class="nt">&lt;annotation</span> <span class="na">name=</span><span class="s">&#34;org.qtproject.QtDBus.QtTypeName.In2&#34;</span> <span class="na">value=</span><span class="s">&#34;MapStringString&#34;</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;a{ss}&#34;</span> <span class="na">name=</span><span class="s">&#34;payloads&#34;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/signal&gt;</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;signal</span> <span class="na">name=</span><span class="s">&#34;incomingAccountMessage&#34;</span> <span class="na">tp:name-for-bindings=</span><span class="s">&#34;incomingAccountMessage&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&lt;tp:added</span> <span class="na">version=</span><span class="s">&#34;2.2.0&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&lt;tp:docstring&gt;</span>
+</span></span><span class="line"><span class="cl">       Notify clients that a new text message has been received at the account level.
+</span></span><span class="line"><span class="cl">   <span class="nt">&lt;/tp:docstring&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;s&#34;</span> <span class="na">name=</span><span class="s">&#34;accountID&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;s&#34;</span> <span class="na">name=</span><span class="s">&#34;from&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&lt;annotation</span> <span class="na">name=</span><span class="s">&#34;org.qtproject.QtDBus.QtTypeName.In2&#34;</span> <span class="na">value=</span><span class="s">&#34;MapStringString&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;arg</span> <span class="na">type=</span><span class="s">&#34;a{ss}&#34;</span> <span class="na">name=</span><span class="s">&#34;payloads&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/signal&gt;</span></span></span></code></pre></div></p>
 <p>Ce signal va permettre d&rsquo;agir à la réception d&rsquo;un message.</p>
 <p>Il y a moyen de gérer énormément de choses comme la vidéo, appeler quelqu&rsquo;un, modifier le niveau du son, envoyer un message, etc. Bref, on connaît l&rsquo;interface pour communiquer avec le daemon, il nous reste plus qu&rsquo;à l&rsquo;utiliser afin de faire ce que l&rsquo;on souhaite.</p>
 <h1 id="contrôlons-ring">Contrôlons Ring</h1>
@@ -286,7 +301,7 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">proxy_confmgr</span><span class="o">.</span><span class="n">connect_to_signal</span><span class="p">(</span><span class="s1">&#39;incomingAccountMessage&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">onIncomingAccountMessage</span><span class="p">)</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">proxy_confmgr</span><span class="o">.</span><span class="n">connect_to_signal</span><span class="p">(</span><span class="s1">&#39;incomingAccountMessage&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">onIncomingAccountMessage</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 <p>et lorsqu&rsquo;on recevra un message, on pourra le traiter avec uns méthode nommée <em>onIncomingAccountMessage</em>.</p>
@@ -303,14 +318,14 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">IRCRingController</span><span class="p">(</span><span class="n">DRingCtrl</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_bridge</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;ircbridge&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">accountId</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">configurationmanager</span><span class="o">.</span><span class="n">getAccountList</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
-
-    <span class="k">def</span> <span class="nf">onIncomingAccountMessage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accountId</span><span class="p">,</span> <span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">):</span>
-        <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">[</span><span class="s1">&#39;text/plain&#39;</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Receive new message from </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">message</span><span class="p">)</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">IRCRingController</span><span class="p">(</span><span class="n">DRingCtrl</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_bridge</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;ircbridge&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">accountId</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">configurationmanager</span><span class="o">.</span><span class="n">getAccountList</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">onIncomingAccountMessage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accountId</span><span class="p">,</span> <span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">fromAccount</span><span class="p">,</span> <span class="n">payloads</span><span class="p">[</span><span class="s1">&#39;text/plain&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Receive new message from </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">message</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 <h1 id="un-bot-irc">Un bot IRC</h1>
@@ -329,10 +344,13 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
         
           <div class="blog-tags">
             
+              
               <a href="https://enconn.fr/tags/software/">software</a>&nbsp;
             
+              
               <a href="https://enconn.fr/tags/ring/">ring</a>&nbsp;
             
+              
               <a href="https://enconn.fr/tags/python/">python</a>&nbsp;
             
           </div>
@@ -360,17 +378,14 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 
 
       
-        
-        
-      
 
     </div>
   </div>
 </div>
 
-      
-<footer>
+      <footer>
   <div class="container">
+    
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
@@ -401,7 +416,7 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
@@ -416,14 +431,7 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
                 </a>
               </li>
           
-          <li>
-            <a href="" title="RSS">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
+          
           
         </ul>
         <p class="credits copyright text-muted">
@@ -435,32 +443,33 @@ Ce matin, j&rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre
 
           &nbsp;&bull;&nbsp;&copy;
           
-            2022
+            2026
           
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://enconn.fr">Enconn</a>
+            <a href="https://enconn.fr/">Enconn</a>
           
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.152.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
     </div>
   </div>
-</footer><script src="https://enconn.fr/js/katex.min.js"></script>
-<script src="https://enconn.fr/js/auto-render.min.js"></script>
-<script src="https://enconn.fr/js/jquery-3.5.1.slim.min.js"></script>
+</footer><script defer src="https://enconn.fr/js/katex.min.js"></script>
+<script defer src="https://enconn.fr/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="https://enconn.fr/js/jquery-3.7.0.slim.min.js"></script>
 <script src="https://enconn.fr/js/bootstrap.min.js"></script>
 
 <script src="https://enconn.fr/js/main.js"></script>
 <script src="https://enconn.fr/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
-<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
 <script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
 
 
 

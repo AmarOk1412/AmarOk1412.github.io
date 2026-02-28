@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>privacy on Enconn</title>
+    <title>Privacy on Enconn</title>
     <link>https://enconn.fr/tags/privacy/</link>
-    <description>Recent content in privacy on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Privacy on Enconn</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This blog has a .onion address</title>
       <link>https://enconn.fr/blog/onion-address/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/onion-address/</guid>
-      <description>This blog is also available via the Tor Browser. And have a .onion address.onion
-You can support the Tor project there: https://support.torproject.org/
-Or run your own hidden service via https://2019.www.torproject.org/docs/tor-onion-service.html.en</description>
+      <description>&lt;p&gt;This blog is also available via the Tor Browser. And have a &lt;a href=&#34;http://av6esbutl6fnanosaqbngwazxznyuntuo7pjdbxxr6rqbmngy76t3kqd.onion&#34;&gt;.onion&lt;/a&gt; address.onion&lt;/p&gt;&#xA;&lt;p&gt;You can support the Tor project there: &lt;a href=&#34;https://support.torproject.org/&#34;&gt;https://support.torproject.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Or run your own hidden service via &lt;a href=&#34;https://2019.www.torproject.org/docs/tor-onion-service.html.en&#34;&gt;https://2019.www.torproject.org/docs/tor-onion-service.html.en&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

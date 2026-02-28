@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>security on Enconn</title>
+    <title>Security on Enconn</title>
     <link>https://enconn.fr/tags/security/</link>
-    <description>Recent content in security on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Security on Enconn</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sun, 25 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>r2</title>
       <link>https://enconn.fr/blog/radare/</link>
-      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/radare/</guid>
-      <description>Article original ici
-Hei, je n&amp;rsquo;avais pas n&amp;rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&amp;hellip;
-Aujourd&amp;rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le NorthSec 2018 à Montréal. Il m&amp;rsquo;arrive très rarement de faire des CTF et je n&amp;rsquo;en ai pas fait depuis un moment.
-Pour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges.</description>
+      <description>&lt;p&gt;&lt;em&gt;Article original &lt;a href=&#34;https://zestedesavoir.com/billets/2479/r2-pour-changer-de-gdb/&#34;&gt;ici&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hei, je n&amp;rsquo;avais pas n&amp;rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Aujourd&amp;rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le &lt;a href=&#34;https://nsec.io/&#34;&gt;NorthSec 2018&lt;/a&gt; à Montréal. Il m&amp;rsquo;arrive très rarement de faire des CTF et je n&amp;rsquo;en ai pas fait depuis un moment.&lt;/p&gt;&#xA;&lt;p&gt;Pour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges. Et j&amp;rsquo;ai décidé d&amp;rsquo;apprendre à utiliser &lt;code&gt;radare2&lt;/code&gt; (&lt;a href=&#34;http://radare.org/)&#34;&gt;http://radare.org/)&lt;/a&gt;. Dans ce billet, je vais donc partager mon expérimentation du jour, ou des suivantes si j&amp;rsquo;en fais une série.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

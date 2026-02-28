@@ -1,0 +1,578 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Parsing recipe ingredients locally - </title>
+
+  <meta name="description" content="Or how to run a python library on a phone">
+  <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Enconn",
+    
+    "url": "https:\/\/enconn.fr\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/enconn.fr\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/blog\/parsing-ingredients-list-python-android\/",
+          "name": "Parsing recipe ingredients locally"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "Parsing recipe ingredients locally",
+  "description" : "Wow, it\u0026rsquo;s been 4 years since my last article. A lot of things have happened: the pandemic, the AI-bubble-sloppy-shit. But recently I thought about re-opening this blog. I\u0026rsquo;ve been using Obsidian for a long time now, and I have a lot of notes, ideas for articles, and projects I want to work on. And a friend recently started to write weekly articles on his blog, so now I know it\u0026rsquo;s my turn to make this part of the Internet live again.\n",
+  "inLanguage" : "en",
+  "wordCount":  1341 ,
+  "datePublished" : "2026-02-28T00:00:00\u002b00:00",
+  "dateModified" : "2026-02-28T00:00:00\u002b00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "android, planeat, dev" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/parsing-ingredients-list-python-android\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Parsing recipe ingredients locally" />
+<meta property="og:description" content="Or how to run a python library on a phone">
+<meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+<meta property="og:url" content="https://enconn.fr/blog/parsing-ingredients-list-python-android/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Enconn" />
+
+  <meta name="twitter:title" content="Parsing recipe ingredients locally" />
+  <meta name="twitter:description" content="Or how to run a python library on a phone">
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AmarOk1412" />
+  <meta name="twitter:creator" content="@AmarOk1412" />
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.152.2">
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/brands.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/regular.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/solid.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg-with-js.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-shims.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v5-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr/">Enconn</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+        <li>
+          <a title="Blog" href="/blog/">Blog</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="Logs" href="/logs/">Logs</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="About" href="/about/">About</a>
+        </li>
+        
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a title="Enconn" href="https://enconn.fr/">
+          <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          
+        </a>
+      </div>
+    </div>
+    
+
+  </div>
+</nav>
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              
+                <h1>Parsing recipe ingredients locally</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <h2 class="blog-subheading">Or how to run a python library on a phone</h2>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Wow, it&rsquo;s been 4 years since my last article. A lot of things have happened: the pandemic, the AI-bubble-sloppy-shit. But recently I thought about re-opening this blog.
+I&rsquo;ve been using <a href="https://obsidian.md">Obsidian</a> for a long time now, and I have a lot of notes, ideas for articles, and projects I want to work on. And a friend recently started to write weekly articles on his <a href="https://drouin.io/">blog</a>, so now I know it&rsquo;s my turn to make this part of the Internet live again.</p>
+<p>I don&rsquo;t know what will be the direction of this blog. I still do a lot of technical stuff (nowadays I send code to space, have a lot of personal projects), but I do a lot of other things that I want to write on.</p>
+<p>This week, I didn&rsquo;t do much (it&rsquo;s winter, so I&rsquo;m sleepy), but I did something I wanted since a few months.</p>
+<p>I work on <a href="https://play.google.com/store/apps/details?id=com.planeat.planeat">PlanEat</a>, a small application, mostly for me to experiment with Android development. I&rsquo;ll definitely talk about this project in a few posts, but this week I worked on an issue and it&rsquo;s definitely worth writing a few lines about it.</p>
+<h1 id="the-issue">The issue</h1>
+<p>So PlanEat is basically an application I use to plan the recipes I&rsquo;ll cook during the week and build a shopping list for my groceries.
+To do this, I need to parse ingredients. If you already opened cooking recipes on the internet, you know it&rsquo;s generally a pain. Because generally it contains useless information for a grocery store. E.g. &ldquo;1  (10-ounce) package frozen chopped spinach, thawed, excess moisture squeezed out, or 10 ounces chopped fresh spinach&rdquo;</p>
+<p>I tried several approaches to solve this issue. Some bad, but it&rsquo;s not my point for now. I finally found a repository from the New York Times on GitHub doing exactly what I was looking for: <a href="https://github.com/NYTimes/ingredient-phrase-tagger">CRF Ingredient Phrase Tagger</a>. They use(d) this for <a href="https://cooking.nytimes.com/">https://cooking.nytimes.com/</a> and they explain their approach in a good blog post: <a href="https://archive.nytimes.com/open.blogs.nytimes.com/2015/04/09/extracting-structured-data-from-recipes-using-conditional-random-fields/?_r=0">&ldquo;Extracting structured data from recipes using Conditional Random Fields&rdquo;</a></p>
+<p>To test that this approach was working, I forked the repo and did a small web server that I can request to parse a list of ingredients and send it back to my app. Pretty simple, nothing fancy to develop, reuse and adapt what is already working. However for me it&rsquo;s only a POC, because I don&rsquo;t really want my app to depend on any server (except the websites sharing recipes).</p>
+<h1 id="the-discovery">The Discovery</h1>
+<p>So, to address this issue, I originally wanted to port the code and writing it in Kotlin (or C++/Swig/Kotlin depending the performances I needed).</p>
+<p>But last week, searching for new solutions to this problem I found a library that looked perfect on paper… but in Python: <a href="https://ingredient-parser.readthedocs.io">Ingredient Parser</a></p>
+<p>Bonus, it&rsquo;s trained against several models, including the NYTimes one. I also want to redo my dataset for French recipes. But for now, I do not really care.</p>
+<p><img src="/img/dev/parsing-ingredients-list-python-android/ingredient-parser-python.png" alt="Ingredient Parser documentation"></p>
+<p>So, here is my new plan:</p>
+<ol>
+<li>Run Python on Android. I&rsquo;d prefer C++/Swig/Kotlin, but for a POC, I don&rsquo;t care about the size of speed yet.</li>
+<li>Change my code to use this library instead of doing a request to my server and parse the result</li>
+<li>Translate the list I want to parse, because this was done server side.</li>
+<li>If it works, translate the Python part to native code.</li>
+</ol>
+<p>The good news is that the three steps are working. So it seems definitely doable. Because I just want to interpret the CRF model and not train it on the device (I can do it locally).</p>
+<h1 id="lets-do-it">Let&rsquo;s do it</h1>
+<h2 id="how-to-run-python-code-on-android">How to run Python code on Android</h2>
+<p>This looks like a bad idea, and to be honest, it&rsquo;s probably a bad one (except if you&rsquo;re in Termux and writing some Python code). But the best approach I found for this terrible idea is to use <a href="https://chaquo.com/chaquopy/">Chaquopy</a> and the good news is that the documentation is pretty good!</p>
+<p>In my case, I use an up-to-date Android Studio (Panda 1, 2025.3.1) with Gradle 9.1.0. To use Chaquopy, I just (I got some errors, but it was mostly solved by just updating tools) need to:</p>
+<p><em>build.gradle.kts</em>:</p>
+<pre tabindex="0"><code>plugins {
+    alias(libs.plugins.gradle.versions)
+    // ingredient-parser
+    id(&#34;com.chaquo.python&#34;) version &#34;17.0.0&#34; apply false
+}
+</code></pre><p><em>app/build.gradle.kts</em>:</p>
+<pre tabindex="0"><code>plugins {
+    id(&#34;com.chaquo.python&#34;)
+}
+
+android {
+    compileSdk {
+        version = release(36) {
+            minorApiLevel = 1
+        }
+    }
+    namespace = &#34;com.planeat.planeat&#34;
+
+    defaultConfig {
+        applicationId = &#34;com.planeat.planeat&#34;
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = 36
+
+        ndk {
+            abiFilters += listOf(&#34;arm64-v8a&#34;)
+        }
+    }
+}
+
+chaquopy {
+    defaultConfig {
+        version = &#34;3.13&#34;
+        pip {
+            ...
+        }
+    }
+}
+</code></pre><p>In my <em>MainActivity.kt</em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">ComponentActivity</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@OptIn</span><span class="p">(</span><span class="n">ExperimentalMaterial3WindowSizeClassApi</span><span class="o">::</span><span class="k">class</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="n">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">super</span><span class="p">.</span><span class="n">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(!</span><span class="nc">Python</span><span class="p">.</span><span class="n">isStarted</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nc">Python</span><span class="p">.</span><span class="n">start</span><span class="p">(</span><span class="n">AndroidPlatform</span><span class="p">(</span><span class="k">this</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">setContent</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">AppTheme</span><span class="p">(</span><span class="n">dynamicColor</span><span class="p">=</span><span class="k">false</span><span class="p">,</span> <span class="n">darkTheme</span><span class="p">=</span><span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">windowSize</span> <span class="p">=</span> <span class="n">calculateWindowSizeClass</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">PlanEatApp</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">windowSize</span> <span class="p">=</span> <span class="n">windowSize</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>And then to test it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">val</span> <span class="py">py</span> <span class="p">=</span> <span class="nc">Python</span><span class="p">.</span><span class="n">getInstance</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">val</span> <span class="py">math</span> <span class="p">=</span> <span class="n">py</span><span class="p">.</span><span class="n">getModule</span><span class="p">(</span><span class="s2">&#34;math&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">val</span> <span class="py">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">.</span><span class="n">callAttr</span><span class="p">(</span><span class="s2">&#34;pow&#34;</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="everything-is-not-so-simple">Everything is not so simple</h2>
+<p>So now I can run a python module on Android, running another module should be simple.</p>
+<p>I just modify by gradle file with:</p>
+<pre tabindex="0"><code>chaquopy {
+    defaultConfig {
+        version = &#34;3.13&#34;
+        pip {
+            install(&#34;ingredient_parser_nlp&#34;)
+        }
+    }
+}
+</code></pre><p>and got a build failure. Because this module depends on another module that is not available for this distribution.</p>
+<p>If we open the pip page for <a href="https://pypi.org/project/ingredient-parser-nlp/">ingredient-parser-nlp 2.5.0</a> we see that it provides a wheel (a python module in a zip):</p>
+<p><img src="/img/dev/parsing-ingredients-list-python-android/pip.png" alt="Ingredient Parser Pip package"></p>
+<p>that should work anywhere, but in reality it depends on <a href="https://pypi.org/project/python-crfsuite/">python-crfsuite</a> available pretty everywhere but not on Android (that makes sense, nobody sane would do this). This bundles a C/C++ library (CRFSuite), so we got some native code. Great, I&rsquo;ll sleep later I guess. Let&rsquo;s still try to integrate it.</p>
+<h2 id="building-a-wheel-for-android">Building a wheel for Android</h2>
+<p>So, after some research, I found a small tool called <a href="https://cibuildwheel.pypa.io/en/stable/">cibuildwheel</a></p>
+<p>Seems pretty easy to use, but I have some doubt due to the native part. But let&rsquo;s give it a try:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Pre-requisites: Install NDK &amp; latest cmdlines tools in ls ~/Android/Sdk/cmdline-tools/latest/</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ANDROID_HOME</span><span class="o">=</span>~/Android/Sdk/
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ANDROID_API_LEVEL</span><span class="o">=</span><span class="m">36</span>
+</span></span><span class="line"><span class="cl">python -m cibuildwheel --output-dir wheelhouse --platform android --archs arm64_v8a
+</span></span></code></pre></div><p>Giving me:</p>
+<pre tabindex="0"><code>+ /tmp/cibw-run-m7cmoxsx/cp313-android_arm64_v8a/python/android.py env
+/home/amarok/Android/Sdk//ndk/27.3.13750724/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android36-clang does not exist
+
+✕ 2.16s
+</code></pre><p>and fuck. but I see that my latest toolchain is Android 35. So let&rsquo;s try it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ANDROID_API_LEVEL</span><span class="o">=</span><span class="m">35</span>
+</span></span><span class="line"><span class="cl">python -m cibuildwheel --output-dir wheelhouse --platform android --archs arm64_v8a
+</span></span></code></pre></div><p>And it works! It generates me:</p>
+<pre tabindex="0"><code>python_crfsuite-0.9.12-cp313-cp313-android_35_arm64_v8a.whl
+</code></pre><p>So, I update my gradle.kts</p>
+<pre tabindex="0"><code>chaquopy {
+    defaultConfig {
+        version = &#34;3.13&#34;
+        pip {
+            install(&#34;src/main/assets/python_crfsuite-0.9.12-cp313-cp313-android_35_arm64_v8a.whl&#34;)
+            install(&#34;ingredient_parser_nlp&#34;)
+        }
+    }
+}
+</code></pre><p>But the compilation still fails because it didn&rsquo;t want to install this new wheel. Which seems wrong, because even if the clang version may generate some unwanted artifacts, the wheel should be accepted. So I just tried a dumb guess by renaming the wheel:</p>
+<pre tabindex="0"><code>chaquopy {
+    defaultConfig {
+        version = &#34;3.13&#34;
+        pip {
+            install(&#34;src/main/assets/python_crfsuite-0.9.12-py3-none-any.whl&#34;)
+            install(&#34;ingredient_parser_nlp&#34;)
+        }
+    }
+}
+</code></pre><p>And this time, it&rsquo;s accepted. Nice. Now I can try to parse ingredients!</p>
+<h2 id="parse-ingredients-on-device">Parse Ingredients on device</h2>
+<p>Let&rsquo;s try to use it with a simple code (Yeah, I did my code blocking. You should not try this at home.)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">private</span> <span class="k">val</span> <span class="py">py</span> <span class="p">=</span> <span class="nc">Python</span><span class="p">.</span><span class="n">getInstance</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">val</span> <span class="py">ingredientParserModule</span> <span class="p">=</span> <span class="n">py</span><span class="p">.</span><span class="n">getModule</span><span class="p">(</span><span class="s2">&#34;ingredient_parser&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">val</span> <span class="py">parseIngredientFunc</span> <span class="p">=</span> <span class="n">ingredientParserModule</span><span class="p">[</span><span class="s2">&#34;parse_ingredient&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">fun</span> <span class="nf">parseIngredient</span><span class="p">(</span><span class="n">ingredientData</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">locale</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">IngredientItem</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Because the dataset is in English, translate the ingredient
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">val</span> <span class="py">translatedIngredientData</span> <span class="p">=</span> <span class="n">runBlocking</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">async</span> <span class="p">{</span> <span class="n">translator</span><span class="p">.</span><span class="n">toEnglish</span><span class="p">(</span><span class="n">ingredientData</span><span class="p">,</span> <span class="n">locale</span><span class="p">)</span> <span class="p">}.</span><span class="n">await</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Now parse the ingredient
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">val</span> <span class="py">parsedIngredient</span> <span class="p">=</span> <span class="n">parseIngredientFunc</span><span class="o">?.</span><span class="n">call</span><span class="p">(</span><span class="n">translatedIngredientData</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="s2">&#34;Parsed ingredient: </span><span class="si">$parsedIngredient</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>And now in the logs I see:</p>
+<pre tabindex="0"><code>2026-02-28 17:01:10.269  5688-5736  PlanEat                 com.planeat.planeat                  I  ParsedIngredient(name=[IngredientText(text=&#39;non-salty butter&#39;, confidence=0.989476, starting_index=7)], size=None, amount=[IngredientAmount(quantity=Fraction(250, 1), quantity_max=Fraction(250, 1), unit=&lt;Unit(&#39;milliliter&#39;)&gt;, text=&#39;250 ml&#39;, confidence=0.999731, starting_index=0, unit_system=&lt;UnitSystem.METRIC: &#39;metric&#39;&gt;, APPROXIMATE=False, SINGULAR=False, RANGE=False, MULTIPLIER=False, PREPARED_INGREDIENT=False), IngredientAmount(quantity=Fraction(1, 1), quantity_max=Fraction(1, 1), unit=&lt;Unit(&#39;cup&#39;)&gt;, text=&#39;1 cup&#39;, confidence=0.999048, starting_index=3, unit_system=&lt;UnitSystem.US_CUSTOMARY: &#39;us_customary&#39;&gt;, APPROXIMATE=False, SINGULAR=False, RANGE=False, MULTIPLIER=False, PREPARED_INGREDIENT=False)], preparation=IngredientText(text=&#39;softened&#39;, confidence=0.999774, starting_index=10), comment=None, purpose=None, foundation_foods=[], sentence=&#39;250 ml (1 cup) of non-salty butter, softened&#39;)
+</code></pre><p>Mission accomplished!</p>
+<h1 id="next-steps">Next steps</h1>
+<p>So, after this night of prototyping, I have 3 new tasks:</p>
+<ol>
+<li>Probably check python-crfsuite build system to send them a pull request to automatically build wheels for Android.</li>
+<li>Contact Chaquopy because I do think that it should install my .wheel without the need to rename it.</li>
+<li>Translate the Python code into native code</li>
+</ol>
+<p>See you next week (I&rsquo;ll try)</p>
+
+
+        
+          <div class="blog-tags">
+            
+              
+              <a href="https://enconn.fr/tags/android/">android</a>&nbsp;
+            
+              
+              <a href="https://enconn.fr/tags/planeat/">planeat</a>&nbsp;
+            
+              
+              <a href="https://enconn.fr/tags/dev/">dev</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://enconn.fr/blog/jami-post/" data-toggle="tooltip" data-placement="top" title="My Jami posts">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://enconn.fr">Sébastien Blin</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://enconn.fr/">Enconn</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.152.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://enconn.fr/js/katex.min.js"></script>
+<script defer src="https://enconn.fr/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="https://enconn.fr/js/jquery-3.7.0.slim.min.js"></script>
+<script src="https://enconn.fr/js/bootstrap.min.js"></script>
+
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -4,422 +4,298 @@
     <title>Enconn</title>
     <link>https://enconn.fr/</link>
     <description>Recent content on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parsing recipe ingredients locally</title>
+      <link>https://enconn.fr/blog/parsing-ingredients-list-python-android/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/parsing-ingredients-list-python-android/</guid>
+      <description>&lt;p&gt;Wow, it&amp;rsquo;s been 4 years since my last article. A lot of things have happened: the pandemic, the AI-bubble-sloppy-shit. But recently I thought about re-opening this blog.&#xA;I&amp;rsquo;ve been using &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; for a long time now, and I have a lot of notes, ideas for articles, and projects I want to work on. And a friend recently started to write weekly articles on his &lt;a href=&#34;https://drouin.io/&#34;&gt;blog&lt;/a&gt;, so now I know it&amp;rsquo;s my turn to make this part of the Internet live again.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Guyane Francaise</title>
       <link>https://enconn.fr/logs/guyanada/</link>
-      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/guyanada/</guid>
-      <description>En Septembre 2022, je me suis rendu en Guyane Francaise visiter des amis de longue date. Ce couple d&amp;rsquo;amis en a profité pour me faire découvrir la culture sur place (et je les remercie très fort de me l&amp;rsquo;avoir proposé. Je supporte très mal le chaud, mais le voyage était dépaysant).
-Quelques mots sur la Guyane La Guyane est pas un lieu très touristique. La plupart des Européens vont être localisé à Kourou pour travailler, l&amp;rsquo;eau est marron comparé aux îles autour, les routes sont défoncées (même si au Québec on a l&amp;rsquo;habitude), il y a énorméments de prisons, faut aimer la forêt (ce qui me convient) et l&amp;rsquo;insecurité est présente (beaucoup de contrôle militaires, des embuscades, traffic de drogues/orpaillage illégal, etc).</description>
+      <description>&lt;p&gt;En Septembre 2022, je me suis rendu en Guyane Francaise visiter des amis de longue date.&#xA;Ce couple d&amp;rsquo;amis en a profité pour me faire découvrir la culture sur place (et je les remercie&#xA;très fort de me l&amp;rsquo;avoir proposé. Je supporte très mal le chaud, mais le voyage était dépaysant).&lt;/p&gt;&#xA;&lt;h1 id=&#34;quelques-mots-sur-la-guyane&#34;&gt;Quelques mots sur la Guyane&lt;/h1&gt;&#xA;&lt;p&gt;La Guyane est pas un lieu très touristique. La plupart des Européens vont être localisé à Kourou&#xA;pour travailler, l&amp;rsquo;eau est marron comparé aux îles autour, les routes sont défoncées (même si au Québec&#xA;on a l&amp;rsquo;habitude), il y a énorméments de prisons, faut aimer la forêt (ce qui me convient) et l&amp;rsquo;insecurité&#xA;est présente (beaucoup de contrôle militaires, des embuscades, traffic de drogues/orpaillage illégal, etc).&#xA;Pourtant, comme le disent beaucoup de personnes croisées, c&amp;rsquo;est un endroit avec du potentiel et dans le reste&#xA;de l&amp;rsquo;article je parlerais de mon expérience (que j&amp;rsquo;ai aimé).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My Jami posts</title>
       <link>https://enconn.fr/blog/jami-post/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/jami-post/</guid>
-      <description>I&amp;rsquo;m a Core Developer for https://jami.net since several years now. During those years, I gave some talks and wrote a lot of articles that I&amp;rsquo;ll link of that page:
-Articles  &amp;ldquo;Improving the call experience in Jami&amp;rdquo; - 2022, Aug 31 - https://jami.net/improving-call-experience-in-jami/ &amp;ldquo;Swarm file transfers&amp;rdquo; - 2022, Aug 09 - https://jami.net/swarm-file-transfers/ &amp;ldquo;Synchronizing conversation history with Swarm&amp;rdquo; - 2022, Feb 16 - https://jami.net/synchronizing-conversation-history-with-swarm/ &amp;ldquo;Swarm: a new generation of group conversations&amp;rdquo; - 2021, Jan 15 - https://jami.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m a Core Developer for &lt;a href=&#34;https://jami.net&#34;&gt;https://jami.net&lt;/a&gt; since several years now.&#xA;During those years, I gave some talks and wrote a lot of articles that I&amp;rsquo;ll link of that page:&lt;/p&gt;&#xA;&lt;h1 id=&#34;articles&#34;&gt;Articles&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Improving the call experience in Jami&amp;rdquo; - 2022, Aug 31 - &lt;a href=&#34;https://jami.net/improving-call-experience-in-jami/&#34;&gt;https://jami.net/improving-call-experience-in-jami/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Swarm file transfers&amp;rdquo; - 2022, Aug 09 - &lt;a href=&#34;https://jami.net/swarm-file-transfers/&#34;&gt;https://jami.net/swarm-file-transfers/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Synchronizing conversation history with Swarm&amp;rdquo; - 2022, Feb 16 - &lt;a href=&#34;https://jami.net/synchronizing-conversation-history-with-swarm/&#34;&gt;https://jami.net/synchronizing-conversation-history-with-swarm/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Swarm: a new generation of group conversations&amp;rdquo; - 2021, Jan 15 - &lt;a href=&#34;https://jami.net/swarm-introducing-a-new-generation-of-group-conversations/&#34;&gt;https://jami.net/swarm-introducing-a-new-generation-of-group-conversations/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Improving performance and security with TLS 1.3&amp;rdquo; - 2019, Sep 6 - &lt;a href=&#34;https://jami.net/improving-performance-and-security-with-tls-1-3/&#34;&gt;https://jami.net/improving-performance-and-security-with-tls-1-3/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Peer-to-peer file sharing support in Jami&amp;rdquo; - 2019, Jun 14 - &lt;a href=&#34;https://jami.net/peer-to-peer-file-sharing-support-in-jami/&#34;&gt;https://jami.net/peer-to-peer-file-sharing-support-in-jami/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Establishing peer-to-peer connections with Jami&amp;rdquo; - 2017, Jun 9 - &lt;a href=&#34;https://jami.net/establishing-peer-to-peer-connections-with-jami/&#34;&gt;https://jami.net/establishing-peer-to-peer-connections-with-jami/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;And probably helped to lot of other things (like &lt;a href=&#34;https://docs.jami.net/&#34;&gt;https://docs.jami.net/&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A GPT-3 bot to answer my tickets</title>
       <link>https://enconn.fr/blog/gpt3-gitlab-bot/</link>
-      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/gpt3-gitlab-bot/</guid>
-      <description>Long time no see! I have a looooooot of projects in mind and a lot far too big (+40h of work &amp;amp; personal community stuff &amp;amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this.</description>
+      <description>&lt;p&gt;Long time no see!&#xA;I have a looooooot of projects in mind and a lot far too big (+40h of work &amp;amp; personal community stuff &amp;amp; life). However, I got a list of projects I can do in one week-end(ish) (e.g. a Gartic Phone with DALL-E, play with open push, etc) and because I answer to a lot of tickets every-day, I was wondering how this can be automatized nowadays with all the new AI projects (for the fun, to be honest, I think a good FAQ should answer to all common questions and a good documentation should complete this. So, you just have to fix bugs and redirect to the FAQ/doc).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Git dissect</title>
       <link>https://enconn.fr/blog/git-dissect/</link>
-      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/git-dissect/</guid>
-      <description>It&amp;rsquo;s been a long time since my previous post, but let&amp;rsquo;s continue this serie about distributed systems with a tool that a lot of people use every day: git.
-Git is a versioning tool. Unlike some systems like subversion, you don&amp;rsquo;t need to have a server to use git. Every member of the project own a (partial or not) copy of the project and can directly send data to another member.</description>
+      <description>&lt;p&gt;It&amp;rsquo;s been a long time since my previous post, but let&amp;rsquo;s continue this serie about distributed systems with a tool that a lot of people use every day: &lt;em&gt;git&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Git&lt;/em&gt; is a versioning tool. Unlike some systems like &lt;em&gt;subversion&lt;/em&gt;, you don&amp;rsquo;t need to have a server to use &lt;em&gt;git&lt;/em&gt;. Every member of the project own a (partial or not) copy of the project and can directly send data to another member. So, even if today a lot of people use platforms like &lt;a href=&#34;https://gitea.com/&#34;&gt;Gitea&lt;/a&gt;, &lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt;, &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;, etc. it&amp;rsquo;s possible to work without any of them (can be useful when the platform is down).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Le Mont Tremblant</title>
       <link>https://enconn.fr/logs/mont-tremblant/</link>
-      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/mont-tremblant/</guid>
-      <description>Montréal est une ville très agréable à vivre, mais ses alentours sont superbes pour décompresser le temps d&amp;rsquo;un week-end. Entre l&amp;rsquo;Estrie, les Monts au Sud, Oka au Nord, et les balades un peu plus au Nord, il y a énorméments de choses à faire. si vous avez un joli week-end d&amp;rsquo;automne à passer, ou même une journée d&amp;rsquo;hiver, je recommande très fortement le Mont Tremblant, un parc SEPAQ au Nord de Montréal (il y a aussi la ville de Mont Tremblant et d&amp;rsquo;autres choses dans la zone.</description>
+      <description>&lt;p&gt;Montréal est une ville très agréable à vivre, mais ses alentours sont superbes pour décompresser le temps d&amp;rsquo;un week-end. Entre l&amp;rsquo;Estrie, les Monts au Sud, Oka au Nord, et les balades un peu plus au Nord, il y a énorméments de choses à faire. si vous avez un joli week-end d&amp;rsquo;automne à passer, ou même une journée d&amp;rsquo;hiver, je recommande très fortement le Mont Tremblant, un parc SEPAQ au Nord de Montréal (il y a aussi la ville de Mont Tremblant et d&amp;rsquo;autres choses dans la zone. Ici je parlerais du parc)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>La Gaspésie</title>
       <link>https://enconn.fr/logs/gaspesie/</link>
-      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/gaspesie/</guid>
-      <description>(Note: ce billet traite d&amp;rsquo;un voyage réalisé en 2019)
-Début du roadtrip Depuis pas mal de temps, je souhaitais faire la Gaspésie. J&amp;rsquo;ai donc décidé de prendre 2 semaines pour rouler et voir cette partie du Québec (avec quelques membres de ma famille) après un détour au Saguenay et du Fjord (forcément). Il est possible d&amp;rsquo;arriver en Gaspésie par Forestville en Ferry pour Rimouski, point de départ de ce petit voyage.</description>
+      <description>&lt;p&gt;(Note: ce billet traite d&amp;rsquo;un voyage réalisé en 2019)&lt;/p&gt;&#xA;&lt;h1 id=&#34;début-du-roadtrip&#34;&gt;Début du roadtrip&lt;/h1&gt;&#xA;&lt;p&gt;Depuis pas mal de temps, je souhaitais faire la Gaspésie. J&amp;rsquo;ai donc décidé de prendre 2 semaines pour rouler et voir cette partie du Québec (avec quelques membres de ma famille) après un détour au Saguenay et du Fjord (forcément). Il est possible d&amp;rsquo;arriver en Gaspésie par Forestville en Ferry pour Rimouski, point de départ de ce petit voyage. Par contre, pour bien commencer, je commence avec une bonne plaie en bas du dos. Parfait pour marcher de longues heures avec les frottements du pantalon.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>This blog has a .onion address</title>
       <link>https://enconn.fr/blog/onion-address/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/onion-address/</guid>
-      <description>This blog is also available via the Tor Browser. And have a .onion address.onion
-You can support the Tor project there: https://support.torproject.org/
-Or run your own hidden service via https://2019.www.torproject.org/docs/tor-onion-service.html.en</description>
+      <description>&lt;p&gt;This blog is also available via the Tor Browser. And have a &lt;a href=&#34;http://av6esbutl6fnanosaqbngwazxznyuntuo7pjdbxxr6rqbmngy76t3kqd.onion&#34;&gt;.onion&lt;/a&gt; address.onion&lt;/p&gt;&#xA;&lt;p&gt;You can support the Tor project there: &lt;a href=&#34;https://support.torproject.org/&#34;&gt;https://support.torproject.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Or run your own hidden service via &lt;a href=&#34;https://2019.www.torproject.org/docs/tor-onion-service.html.en&#34;&gt;https://2019.www.torproject.org/docs/tor-onion-service.html.en&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>P2P internals - episode 3</title>
       <link>https://enconn.fr/blog/p2p-internals-dht/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/p2p-internals-dht/</guid>
-      <description>In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. TURN servers) or some new protocols (like ICE).
-It is now time to talk about distributed applications and structures created on top of a p2p network.
-For a lot of distributed applications, all the nodes in the system can&amp;rsquo;t be stable.</description>
+      <description>&lt;p&gt;In the previous articles we talked about how to create a peer to peer connection and what issues we can encounter. These problems are generally due to the NAT which needs methods to pass through it (e.g. &lt;a href=&#34;https://enconn.fr/post/p2p-internals-rfc6062&#34;&gt;TURN&lt;/a&gt; servers) or some new protocols (like &lt;a href=&#34;https://enconn.fr/post/p2p-internals-ice&#34;&gt;ICE&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;It is now time to talk about distributed applications and structures created on top of a p2p network.&lt;/p&gt;&#xA;&lt;p&gt;For a lot of distributed applications, all the nodes in the system can&amp;rsquo;t be stable. In fact, nodes continuously join and leave the network for a lot of reasons. So, we need to use a structure which connects all the nodes of the network to maximize the coverage of that network (we don&amp;rsquo;t want to have nodes in a sub-net) and to get the best response time.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Grands Jardins</title>
       <link>https://enconn.fr/logs/grands-jardins/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/grands-jardins/</guid>
-      <description>Si un jour vous traînez sur la côte Ouest du Saint Laurent, entre Tadoussac et Québec se trouve un petit parc très sympathique pour le temps d&amp;rsquo;un week end : le Parc National des Grands Jardins. Ce parc propose diverses activités (dont de la Via Ferrata pour les amateurs ou du Kayak).
-La faune est peu présente, cependant les balades sont agréables et les points de vues sont super. Ci-dessous vous pouvez voir quelques photos du Pic de la Chouenne.</description>
+      <description>&lt;p&gt;Si un jour vous traînez sur la côte Ouest du Saint Laurent, entre Tadoussac et Québec se trouve un petit parc très sympathique pour le temps d&amp;rsquo;un week end : le Parc National des Grands Jardins. Ce parc propose diverses activités (dont de la Via Ferrata pour les amateurs ou du Kayak).&lt;/p&gt;&#xA;&lt;p&gt;La faune est peu présente, cependant les balades sont agréables et les points de vues sont super. Ci-dessous vous pouvez voir quelques photos du Pic de la Chouenne.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>P2P internals - episode 2</title>
       <link>https://enconn.fr/blog/p2p-internals-ice/</link>
-      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/p2p-internals-ice/</guid>
-      <description>In the first article of this series, we saw how to make an application (DEL) which is able to transfer a file from one peer to one another by successfully bypassing the NAT thanks to a TURN server. However, this technique is not really effective, because, in a lot of cases, a TURN server is completely useless. Indeed, if both peers are on the same network or both peers has an IPv6 address, the TURN server is not mandatory.</description>
+      <description>&lt;p&gt;In the &lt;a href=&#34;https://enconn.fr/blog/p2p-internals-rfc6062/&#34;&gt;first article&lt;/a&gt; of this series, we saw how to make an application (&lt;em&gt;DEL&lt;/em&gt;) which is able to transfer a file from one peer to one another by successfully bypassing the NAT thanks to a TURN server. However, this technique is not really effective, because, in a lot of cases, a TURN server is completely useless. Indeed, if both peers are on the same network or both peers has an IPv6 address, the TURN server is not mandatory. Now, &lt;em&gt;Alice&lt;/em&gt; wants to improve &lt;em&gt;DEL&lt;/em&gt; to only use the TURN server as a fallback.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Dbus on a server</title>
       <link>https://enconn.fr/blog/dbus-on-a-server/</link>
-      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/dbus-on-a-server/</guid>
-      <description>Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a System V init script, but you can encounter the same problem in a terminal or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or your graphical session.</description>
+      <description>&lt;p&gt;Some time ago, I had to run a script to test an application by sending dbus calls. The script was working great, until I moved it on a server with no graphical session. I ran the script as a System V init script, but you can encounter the same problem in a terminal or in a cron. The thing is that a dbus session is generally managed by KDE, Gnome or your graphical session.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>P2P internals - episode 1</title>
       <link>https://enconn.fr/blog/p2p-internals-rfc6062/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/p2p-internals-rfc6062/</guid>
-      <description>I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc.</description>
+      <description>&lt;p&gt;I love distributed systems for a various of reasons. But these systems are complex and require interactions with many layers. Even if a lot of distributed systems and software exists, such systems can be difficult to use for several reasons. Today, our operating systems tend to avoid doing as many calculations as possible (i.e. mobile devices need to save battery and avoid data consumption). Also, IPv4 is still massively used so NATs are still needed, interfaces are mainly created to interact with servers, etc. This is why I want to explain some common problems we can encounter when creating a peer to peer system and to describe existing solutions.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to host your own Jitsi instance</title>
       <link>https://enconn.fr/blog/jitsi/</link>
-      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/jitsi/</guid>
-      <description>For the local future CHATONS (Chatons is a french word which means kitten), I am currently helping to host a new Jitsi-meet instance. This instance will be available at this address: https://conference.facil.services/ and this is a little post about how we did it and what problems we encountered.
-First step - The manual installation For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools).</description>
+      <description>&lt;p&gt;For the local future &lt;a href=&#34;https://chatons.org/&#34;&gt;CHATONS&lt;/a&gt; (&lt;em&gt;Chatons&lt;/em&gt; is a french word which means &lt;em&gt;kitten&lt;/em&gt;), I am currently helping to host a new &lt;a href=&#34;https://jitsi.org/jitsi-meet/&#34;&gt;Jitsi-meet&lt;/a&gt; instance. This instance will be available at this address: &lt;a href=&#34;https://conference.facil.services/&#34;&gt;https://conference.facil.services/&lt;/a&gt; and this is a little post about how we did it and what problems we encountered.&lt;/p&gt;&#xA;&lt;h1 id=&#34;first-step---the-manual-installation&#34;&gt;First step - The manual installation&lt;/h1&gt;&#xA;&lt;p&gt;For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools). Anyway, even the logs were odds.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Un loup au Canada - Partie 3</title>
       <link>https://enconn.fr/logs/ontario/</link>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/ontario/</guid>
-      <description>Troisième province du Canada que je vais présenter, mais seconde que j’ai eu l’occasion de visiter.
-Pour le coup, je ne suis resté qu’une semaine dans cette province qui mérite bien plus. De plus, comme il s’agissait de l’hiver, je n’ai pas eu l’occasion de tester les trails (il en existe un qui fait tout de même 1500km, la route Champlain).
-Ce billet parlera donc des plus grosses zones à voir en Ontario, à savoir Ottawa, Toronto, Niagara Falls.</description>
+      <description>&lt;p&gt;Troisième province du Canada que je vais présenter, mais seconde que j’ai eu l’occasion de visiter.&lt;/p&gt;&#xA;&lt;p&gt;Pour le coup, je ne suis resté qu’une semaine dans cette province qui mérite bien plus. De plus, comme il s’agissait de l’hiver, je n’ai pas eu l’occasion de tester les trails (il en existe un qui fait tout de même 1500km, la route Champlain).&lt;/p&gt;&#xA;&lt;p&gt;Ce billet parlera donc des plus grosses zones à voir en Ontario, à savoir Ottawa, Toronto, Niagara Falls.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Un loup au Canada - Partie 2</title>
       <link>https://enconn.fr/logs/nova-scotia/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/nova-scotia/</guid>
-      <description>Deuxième province des Maritimes et ma préférée, aujourd&amp;rsquo;hui c&amp;rsquo;est au tour de la Nouvelle Écosse d&amp;rsquo;avoir son petit billet.
-Je suis resté 4 jours dans cette région. 2 à Halifax, sa capitale et 2 autres à Sydney (non, pas celui d&amp;rsquo;Australie) qui sont un peu les deux grosses villes de cette province.
-La Nouvelle Écosse en quelques lignes Nova Scotia, c&amp;rsquo;est une province à l&amp;rsquo;est de New-Brunwick, que j&amp;rsquo;ai présenté dans le précédent billet.</description>
+      <description>&lt;p&gt;Deuxième province des Maritimes et ma préférée, aujourd&amp;rsquo;hui c&amp;rsquo;est au tour de la Nouvelle Écosse d&amp;rsquo;avoir son petit billet.&lt;/p&gt;&#xA;&lt;p&gt;Je suis resté 4 jours dans cette région. 2 à Halifax, sa capitale et 2 autres à Sydney (non, pas celui d&amp;rsquo;Australie) qui sont un peu les deux grosses villes de cette province.&lt;/p&gt;&#xA;&lt;h1 id=&#34;la-nouvelle-écosse-en-quelques-lignes&#34;&gt;La Nouvelle Écosse en quelques lignes&lt;/h1&gt;&#xA;&lt;p&gt;Nova Scotia, c&amp;rsquo;est une province à l&amp;rsquo;est de New-Brunwick, que j&amp;rsquo;ai présenté dans le précédent billet.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Un loup au Canada - Partie 1</title>
       <link>https://enconn.fr/logs/new-brunswick/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/new-brunswick/</guid>
-      <description>En août 2016, je suis parti de France pour vivre au Canada, au moins quelques années. Ça fait maintenant plus de 2 ans que je vis ici, et j&amp;rsquo;ai parcouru quelques milliers de km dans ce grand pays. visité une bonne partie de 5 des provinces (je souhaite encore visiter la Gaspésie au Québec, l&amp;rsquo;extrême Nord, le Labrador et le Yukon).
-Je commence donc une série de billets (un peu pour faire suite aux billets du Schtroumpf pythonneux), parlant des différentes provinces, ce qu&amp;rsquo;on peut y voir et pourquoi pas, vous donner l&amp;rsquo;envie d&amp;rsquo;y faire un tour.</description>
+      <description>&lt;p&gt;En août 2016, je suis parti de France pour vivre au Canada, au moins quelques années. Ça fait maintenant plus de 2 ans que je vis ici, et j&amp;rsquo;ai parcouru quelques milliers de km dans ce grand pays. visité une bonne partie de 5 des provinces (je souhaite encore visiter la Gaspésie au Québec, l&amp;rsquo;extrême Nord, le Labrador et le Yukon).&lt;/p&gt;&#xA;&lt;p&gt;Je commence donc une série de billets (un peu pour faire suite aux billets du Schtroumpf pythonneux), parlant des différentes provinces, ce qu&amp;rsquo;on peut y voir et pourquoi pas, vous donner l&amp;rsquo;envie d&amp;rsquo;y faire un tour. Pour donner une idée, voici actuellement les zones que j&amp;rsquo;ai pu visiter :&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Boston</title>
       <link>https://enconn.fr/logs/boston/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/boston/</guid>
-      <description>L&amp;rsquo;avantage de vivre dans une ville comme Montréal, c&amp;rsquo;est qu&amp;rsquo;il est possible de faire un week-end aux US assez facilement. C&amp;rsquo;est ce que j&amp;rsquo;ai fait en allant pendant la fête des patriotes à Boston pour le week-end.
-Petite note de passage de douanes Pour aller du Canada aucun papier n&amp;rsquo;est nécessaire de faire avant de passer la douane. Mais je conseille de faire tout de même l&amp;rsquo;ESTA pour éviter de passer 1h a passer la douane.</description>
+      <description>&lt;p&gt;L&amp;rsquo;avantage de vivre dans une ville comme Montréal, c&amp;rsquo;est qu&amp;rsquo;il est possible de faire un week-end aux US assez facilement. C&amp;rsquo;est ce que j&amp;rsquo;ai fait en allant pendant la fête des patriotes à Boston pour le week-end.&lt;/p&gt;&#xA;&lt;h1 id=&#34;petite-note-de-passage-de-douanes&#34;&gt;Petite note de passage de douanes&lt;/h1&gt;&#xA;&lt;p&gt;Pour aller du Canada aucun papier n&amp;rsquo;est nécessaire de faire avant de passer la douane. Mais je conseille de faire tout de même l&amp;rsquo;ESTA pour éviter de passer 1h a passer la douane. Au final on est arrivé avec plusieurs heures de retard, vers 1h30 du matin (et vers 2h30 au Airbnb).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>(2/3)Retour du nsec - The visual microphone</title>
       <link>https://enconn.fr/blog/2-3-retour-du-nsec-the-visual-microphone/</link>
-      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/2-3-retour-du-nsec-the-visual-microphone/</guid>
-      <description>Suite de la petite série sur le retour du nsec. Dans ce second article, je vais m&amp;rsquo;intéresser la dernière partie d&amp;rsquo;une track en 3 points réalisée par un autre membre de mon équipe.
-La première partie consistait à trouver la fréquence du mouvement du diaphragme d&amp;rsquo;un haut parleur. Puis de trouver la musique qui était jouée par cette enceinte (bien entendu, le son n&amp;rsquo;était pas présent). La dernière partie consistait à retrouver une conversation réalisée dans une pièce où un paquet de chips était filmé à très haute fréquence.</description>
+      <description>&lt;p&gt;Suite de la petite série sur le retour du nsec. Dans ce second article, je vais m&amp;rsquo;intéresser la dernière partie d&amp;rsquo;une track en 3 points réalisée par un autre membre de mon équipe.&lt;/p&gt;&#xA;&lt;p&gt;La première partie consistait à trouver la fréquence du mouvement du diaphragme d&amp;rsquo;un haut parleur. Puis de trouver la musique qui était jouée par cette enceinte (bien entendu, le son n&amp;rsquo;était pas présent). La dernière partie consistait à retrouver une conversation réalisée dans une pièce où un paquet de chips était filmé à très haute fréquence.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>(1/3)Retour du nsec - Introduction au badge hacking</title>
       <link>https://enconn.fr/blog/1-3-retour-du-nsec-introduction-au-badge-hacking/</link>
-      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/1-3-retour-du-nsec-introduction-au-badge-hacking/</guid>
-      <description>Comme expliqué dans mon précédent billet (https://zestedesavoir.com/contenus/2479/r2-pour-changer-de-gdb/), j&amp;rsquo;ai participé au NorthSec 2018, une grosse compétition de sécurité en Amérique du Nord.
-Au final, quelques épreuves valent un article, certaines où je n&amp;rsquo;ai pas les connaissances (par exemple, pour une épreuve web, il fallait réaliser du Prototype pollution attack) et quelques unes assez drôle.
-Je vais donc m&amp;rsquo;attarder sur 3 challenges :
- Pour la conférence, chaque personne possède un badge contenant le programme de la conférence, des LEDs qui clignotent, des PINS, une interface bluetooth et&amp;hellip; 2 FLAGS (cet article).</description>
+      <description>&lt;p&gt;Comme expliqué dans mon précédent billet (&lt;a href=&#34;https://zestedesavoir.com/contenus/2479/r2-pour-changer-de-gdb/&#34;&gt;https://zestedesavoir.com/contenus/2479/r2-pour-changer-de-gdb/&lt;/a&gt;), j&amp;rsquo;ai participé au &lt;a href=&#34;https://nsec.io/&#34;&gt;NorthSec 2018&lt;/a&gt;, une grosse compétition de sécurité en Amérique du Nord.&lt;/p&gt;&#xA;&lt;p&gt;Au final, quelques épreuves valent un article, certaines où je n&amp;rsquo;ai pas les connaissances (par exemple, pour une épreuve web, il fallait réaliser du &lt;a href=&#34;https://hackerone.com/reports/310443&#34;&gt;Prototype pollution attack&lt;/a&gt;) et quelques unes assez drôle.&lt;/p&gt;&#xA;&lt;p&gt;Je vais donc m&amp;rsquo;attarder sur 3 challenges :&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Pour la conférence, chaque personne possède un badge contenant le programme de la conférence, des LEDs qui clignotent, des PINS, une interface bluetooth et&amp;hellip; 2 FLAGS (cet article).&lt;/li&gt;&#xA;&lt;li&gt;On vient de recevoir 10 pdfs de 300 pages, le but est de trouver quelle page a été imprimée sur une imprimante différente des 2999 autres.&lt;/li&gt;&#xA;&lt;li&gt;Un agent se trouvait dans une pièce ou une conversation top secrète a eu lieu. Il a réussi a enregistrer cette conversation, cependant comme le son de la vidéo n&amp;rsquo;est pas disponible, il faut reconstruire cette conversation à partir des vibrations du paquet de chips pris en vidéo.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Voici donc le premier article (en espérant avoir le temps d&amp;rsquo;écrire les deux suivants), avec une introduction de hacking de badges. :)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tarpaulin ou kcov ?</title>
       <link>https://enconn.fr/blog/tarpaulin-ou-kcov/</link>
-      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/tarpaulin-ou-kcov/</guid>
-      <description>Pour un projet (que je présenterais plus tard sur le forum), j&amp;rsquo;ai eu besoin d&amp;rsquo;avoir du retour sur mes tests. Une des métriques m&amp;rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n&amp;rsquo;ai pas encore testé et d&amp;rsquo;ajouter des scénarios.
-En cherchant un peu sur Internet, je suis tombé sur 2 outils :
- kcov tarpaulin  En voici un petit comparatif.
-Comparatif Facilité d&amp;rsquo;installation kcov wget https://github.</description>
+      <description>&lt;p&gt;Pour un projet (que je présenterais plus tard sur le forum), j&amp;rsquo;ai eu besoin d&amp;rsquo;avoir du retour sur mes tests. Une des métriques m&amp;rsquo;intéresse est le pourcentage de couverture, car il me permet de connaître les branches que je n&amp;rsquo;ai pas encore testé et d&amp;rsquo;ajouter des scénarios.&lt;/p&gt;&#xA;&lt;p&gt;En cherchant un peu sur Internet, je suis tombé sur 2 outils :&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/SimonKagstrom/kcov/&#34;&gt;kcov&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/xd009642/tarpaulin&#34;&gt;tarpaulin&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;En voici un petit comparatif.&lt;/p&gt;&#xA;&lt;h1 id=&#34;comparatif&#34;&gt;Comparatif&lt;/h1&gt;&#xA;&lt;h2 id=&#34;facilité-dinstallation&#34;&gt;Facilité d&amp;rsquo;installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;kcov&#34;&gt;kcov&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  tar xzf master.tar.gz &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; kcov-master &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  mkdir build &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; build &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  cmake .. &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  make &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  make install &lt;span class=&#34;nv&#34;&gt;DESTDIR&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;../../kcov-build &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ../.. &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  rm -rf kcov-master&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;tarpaulin&#34;&gt;Tarpaulin&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# install libssl-dev pkg-config cmake zlib1g-dev&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cargo install cargo-tarpaulin&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Tarpaulin 1 ; kcov 0&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>r2</title>
       <link>https://enconn.fr/blog/radare/</link>
-      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/radare/</guid>
-      <description>Article original ici
-Hei, je n&amp;rsquo;avais pas n&amp;rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&amp;hellip;
-Aujourd&amp;rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le NorthSec 2018 à Montréal. Il m&amp;rsquo;arrive très rarement de faire des CTF et je n&amp;rsquo;en ai pas fait depuis un moment.
-Pour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges.</description>
+      <description>&lt;p&gt;&lt;em&gt;Article original &lt;a href=&#34;https://zestedesavoir.com/billets/2479/r2-pour-changer-de-gdb/&#34;&gt;ici&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hei, je n&amp;rsquo;avais pas n&amp;rsquo;avais pas écrit de billet ici alors que les sujets ne manquent pas&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Aujourd&amp;rsquo;hui avec des personnes de ma boîte, nous allons peut-être monter une équipe pour le &lt;a href=&#34;https://nsec.io/&#34;&gt;NorthSec 2018&lt;/a&gt; à Montréal. Il m&amp;rsquo;arrive très rarement de faire des CTF et je n&amp;rsquo;en ai pas fait depuis un moment.&lt;/p&gt;&#xA;&lt;p&gt;Pour se préparer, on va se faire une séance de quelques heures par semaine pour faire quelques challenges. Et j&amp;rsquo;ai décidé d&amp;rsquo;apprendre à utiliser &lt;code&gt;radare2&lt;/code&gt; (&lt;a href=&#34;http://radare.org/)&#34;&gt;http://radare.org/)&lt;/a&gt;. Dans ce billet, je vais donc partager mon expérimentation du jour, ou des suivantes si j&amp;rsquo;en fais une série.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Brussels</title>
       <link>https://enconn.fr/logs/brussels/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/brussels/</guid>
-      <description>The day before the FOSDEM, I visited Brussels. It was a 26 km day walk. In the morning I went to Atomium built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.
-   Atomium
-      Atomium
-      Atomium
-    In the center I saw the Palace of Justice a great building you can see far away.</description>
+      <description>&lt;p&gt;The day before the &lt;a href=&#34;https://enconn.fr/dev/fosdem&#34;&gt;FOSDEM&lt;/a&gt;, I visited Brussels. It was a 26 km day walk. In the morning I went to &lt;em&gt;Atomium&lt;/em&gt; built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;&#xA;&#x9;  &#xA;  &#xA;  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://enconn.fr/css/hugo-easy-gallery.css&#34; /&gt;&#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/brussels/atomium2.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/brussels/atomium2.jpg&#34; alt=&#34;Atomium&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/brussels/atomium2.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Atomium&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &#xA;  &#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/brussels/atomium.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/brussels/atomium.jpg&#34; alt=&#34;Atomium&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/brussels/atomium.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Atomium&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &#xA;  &#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/brussels/atomium3.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/brussels/atomium3.jpg&#34; alt=&#34;Atomium&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/brussels/atomium3.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Atomium&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;In the center I saw the &lt;em&gt;Palace of Justice&lt;/em&gt; a great building you can see far away. In this area, you have a lot of buildings. For example, you can see &lt;a href=&#34;http://www.lapharmacieanglaise.com/&#34;&gt;&lt;em&gt;la Pharmacie anglaise&lt;/em&gt;&lt;/a&gt;, the palace of Brussels, etc.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ZMarkdown</title>
       <link>https://enconn.fr/blog/zmarkdown/</link>
-      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/zmarkdown/</guid>
-      <description>Description ZMarkdown is the markdown engine used by Zeste de Savoir. It translates Markdown input to an AST, then the AST to LaTeX or HTML. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on Remark and created in NodeJs.
-Why? Similar projects don&amp;rsquo;t use AST (like the previous iteration of ZMarkdown to translate Markdown and they are difficult to improve with modules or translate in another text language.</description>
+      <description>&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;&#xA;&lt;p&gt;ZMarkdown is the markdown engine used by &lt;a href=&#34;https://zestedesavoir.com&#34;&gt;Zeste de Savoir&lt;/a&gt;. It translates Markdown input to an &lt;a href=&#34;https://en.wikipedia.org/wiki/Abstract_syntax_tree&#34;&gt;AST&lt;/a&gt;, then the &lt;em&gt;AST&lt;/em&gt; to &lt;em&gt;LaTeX&lt;/em&gt; or &lt;em&gt;HTML&lt;/em&gt;. So, we can render markdown in a web page or generate PDF from our tutorials. This project is based on &lt;a href=&#34;http://remark.js.org/&#34;&gt;Remark&lt;/a&gt; and created in NodeJs.&lt;/p&gt;&#xA;&lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;&#xA;&lt;p&gt;Similar projects don&amp;rsquo;t use AST (like the previous iteration of &lt;a href=&#34;https://github.com/zestedesavoir/Python-ZMarkdown&#34;&gt;ZMarkdown&lt;/a&gt; to translate Markdown and they are difficult to improve with modules or translate in another text language. Because &lt;em&gt;Remark&lt;/em&gt; is extremely modulable and uses an AST, it&amp;rsquo;s the best solution to craft a markdown engine to translate a custom markdown into any format (HTML, slides, PDF, generate Table Of Contents, generate man pages, etc).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Passer de la fibre au 56k</title>
       <link>https://enconn.fr/blog/fibre-to-56k/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/fibre-to-56k/</guid>
-      <description>Contenu posté sur Zeste de Savoir
-Vous avez peut-être chez vous un réseau avec un débit trop élevé ou qui marche (trop) bien. Dans ce billet, je ne vais pas parler du côté matériel d&amp;rsquo;un réseau, ni de brancher un switch sans STP en boucle pour le mettre down, mais de quelques commandes linux que j&amp;rsquo;ai eu l&amp;rsquo;occasion d&amp;rsquo;utiliser ces derniers jours pour simuler un mauvais réseau.
-Note : Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel, ce billet cherche seulement à donner un aperçu des possibilités de quelques commandes.</description>
+      <description>&lt;p&gt;Contenu posté sur &lt;a href=&#34;https://zestedesavoir.com/contenus/2012/passer-de-la-fibre-au-56k/&#34;&gt;Zeste de Savoir&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Vous avez peut-être chez vous un réseau avec un débit trop élevé ou qui marche (trop) bien. Dans ce billet, je ne vais pas parler du côté matériel d&amp;rsquo;un réseau, ni de brancher un switch sans STP en boucle pour le mettre down, mais de quelques commandes linux que j&amp;rsquo;ai eu l&amp;rsquo;occasion d&amp;rsquo;utiliser ces derniers jours pour simuler un mauvais réseau.&lt;/p&gt;&#xA;&lt;p&gt;Note : Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel, ce billet cherche seulement à donner un aperçu des possibilités de quelques commandes.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Créer un bridge IRC - Ring</title>
       <link>https://enconn.fr/blog/bridge-irc-ring/</link>
-      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/bridge-irc-ring/</guid>
-      <description>Contenu posté sur Zeste de Savoir
-J&amp;rsquo;aime faire des bots. J&amp;rsquo;ai des bots pour tout et n&amp;rsquo;importe quoi. J&amp;rsquo;ai des bots sur twitter, sur des serveurs IRC, des bots plus ou moins utile, des bots qui contrôlent des trucs et d&amp;rsquo;autres qui bougent.
-Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et ring.cx. Ce bot peut servir à plusieurs choses :</description>
+      <description>&lt;p&gt;Contenu posté sur &lt;a href=&#34;https://zestedesavoir.com/contenus/1829/creer-un-bridge-irc-ring/&#34;&gt;Zeste de Savoir&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;J&amp;rsquo;aime faire des bots&lt;/em&gt;. J&amp;rsquo;ai des bots pour tout et n&amp;rsquo;importe quoi. J&amp;rsquo;ai des bots sur twitter, sur des serveurs &lt;a href=&#34;https://github.com/zestedesavoir/clem-irc-bot&#34;&gt;IRC&lt;/a&gt;, des bots plus ou moins utile, des bots qui contrôlent &lt;a href=&#34;https://enconn.fr/dev/glados-replica&#34;&gt;des trucs&lt;/a&gt; et d&amp;rsquo;autres qui bougent.&lt;br&gt;&#xA;Ce matin, j&amp;rsquo;ai décidé de réaliser un petit bot qui sert de bridge entre un channel IRC et &lt;a href=&#34;https://ring.cx&#34;&gt;ring.cx&lt;/a&gt;. Ce bot peut servir à plusieurs choses :&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Pouvoir pinguer une personne par Ring depuis le channel IRC.&lt;/li&gt;&#xA;&lt;li&gt;Pouvoir choisir de récupérer tout le contenu d&amp;rsquo;un channel.&lt;/li&gt;&#xA;&lt;li&gt;Pouvoir arrêter de recevoir les informations par Ring.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Dans ce billet je vais expliquer comment je l&amp;rsquo;ai réalisé.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Niagara</title>
       <link>https://enconn.fr/logs/niagara/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/niagara/</guid>
-      <description>Pour notre premier jour à Toronto, nous avons décidé de ne pas visiter Toronto, mais les chutes du Niagara, qui se trouvent à 1h30 en bus de la ville. Au final, les chutes sont magnifiques, mais le complexe autour des chutes m&amp;rsquo;a un peu surpris (je m&amp;rsquo;attendais à une zone plus naturelle qu&amp;rsquo;un complexe de casinos).
-   Le complexe
-      Les chutes
-      Les chutes 2</description>
+      <description>&lt;p&gt;Pour notre premier jour à Toronto, nous avons décidé de ne pas visiter Toronto, mais les chutes du Niagara, qui se trouvent à 1h30 en bus de la ville. Au final, les chutes sont magnifiques, mais le complexe autour des chutes m&amp;rsquo;a un peu surpris (je m&amp;rsquo;attendais à une zone plus naturelle qu&amp;rsquo;un complexe de casinos).&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;&#xA;&#x9;  &#xA;  &#xA;  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://enconn.fr/css/hugo-easy-gallery.css&#34; /&gt;&#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/quebec/niagara/t30.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/quebec/niagara/t30.jpg&#34; alt=&#34;Le complexe&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/quebec/niagara/t30.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Le complexe&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &#xA;  &#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/quebec/niagara/t31.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/quebec/niagara/t31.jpg&#34; alt=&#34;Les chutes&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/quebec/niagara/t31.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Les chutes&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Ottawa</title>
       <link>https://enconn.fr/logs/ottawa/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/ottawa/</guid>
-      <description>Petite visite d&amp;rsquo;une journée dans la capitale canadienne. Ottawa est une ville assez rapide à visiter au final (pour le centre de la ville). Les monuments à voir se trouvent sur le même chemin. Une grosse partie de cette journée s&amp;rsquo;est déroulé prêt du parlement (un spectacle de lumières avait lieu) et sur le chemin des monuments. Pour le repas du midi nous l&amp;rsquo;avons fait entre le chemin conseillé pour les visites de monuments et notre auberge de jeunesse, au market district.</description>
+      <description>&lt;p&gt;Petite visite d&amp;rsquo;une journée dans la capitale canadienne. Ottawa est une ville assez rapide à visiter au final (pour le centre de la ville). Les monuments à voir se trouvent sur le même chemin. Une grosse partie de cette journée s&amp;rsquo;est déroulé prêt du parlement (un spectacle de lumières avait lieu) et sur le chemin des monuments. Pour le repas du midi nous l&amp;rsquo;avons fait entre le chemin conseillé pour les visites de monuments et notre auberge de jeunesse, au market district.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Toronto</title>
       <link>https://enconn.fr/logs/toronto/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/toronto/</guid>
-      <description>En décembre 2016, j&amp;rsquo;ai eu l&amp;rsquo;occasion de passer plusieurs jours dans la ville de Toronto et de visiter la plupart de ses endroits (sauf le hackerspace&amp;hellip;)
-Chinatown Une de mes premières destination était le Chinatown. Toronto possède une grosse population asiatique et possède en son centre un chinatown et un koreatown. De plus, il se trouve prêt du Kensigton Market et de la Graffity Alley que je voulais visiter. C&amp;rsquo;est un endroit parfait pour chercher un dépaysement (la plupart des pancartes sont marqués dans en chinois, japonais, etc.</description>
+      <description>&lt;p&gt;En décembre 2016, j&amp;rsquo;ai eu l&amp;rsquo;occasion de passer plusieurs jours dans la ville de Toronto et de visiter la plupart de ses endroits (sauf le hackerspace&amp;hellip;)&lt;/p&gt;&#xA;&lt;h2 id=&#34;chinatown&#34;&gt;Chinatown&lt;/h2&gt;&#xA;&lt;p&gt;Une de mes premières destination était le Chinatown. Toronto possède une grosse population asiatique et possède en son centre un chinatown et un koreatown. De plus, il se trouve prêt du Kensigton Market et de la Graffity Alley que je voulais visiter. C&amp;rsquo;est un endroit parfait pour chercher un dépaysement (la plupart des pancartes sont marqués dans en chinois, japonais, etc.)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Zoo Saint-Félicien</title>
       <link>https://enconn.fr/logs/zoo/</link>
-      <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/zoo/</guid>
-      <description>À l&amp;rsquo;ouest du lac Saint-Jean il y a un Zoo Sauvage. une moitié du zoo est une partie sans cage (sauf pour la meute de loup), la seconde est plus classique. Voici quelques photos de la journée. On a été à une fromagerie prêt du Zoo. Le fromage n&amp;rsquo;existe pas ici (hors cheddar et fromage de chèvre). Mais la bière est pas mal :).
-   ours noir
-      ours noir</description>
+      <description>&lt;p&gt;À l&amp;rsquo;ouest du lac Saint-Jean il y a un Zoo Sauvage. une moitié du zoo est une partie sans cage (sauf pour la meute de loup), la seconde est plus classique. Voici quelques photos de la journée. On a été à une fromagerie prêt du Zoo. Le fromage n&amp;rsquo;existe pas ici (hors cheddar et fromage de chèvre). Mais la bière est pas mal :).&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;&#xA;&#x9;  &#xA;  &#xA;  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://enconn.fr/css/hugo-easy-gallery.css&#34; /&gt;&#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/quebec/zoo-saint-felicien/z1.JPG&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/quebec/zoo-saint-felicien/z1.JPG&#34; alt=&#34;ours noir&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/quebec/zoo-saint-felicien/z1.JPG&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;ours noir&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Parc des Monts-Valins</title>
       <link>https://enconn.fr/logs/parc-des-monts-valins/</link>
-      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/parc-des-monts-valins/</guid>
-      <description>Première visite Pour mon premier parc national visité, j&amp;rsquo;ai choisi le parc du Mont Valins, un poil au nord de Chicoutimi. On était censé y aller pour voir un magnifique point de vue en haut du Mont. Heureusement (ou pas), le Mont Valin était au beau milieu d&amp;rsquo;un nuage. Ce qui a limité le champ de vision en haut du mont (mais ce n&amp;rsquo;est pas grave, on a pu parler au gardien dans le refuge) mais a donné des photos très sympathiques !</description>
+      <description>&lt;h2 id=&#34;première-visite&#34;&gt;Première visite&lt;/h2&gt;&#xA;&lt;p&gt;Pour mon premier parc national visité, j&amp;rsquo;ai choisi le parc du Mont Valins, un poil au nord de Chicoutimi. On était censé y aller pour voir un magnifique point de vue en haut du Mont. Heureusement (ou pas), le Mont Valin était au beau milieu d&amp;rsquo;un nuage. Ce qui a limité le champ de vision en haut du mont (mais ce n&amp;rsquo;est pas grave, on a pu parler au gardien dans le refuge) mais a donné des photos très sympathiques !&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fjord de Saguenay</title>
       <link>https://enconn.fr/logs/fjord-saguenay/</link>
-      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/fjord-saguenay/</guid>
-      <description>Le moment que j&amp;rsquo;attendais le plus était sans doute l&amp;rsquo;été indien et ses fameuses couleurs. Durant la semaine de la relâche, j&amp;rsquo;en ai profité pour faire quelques parcs. Le premier était le parc du Fjord et son chemin de la statue qui m&amp;rsquo;a permis de voir à quel point l&amp;rsquo;été indien est magnifique.
-   Fjord du Saguenay
-      Fjord du Saguenay
-      Fjord du Saguenay</description>
+      <description>&lt;p&gt;Le moment que j&amp;rsquo;attendais le plus était sans doute l&amp;rsquo;été indien et ses fameuses couleurs. Durant la semaine de la relâche, j&amp;rsquo;en ai profité pour faire quelques parcs. Le premier était le parc du Fjord et son chemin de la statue qui m&amp;rsquo;a permis de voir à quel point l&amp;rsquo;été indien est magnifique.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;&#xA;&#x9;  &#xA;  &#xA;  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://enconn.fr/css/hugo-easy-gallery.css&#34; /&gt;&#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/quebec/fjord/fj1.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/quebec/fjord/fj1.jpg&#34; alt=&#34;Fjord du Saguenay&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/quebec/fjord/fj1.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Fjord du Saguenay&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &#xA;  &#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/quebec/fjord/fj2.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/quebec/fjord/fj2.jpg&#34; alt=&#34;Fjord du Saguenay&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/quebec/fjord/fj2.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Fjord du Saguenay&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Roadtrip</title>
       <link>https://enconn.fr/logs/roadtrip/</link>
-      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/roadtrip/</guid>
-      <description>Jour 1 Pour commencer ce road trip, on a loué une voiture (une Ford focus berline F blanche automatique) pour aller aux Monts Valins. Au final apres 1h de route et quelques paysages stylés, nous nous sommes rendus compte que la route était pas vraiment une route (on voyait que des 4x4 puis apres plus personne. Mais les paysages étaient stylés.
-Au final, nous avons décidé de viser le camping sur la carte pour décider de ce qu&amp;rsquo;on fera après.</description>
+      <description>&lt;h2 id=&#34;jour-1&#34;&gt;Jour 1&lt;/h2&gt;&#xA;&lt;p&gt;Pour commencer ce road trip, on a loué une voiture (une Ford focus berline F blanche automatique) pour aller aux Monts Valins. Au final apres 1h de route et quelques paysages stylés, nous nous sommes rendus compte que la route était pas vraiment une route (on voyait que des 4x4 puis apres plus personne. Mais les paysages étaient stylés.&lt;/p&gt;&#xA;&lt;p&gt;Au final, nous avons décidé de viser le camping sur la carte pour décider de ce qu&amp;rsquo;on fera après. Au final le camping était abandonné et il restait une caravane de hipster ermite abandonné en mode into the wild (très bon film).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chicoutimi</title>
       <link>https://enconn.fr/logs/chicoutimi/</link>
-      <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/chicoutimi/</guid>
-      <description>Arrivée Le dernier point de cette semaine de voyage est Chicoutimi, ma ville d&amp;rsquo;arrivée dans laquelle je vais vivre au moins les 10 prochains mois. Ces 10 prochains mois se passeront dans un appartement prêt du port, de l&amp;rsquo;université et des commerces. La ville est relativement petite (moins de 150 000 habitants), l&amp;rsquo;université joue un rôle centrale, mais quelques points valent le coup d&amp;rsquo;oeil et la ville est relativement active (pas mal d&amp;rsquo;évènements tout au long de l&amp;rsquo;année.</description>
+      <description>&lt;h2 id=&#34;arrivée&#34;&gt;Arrivée&lt;/h2&gt;&#xA;&lt;p&gt;Le dernier point de cette semaine de voyage est Chicoutimi, ma ville d&amp;rsquo;arrivée dans laquelle je vais vivre au moins les 10 prochains mois. Ces 10 prochains mois se passeront dans un appartement prêt du port, de l&amp;rsquo;université et des commerces. La ville est relativement petite (moins de 150 000 habitants), l&amp;rsquo;université joue un rôle centrale, mais quelques points valent le coup d&amp;rsquo;oeil et la ville est relativement active (pas mal d&amp;rsquo;évènements tout au long de l&amp;rsquo;année. Lorsque je suis arrivée, c&amp;rsquo;était pendant le &lt;a href=&#34;http://festivalhumanite.org/&#34;&gt;Festival Humanité&lt;/a&gt;) et bien placée dans le Saguenay. On peut trouver à proximité le Fjord, le Lac Saint Jean, etc.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Baie-Saint-Paul</title>
       <link>https://enconn.fr/logs/baie-saint-paul/</link>
-      <pubDate>Wed, 24 Aug 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Wed, 24 Aug 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/baie-saint-paul/</guid>
-      <description>Baie-Saint-Paul est un petit village prêt du Saint Laurent. On peut y trouver une ambiance entre les films de western avec sa rue principale et forêt de sapins avec les alentours. La ville se visite très vite mais le centre ville est très joli tout comme le coin de la baie ou des excursions débutent pour aller voir des baleines. Il existe aussi de nombreuses randonnées autour. J&amp;rsquo;en ai surtout profité pour découvrir un village de campagne et me promener.</description>
+      <description>&lt;p&gt;Baie-Saint-Paul est un petit village prêt du Saint Laurent. On peut y trouver une ambiance entre les films de western avec sa rue principale et forêt de sapins avec les alentours. La ville se visite très vite mais le centre ville est très joli tout comme le coin de la baie ou des excursions débutent pour aller voir des baleines. Il existe aussi de nombreuses randonnées autour. J&amp;rsquo;en ai surtout profité pour découvrir un village de campagne et me promener.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Québec</title>
       <link>https://enconn.fr/logs/quebec/</link>
-      <pubDate>Mon, 22 Aug 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Mon, 22 Aug 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/quebec/</guid>
-      <description>Les points visités Ma visite de Quebec a débuté par la zone de la gare du Palais. J&amp;rsquo;ai alors choisi de faire le tour des rues en montant vers la Haute ville via les remparts. En haut des remparts se trouve LE plus beau point de Quebec. La terasse entre l&amp;rsquo;hôtel surplombant la ville et la balade des gouverneurs. Après une pause café sur cette terrasse à regarder les différents artistes réaliser leur spectacle, je me suis attaqué à la balade des gouverneurs qui offre une belle vision des alentours pour finir en haut des plaines d&amp;rsquo;Abraham.</description>
+      <description>&lt;h2 id=&#34;les-points-visités&#34;&gt;Les points visités&lt;/h2&gt;&#xA;&lt;p&gt;Ma visite de Quebec a débuté par la zone de la gare du Palais. J&amp;rsquo;ai alors choisi de faire le tour des rues en montant vers la Haute ville via les remparts. En haut des remparts se trouve LE plus beau point de Quebec. La terasse entre l&amp;rsquo;hôtel surplombant la ville et la balade des gouverneurs. Après une pause café sur cette terrasse à regarder les différents artistes réaliser leur spectacle, je me suis attaqué à la balade des gouverneurs qui offre une belle vision des alentours pour finir en haut des plaines d&amp;rsquo;Abraham. Je suis ensuite rentré fatigué des 40km que j&amp;rsquo;avais marché les 2 derniers jours&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Montréal</title>
       <link>https://enconn.fr/logs/montreal/</link>
-      <pubDate>Sat, 20 Aug 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 20 Aug 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/montreal/</guid>
-      <description>Les points visités Si vous vous rendez à Montréal, je vous conseil VRAIMENT de faire un tour au parc du Mont Royal (Mount Royal). Il s&amp;rsquo;agit d&amp;rsquo;un parc immense qui domine la ville de Montréal. Vous trouverez dans ce parc plusieurs points importants comme le lac aux castors, la croix du Mont-Royal mais surtout le chalet du Mont. Ce chalet ouvre sur une vue sans équivalent sur la ville.
-   Point de vue de Mont-Royal</description>
+      <description>&lt;h2 id=&#34;les-points-visités&#34;&gt;Les points visités&lt;/h2&gt;&#xA;&lt;p&gt;Si vous vous rendez à Montréal, je vous conseil VRAIMENT de faire un tour au parc du Mont Royal (&lt;a href=&#34;https://en.wikipedia.org/wiki/Mount_Royal&#34;&gt;Mount Royal&lt;/a&gt;). Il s&amp;rsquo;agit d&amp;rsquo;un parc immense qui domine la ville de Montréal. Vous trouverez dans ce parc plusieurs points importants comme le lac aux castors, la croix du Mont-Royal mais surtout le chalet du Mont. Ce chalet ouvre sur une vue sans équivalent sur la ville.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;&#xA;&#x9;  &#xA;  &#xA;  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://enconn.fr/css/hugo-easy-gallery.css&#34; /&gt;&#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/quebec/montreal/royal1.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/quebec/montreal/royal1.jpg&#34; alt=&#34;Point de vue de Mont-Royal&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/quebec/montreal/royal1.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Point de vue de Mont-Royal&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chronique du libre n°2</title>
       <link>https://enconn.fr/blog/chronique-du-libre-2/</link>
-      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/chronique-du-libre-2/</guid>
-      <description>Tout le monde connait Mozilla grâce à Firefox mais les projets de l&amp;rsquo;organisation ne se limitent pas à un navigateur. La mission de Mozilla est de promouvoir l’ouverture, l’innovation et la bonne santé du Web. La Fondation Mozilla propose des programmes pour mapper ces valeurs à la science, les médias, à la politique ou l&amp;rsquo;éducation afin de les rendre ouverts, collaboratifs et partageables.
-Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&amp;rsquo;open science et plus particulièrement d&amp;rsquo;un projet de la Fondation Mozilla relativement peu connu : Le Mozilla Science Lab.</description>
+      <description>&lt;p&gt;Tout le monde connait Mozilla grâce à Firefox mais les projets de l&amp;rsquo;organisation ne se limitent pas à un navigateur. La &lt;a href=&#34;https://www.mozilla.org/fr/mission/&#34;&gt;mission&lt;/a&gt; de Mozilla est de promouvoir l’ouverture, l’innovation et la bonne santé du Web. La Fondation Mozilla propose des programmes pour mapper ces valeurs à la science, les médias, à la politique ou l&amp;rsquo;éducation afin de les rendre ouverts, collaboratifs et partageables.&lt;/p&gt;&#xA;&lt;p&gt;Dans ce deuxième article des Chroniques du Libre, nous allons donc parler d&amp;rsquo;open science et plus particulièrement d&amp;rsquo;un projet de la &lt;a href=&#34;https://www.mozilla.org/en-US/foundation/&#34;&gt;Fondation Mozilla&lt;/a&gt; relativement peu connu : Le &lt;a href=&#34;http://mozillascience.org/&#34;&gt;Mozilla Science Lab&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chronique du libre n°1</title>
       <link>https://enconn.fr/blog/chronique-du-libre-1/</link>
-      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/chronique-du-libre-1/</guid>
-      <description>&lt;p&gt;Le monde du libre est composé de bien de projets dans de nombreux domaines. De nombreuses communautés se sont formées autour de ces projets. Cette nouvelle série d&amp;rsquo;articles a pour but de présenter des projets communautaires dans différents domaines. Aujourd&amp;rsquo;hui, nous allons débuter cette série avec un projet de robot humanoïde open-source : InMoov.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/dev/inmoov/inmoov_ban.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Le monde du libre est composé de bien de projets dans de nombreux domaines. De nombreuses communautés se sont formées autour de ces projets. Cette nouvelle série d&amp;rsquo;articles a pour but de présenter des projets communautaires dans différents domaines. Aujourd&amp;rsquo;hui, nous allons débuter cette série avec un projet de robot humanoïde open-source : InMoov.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/dev/inmoov/inmoov_ban.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Gallerie 2D</title>
       <link>https://enconn.fr/logs/gallerie/</link>
-      <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/gallerie/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://enconn.fr/img/logs/galerie/alice.png&#34; alt=&#34;Alice&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Sébastien Blin</title>
       <link>https://enconn.fr/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/about/</guid>
-      <description>Hei there!
-I&amp;rsquo;m Sébastien/AmarOk, a Free software consultant currently working on Jami.
-I care about privacy and I am involved in several projects and I think ethics should be at the center of a lot of things. I am currently working on several projects including VOiP, distributed technologies, Rust, Robots.
-Also, I love cold countries and that&amp;rsquo;s why I moved to Canada.
-Find me  Mail Mastodon Zeste De Savoir Twitter Github Jami: amarok@enconn.</description>
+      <description>&lt;p&gt;Hei there!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Sébastien/AmarOk, a Free software consultant currently working on &lt;a href=&#34;https://jami.net&#34;&gt;Jami&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I care about privacy and I am involved in several projects and I think ethics should be at the center of a lot of things.&#xA;I am currently working on several projects including VOiP, distributed technologies, Rust, Robots.&lt;/p&gt;&#xA;&lt;p&gt;Also, I love cold countries and that&amp;rsquo;s why I moved to Canada.&lt;/p&gt;&#xA;&lt;h2 id=&#34;find-me&#34;&gt;Find me&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;mailto:contact@enconn.fr&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://mastodon.social/@amarok&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://zestedesavoir.com/membres/voir/AmarOk/&#34;&gt;Zeste De Savoir&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://twitter.com/AmarOk1412/&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/AmarOk1412/&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jami.net&#34;&gt;Jami&lt;/a&gt;: &lt;a href=&#34;mailto:amarok@enconn.fr&#34;&gt;amarok@enconn.fr&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;IRC: AmarOk1412 on freenode.&lt;/li&gt;&#xA;&lt;li&gt;PGP: &lt;a href=&#34;http://pgp.mit.edu/pks/lookup?op=vindex&amp;amp;search=0x85F1D0174FC09B8C68D65379C894BB01EEB2A9A9&#34;&gt;0x85F1D0174FC09B8C68D65379C894BB01EEB2A9A9&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;some-links&#34;&gt;Some links&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://lobste.rs/&#34;&gt;Lobste.rs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://zestedesavoir.com&#34;&gt;Zeste de Savoir&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

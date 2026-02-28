@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Enconn</title>
+    <link>https://enconn.fr/tags/android/</link>
+    <description>Recent content in Android on Enconn</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
+    <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parsing recipe ingredients locally</title>
+      <link>https://enconn.fr/blog/parsing-ingredients-list-python-android/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/parsing-ingredients-list-python-android/</guid>
+      <description>&lt;p&gt;Wow, it&amp;rsquo;s been 4 years since my last article. A lot of things have happened: the pandemic, the AI-bubble-sloppy-shit. But recently I thought about re-opening this blog.&#xA;I&amp;rsquo;ve been using &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; for a long time now, and I have a lot of notes, ideas for articles, and projects I want to work on. And a friend recently started to write weekly articles on his &lt;a href=&#34;https://drouin.io/&#34;&gt;blog&lt;/a&gt;, so now I know it&amp;rsquo;s my turn to make this part of the Internet live again.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

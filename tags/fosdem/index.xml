@@ -4,23 +4,18 @@
     <title>FOSDEM on Enconn</title>
     <link>https://enconn.fr/tags/fosdem/</link>
     <description>Recent content in FOSDEM on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/fosdem/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/fosdem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Brussels</title>
       <link>https://enconn.fr/logs/brussels/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/logs/brussels/</guid>
-      <description>The day before the FOSDEM, I visited Brussels. It was a 26 km day walk. In the morning I went to Atomium built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.
-   Atomium
-      Atomium
-      Atomium
-    In the center I saw the Palace of Justice a great building you can see far away.</description>
+      <description>&lt;p&gt;The day before the &lt;a href=&#34;https://enconn.fr/dev/fosdem&#34;&gt;FOSDEM&lt;/a&gt;, I visited Brussels. It was a 26 km day walk. In the morning I went to &lt;em&gt;Atomium&lt;/em&gt; built for the World&amp;rsquo;s Fair Expo (1958). Then I wanted to go to the &amp;ldquo;Serres Royales&amp;rdquo;, but it was raining so I come back in the center.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;&#xA;&#x9;  &#xA;  &#xA;  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://enconn.fr/css/hugo-easy-gallery.css&#34; /&gt;&#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/brussels/atomium2.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/brussels/atomium2.jpg&#34; alt=&#34;Atomium&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/brussels/atomium2.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Atomium&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &#xA;  &#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/brussels/atomium.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/brussels/atomium.jpg&#34; alt=&#34;Atomium&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/brussels/atomium.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Atomium&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &#xA;  &#xA;  &lt;div class=&#34;box&#34; &gt;&#xA;    &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://enconn.fr//img/logs/brussels/atomium3.jpg&#39;);&#34;&gt;&#xA;        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://enconn.fr/img/logs/brussels/atomium3.jpg&#34; alt=&#34;Atomium&#34;/&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;a href=&#34;https://enconn.fr/img/logs/brussels/atomium3.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;        &lt;figcaption&gt;&#xA;            &lt;p&gt;Atomium&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;In the center I saw the &lt;em&gt;Palace of Justice&lt;/em&gt; a great building you can see far away. In this area, you have a lot of buildings. For example, you can see &lt;a href=&#34;http://www.lapharmacieanglaise.com/&#34;&gt;&lt;em&gt;la Pharmacie anglaise&lt;/em&gt;&lt;/a&gt;, the palace of Brussels, etc.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

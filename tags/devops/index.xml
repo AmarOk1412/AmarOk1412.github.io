@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>devops on Enconn</title>
+    <title>Devops on Enconn</title>
     <link>https://enconn.fr/tags/devops/</link>
-    <description>Recent content in devops on Enconn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Devops on Enconn</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://enconn.fr/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://enconn.fr/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to host your own Jitsi instance</title>
       <link>https://enconn.fr/blog/jitsi/</link>
-      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
-      <author>contact@enconn.fr (Sébastien Blin)</author>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/blog/jitsi/</guid>
-      <description>For the local future CHATONS (Chatons is a french word which means kitten), I am currently helping to host a new Jitsi-meet instance. This instance will be available at this address: https://conference.facil.services/ and this is a little post about how we did it and what problems we encountered.
-First step - The manual installation For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools).</description>
+      <description>&lt;p&gt;For the local future &lt;a href=&#34;https://chatons.org/&#34;&gt;CHATONS&lt;/a&gt; (&lt;em&gt;Chatons&lt;/em&gt; is a french word which means &lt;em&gt;kitten&lt;/em&gt;), I am currently helping to host a new &lt;a href=&#34;https://jitsi.org/jitsi-meet/&#34;&gt;Jitsi-meet&lt;/a&gt; instance. This instance will be available at this address: &lt;a href=&#34;https://conference.facil.services/&#34;&gt;https://conference.facil.services/&lt;/a&gt; and this is a little post about how we did it and what problems we encountered.&lt;/p&gt;&#xA;&lt;h1 id=&#34;first-step---the-manual-installation&#34;&gt;First step - The manual installation&lt;/h1&gt;&#xA;&lt;p&gt;For the story, the first attempt for hosting the instance worked during several weeks. But, after a migration to our final server, we started to see a lot of problems with that instance (due to the migration or the installation of the back-up system or the monitoring tools). Anyway, even the logs were odds.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

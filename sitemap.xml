@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://enconn.fr/tags/android/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/blog/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/dev/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://enconn.fr/</loc>
-    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/blog/parsing-ingredients-list-python-android/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/planeat/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/france/</loc>
     <lastmod>2022-12-03T00:00:00+00:00</lastmod>
@@ -23,17 +41,8 @@
     <loc>https://enconn.fr/tags/south-america/</loc>
     <lastmod>2022-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://enconn.fr/tags/</loc>
-    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://enconn.fr/tags/tropical/</loc>
     <lastmod>2022-12-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://enconn.fr/blog/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://enconn.fr/tags/dev/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/jami/</loc>
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
