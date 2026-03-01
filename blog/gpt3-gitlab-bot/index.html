@@ -96,8 +96,6 @@
   <meta name="twitter:description" content="A project done in one week-end">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@AmarOk1412" />
-  <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.152.2">
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
@@ -126,6 +124,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="https://enconn.fr/">Enconn</a>
+      <div class="navbar-by">by AmarOk</div>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -290,8 +289,8 @@ I have a looooooot of projects in mind and a lot far too big (+40h of work &amp;
 <p>GitLab is a HUGE project, with a huge API, but the documentation is good.
 The first step is to get an access token via <code>https://INSTANCE_GITLAB/-/profile/personal_access_tokens</code> once logged with the <code>api</code> and <code>read_api</code> permissions.</p>
 <p>Then, we can read the documentation. In my case:</p>
-<p><a href="https://docs.gitlab.com/ee/api/issues.html">https://docs.gitlab.com/ee/api/issues.html</a><br>
-<a href="https://docs.gitlab.com/ee/api/discussions.html">https://docs.gitlab.com/ee/api/discussions.html</a><br>
+<p><a href="https://docs.gitlab.com/ee/api/issues.html">https://docs.gitlab.com/ee/api/issues.html</a>
+<a href="https://docs.gitlab.com/ee/api/discussions.html">https://docs.gitlab.com/ee/api/discussions.html</a>
 <a href="https://docs.gitlab.com/ee/api/projects.html">https://docs.gitlab.com/ee/api/projects.html</a></p>
 <p>Then, the simplest way to know what we will have to parse is to use that good old <code>curl</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Retrieve all projects from an instance (here gitlab.com)</span>
@@ -411,21 +410,21 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
 
 
         
-          <div class="blog-tags">
-            
-              
-              <a href="https://enconn.fr/tags/gpt-3/">gpt-3</a>&nbsp;
-            
-              
-              <a href="https://enconn.fr/tags/dev/">dev</a>&nbsp;
-            
-              
-              <a href="https://enconn.fr/tags/ai/">ai</a>&nbsp;
-            
-              
-              <a href="https://enconn.fr/tags/software/">software</a>&nbsp;
-            
-          </div>
+        <div class="blog-tags">
+          
+          
+          <a href="https://enconn.fr/%20tags/gpt-3/">gpt-3</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/dev/">dev</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/ai/">ai</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/software/">software</a>&nbsp;
+          
+        </div>
         
 
         
@@ -434,21 +433,61 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
       </article>
 
       
-        <ul class="pager blog-pager">
-          
-            <li class="previous">
-              <a href="https://enconn.fr/blog/git-dissect/" data-toggle="tooltip" data-placement="top" title="Git dissect">&larr; Previous Post</a>
-            </li>
-          
-          
-            <li class="next">
-              <a href="https://enconn.fr/blog/jami-post/" data-toggle="tooltip" data-placement="top" title="My Jami posts">Next Post &rarr;</a>
-            </li>
-          
-        </ul>
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="https://enconn.fr/blog/git-dissect/" data-toggle="tooltip" data-placement="top"
+            title="Git dissect">&larr; Previous Post</a>
+        </li>
+        
+        
+        <li class="next">
+          <a href="https://enconn.fr/blog/jami-post/" data-toggle="tooltip" data-placement="top"
+            title="My Jami posts">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
       
 
 
+      
+
+      
+
+      
+      
+      <div class="disqus-comments">
+        
+  
+    <div class="comments">
+      <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "amarok1412" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+
+
+      </div>
+      
+      
+      
       
 
     </div>
@@ -479,26 +518,6 @@ Les problèmes de connectivité peuvent être dus à des blocages de pare-feu, �
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-		
-		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
-		
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-		
-		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
-		
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

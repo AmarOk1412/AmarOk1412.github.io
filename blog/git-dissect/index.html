@@ -96,8 +96,6 @@
   <meta name="twitter:description" content="P2P internals - episode 4">
   <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@AmarOk1412" />
-  <meta name="twitter:creator" content="@AmarOk1412" />
   <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.152.2">
   <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
@@ -126,6 +124,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="https://enconn.fr/">Enconn</a>
+      <div class="navbar-by">by AmarOk</div>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -846,7 +845,7 @@ Let&rsquo;s use a completely fictional protocol, called WOLF (because <em>git</e
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Usage: ./p2p-internal-git &lt;src_dir&gt; &lt;dest_dir&gt;&#34;</span><span class="p">);</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">src_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">clone</span><span class="p">();</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">dest_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Path</span>::<span class="n">new</span><span class="p">(</span><span class="o">&amp;</span><span class="n">args</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -912,7 +911,7 @@ git2 = { git = &#34;https://github.com/AmarOk1412/git2-rs&#34; }
 </span></span><span class="line"><span class="cl">Receiving objects: 100% <span class="o">(</span>16609/16609<span class="o">)</span>, 10.85 MiB <span class="p">|</span> 2.25 MiB/s, <span class="k">done</span>.
 </span></span><span class="line"><span class="cl">Resolving deltas: 100% <span class="o">(</span>11966/11966<span class="o">)</span>, <span class="k">done</span>.
 </span></span><span class="line"><span class="cl"><span class="c1"># Then, the magic:</span>
-</span></span><span class="line"><span class="cl"> amarok@tars3  ~/Projects/p2p-internals-git   main  ./target/debug/p2p-internals-git zmarkdown zmarkdown-copy                                   
+</span></span><span class="line"><span class="cl"> amarok@tars3  ~/Projects/p2p-internals-git   main  ./target/debug/p2p-internals-git zmarkdown zmarkdown-copy
 </span></span><span class="line"><span class="cl">Starting server <span class="k">for</span> zmarkdown
 </span></span><span class="line"><span class="cl">RECV: 0028git-upload-pack /zdshost<span class="o">=</span>localhost
 </span></span><span class="line"><span class="cl">Upload pack <span class="nb">command</span> detected
@@ -921,7 +920,7 @@ git2 = { git = &#34;https://github.com/AmarOk1412/git2-rs&#34; }
 </span></span><span class="line"><span class="cl">Send: 0046c42412dfee248e8acbd21df6038991dff6fd1b2a refs/remotes/origin/HEAD
 </span></span><span class="line"><span class="cl">Send: 0048c42412dfee248e8acbd21df6038991dff6fd1b2a refs/remotes/origin/master
 </span></span><span class="line"><span class="cl">Send: <span class="m">0000</span>
-</span></span><span class="line"><span class="cl">RECV: 0057want c42412dfee248e8acbd21df6038991dff6fd1b2a multi_ack side-band-64k include-tag 
+</span></span><span class="line"><span class="cl">RECV: 0057want c42412dfee248e8acbd21df6038991dff6fd1b2a multi_ack side-band-64k include-tag
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Detected wanted commit: c42412dfee248e8acbd21df6038991dff6fd1b2a
 </span></span><span class="line"><span class="cl">RECV: <span class="m">0000</span>
@@ -935,7 +934,7 @@ git2 = { git = &#34;https://github.com/AmarOk1412/git2-rs&#34; }
 </span></span><span class="line"><span class="cl"><span class="c1"># And we can validate</span>
 </span></span><span class="line"><span class="cl"> amarok@tars3  ~/Projects/p2p-internals-git   main  git -C zmarkdown rev-parse HEAD
 </span></span><span class="line"><span class="cl">c42412dfee248e8acbd21df6038991dff6fd1b2a
-</span></span><span class="line"><span class="cl"> amarok@tars3  ~/Projects/p2p-internals-git   main  git -C zmarkdown-copy rev-parse HEAD 
+</span></span><span class="line"><span class="cl"> amarok@tars3  ~/Projects/p2p-internals-git   main  git -C zmarkdown-copy rev-parse HEAD
 </span></span><span class="line"><span class="cl">c42412dfee248e8acbd21df6038991dff6fd1b2a
 </span></span></code></pre></div><p>And that&rsquo;s all! We did a minimal <em>git</em> server able to clone a repository. Sure, it&rsquo;s far from complete and there is a lot of missing features, but I hope I have enlightened you about how <em>git</em> exchanges data between a client and a server.</p>
 <h2 id="references">References</h2>
@@ -950,18 +949,18 @@ git2 = { git = &#34;https://github.com/AmarOk1412/git2-rs&#34; }
 
 
         
-          <div class="blog-tags">
-            
-              
-              <a href="https://enconn.fr/tags/p2p/">p2p</a>&nbsp;
-            
-              
-              <a href="https://enconn.fr/tags/dev/">dev</a>&nbsp;
-            
-              
-              <a href="https://enconn.fr/tags/git/">git</a>&nbsp;
-            
-          </div>
+        <div class="blog-tags">
+          
+          
+          <a href="https://enconn.fr/%20tags/p2p/">p2p</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/dev/">dev</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/git/">git</a>&nbsp;
+          
+        </div>
         
 
         
@@ -970,21 +969,61 @@ git2 = { git = &#34;https://github.com/AmarOk1412/git2-rs&#34; }
       </article>
 
       
-        <ul class="pager blog-pager">
-          
-            <li class="previous">
-              <a href="https://enconn.fr/blog/onion-address/" data-toggle="tooltip" data-placement="top" title="This blog has a .onion address">&larr; Previous Post</a>
-            </li>
-          
-          
-            <li class="next">
-              <a href="https://enconn.fr/blog/gpt3-gitlab-bot/" data-toggle="tooltip" data-placement="top" title="A GPT-3 bot to answer my tickets">Next Post &rarr;</a>
-            </li>
-          
-        </ul>
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="https://enconn.fr/blog/onion-address/" data-toggle="tooltip" data-placement="top"
+            title="This blog has a .onion address">&larr; Previous Post</a>
+        </li>
+        
+        
+        <li class="next">
+          <a href="https://enconn.fr/blog/gpt3-gitlab-bot/" data-toggle="tooltip" data-placement="top"
+            title="A GPT-3 bot to answer my tickets">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
       
 
 
+      
+
+      
+
+      
+      
+      <div class="disqus-comments">
+        
+  
+    <div class="comments">
+      <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "amarok1412" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+
+
+      </div>
+      
+      
+      
       
 
     </div>
@@ -1015,26 +1054,6 @@ git2 = { git = &#34;https://github.com/AmarOk1412/git2-rs&#34; }
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-		
-		  <a href="https://twitter.com/AmarOk1412" title="Twitter">
-		
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-		
-		  <a rel="me"href="https://mastodon.social/@amarok" title="Mastodon">
-		
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
