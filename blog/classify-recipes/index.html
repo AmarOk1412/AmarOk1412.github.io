@@ -1,0 +1,767 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>How to classify recipes - </title>
+
+  <meta name="description" content="another keep it simple stupid example">
+  <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Enconn",
+    
+    "url": "https:\/\/enconn.fr\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/enconn.fr\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/blog\/classify-recipes\/",
+          "name": "How to classify recipes"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "How to classify recipes",
+  "description" : "This week I still have some new things to explain about PlanEat.\nBad News - Android sucks So, I guess it\u0026rsquo;ll probably be the end of PlanEat. And probably a time to try other OSes again on my phone. (I have a PinePhone for a few years, but there is a lot to explore). Google is trying to kill Android once again. So, I encourage you to read https:\/\/keepandroidopen.org\/ For me, I still don\u0026rsquo;t know what I\u0026rsquo;ll do with PlanEat. Probably kill it. That was fun, but I have other ideas. Anyway, this week I wanted to share about how I classify recipes in PlanEat. Here is a screenshot of the app:\n",
+  "inLanguage" : "en",
+  "wordCount":  2537 ,
+  "datePublished" : "2026-03-07T00:00:00\u002b00:00",
+  "dateModified" : "2026-03-07T00:00:00\u002b00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "android, planeat, dev" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/classify-recipes\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="How to classify recipes" />
+<meta property="og:description" content="another keep it simple stupid example">
+<meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+<meta property="og:url" content="https://enconn.fr/blog/classify-recipes/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Enconn" />
+
+  <meta name="twitter:title" content="How to classify recipes" />
+  <meta name="twitter:description" content="another keep it simple stupid example">
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.152.2">
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/brands.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/regular.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/solid.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg-with-js.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-shims.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v5-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr/">Enconn</a>
+      <div class="navbar-by">by AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+        <li>
+          <a title="Blog" href="/blog/">Blog</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="Logs" href="/logs/">Logs</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="About" href="/about/">About</a>
+        </li>
+        
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a title="Enconn" href="https://enconn.fr/">
+          <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          
+        </a>
+      </div>
+    </div>
+    
+
+  </div>
+</nav>
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              
+                <h1>How to classify recipes</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <h2 class="blog-subheading">another keep it simple stupid example</h2>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>This week I still have some new things to explain about <a href="https://play.google.com/store/apps/details?id=com.planeat.planeat">PlanEat</a>.</p>
+<h1 id="bad-news---android-sucks">Bad News - Android sucks</h1>
+<p>So, I guess it&rsquo;ll probably be the end of PlanEat. And probably a time to try other OSes again on my phone. (I have a PinePhone for a few years, but there is a lot to explore).
+Google is trying to kill Android once again. So, I encourage you to read <a href="https://keepandroidopen.org/">https://keepandroidopen.org/</a>
+For me, I still don&rsquo;t know what I&rsquo;ll do with PlanEat. Probably kill it. That was fun, but I have other ideas. Anyway, this week I wanted to share about how I classify recipes in PlanEat. Here is a screenshot of the app:</p>
+<p><img src="/img/dev/classify-recipes/planeat.png" alt="Screenshot of my app"></p>
+<p>Where, on the top, I can filter recipes by type: <strong>All</strong>, <strong>Easy</strong>, <strong>Medium</strong>, <strong>Hard</strong>, <strong>Appetizer</strong>, <strong>Healthy</strong>, <strong>Middle Eastern</strong>, <strong>Asian</strong>, …</p>
+<p>For <strong>All</strong>, it&rsquo;s easy (I show all the recipes). <strong>Easy</strong>/<strong>Medium</strong>/<strong>Hard</strong> is based on the time you need to cook. But the rest is not so trivial.</p>
+<h1 id="how-to-classify-recipes">How to classify recipes</h1>
+<h2 id="create-a-plan-of-attack">Create a plan of attack</h2>
+<p>AI is generally a classic solution for classification problems on non-trivial data. There is pleeeeeenty of classifier available in the wild. I&rsquo;m not an expert in this field and I definitely have a lot to learn. But I basically know the process.</p>
+<p>First, there is good documentation if you want to start to play with models. I&rsquo;d recommend to check:</p>
+<ol>
+<li><em>TensorFlow</em></li>
+<li><em>SciKit</em></li>
+<li><em>PyTorch</em></li>
+</ol>
+<p>They got a lot of resources and tutorials explaining different use-case. The thing is, I&rsquo;m developing for an Android App. So, to my knowledge, the best solution is to choose <em>TensorFlow</em> Lite (now LiteRT). So, I know I need to create a <code>.tflite</code> file for my app.</p>
+<p>But it&rsquo;s basically possible to convert models generated by some library to tflite pretty easily, so it&rsquo;s not really a limitation.</p>
+<p>When you try to solve a classification problem with AI, I guess the two big steps are:</p>
+<ol>
+<li>Choose which model(s) you will need to train</li>
+<li>How to create a dataset that will be good enough to get the results you need</li>
+</ol>
+<p>Note, for 1, nowadays there is plenty of already pre-trained models for everything you need available on <a href="https://huggingface.co/">https://huggingface.co/</a>
+But I think my problem is simple enough to do my own model (and I want to learn things about this).</p>
+<p>In my case, I basically seek something like (<code>Model(Recipe)-&gt;List&lt;Labels&gt;</code>) where I already know my output labels. So I want to do something called <em>Multi Label Classification</em>.</p>
+<p>Let&rsquo;s now create the model.</p>
+<h2 id="create-the-dataset">Create the dataset</h2>
+<p>This part only may need several articles. Seems trivial (just get enough data to train your model), but in reality, you need to get the good amount of data to train your model correctly.
+If you want to know more about this, I can recommend to start to search &ldquo;overfitting and underfitting&rdquo; in your favorite search engine.</p>
+<p>But for <em>Multi Label Classification</em>, you will need:</p>
+<ol>
+<li>Labels (in my case, &ldquo;Appetizer&rdquo;, &ldquo;Healthy&rdquo;, &ldquo;Middle Eastern&rdquo;, &ldquo;Asian&rdquo;, …)</li>
+<li>Two datasets. In my case a .csv of two columns (value/result or &ldquo;a simplified Recipe&rdquo;/&ldquo;a list of tags&rdquo;):
+<ol>
+<li>One for training your model. It&rsquo;s about 9 times larger than the second dataset</li>
+<li>One to evaluate the pertinence of your trained model.</li>
+</ol>
+</li>
+</ol>
+<p>To get a lot of data, there is no magic. You will need to scrape pages and construct structured data. Note, you have to respect some rules if you scrape data and you need to follow website rules too.
+So, now let&rsquo;s say you have thousands of lines like the following:</p>
+<pre tabindex="0"><code>{&#34;title&#34;:&#34;Chips de patates douces&#34;,&#34;tags&#34;:[&#34;amuse-gueule&#34;,&#34;chips de patates douces&#34;,&#34;chips&#34;,&#34;patate douce&#34;,&#34;sel&#34;,&#34;facile&#34;,&#34;bon marché&#34;,&#34;chips&#34;],&#34;ingredients&#34;:[&#34;800 g de patate douce&#34;,&#34;sel&#34;]}@Vegetarian,Comfort Food
+</code></pre><p>You will need 3 scripts:</p>
+<ol>
+<li>The one splitting your big dataset in two:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the data with &#34;@&#34; as the separator</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;input.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;@&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Split the data into train and test sets</span>
+</span></span><span class="line"><span class="cl"><span class="n">train_df</span><span class="p">,</span> <span class="n">test_df</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Save the train and test sets to CSV files with &#34;@&#34; as the separator</span>
+</span></span><span class="line"><span class="cl"><span class="n">train_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">test_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;test.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Train and test data have been split. Train data: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">train_df</span><span class="p">)</span><span class="si">}</span><span class="s2"> rows, Test data: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">)</span><span class="si">}</span><span class="s2"> rows.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="2">
+<li>A script to train your model. In this script, you will need to clean a bit your data. Because to train the model, it will tokenize your text and you want to avoid to get two tokens for &ldquo;épices&rdquo;/&ldquo;epices&rdquo; for example. Or weird characters.
+Then, for multilabel classification, you need to transform your output in vectors. Because the model will only predict 1 output, if you want multiple result (such as &ldquo;Vegetarian,Asian&rdquo;), you basically transform the output to be a vector like <em>[0100100000]</em> where 1s are the active labels, 0s are the absent ones.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MultiLabelBinarizer</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing.text</span> <span class="kn">import</span> <span class="n">Tokenizer</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing.sequence</span> <span class="kn">import</span> <span class="n">pad_sequences</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tensorflow.keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Embedding</span><span class="p">,</span> <span class="n">LSTM</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">re</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load your CSV data</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;test.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Convert Tags column from string representation to lists</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">convert_to_list</span><span class="p">(</span><span class="n">tag_str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">tag_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Tags&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Tags&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">convert_to_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Tags&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Tags&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">convert_to_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Clean and preprocess the text data</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;[^a-zA-Z\s]&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>  <span class="c1"># Remove special characters, digits, etc.</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;\s+&#34;</span><span class="p">,</span> <span class="s2">&#34; &#34;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>  <span class="c1"># Remove extra spaces</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Function to extract and concatenate relevant fields from Recipe JSON</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">process_recipe</span><span class="p">(</span><span class="n">recipe_json</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Load the JSON from string, if necessary</span>
+</span></span><span class="line"><span class="cl">    <span class="n">recipe</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">recipe_json</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">recipe_json</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="n">recipe_json</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span> <span class="o">=</span> <span class="n">recipe</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ingredients</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">recipe</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ingredients&#39;</span><span class="p">,</span> <span class="p">[]))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tags</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">recipe</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tags&#39;</span><span class="p">,</span> <span class="p">[]))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Concatenate title, ingredients, and tags into one string</span>
+</span></span><span class="line"><span class="cl">    <span class="n">full_text</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">ingredients</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">tags</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">clean_text</span><span class="p">(</span><span class="n">full_text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Apply the recipe processing function</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">process_recipe</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">process_recipe</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Prepare the data</span>
+</span></span><span class="line"><span class="cl"><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">Tokenizer</span><span class="p">(</span><span class="n">oov_token</span><span class="o">=</span><span class="s2">&#34;&lt;OOV&gt;&#34;</span><span class="p">,</span> <span class="n">num_words</span><span class="o">=</span><span class="mi">100000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tokenizer</span><span class="o">.</span><span class="n">fit_on_texts</span><span class="p">(</span><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_train</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_test</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Check how many words the tokenizer captured</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Number of unique tokens: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">max_length</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span> <span class="k">for</span> <span class="n">seq</span> <span class="ow">in</span> <span class="n">X_train</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span> <span class="k">for</span> <span class="n">seq</span> <span class="ow">in</span> <span class="n">X_test</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_train</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">max_length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_test</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">max_length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Convert tags to binary format</span>
+</span></span><span class="line"><span class="cl"><span class="n">mlb</span> <span class="o">=</span> <span class="n">MultiLabelBinarizer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_train</span> <span class="o">=</span> <span class="n">mlb</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Tags&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_test</span> <span class="o">=</span> <span class="n">mlb</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Tags&#39;</span><span class="p">])</span>
+</span></span></code></pre></div><p>Then I define my model to train:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Define the model</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Embedding</span><span class="p">(</span><span class="n">input_dim</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_length</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">LSTM</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Dense</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Train the model</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Evaluate the model</span>
+</span></span><span class="line"><span class="cl"><span class="n">loss</span><span class="p">,</span> <span class="n">acc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Model evaluation results: Loss = </span><span class="si">{</span><span class="n">loss</span><span class="si">}</span><span class="s2">, Accuracy = </span><span class="si">{</span><span class="n">acc</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p><img src="/img/dev/classify-recipes/network.png" alt="The network"></p>
+<p>Here, I define a Neural Network than converts my input to a vector of 128 nodes followed by 2 LSTM models (this is used to discover dependencies in a text) and a Dense model that will give me the probability for each tags. And I train this model on 90% of the model, validate it against 10% of the data and print the precision.</p>
+<p>Finally, I convert it to a tflite model with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Export the model to TensorFlow Lite format</span>
+</span></span><span class="line"><span class="cl"><span class="n">converter</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">lite</span><span class="o">.</span><span class="n">TFLiteConverter</span><span class="o">.</span><span class="n">from_keras_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">converter</span><span class="o">.</span><span class="n">target_spec</span><span class="o">.</span><span class="n">supported_ops</span> <span class="o">=</span> <span class="p">[</span><span class="n">tf</span><span class="o">.</span><span class="n">lite</span><span class="o">.</span><span class="n">OpsSet</span><span class="o">.</span><span class="n">TFLITE_BUILTINS</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">lite</span><span class="o">.</span><span class="n">OpsSet</span><span class="o">.</span><span class="n">SELECT_TF_OPS</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">converter</span><span class="o">.</span><span class="n">_experimental_lower_tensor_list_ops</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="n">tflite_model</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">convert</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Save the model</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;model_multi_label.tflite&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">tflite_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Model exported to TensorFlow Lite format.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>And now I can use my model on Android. But I also can test it directly in Python with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing.text</span> <span class="kn">import</span> <span class="n">Tokenizer</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing.sequence</span> <span class="kn">import</span> <span class="n">pad_sequences</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MultiLabelBinarizer</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">re</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Example recipe data</span>
+</span></span><span class="line"><span class="cl"><span class="n">recipes</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;pates au pesto&#34;</span><span class="p">,</span> <span class="s2">&#34;tags&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;healthy&#34;</span><span class="p">,</span> <span class="s2">&#34;pates&#34;</span><span class="p">],</span> <span class="s2">&#34;ingredients&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;pates&#34;</span><span class="p">,</span> <span class="s2">&#34;pesto&#34;</span><span class="p">,</span> <span class="s2">&#34;fromage&#34;</span><span class="p">]},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;dumplings au poireau&#34;</span><span class="p">,</span> <span class="s2">&#34;tags&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;vegetarian&#34;</span><span class="p">,</span> <span class="s2">&#34;dumplings&#34;</span><span class="p">],</span> <span class="s2">&#34;ingredients&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;poireau&#34;</span><span class="p">,</span> <span class="s2">&#34;pate&#34;</span><span class="p">,</span> <span class="s2">&#34;oignon&#34;</span><span class="p">]},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;muffins aux pepites de chocolat&#34;</span><span class="p">,</span> <span class="s2">&#34;tags&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;dessert&#34;</span><span class="p">,</span> <span class="s2">&#34;chocolat&#34;</span><span class="p">],</span> <span class="s2">&#34;ingredients&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;farine&#34;</span><span class="p">,</span> <span class="s2">&#34;morceaux de chocolat&#34;</span><span class="p">,</span> <span class="s2">&#34;sucre&#34;</span><span class="p">]},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="s2">&#34;title&#34;</span><span class="p">:</span><span class="s2">&#34;Chips de patates douces&#34;</span><span class="p">,</span><span class="s2">&#34;tags&#34;</span><span class="p">:[</span><span class="s2">&#34;amuse-gueule&#34;</span><span class="p">,</span><span class="s2">&#34;chips de patates douces&#34;</span><span class="p">,</span><span class="s2">&#34;chips&#34;</span><span class="p">,</span><span class="s2">&#34;patate douce&#34;</span><span class="p">,</span><span class="s2">&#34;sel&#34;</span><span class="p">,</span><span class="s2">&#34;facile&#34;</span><span class="p">,</span><span class="s2">&#34;bon marché&#34;</span><span class="p">,</span><span class="s2">&#34;chips&#34;</span><span class="p">],</span><span class="s2">&#34;ingredients&#34;</span><span class="p">:[</span><span class="s2">&#34;800 g de patate douce&#34;</span><span class="p">,</span><span class="s2">&#34;sel&#34;</span><span class="p">]},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="s2">&#34;title&#34;</span><span class="p">:</span><span class="s2">&#34;Pain aux 5 bananes et au son&#34;</span><span class="p">,</span><span class="s2">&#34;tags&#34;</span><span class="p">:[</span><span class="s2">&#34;dessert&#34;</span><span class="p">,</span><span class="s2">&#34;banane&#34;</span><span class="p">,</span><span class="s2">&#34;fruit&#34;</span><span class="p">,</span><span class="s2">&#34;desserts&#34;</span><span class="p">,</span><span class="s2">&#34;à congeler&#34;</span><span class="p">,</span><span class="s2">&#34;santé&#34;</span><span class="p">,</span><span class="s2">&#34;choix sain&#34;</span><span class="p">],</span><span class="s2">&#34;ingredients&#34;</span><span class="p">:[</span><span class="s2">&#34;375 ml  (1 1\/2 tasse) de farine tout usage non blanchie&#34;</span><span class="p">,</span><span class="s2">&#34;180 ml  (3\/4 tasse) de farine d’avoine&#34;</span><span class="p">,</span><span class="s2">&#34;30 ml  (2 c. à soupe) de son de blé&#34;</span><span class="p">,</span><span class="s2">&#34;5 ml  (1 c. à thé) de poudre à pâte&#34;</span><span class="p">,</span><span class="s2">&#34;5 ml  (1 c. à thé) de bicarbonate de soude&#34;</span><span class="p">,</span><span class="s2">&#34;500 ml  (2 tasses) de bananes bien mûres écrasées à la fourchette (environ 5 bananes)&#34;</span><span class="p">,</span><span class="s2">&#34;125 ml  (1\/2 tasse) de cassonade légèrement tassée&#34;</span><span class="p">,</span><span class="s2">&#34;60 ml  (1\/4 tasse) de yogourt nature 0 %&#34;</span><span class="p">,</span><span class="s2">&#34;45 ml  (3 c. à soupe) d’huile de canola&#34;</span><span class="p">,</span><span class="s2">&#34;2   oeufs&#34;</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Clean and preprocess the text data</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;[^a-zA-Z\s]&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>  <span class="c1"># Remove special characters, digits, etc.</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;\s+&#34;</span><span class="p">,</span> <span class="s2">&#34; &#34;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>  <span class="c1"># Remove extra spaces</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Function to extract and concatenate relevant fields from Recipe JSON</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">process_recipe</span><span class="p">(</span><span class="n">recipe_json</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Load the JSON from string, if necessary</span>
+</span></span><span class="line"><span class="cl">    <span class="n">recipe</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">recipe_json</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">recipe_json</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="n">recipe_json</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span> <span class="o">=</span> <span class="n">recipe</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ingredients</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">recipe</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ingredients&#39;</span><span class="p">,</span> <span class="p">[]))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tags</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">recipe</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tags&#39;</span><span class="p">,</span> <span class="p">[]))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Concatenate title, ingredients, and tags into one string</span>
+</span></span><span class="line"><span class="cl">    <span class="n">full_text</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">ingredients</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">tags</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">clean_text</span><span class="p">(</span><span class="n">full_text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load training data</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Initialize and fit the tokenizer</span>
+</span></span><span class="line"><span class="cl"><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">Tokenizer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">tokenizer</span><span class="o">.</span><span class="n">fit_on_texts</span><span class="p">(</span><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Recipe&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">max_length</span> <span class="o">=</span> <span class="mi">262</span>  <span class="c1"># Replace with the actual max length from training</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fit MultiLabelBinarizer with training data</span>
+</span></span><span class="line"><span class="cl"><span class="n">mlb</span> <span class="o">=</span> <span class="n">MultiLabelBinarizer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">mlb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Tags&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)))</span>  <span class="c1"># Fit with the same tags as during training</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">preprocess_recipe</span><span class="p">(</span><span class="n">recipe</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">,</span> <span class="n">max_length</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Preprocess a single recipe and convert to padded sequence.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sequence</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">([</span><span class="n">recipe</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">padded_sequence</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">(</span><span class="n">sequence</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">max_length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">padded_sequence</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">predict_tags</span><span class="p">(</span><span class="n">recipe</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">,</span> <span class="n">mlb</span><span class="p">,</span> <span class="n">max_length</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Predict tags for a given recipe using the provided model.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">padded_sequence</span> <span class="o">=</span> <span class="n">preprocess_recipe</span><span class="p">(</span><span class="n">recipe</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">,</span> <span class="n">max_length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Load the TFLite model</span>
+</span></span><span class="line"><span class="cl">    <span class="n">interpreter</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">lite</span><span class="o">.</span><span class="n">Interpreter</span><span class="p">(</span><span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;model_multi_label.tflite&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">interpreter</span><span class="o">.</span><span class="n">allocate_tensors</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Set input tensor</span>
+</span></span><span class="line"><span class="cl">    <span class="n">input_details</span> <span class="o">=</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_input_details</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_details</span> <span class="o">=</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_output_details</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">interpreter</span><span class="o">.</span><span class="n">set_tensor</span><span class="p">(</span><span class="n">input_details</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">],</span> <span class="n">padded_sequence</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Run inference</span>
+</span></span><span class="line"><span class="cl">    <span class="n">interpreter</span><span class="o">.</span><span class="n">invoke</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Get and process the output</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_data</span> <span class="o">=</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_tensor</span><span class="p">(</span><span class="n">output_details</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">predictions</span> <span class="o">=</span> <span class="p">(</span><span class="n">output_data</span> <span class="o">&gt;</span> <span class="mf">0.8</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Convert predictions to tags</span>
+</span></span><span class="line"><span class="cl">    <span class="n">predicted_tags</span> <span class="o">=</span> <span class="p">[</span><span class="n">tag</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">tag</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span><span class="p">)</span> <span class="k">if</span> <span class="n">predictions</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">predicted_tags</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Predict tags for each recipe</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">recipe</span> <span class="ow">in</span> <span class="n">recipes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span> <span class="o">=</span> <span class="n">recipe</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text</span> <span class="o">=</span> <span class="n">process_recipe</span><span class="p">(</span><span class="n">recipe</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tags</span> <span class="o">=</span> <span class="n">predict_tags</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">,</span> <span class="n">mlb</span><span class="p">,</span> <span class="n">max_length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Recipe: </span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="s2">Predicted Tags: </span><span class="si">{</span><span class="n">tags</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="embed-in-the-app">Embed in the app</h2>
+<p>Finally, to embed my classifier in my app, I just need to place the model in the assets of the app and do:</p>
+<pre tabindex="0"><code>dependencies {
+    // Classify recipes
+    implementation(libs.litert)
+    implementation(libs.tensorflow.lite.select.tf.ops)
+    implementation(libs.litert.metadata)
+    implementation(libs.litert.support.api)
+}
+</code></pre><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TagClassifier</span><span class="p">(</span><span class="k">val</span> <span class="py">context</span><span class="p">:</span> <span class="n">Context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">interpreter</span><span class="p">:</span> <span class="n">Interpreter</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">tokenizer</span><span class="p">:</span> <span class="n">Map</span><span class="p">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Int</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">labels</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">val</span> <span class="py">maxLength</span> <span class="p">=</span> <span class="m">262</span> <span class="c1">// Replace with the actual max length from training
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">init</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Load the TFLite model for assets
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">interpreter</span> <span class="p">=</span> <span class="n">Interpreter</span><span class="p">(</span><span class="n">loadModelFile</span><span class="p">(</span><span class="s2">&#34;model_multi_label.tflite&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Load the tokenizer
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">tokenizer</span> <span class="p">=</span> <span class="n">loadTokenizer</span><span class="p">(</span><span class="n">context</span><span class="p">.</span><span class="n">assets</span><span class="p">.</span><span class="k">open</span><span class="p">(</span><span class="s2">&#34;tokenizer.json&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Load labels
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">labels</span> <span class="p">=</span> <span class="n">loadLabels</span><span class="p">(</span><span class="n">context</span><span class="p">.</span><span class="n">assets</span><span class="p">.</span><span class="k">open</span><span class="p">(</span><span class="s2">&#34;labels.txt&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">fun</span> <span class="nf">loadModelFile</span><span class="p">(</span><span class="n">fileName</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">ByteBuffer</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">context</span><span class="p">.</span><span class="n">assets</span><span class="p">.</span><span class="n">openFd</span><span class="p">(</span><span class="n">fileName</span><span class="p">).</span><span class="n">use</span> <span class="p">{</span> <span class="n">fileDescriptor</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">FileInputStream</span><span class="p">(</span><span class="n">fileDescriptor</span><span class="p">.</span><span class="n">fileDescriptor</span><span class="p">).</span><span class="n">channel</span><span class="p">.</span><span class="n">use</span> <span class="p">{</span> <span class="n">fileChannel</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">startOffset</span> <span class="p">=</span> <span class="n">fileDescriptor</span><span class="p">.</span><span class="n">startOffset</span>
+</span></span><span class="line"><span class="cl">                <span class="k">val</span> <span class="py">declaredLength</span> <span class="p">=</span> <span class="n">fileDescriptor</span><span class="p">.</span><span class="n">declaredLength</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">fileChannel</span><span class="p">.</span><span class="n">map</span><span class="p">(</span><span class="nc">FileChannel</span><span class="p">.</span><span class="nc">MapMode</span><span class="p">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="n">startOffset</span><span class="p">,</span> <span class="n">declaredLength</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">fun</span> <span class="nf">classify</span><span class="p">(</span><span class="n">recipe</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">input</span> <span class="p">=</span> <span class="n">preprocessRecipe</span><span class="p">(</span><span class="n">recipe</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">output</span> <span class="p">=</span> <span class="n">Array</span><span class="p">(</span><span class="m">1</span><span class="p">)</span> <span class="p">{</span> <span class="n">FloatArray</span><span class="p">(</span><span class="n">labels</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">interpreter</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="n">output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Choose tags with more than 80% of probability
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">val</span> <span class="py">predictions</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">output</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">indices</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">output</span><span class="p">[</span><span class="m">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="p">&gt;</span> <span class="m">0.8f</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">predictions</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">predictions</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">fun</span> <span class="nf">loadTokenizer</span><span class="p">(</span><span class="n">inputStream</span><span class="p">:</span> <span class="n">InputStream</span><span class="p">):</span> <span class="n">Map</span><span class="p">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">tokenizerJson</span> <span class="p">=</span> <span class="n">inputStream</span><span class="p">.</span><span class="n">bufferedReader</span><span class="p">().</span><span class="n">use</span><span class="p">(</span><span class="n">BufferedReader</span><span class="o">::</span><span class="n">readText</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">jsonObject</span> <span class="p">=</span> <span class="n">JSONObject</span><span class="p">(</span><span class="n">tokenizerJson</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">val</span> <span class="py">tokenizerMap</span> <span class="p">=</span> <span class="n">mutableMapOf</span><span class="p">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Int</span><span class="p">&gt;()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">jsonObject</span><span class="p">.</span><span class="n">keys</span><span class="p">().</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">key</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">val</span> <span class="py">value</span> <span class="p">=</span> <span class="n">jsonObject</span><span class="p">.</span><span class="n">getInt</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tokenizerMap</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="p">=</span> <span class="k">value</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">tokenizerMap</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">fun</span> <span class="nf">loadLabels</span><span class="p">(</span><span class="n">inputStream</span><span class="p">:</span> <span class="n">InputStream</span><span class="p">):</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">inputStream</span><span class="p">.</span><span class="n">bufferedReader</span><span class="p">(</span><span class="nc">Charset</span><span class="p">.</span><span class="n">forName</span><span class="p">(</span><span class="s2">&#34;UTF-8&#34;</span><span class="p">)).</span><span class="n">useLines</span> <span class="p">{</span> <span class="n">lines</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">lines</span><span class="p">.</span><span class="n">toList</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="k">fun</span> <span class="nf">preprocessRecipe</span><span class="p">(</span><span class="n">recipe</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">ByteBuffer</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Convert the ingredient to a sequence of indices
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">val</span> <span class="py">sequence</span> <span class="p">=</span> <span class="n">tokenizer</span><span class="p">.</span><span class="n">entries</span><span class="p">.</span><span class="n">mapNotNull</span> <span class="p">{</span> <span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span> <span class="o">-&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="n">word</span><span class="p">.</span><span class="n">lowercase</span><span class="p">(),</span> <span class="n">ignoreCase</span> <span class="p">=</span> <span class="k">true</span><span class="p">))</span> <span class="n">index</span> <span class="k">else</span> <span class="k">null</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}.</span><span class="n">take</span><span class="p">(</span><span class="n">maxLength</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Create an array for the sequence with padding
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">val</span> <span class="py">sequenceArray</span> <span class="p">=</span> <span class="n">IntArray</span><span class="p">(</span><span class="n">maxLength</span><span class="p">)</span> <span class="p">{</span> <span class="m">0</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Place the sequence at the end of the array
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">sequence</span><span class="p">.</span><span class="n">indices</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sequenceArray</span><span class="p">[</span><span class="n">maxLength</span> <span class="p">-</span> <span class="n">sequence</span><span class="p">.</span><span class="n">size</span> <span class="p">+</span> <span class="n">i</span><span class="p">]</span> <span class="p">=</span> <span class="n">sequence</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Create ByteBuffer and fill with the sequence
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">val</span> <span class="py">byteBuffer</span> <span class="p">=</span> <span class="nc">ByteBuffer</span><span class="p">.</span><span class="n">allocateDirect</span><span class="p">(</span><span class="m">4</span> <span class="p">*</span> <span class="n">maxLength</span><span class="p">).</span><span class="n">apply</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">order</span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="n">nio</span><span class="p">.</span><span class="nc">ByteOrder</span><span class="p">.</span><span class="n">nativeOrder</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="k">value</span> <span class="k">in</span> <span class="n">sequenceArray</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">byteBuffer</span><span class="p">.</span><span class="n">putFloat</span><span class="p">(</span><span class="k">value</span><span class="p">.</span><span class="n">toFloat</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">byteBuffer</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>And now I have a working tag classifier!</p>
+<h1 id="kiss">KISS</h1>
+<p>Sorry, I lied. This code is from last year, when I started the project. It was working great (even if sometimes, I got some non-veggie recipes classified as veggies. But my dataset needed some more work). But there are a few things I do not like with this approach:</p>
+<ul>
+<li>TFLite is not light enough. This only dependency alone represents 63% of the size of the app. This is a bit dumb. Even if for now, I&rsquo;m basically the only user of my app, so I just don&rsquo;t care.</li>
+<li>The model prediction is basically a black box trained on the data you want. It&rsquo;s hard to debug and you have to improve your dataset, change your approach/model or play with some parameters.</li>
+<li>AI is a good tool on non-trivial data. Because you can get better and faster results than other methods, but, are recipes really non-trivial?</li>
+</ul>
+<p>So the question I tried to solve this week, is &ldquo;Can I replace this brick by something simpler but with better results?&rdquo;</p>
+<p>Because, even if <a href="https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/">Nobody Gets Promoted for Simplicity</a>, the best solution is generally the simplest one.</p>
+<h2 id="check-the-standard">Check the standard</h2>
+<p>Another philosophy I try to follow is: <strong>Don&rsquo;t reinvent the wheel</strong>. I love to learn how things work, but sometimes, I just need to get shit done.</p>
+<p>After getting recipes from several websites, I discovered that generally all websites were embedding a cool and easy to parse JSON with a shared format. Meaning that they were all using the same library OR that a standard format exists for recipes.
+And the truth is, there is indeed an existing schema to represent recipes: <a href="https://schema.org/Recipe">https://schema.org/Recipe</a></p>
+<p>I already use this structure a lot in my app to show and parse recipes. But in this schema there are also these two fields:</p>
+<ol>
+<li><strong>recipeCategory</strong> 	The category of the recipe—for example, appetizer, entree, etc.</li>
+<li><strong>recipeCuisine</strong>    The cuisine of the recipe (for example, French or Ethiopian).</li>
+</ol>
+<p>Meaning that the recipes I want to classify are pretty trivial and do not need a model for this.</p>
+<h2 id="a-light-and-quick-filtering-system">A Light and Quick Filtering System</h2>
+<p>The existence of this standard simplifies a lot the algorithm. Let&rsquo;s ditch the pre-trained model and TagClassifier. Now the algorithm is:</p>
+<ol>
+<li>Get <code>recipe[&quot;recipeCategory&quot;]</code> and <code>recipe[&quot;recipeCuisine&quot;]</code></li>
+<li>Check if tags we&rsquo;re showing are present in the list.</li>
+</ol>
+<p>Done?</p>
+<p>In theory, sure. But even if the schema is a standard, the values inside are decided by the website. And to be honest, it&rsquo;s pretty heterogeneous. It&rsquo;s not just tag = &ldquo;Healthy&rdquo; if &ldquo;healthy&rdquo; is in the list. So, there is a missing step to do before. And my big dataset of recipes will be useful once more.</p>
+<p>Basically, I already have a correspondence of Recipes-&gt;Tags I want. The idea is to get the most common words in <code>recipe[&quot;recipeCategory&quot;]</code> and <code>recipe[&quot;recipeCuisine&quot;]</code> for each tag. So for each tag I search ~20 correspondences such as <em>vegetable</em> for <strong>Vegetarian</strong> or <em>recipe of the week</em> for <strong>Easy</strong>, <em>italian</em> for <strong>European</strong>, etc.
+The good news, is that it&rsquo;s quicker than the classification, easier to predict and the size of the apk is reduced by <strong>68%</strong>. It also fix a warning on 16kb alignment for the Play Store.</p>
+<h1 id="thanks-for-reading">Thanks for reading!</h1>
+<p>I&rsquo;m happy to write again, and I hope to keep this motivation for a few months.
+I already have planned several articles to write and next week the topic will be completely different (another project, another subject). Just for your information. This blog has <a href="/index.xml">RSS</a></p>
+<p>And do not forget: <strong>always check for standards</strong> before doing something!</p>
+
+
+        
+        <div class="blog-tags">
+          
+          
+          <a href="https://enconn.fr/%20tags/android/">android</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/planeat/">planeat</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/dev/">dev</a>&nbsp;
+          
+        </div>
+        
+
+        
+
+        
+      </article>
+
+      
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="https://enconn.fr/blog/parsing-ingredients-list-python-android/" data-toggle="tooltip" data-placement="top"
+            title="Parsing recipe ingredients locally">&larr; Previous Post</a>
+        </li>
+        
+        
+      </ul>
+      
+
+
+      
+
+      
+
+      
+      
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://enconn.fr">Sébastien Blin</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://enconn.fr/">Enconn</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.152.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://enconn.fr/js/katex.min.js"></script>
+<script defer src="https://enconn.fr/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="https://enconn.fr/js/jquery-3.7.0.slim.min.js"></script>
+<script src="https://enconn.fr/js/bootstrap.min.js"></script>
+
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://enconn.fr/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to classify recipes</title>
+      <link>https://enconn.fr/blog/classify-recipes/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/blog/classify-recipes/</guid>
+      <description>&lt;p&gt;This week I still have some new things to explain about &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.planeat.planeat&#34;&gt;PlanEat&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;bad-news---android-sucks&#34;&gt;Bad News - Android sucks&lt;/h1&gt;&#xA;&lt;p&gt;So, I guess it&amp;rsquo;ll probably be the end of PlanEat. And probably a time to try other OSes again on my phone. (I have a PinePhone for a few years, but there is a lot to explore).&#xA;Google is trying to kill Android once again. So, I encourage you to read &lt;a href=&#34;https://keepandroidopen.org/&#34;&gt;https://keepandroidopen.org/&lt;/a&gt;&#xA;For me, I still don&amp;rsquo;t know what I&amp;rsquo;ll do with PlanEat. Probably kill it. That was fun, but I have other ideas. Anyway, this week I wanted to share about how I classify recipes in PlanEat. Here is a screenshot of the app:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Parsing recipe ingredients locally</title>
       <link>https://enconn.fr/blog/parsing-ingredients-list-python-android/</link>

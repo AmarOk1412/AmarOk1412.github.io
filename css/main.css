@@ -88,6 +88,9 @@ hr.small {
 }
 
 @media only screen and (max-width: 768px) {
+  .page-heading {
+    padding-top: 60px;
+  }
   .blog-heading {
     padding-top: 60px;
   }
