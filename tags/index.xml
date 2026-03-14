@@ -8,20 +8,41 @@
     <language>en-us</language>
     <managingEditor>contact@enconn.fr (Sébastien Blin)</managingEditor>
     <webMaster>contact@enconn.fr (Sébastien Blin)</webMaster>
-    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://enconn.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev</title>
+      <link>https://enconn.fr/tags/dev/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/dev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geocoding</title>
+      <link>https://enconn.fr/tags/geocoding/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/geocoding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://enconn.fr/tags/programming/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quebec-Guide</title>
+      <link>https://enconn.fr/tags/quebec-guide/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
+      <guid>https://enconn.fr/tags/quebec-guide/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Android</title>
       <link>https://enconn.fr/tags/android/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
       <guid>https://enconn.fr/tags/android/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dev</title>
-      <link>https://enconn.fr/tags/dev/</link>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><author>contact@enconn.fr (Sébastien Blin)</author>
-      <guid>https://enconn.fr/tags/dev/</guid>
       <description></description>
     </item>
     <item>

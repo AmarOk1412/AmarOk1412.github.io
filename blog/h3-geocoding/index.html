@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Computing distances between activities - </title>
+
+  <meta name="description" content="to create a travel guide">
+  <meta name="author" content="Sébastien Blin"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Enconn",
+    
+    "url": "https:\/\/enconn.fr\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/enconn.fr\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/enconn.fr\/blog\/h3-geocoding\/",
+          "name": "Computing distances between activities"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sébastien Blin"
+  },
+  "headline": "Computing distances between activities",
+  "description" : "I didn\u0026rsquo;t do much this work, busy during the day, doing nothing at night (yeah, my bad, One Piece season 2 is there). I\u0026rsquo;m mostly preparing different stuff that I\u0026rsquo;ll not describe for now, and this week end, I\u0026rsquo;ve got 2 full days in a forge doing stuff.\nSo this week, I\u0026rsquo;ll talk about a project I do in my spare time. I want to write a guide for travelers to visit Quebec. The goal is pretty simple, users answer to some questions and they get a custom planning for their vacations. Behind this simple idea, there is still a bunch of subjects to think of.\n",
+  "inLanguage" : "en",
+  "wordCount":  665 ,
+  "datePublished" : "2026-03-13T00:00:00\u002b00:00",
+  "dateModified" : "2026-03-13T00:00:00\u002b00:00",
+  "image" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+  "keywords" : [ "programming, geocoding, dev, quebec-guide" ],
+  "mainEntityOfPage" : "https:\/\/enconn.fr\/blog\/h3-geocoding\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/enconn.fr\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/enconn.fr\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Computing distances between activities" />
+<meta property="og:description" content="to create a travel guide">
+<meta property="og:image" content="https://enconn.fr/img/avatar-icon.png" />
+<meta property="og:url" content="https://enconn.fr/blog/h3-geocoding/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Enconn" />
+
+  <meta name="twitter:title" content="Computing distances between activities" />
+  <meta name="twitter:description" content="to create a travel guide">
+  <meta name="twitter:image" content="https://enconn.fr/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href='https://enconn.fr/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.152.2">
+  <link rel="alternate" href="https://enconn.fr/index.xml" type="application/rss+xml" title="Enconn"><link rel="stylesheet" href="https://enconn.fr/css/katex.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/brands.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/regular.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/solid.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/svg-with-js.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v4-shims.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/fontawesome/css/v5-font-face.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/bootstrap.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/main.css" /><link rel="stylesheet" href="https://enconn.fr/css/fonts.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/highlight.min.css" /><link rel="stylesheet" href="https://enconn.fr/css/codeblock.css" /><link rel="stylesheet" href="https://enconn.fr/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="https://enconn.fr/css/photoswipe.default-skin.min.css" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://enconn.fr/">Enconn</a>
+      <div class="navbar-by">by AmarOk</div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+        <li>
+          <a title="Blog" href="/blog/">Blog</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="Logs" href="/logs/">Logs</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="About" href="/about/">About</a>
+        </li>
+        
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a title="Enconn" href="https://enconn.fr/">
+          <img class="avatar-img" src="https://enconn.fr/img/avatar-icon.png" alt="Enconn" />
+          
+        </a>
+      </div>
+    </div>
+    
+
+  </div>
+</nav>
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              
+                <h1>Computing distances between activities</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <h2 class="blog-subheading">to create a travel guide</h2>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>I didn&rsquo;t do much this work, busy during the day, doing nothing at night (yeah, my bad, One Piece season 2 is there).
+I&rsquo;m mostly preparing different stuff that I&rsquo;ll not describe for now, and this week end, I&rsquo;ve got 2 full days in a forge doing stuff.</p>
+<p>So this week, I&rsquo;ll talk about a project I do in my spare time. I want to write a guide for travelers to visit Quebec.
+The goal is pretty simple, users answer to some questions and they get a custom planning for their vacations.
+Behind this simple idea, there is still a bunch of subjects to think of.</p>
+<p>And for this week, here is a small subject. I need to search activities in a sector, or check similar activities nearby. How can I do this?</p>
+<h1 id="postal-codes">Postal codes</h1>
+<p><img src="/img/dev/h3-geocoding/postal-code.jpg" alt="Postal Codes"></p>
+<p>In Québec/Canada, there is a certain sort of logic with postal codes, but. Nah, don&rsquo;t. In the screenshot, it&rsquo;s a simple case just for your information.</p>
+<h1 id="latitudelongitude">Latitude/Longitude</h1>
+<p>I guess the first reflex for a developer would be to go for latitude/longitude. It&rsquo;s pretty simple, because it encodes every point in the world with 2 numbers with infinite precision.
+The standard is around 4/5 digits, providing a precision of 10 meters. 2 are around 1km. This seems fine.</p>
+<p>So, now the step is to transform an address to a coordinate (lat,lon). This can easily be done via a really helpful project (which is free as freedom): <a href="https://www.openstreetmap.org/">OpenStreetMap</a></p>
+<p>OpenStreetMap has a geocoding software with an API: <a href="https://nominatim.openstreetmap.org/search">nominatim</a> that can provide a simple JSON to parse.</p>
+<p>For <em>Hotel de ville, Montréal</em> I can get a JSON, where I get the first candidate and retrieve the linked latitude/longitude: (<strong>45.5088383,-73.554142</strong>). Then for <em>La Tour à Bières, Chicoutimi</em>, I have (<strong>48.4290195,-71.0522944</strong>).</p>
+<p>To correctly use Nominatim, you can search the address first on OpenStreetMap. There are generally some differences with Google Maps (<em>A.</em> vs <em>Ave</em> vs <em>Avenue</em> or <em>Rd</em> vs <em>Road</em>, etc). So, avoid maps!
+To compute the distance in km between two destinations, we can use the Haversine formula: </p>
+$$d = 2R \arcsin\left(\sqrt{\sin^2\left(\frac{\Delta\phi}{2}\right) + \cos\phi_1 \cos\phi_2 \sin^2\left(\frac{\Delta\lambda}{2}\right)}\right)$$<p>where </p>
+$$\Delta\phi$$<p> is the delta of latitudes in radians, </p>
+$$\Delta\lambda$$<p> the delta of longitudes in radians, $R$ is the earth radius (~6371 km).
+In our case: this gives 376.1km (remove some digits and you will be around ~330km).</p>
+<p>To be honest, this is fine, but slow and need to compute things. We can do better than that if we think about datas.</p>
+<h1 id="hash-encoding">Hash encoding</h1>
+<p>Remember my previous articles about <a href="http://localhost:1313/blog/p2p-internals-dht/">DHTs</a>. Computing distances between hashes is really trivial. It&rsquo;s just a <em>XOR</em> operation. So, it would be perfect to transform a coordinate to a hash. The nearest the hash, the nearest the activity.</p>
+<p>And, the good news, is I&rsquo;m not the first to have thought about this. This is a common problem for Uber (and in aerospace) and they came with a solution for this. Introducing <a href="https://h3geo.org">h3</a></p>
+<blockquote>
+<p>H3 is a hierarchical geospatial index. H3 indexes refer to cells by the spatial hierarchy. Every hexagonal cell, up to the maximum resolution supported by H3, has seven child cells below it in this hierarchy. This subdivision is referred to as aperture 7.</p>
+</blockquote>
+<p><img src="/img/dev/h3-geocoding/parent-child.png" alt="H3"></p>
+<p>The idea is simple. The world is divided in hexagons and 12 pentagons of a certain size. Then, every hexagon is divided in 7 sub-sections until a precision of 1m (so, 569,707,381,193,162 which is under a 64-bit integer). Here is the resolution:</p>
+<p><img src="/img/dev/h3-geocoding/resolution.png" alt="H3 resolution">
+Source: <a href="https://h3geo.org/docs/core-library/restable#average-area-in-km2">https://h3geo.org/docs/core-library/restable#average-area-in-km2</a></p>
+<p>So to find the activities nearby, you can just consider a resolution of 5 or 6 and neighbors to get ~10 or 50km precision, which is good enough depending on the transportation mode the traveler uses. Here is an example with 842ba13ffffffff and 842ba1bffffffff:</p>
+<p><img src="/img/dev/h3-geocoding/h3-example.png" alt="H3 example"></p>
+<p>Finally, to use it, I found a crate in Rust: <a href="https://docs.rs/h3o/latest/h3o/">https://docs.rs/h3o/latest/h3o/</a> taking a LatLng in input, giving a h3 code in output.</p>
+<h1 id="final-note">Final note</h1>
+<p>The only thing is that it&rsquo;s not a travel distance, but the straight distance between two points, but it&rsquo;s useful to get similar activities nearby, not traveling time (yet).</p>
+
+
+        
+        <div class="blog-tags">
+          
+          
+          <a href="https://enconn.fr/%20tags/programming/">programming</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/geocoding/">geocoding</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/dev/">dev</a>&nbsp;
+          
+          
+          <a href="https://enconn.fr/%20tags/quebec-guide/">quebec-guide</a>&nbsp;
+          
+        </div>
+        
+
+        
+
+        
+      </article>
+
+      
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="https://enconn.fr/blog/classify-recipes/" data-toggle="tooltip" data-placement="top"
+            title="How to classify recipes">&larr; Previous Post</a>
+        </li>
+        
+        
+      </ul>
+      
+
+
+      
+
+      
+
+      
+      
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="mailto:contact@enconn.fr" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/AmarOk1412" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://enconn.fr">Sébastien Blin</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://enconn.fr/">Enconn</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.152.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://enconn.fr/js/katex.min.js"></script>
+<script defer src="https://enconn.fr/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="https://enconn.fr/js/jquery-3.7.0.slim.min.js"></script>
+<script src="https://enconn.fr/js/bootstrap.min.js"></script>
+
+<script src="https://enconn.fr/js/main.js"></script>
+<script src="https://enconn.fr/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://enconn.fr/js/photoswipe.min.js"></script>
+<script src="https://enconn.fr/js/photoswipe-ui-default.min.js"></script><script src="https://enconn.fr/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://enconn.fr/tags/android/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://enconn.fr/blog/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/blog/h3-geocoding/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/dev/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/geocoding/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/programming/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/quebec-guide/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://enconn.fr/tags/android/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/blog/classify-recipes/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/tags/planeat/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://enconn.fr/tags/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://enconn.fr/blog/parsing-ingredients-list-python-android/</loc>
